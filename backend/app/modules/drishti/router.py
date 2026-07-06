@@ -1,12 +1,22 @@
 """DRISHTI API routes."""
 from __future__ import annotations
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, HTTPException, Query
 
 from app.modules.drishti import gdelt
-from app.modules.drishti.relevance import score_and_rank
+from app.modules.drishti.brief import generate_brief
+from app.modules.drishti.qa import ask as ask_prahari
+from app.modules.drishti.relevance import score_and_rank, score_event
 from app.schemas.common import utcnow
-from app.schemas.drishti import EventRadarResponse, Sector, Severity
+from app.schemas.drishti import (
+    AskRequest,
+    AskResponse,
+    DoAvoidBrief,
+    EventRadarResponse,
+    Language,
+    Sector,
+    Severity,
+)
 
 router = APIRouter(prefix="/api/drishti", tags=["DRISHTI"])
 
@@ -44,3 +54,29 @@ async def event_radar(
         },
         live_source=live,
     )
+
+
+@router.get(
+    "/events/{event_id}/brief",
+    response_model=DoAvoidBrief,
+    summary="Do/Avoid Advisor brief for one event (D4)",
+)
+async def do_avoid_brief(
+    event_id: str,
+    language: Language = Query(Language.EN, description="Brief language (English or Bangla)."),
+) -> DoAvoidBrief:
+    """Generate a two-column national-interest brief for a specific event.
+
+    Refuses (with reason) when evidence is below the confidence floor.
+    """
+    events, _ = await gdelt.get_events()
+    match = next((e for e in events if e.id == event_id), None)
+    if match is None:
+        raise HTTPException(status_code=404, detail=f"Event '{event_id}' not found in the current feed.")
+    return await generate_brief(score_event(match), language=language.value)
+
+
+@router.post("/ask", response_model=AskResponse, summary="Ask-PRAHARI bilingual Q&A (C2)")
+async def ask(request: AskRequest) -> AskResponse:
+    """Answer a natural-language question (Bangla or English) grounded in the feed."""
+    return await ask_prahari(request.question, request.language)
