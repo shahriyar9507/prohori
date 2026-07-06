@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useStrings } from './i18n.js'
 import DrishtiView from './modules/DrishtiView.jsx'
+import RakkhokView from './modules/RakkhokView.jsx'
 
 const MODULES = [
   { key: 'drishti', bn: 'দৃষ্টি' },
@@ -42,9 +43,9 @@ export default function App() {
       </header>
 
       <main className="main">
-        {active === 'drishti' ? (
-          <DrishtiView lang={lang} />
-        ) : (
+        {active === 'drishti' && <DrishtiView lang={lang} />}
+        {active === 'rakkhok' && <RakkhokView lang={lang} />}
+        {active === 'shomudro' && (
           <div className="placeholder">
             {t.modules[active]} — {t.comingSoon}
           </div>

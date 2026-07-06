@@ -30,4 +30,10 @@ export const api = {
   brief: (eventId, language = 'en') =>
     get(`/api/drishti/events/${encodeURIComponent(eventId)}/brief?language=${language}`),
   ask: (question, language = 'en') => post('/api/drishti/ask', { question, language }),
+
+  // RAKKHOK
+  readiness: () => get('/api/rakkhok/readiness'),
+  assets: (force) => get(`/api/rakkhok/assets${force ? `?force=${force}` : ''}`),
+  rulRanking: (limit = 8) => get(`/api/rakkhok/rul-ranking?limit=${limit}`),
+  fleetAlerts: () => get('/api/rakkhok/alerts'),
 }

@@ -160,6 +160,40 @@ body {
 .filters select { background: var(--bg); color: var(--text); border: 1px solid var(--border);
   border-radius: 8px; padding: 8px 10px; font-size: 13px; }
 
+/* ─── RAKKHOK — readiness tiles & rankings ───────────────────────────── */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 18px; }
+.tile { background: var(--bg-panel); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px; text-align: center; }
+.tile .num { font-size: 34px; font-weight: 800; line-height: 1; }
+.tile .lbl { color: var(--text-dim); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
+.tile.readiness .num { color: var(--accent-bright); }
+.tile.ok .num { color: var(--green); } .tile.warn .num { color: var(--amber); } .tile.bad .num { color: var(--red); }
+
+.force-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-bottom: 18px; }
+.force-card { background: var(--bg-panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.force-card .fname { font-weight: 700; text-transform: capitalize; font-size: 13px; }
+.force-card .fpct { font-size: 24px; font-weight: 800; margin: 4px 0; }
+.force-card .fsub { font-size: 11px; color: var(--text-dim); }
+.bar { height: 6px; border-radius: 4px; background: var(--bg); overflow: hidden; margin-top: 6px; }
+.bar > span { display: block; height: 100%; }
+
+.rank-row { display: flex; align-items: center; gap: 10px; padding: 10px; border-bottom: 1px solid var(--border); }
+.rank-row:last-child { border-bottom: none; }
+.rank-name { flex: 1; }
+.rank-name .rn { font-weight: 600; font-size: 14px; }
+.rank-name .rt { color: var(--text-dim); font-size: 11px; }
+.risk { min-width: 120px; }
+.risk .rlabel { font-size: 10px; color: var(--text-dim); display: flex; justify-content: space-between; }
+.status-pill { font-size: 10px; padding: 3px 8px; border-radius: 20px; font-weight: 700; text-transform: uppercase; }
+.st-operational { background: var(--green-bg); color: var(--green); }
+.st-maintenance { background: var(--amber-bg); color: var(--amber); }
+.st-grounded { background: var(--red-bg); color: var(--red); }
+
+.alert-row { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 8px;
+  margin-bottom: 6px; font-size: 13px; background: var(--bg-panel-2); border: 1px solid var(--border); }
+.alert-row .lvl { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.lvl-red { background: var(--red); } .lvl-amber { background: var(--amber); } .lvl-yellow { background: #eab308; }
+
 .muted { color: var(--text-dim); }
 .loading { color: var(--text-dim); font-size: 14px; padding: 20px; text-align: center; }
 .banner { font-size: 12px; color: var(--text-dim); margin-bottom: 10px; }
