@@ -1,0 +1,135 @@
+{
+  "_note": "Synthetic 25-asset demo fleet for RAKKHOK. Type designations are generic and fictional; no real hull/tail numbers or real force inventory are represented. Clocks use either usage (current/limit/unit) or calendar (due_in_days, relative to REFERENCE_DATE 2026-07-06).",
+  "assets": [
+    {"id": "AF-MPA-201", "name": "MPA-201", "type": "MPA-2 Maritime Patrol Aircraft", "force": "air_force", "base": "Air Base, Chattogram", "induction_year": 2004, "design_life_years": 30, "status": "operational", "usage": {"util_per_day": 2.5, "airframe_hours": 19850},
+      "clocks": [
+        {"type": "airframe_hours", "label": "Airframe life", "current": 19850, "limit": 20000, "unit": "hours"},
+        {"type": "engine_tbo", "label": "Engine TBO", "current": 1800, "limit": 3000, "unit": "hours"},
+        {"type": "certification", "label": "Airworthiness cert", "due_in_days": 220}
+      ]},
+    {"id": "AF-TPT-130", "name": "TPT-130", "type": "TPT-130 Transport Aircraft", "force": "air_force", "base": "Air Base, Dhaka", "induction_year": 2012, "design_life_years": 35, "status": "operational", "usage": {"util_per_day": 3.0, "airframe_hours": 9200},
+      "clocks": [
+        {"type": "airframe_hours", "label": "Airframe life", "current": 9200, "limit": 25000, "unit": "hours"},
+        {"type": "engine_tbo", "label": "Engine TBO", "current": 900, "limit": 3500, "unit": "hours"},
+        {"type": "certification", "label": "Airworthiness cert", "due_in_days": 300}
+      ]},
+    {"id": "AF-HEL-017", "name": "HELI-017", "type": "HELI-17 Utility Helicopter", "force": "air_force", "base": "Air Base, Jashore", "induction_year": 2009, "design_life_years": 30, "status": "maintenance", "usage": {"util_per_day": 2.0, "engine_hours": 2750},
+      "clocks": [
+        {"type": "airframe_hours", "label": "Airframe life", "current": 6100, "limit": 12000, "unit": "hours"},
+        {"type": "engine_tbo", "label": "Engine TBO", "current": 2750, "limit": 3000, "unit": "hours"},
+        {"type": "certification", "label": "Airworthiness cert", "due_in_days": 75}
+      ]},
+    {"id": "AF-HEM-051", "name": "HELI-M-051", "type": "HELI-M Maritime Helicopter", "force": "air_force", "base": "Naval Air, Chattogram", "induction_year": 2016, "design_life_years": 30, "status": "operational", "usage": {"util_per_day": 1.8, "engine_hours": 1400},
+      "clocks": [
+        {"type": "airframe_hours", "label": "Airframe life", "current": 3600, "limit": 12000, "unit": "hours"},
+        {"type": "engine_tbo", "label": "Engine TBO", "current": 1400, "limit": 3000, "unit": "hours"},
+        {"type": "consumable", "label": "Life-raft certification", "due_in_days": -6}
+      ]},
+    {"id": "AF-TRN-007", "name": "TRN-007", "type": "TRN-7 Trainer Aircraft", "force": "air_force", "base": "Air Base, Dhaka", "induction_year": 2019, "design_life_years": 30, "status": "operational", "usage": {"util_per_day": 3.5, "airframe_hours": 2100},
+      "clocks": [
+        {"type": "airframe_hours", "label": "Airframe life", "current": 2100, "limit": 15000, "unit": "hours"},
+        {"type": "certification", "label": "Airworthiness cert", "due_in_days": 260}
+      ]},
+    {"id": "AF-FGT-071", "name": "FGT-071", "type": "FGT-7 Fighter Aircraft", "force": "air_force", "base": "Air Base, Chattogram", "induction_year": 2007, "design_life_years": 30, "status": "operational", "usage": {"util_per_day": 1.5, "airframe_hours": 5400},
+      "clocks": [
+        {"type": "airframe_hours", "label": "Airframe life", "current": 5400, "limit": 8000, "unit": "hours"},
+        {"type": "certification", "label": "Airworthiness cert", "due_in_days": 60}
+      ]},
+    {"id": "NV-FRG-001", "name": "FRG-001", "type": "FRG-1 Frigate", "force": "navy", "base": "BNS Issa Khan, Chattogram", "induction_year": 2001, "design_life_years": 35, "status": "operational", "usage": {"util_per_day": 8.0, "engine_hours": 41000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Main engine overhaul", "current": 4200, "limit": 6000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Dry-dock hull survey", "due_in_days": 150}
+      ]},
+    {"id": "NV-OPV-011", "name": "OPV-Shongram", "type": "OPV Shongram-class Offshore Patrol Vessel", "force": "navy", "base": "BNS Issa Khan, Chattogram", "induction_year": 2013, "design_life_years": 35, "status": "operational", "usage": {"util_per_day": 7.0, "engine_hours": 22000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Main engine overhaul", "current": 1500, "limit": 6000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Dry-dock hull survey", "due_in_days": 400}
+      ]},
+    {"id": "NV-OPV-012", "name": "OPV-012", "type": "OPV-2 Offshore Patrol Vessel", "force": "navy", "base": "BNS Sheikh Mujib, Khulna", "induction_year": 2006, "design_life_years": 35, "status": "operational", "usage": {"util_per_day": 7.5, "engine_hours": 33000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Main engine overhaul", "current": 5450, "limit": 6000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Dry-dock hull survey", "due_in_days": 240}
+      ]},
+    {"id": "NV-CRV-003", "name": "CRV-003", "type": "CRV Corvette", "force": "navy", "base": "BNS Issa Khan, Chattogram", "induction_year": 2015, "design_life_years": 35, "status": "operational", "usage": {"util_per_day": 6.5, "engine_hours": 16000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Main engine overhaul", "current": 2100, "limit": 6000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Dry-dock hull survey", "due_in_days": 20}
+      ]},
+    {"id": "NV-FPB-021", "name": "FPB-021", "type": "FPB Fast Patrol Boat", "force": "navy", "base": "BNS Sheikh Mujib, Khulna", "induction_year": 2018, "design_life_years": 25, "status": "operational", "usage": {"util_per_day": 5.0, "engine_hours": 7000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine overhaul", "current": 1200, "limit": 4000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Hull survey", "due_in_days": 500}
+      ]},
+    {"id": "NV-FPB-022", "name": "FPB-022", "type": "FPB-2 Fast Patrol Boat", "force": "navy", "base": "BNS Issa Khan, Chattogram", "induction_year": 2011, "design_life_years": 25, "status": "operational", "usage": {"util_per_day": 5.0, "engine_hours": 12000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine overhaul", "current": 3600, "limit": 4000, "unit": "hours"},
+        {"type": "consumable", "label": "Firefighting system service", "due_in_days": 85}
+      ]},
+    {"id": "NV-MSL-005", "name": "MSL-005", "type": "MSL Missile Boat", "force": "navy", "base": "BNS Sheikh Mujib, Khulna", "induction_year": 2003, "design_life_years": 30, "status": "operational", "usage": {"util_per_day": 4.0, "engine_hours": 20000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine overhaul", "current": 3100, "limit": 4000, "unit": "hours"},
+        {"type": "certification", "label": "Weapon-system certification", "due_in_days": 25}
+      ]},
+    {"id": "CG-OPV-101", "name": "CG-OPV-101", "type": "OPV Coast Guard Offshore Patrol Vessel", "force": "coast_guard", "base": "CG Base, Chattogram", "induction_year": 2014, "design_life_years": 30, "status": "operational", "usage": {"util_per_day": 8.0, "engine_hours": 21000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Main engine overhaul", "current": 1800, "limit": 6000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Dry-dock hull survey", "due_in_days": 330}
+      ]},
+    {"id": "CG-FPB-102", "name": "CG-FPB-102", "type": "FPB Coast Guard Fast Patrol Boat", "force": "coast_guard", "base": "CG Station, Bhola", "induction_year": 2008, "design_life_years": 25, "status": "operational", "usage": {"util_per_day": 6.0, "engine_hours": 15500},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine overhaul", "current": 3950, "limit": 4000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Hull survey", "due_in_days": 190}
+      ]},
+    {"id": "CG-IPV-103", "name": "CG-IPV-103", "type": "IPV Inshore Patrol Vessel", "force": "coast_guard", "base": "CG Station, Cox's Bazar", "induction_year": 2017, "design_life_years": 25, "status": "operational", "usage": {"util_per_day": 5.5, "engine_hours": 9000},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine overhaul", "current": 1500, "limit": 4000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Hull survey", "due_in_days": 420}
+      ]},
+    {"id": "CG-IPV-104", "name": "CG-IPV-104", "type": "IPV-2 Inshore Patrol Vessel", "force": "coast_guard", "base": "CG Station, Mongla", "induction_year": 2010, "design_life_years": 25, "status": "operational", "usage": {"util_per_day": 5.5, "engine_hours": 13500},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine overhaul", "current": 2600, "limit": 4000, "unit": "hours"},
+        {"type": "hull_survey", "label": "Hull survey", "due_in_days": 70}
+      ]},
+    {"id": "CG-SAR-105", "name": "CG-SAR-105", "type": "SAR-B Search-and-Rescue Boat", "force": "coast_guard", "base": "CG Station, Cox's Bazar", "induction_year": 2020, "design_life_years": 25, "status": "operational", "usage": {"util_per_day": 4.5, "engine_hours": 3200},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine overhaul", "current": 700, "limit": 4000, "unit": "hours"},
+        {"type": "consumable", "label": "Rescue-equipment service", "due_in_days": 160}
+      ]},
+    {"id": "AR-UTL-401", "name": "UTL-401", "type": "UTL-4 Utility Vehicle", "force": "army", "base": "Cantonment, Dhaka", "induction_year": 2019, "design_life_years": 20, "status": "operational", "usage": {"util_per_day": 3.0, "engine_hours": 3800},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine service", "current": 1200, "limit": 5000, "unit": "hours"},
+        {"type": "certification", "label": "Roadworthiness", "due_in_days": 280}
+      ]},
+    {"id": "AR-APC-303", "name": "APC-303", "type": "APC-3 Armoured Personnel Carrier", "force": "army", "base": "Cantonment, Chattogram", "induction_year": 2009, "design_life_years": 25, "status": "operational", "usage": {"util_per_day": 2.5, "engine_hours": 8600},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Powerpack overhaul", "current": 3700, "limit": 4500, "unit": "hours"},
+        {"type": "certification", "label": "Fleet certification", "due_in_days": 130}
+      ]},
+    {"id": "AR-GEN-200", "name": "GEN-200", "type": "GEN-200 Field Generator", "force": "army", "base": "Cantonment, Jashore", "induction_year": 2005, "design_life_years": 20, "status": "operational", "usage": {"util_per_day": 10.0, "engine_hours": 29500},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Major service", "current": 2900, "limit": 3000, "unit": "hours"},
+        {"type": "consumable", "label": "Coolant/filter service", "due_in_days": 15}
+      ]},
+    {"id": "AR-RAD-C01", "name": "RAD-C01", "type": "RAD-C Coastal Surveillance Radar", "force": "army", "base": "Coastal Post, Teknaf", "induction_year": 2013, "design_life_years": 20, "status": "operational", "usage": {"util_per_day": 20.0, "engine_hours": 0},
+      "clocks": [
+        {"type": "certification", "label": "System calibration", "due_in_days": 55},
+        {"type": "consumable", "label": "UPS battery bank", "due_in_days": 200}
+      ]},
+    {"id": "AR-RAD-C02", "name": "RAD-C02", "type": "RAD-C2 Coastal Surveillance Radar", "force": "army", "base": "Coastal Post, Kuakata", "induction_year": 2018, "design_life_years": 20, "status": "operational", "usage": {"util_per_day": 20.0, "engine_hours": 0},
+      "clocks": [
+        {"type": "certification", "label": "System calibration", "due_in_days": 240},
+        {"type": "consumable", "label": "UPS battery bank", "due_in_days": 320}
+      ]},
+    {"id": "AR-HEL-A09", "name": "HELI-A09", "type": "HELI-A Army Aviation Helicopter", "force": "army", "base": "Army Aviation, Jashore", "induction_year": 2011, "design_life_years": 30, "status": "operational", "usage": {"util_per_day": 2.2, "engine_hours": 2400},
+      "clocks": [
+        {"type": "airframe_hours", "label": "Airframe life", "current": 5300, "limit": 12000, "unit": "hours"},
+        {"type": "engine_tbo", "label": "Engine TBO", "current": 2400, "limit": 3000, "unit": "hours"},
+        {"type": "certification", "label": "Airworthiness cert", "due_in_days": 110}
+      ]},
+    {"id": "AR-TRK-501", "name": "TRK-501", "type": "TRK-5 Heavy Logistics Truck", "force": "army", "base": "Cantonment, Dhaka", "induction_year": 2016, "design_life_years": 20, "status": "operational", "usage": {"util_per_day": 4.0, "engine_hours": 6800},
+      "clocks": [
+        {"type": "engine_tbo", "label": "Engine service", "current": 2000, "limit": 6000, "unit": "hours"},
+        {"type": "certification", "label": "Roadworthiness", "due_in_days": 175}
+      ]}
+  ]
+}
