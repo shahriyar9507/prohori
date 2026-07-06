@@ -2,8 +2,8 @@
   "evt-2026-0701-teesta:en": {
     "event_id": "evt-2026-0701-teesta",
     "title": "India and Bangladesh resume Teesta water-sharing technical talks",
-    "situation": "Water-resource officials from both countries reopened technical discussions on dry-season flow allocation of the Teesta river, a long-pending item affecting northern Bangladesh agriculture.",
-    "why_it_matters": "Relevance to Bangladesh is scored 86/100 (RED). Involving India, it carries first-order effect on dry-season agriculture; second-order effect on rural livelihoods and food security. first-order effect on partner relationships; second-order effect on negotiating leverage across files.",
+    "situation": "Bangladesh and India have resumed technical discussions regarding the sharing of Teesta river water during the dry season. This issue has been a long-standing concern, particularly for agricultural activities in northern Bangladesh.",
+    "why_it_matters": "The resumption of these talks is significant for Bangladesh as the Teesta river's dry-season flow directly impacts its agricultural sector, a key component of the national economy. A resolution could improve agricultural productivity and livelihoods in affected regions. Conversely, continued delays or an unfavorable agreement could exacerbate water scarcity issues, potentially leading to economic strain and social challenges in northern Bangladesh. This also has implications for broader bilateral relations, as water-sharing agreements are often sensitive diplomatic issues.",
     "do": [
       {
         "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
@@ -82,18 +82,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.787055Z",
+      "generated_at": "2026-07-06T21:42:19.736231Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0701-teesta:bn": {
     "event_id": "evt-2026-0701-teesta",
     "title": "India and Bangladesh resume Teesta water-sharing technical talks",
-    "situation": "Water-resource officials from both countries reopened technical discussions on dry-season flow allocation of the Teesta river, a long-pending item affecting northern Bangladesh agriculture.",
-    "why_it_matters": "Relevance to Bangladesh is scored 86/100 (RED). Involving India, it carries first-order effect on dry-season agriculture; second-order effect on rural livelihoods and food security. first-order effect on partner relationships; second-order effect on negotiating leverage across files.",
+    "situation": "ভারত ও বাংলাদেশের জলসম্পদ কর্মকর্তারা শুষ্ক মৌসুমে তিস্তা নদীর জলবন্টন নিয়ে কারিগরি আলোচনা পুনরায় শুরু করেছেন। এই বিষয়টি দীর্ঘকাল ধরে অমীমাংসিত ছিল এবং বাংলাদেশের উত্তরাঞ্চলের কৃষিকাজকে প্রভাবিত করে।",
+    "why_it_matters": "তিস্তা নদীর জলবন্টন নিয়ে আলোচনা পুনরায় শুরু হওয়া বাংলাদেশের জন্য গুরুত্বপূর্ণ কারণ এটি উত্তরাঞ্চলের কৃষিকাজের উপর সরাসরি প্রভাব ফেলে। এই আলোচনা সফল হলে শুষ্ক মৌসুমে জল সরবরাহের নিশ্চয়তা পাওয়া যাবে, যা কৃষকদের জন্য অত্যন্ত জরুরি। এটি দুই দেশের মধ্যে দ্বিপাক্ষিক সম্পর্ককেও শক্তিশালী করবে এবং ভবিষ্যতে অন্যান্য জলসম্পদ সংক্রান্ত বিষয়ে সহযোগিতার পথ খুলে দেবে। প্রথমত, কৃষিক্ষেত্রে স্থিতিশীলতা আসবে। দ্বিতীয়ত, এটি আঞ্চলিক জল ব্যবস্থাপনায় বাংলাদেশের অবস্থানকে দৃঢ় করবে।",
     "do": [
       {
         "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
@@ -172,18 +172,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.787055Z",
+      "generated_at": "2026-07-06T21:42:28.635355Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0703-port:en": {
     "event_id": "evt-2026-0703-port",
     "title": "Foreign consortium proposes deep-sea port investment on Bay of Bengal coast",
-    "situation": "An international consortium tabled a financing proposal for deep-sea port and logistics infrastructure near the Bay of Bengal, citing regional trade-corridor ambitions.",
-    "why_it_matters": "Relevance to Bangladesh is scored 88/100 (RED). Involving China, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves. first-order effect on border stability; second-order effect on diplomatic bandwidth and defence posture. first-order effect on energy-import cost and supply; second-order effect on industrial output and prices.",
+    "situation": "A foreign consortium has submitted a financing proposal for the development of deep-sea port and logistics infrastructure situated along the Bay of Bengal coast. The consortium cited ambitions related to regional trade corridors as the basis for their proposal.",
+    "why_it_matters": "This development is highly relevant to Bangladesh due to its strategic location on the Bay of Bengal and its potential to enhance regional trade connectivity. The proposed port could significantly boost Bangladesh's trade capacity and economic growth, potentially attracting further foreign investment. From a security perspective, increased maritime infrastructure could bolster Bangladesh's naval presence and influence in the Bay of Bengal. The energy sector could also benefit through improved logistics for energy imports and exports. The involvement of a foreign consortium, particularly given the mention of regional trade corridors, necessitates careful consideration of Bangladesh's strategic interests and potential geopolitical implications.",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -303,18 +303,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.787055Z",
+      "generated_at": "2026-07-06T21:42:37.398938Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.95,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0703-port:bn": {
     "event_id": "evt-2026-0703-port",
     "title": "Foreign consortium proposes deep-sea port investment on Bay of Bengal coast",
-    "situation": "An international consortium tabled a financing proposal for deep-sea port and logistics infrastructure near the Bay of Bengal, citing regional trade-corridor ambitions.",
-    "why_it_matters": "Relevance to Bangladesh is scored 88/100 (RED). Involving China, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves. first-order effect on border stability; second-order effect on diplomatic bandwidth and defence posture. first-order effect on energy-import cost and supply; second-order effect on industrial output and prices.",
+    "situation": "একটি আন্তর্জাতিক কনসোর্টিয়াম বঙ্গোপসাগরের উপকূলে একটি গভীর সমুদ্র বন্দর এবং লজিস্টিক অবকাঠামো নির্মাণের জন্য একটি অর্থায়নের প্রস্তাব পেশ করেছে, যা আঞ্চলিক বাণিজ্য করিডোর প্রতিষ্ঠার উচ্চাকাঙ্ক্ষা দ্বারা চালিত।",
+    "why_it_matters": "এই প্রস্তাবটি বাংলাদেশের জন্য উল্লেখযোগ্য কারণ এটি আঞ্চলিক বাণিজ্য ও নিরাপত্তা উভয় ক্ষেত্রেই প্রভাব ফেলতে পারে। প্রথমত, এটি বাংলাদেশের অর্থনীতিতে নতুন বাণিজ্য পথ খুলে দিতে পারে এবং অর্থনৈতিক প্রবৃদ্ধি বাড়াতে পারে। দ্বিতীয়ত, এই ধরনের অবকাঠামো নির্মাণ আঞ্চলিক নিরাপত্তা পরিস্থিতিতে পরিবর্তন আনতে পারে, যা বাংলাদেশের কৌশলগত অবস্থানকে আরও গুরুত্বপূর্ণ করে তুলবে।",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -434,18 +434,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.787055Z",
+      "generated_at": "2026-07-06T21:42:46.037510Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.95,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0702-labour:en": {
     "event_id": "evt-2026-0702-labour",
     "title": "Gulf state announces revised overseas-worker quota policy",
-    "situation": "A major Gulf labour-destination country published a revised recruitment-quota framework for South Asian workers, with implications for remittance inflows.",
-    "why_it_matters": "Relevance to Bangladesh is scored 81/100 (RED). Involving Saudi Arabia, it carries first-order effect on overseas employment and remittance inflows; second-order effect on the balance of payments. first-order effect on partner relationships; second-order effect on negotiating leverage across files.",
+    "situation": "Saudi Arabia, a significant destination for Bangladeshi overseas workers, has announced a revised recruitment quota framework for South Asian laborers.",
+    "why_it_matters": "This policy change by Saudi Arabia directly impacts Bangladesh's labor sector by potentially altering the number of its citizens who can seek employment there. A significant consequence for Bangladesh would be the effect on remittance inflows, a crucial component of its foreign exchange reserves and national income. This could necessitate diplomatic engagement to understand the specifics of the revised policy and its implications for Bangladeshi workers and the national economy.",
     "do": [
       {
         "action": "Engage the destination country's labour ministry to clarify and shape the policy.",
@@ -531,18 +531,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.787055Z",
+      "generated_at": "2026-07-06T21:42:53.884935Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0702-labour:bn": {
     "event_id": "evt-2026-0702-labour",
     "title": "Gulf state announces revised overseas-worker quota policy",
-    "situation": "A major Gulf labour-destination country published a revised recruitment-quota framework for South Asian workers, with implications for remittance inflows.",
-    "why_it_matters": "Relevance to Bangladesh is scored 81/100 (RED). Involving Saudi Arabia, it carries first-order effect on overseas employment and remittance inflows; second-order effect on the balance of payments. first-order effect on partner relationships; second-order effect on negotiating leverage across files.",
+    "situation": "সৌদি আরব দক্ষিণ এশীয় শ্রমিকদের জন্য একটি সংশোধিত নিয়োগ-কোটাসংক্রান্ত নীতি ঘোষণা করেছে।",
+    "why_it_matters": "এই নীতি বাংলাদেশের জন্য গুরুত্বপূর্ণ কারণ এটি সৌদি আরবে কর্মরত বাংলাদেশি শ্রমিকদের সংখ্যা এবং তাদের পাঠানো রেমিটেন্সের উপর প্রভাব ফেলতে পারে। এর ফলে বাংলাদেশের বৈদেশিক মুদ্রার রিজার্ভ এবং শ্রমবাজারের উপর প্রথম ও দ্বিতীয় স্তরের প্রভাব পড়তে পারে।",
     "do": [
       {
         "action": "Engage the destination country's labour ministry to clarify and shape the policy.",
@@ -628,18 +628,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:02.332790Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0705-border:en": {
     "event_id": "evt-2026-0705-border",
     "title": "Reported cross-border security incident along the Myanmar frontier",
-    "situation": "Local authorities reported an incident near the Bangladesh–Myanmar border area, prompting heightened patrol activity in the region.",
-    "why_it_matters": "Relevance to Bangladesh is scored 92/100 (RED). Involving Myanmar, it carries first-order effect on border stability; second-order effect on diplomatic bandwidth and defence posture.",
+    "situation": "Local authorities reported a security incident near the Bangladesh-Myanmar border, leading to increased patrol activity in the area.",
+    "why_it_matters": "This incident along the Myanmar frontier raises security concerns for Bangladesh, potentially impacting border management and regional stability. Heightened patrols suggest a need to monitor the situation closely to prevent any spillover effects that could affect national security or lead to increased refugee flows.",
     "do": [
       {
         "action": "Verify facts through the established border-liaison mechanism before acting.",
@@ -704,18 +704,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:10.240641Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.7,
       "confidence_label": "medium"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0705-border:bn": {
     "event_id": "evt-2026-0705-border",
     "title": "Reported cross-border security incident along the Myanmar frontier",
-    "situation": "Local authorities reported an incident near the Bangladesh–Myanmar border area, prompting heightened patrol activity in the region.",
-    "why_it_matters": "Relevance to Bangladesh is scored 92/100 (RED). Involving Myanmar, it carries first-order effect on border stability; second-order effect on diplomatic bandwidth and defence posture.",
+    "situation": "বাংলাদেশের মিয়ানমার সীমান্ত অঞ্চলে একটি নিরাপত্তা সংক্রান্ত ঘটনা ঘটেছে বলে স্থানীয় কর্তৃপক্ষ জানিয়েছে, যার ফলে ওই এলাকায় টহল কার্যক্রম বৃদ্ধি করা হয়েছে।",
+    "why_it_matters": "এই ঘটনাটি বাংলাদেশের সীমান্ত নিরাপত্তা এবং আঞ্চলিক স্থিতিশীলতার জন্য তাৎপর্যপূর্ণ। প্রথমত, এটি সীমান্ত এলাকায় উত্তেজনা বাড়াতে পারে এবং দুই দেশের মধ্যে কূটনৈতিক সম্পর্ককে প্রভাবিত করতে পারে। দ্বিতীয়ত, এই ধরনের ঘটনা সীমান্ত পারাপার এবং সংশ্লিষ্ট বাণিজ্যিক কার্যক্রমে বিঘ্ন ঘটাতে পারে, যা বাংলাদেশের অর্থনীতিতে পরোক্ষ প্রভাব ফেলতে পারে। এছাড়াও, এটি রোহিঙ্গা শরণার্থী পরিস্থিতি এবং সীমান্ত ব্যবস্থাপনা সংক্রান্ত বাংলাদেশের নীতিগুলির উপর অতিরিক্ত চাপ সৃষ্টি করতে পারে।",
     "do": [
       {
         "action": "Verify facts through the established border-liaison mechanism before acting.",
@@ -780,18 +780,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:18.591174Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.7,
       "confidence_label": "medium"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0630-eu-rmg:en": {
     "event_id": "evt-2026-0630-eu-rmg",
     "title": "European Union opens review of garment import preferences",
-    "situation": "The EU began a scheduled review of trade-preference arrangements covering ready-made garment imports, a category central to Bangladesh's export earnings.",
-    "why_it_matters": "Relevance to Bangladesh is scored 86/100 (RED). Involving European Union, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves. first-order effect on overseas employment and remittance inflows; second-order effect on the balance of payments.",
+    "situation": "The European Union has initiated a scheduled review of its trade-preference arrangements for ready-made garment imports.",
+    "why_it_matters": "This review is significant for Bangladesh as ready-made garments constitute a central component of its export earnings. Any changes to these preferences could impact Bangladesh's export revenue and potentially affect labor conditions within the garment sector. The outcome of this review will be a key factor in determining the future trade relationship between the EU and Bangladesh concerning this vital industry.",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -890,18 +890,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:26.736231Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.9,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0630-eu-rmg:bn": {
     "event_id": "evt-2026-0630-eu-rmg",
     "title": "European Union opens review of garment import preferences",
-    "situation": "The EU began a scheduled review of trade-preference arrangements covering ready-made garment imports, a category central to Bangladesh's export earnings.",
-    "why_it_matters": "Relevance to Bangladesh is scored 86/100 (RED). Involving European Union, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves. first-order effect on overseas employment and remittance inflows; second-order effect on the balance of payments.",
+    "situation": "ইউরোপীয় ইউনিয়ন তৈরি পোশাক আমদানির ক্ষেত্রে বাণিজ্য-পছন্দ ব্যবস্থার একটি নির্ধারিত পর্যালোচনা শুরু করেছে, যা বাংলাদেশের রপ্তানি আয়ের একটি প্রধান খাত।",
+    "why_it_matters": "এই পর্যালোচনাটি বাংলাদেশের জন্য অত্যন্ত গুরুত্বপূর্ণ কারণ তৈরি পোশাক দেশটির রপ্তানি আয়ের একটি বড় অংশ। যদি এই পর্যালোচনায় আমদানির ক্ষেত্রে কোনো পরিবর্তন আনা হয়, তবে তা বাংলাদেশের পোশাক শিল্পের প্রতিযোগিতা সক্ষমতা এবং শ্রমিকদের কর্মসংস্থানের উপর প্রভাব ফেলতে পারে। প্রথমত, এটি রপ্তানি আয় এবং বৈদেশিক মুদ্রার উপর সরাসরি প্রভাব ফেলবে। দ্বিতীয়ত, এটি পোশাক শিল্পের উৎপাদন, বিনিয়োগ এবং শ্রমিকদের মজুরি ও কাজের পরিবেশের উপর পরোক্ষ প্রভাব ফেলতে পারে।",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -1000,18 +1000,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:34.850995Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.9,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0704-shipping:en": {
     "event_id": "evt-2026-0704-shipping",
     "title": "Shipping-lane disruption raises freight costs on key export routes",
-    "situation": "Reported disruption along a major maritime shipping lane increased freight and insurance costs on routes used for regional exports and energy imports.",
-    "why_it_matters": "Relevance to Bangladesh is scored 46/100 (AMBER). Involving Egypt, Yemen, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves. first-order effect on energy-import cost and supply; second-order effect on industrial output and prices.",
+    "situation": "Disruption along a major maritime shipping lane has led to increased freight and insurance costs for routes crucial for regional exports and energy imports.",
+    "why_it_matters": "This disruption directly impacts Bangladesh's trade sector by raising the costs of exporting goods and importing energy. Higher freight and insurance expenses can reduce the competitiveness of Bangladeshi exports and increase the cost of essential energy resources, potentially affecting domestic prices and economic stability.",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -1103,18 +1103,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:42.928305Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.9,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0704-shipping:bn": {
     "event_id": "evt-2026-0704-shipping",
     "title": "Shipping-lane disruption raises freight costs on key export routes",
-    "situation": "Reported disruption along a major maritime shipping lane increased freight and insurance costs on routes used for regional exports and energy imports.",
-    "why_it_matters": "Relevance to Bangladesh is scored 46/100 (AMBER). Involving Egypt, Yemen, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves. first-order effect on energy-import cost and supply; second-order effect on industrial output and prices.",
+    "situation": "একটি প্রধান সামুদ্রিক শিপিং রুটে বিঘ্ন ঘটায় আঞ্চলিক রপ্তানি ও জ্বালানি আমদানির রুটে মালবাহী ও বীমা খরচ বৃদ্ধি পেয়েছে।",
+    "why_it_matters": "এই ঘটনা বাংলাদেশের রপ্তানি পণ্যের পরিবহন ব্যয় বাড়াতে পারে এবং জ্বালানি আমদানির খরচও বৃদ্ধি করতে পারে, যা দেশের অর্থনীতিতে প্রভাব ফেলবে।",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -1206,18 +1206,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:50.999353Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.9,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0629-bimstec:en": {
     "event_id": "evt-2026-0629-bimstec",
     "title": "BIMSTEC members discuss regional connectivity framework",
-    "situation": "Member states of the Bay of Bengal regional grouping discussed a connectivity and trade-facilitation framework at a ministerial meeting.",
-    "why_it_matters": "Relevance to Bangladesh is scored 91/100 (RED). Involving BIMSTEC, India, Myanmar, Thailand, it carries first-order effect on partner relationships; second-order effect on negotiating leverage across files. first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves.",
+    "situation": "BIMSTEC member states, including Bangladesh, India, Myanmar, and Thailand, convened a ministerial meeting to discuss a regional connectivity and trade-facilitation framework.",
+    "why_it_matters": "This discussion is highly relevant to Bangladesh as it directly addresses the potential for enhanced regional trade and infrastructure development. Improved connectivity could lead to increased trade volumes, reduced transit times for goods, and greater economic integration for Bangladesh within the Bay of Bengal region. This could also foster stronger diplomatic ties and potentially attract foreign investment, though it may also necessitate adjustments to domestic trade policies and infrastructure to fully capitalize on these opportunities.",
     "do": [
       {
         "action": "Engage constructively while preserving balance among partners.",
@@ -1303,18 +1303,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:43:58.944925Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0629-bimstec:bn": {
     "event_id": "evt-2026-0629-bimstec",
     "title": "BIMSTEC members discuss regional connectivity framework",
-    "situation": "Member states of the Bay of Bengal regional grouping discussed a connectivity and trade-facilitation framework at a ministerial meeting.",
-    "why_it_matters": "Relevance to Bangladesh is scored 91/100 (RED). Involving BIMSTEC, India, Myanmar, Thailand, it carries first-order effect on partner relationships; second-order effect on negotiating leverage across files. first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves.",
+    "situation": "বঙ্গোপসাগরীয় আঞ্চলিক জোটের সদস্য রাষ্ট্রগুলো একটি মন্ত্রী পর্যায়ের বৈঠকে আঞ্চলিক সংযোগ ও বাণিজ্য-সুবিধা বিষয়ক একটি কাঠামোর বিষয়ে আলোচনা করেছে।",
+    "why_it_matters": "এই আলোচনা বাংলাদেশের জন্য গুরুত্বপূর্ণ কারণ এটি আঞ্চলিক বাণিজ্য বৃদ্ধি এবং অর্থনৈতিক সম্পর্ক জোরদার করার সুযোগ তৈরি করতে পারে। প্রথমত, উন্নত সংযোগ ব্যবস্থা বাংলাদেশের পণ্য ও পরিষেবার জন্য নতুন বাজার উন্মুক্ত করতে পারে। দ্বিতীয়ত, এই উদ্যোগের ফলে আঞ্চলিক সরবরাহ শৃঙ্খল শক্তিশালী হতে পারে, যা বাংলাদেশের অর্থনীতিকে আরও স্থিতিশীল করে তুলবে।",
     "do": [
       {
         "action": "Engage constructively while preserving balance among partners.",
@@ -1400,18 +1400,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:44:06.846715Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0701-cyclone:en": {
     "event_id": "evt-2026-0701-cyclone",
     "title": "Weather agencies track intensifying system in the Bay of Bengal",
-    "situation": "Regional meteorological agencies flagged an intensifying weather system over the Bay of Bengal, with potential coastal impact during the monsoon period.",
-    "why_it_matters": "Relevance to Bangladesh is scored 87/100 (RED). Involving the parties involved, it carries first-order effect on coastal safety; second-order effect on disaster-response asset readiness. first-order effect on border stability; second-order effect on diplomatic bandwidth and defence posture.",
+    "situation": "A weather system in the Bay of Bengal is intensifying and may affect coastal areas during the monsoon season.",
+    "why_it_matters": "This intensifying weather system poses a direct threat to Bangladesh's coastal regions, potentially causing damage to infrastructure and displacement of populations. The monsoon period is critical for agriculture, and disruptions could impact food security. Furthermore, increased storm activity in the Bay of Bengal could necessitate enhanced disaster preparedness and response measures, diverting resources and attention from other national priorities.",
     "do": [
       {
         "action": "Confirm early-warning dissemination and pre-position response assets.",
@@ -1497,18 +1497,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:44:15.039669Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0701-cyclone:bn": {
     "event_id": "evt-2026-0701-cyclone",
     "title": "Weather agencies track intensifying system in the Bay of Bengal",
-    "situation": "Regional meteorological agencies flagged an intensifying weather system over the Bay of Bengal, with potential coastal impact during the monsoon period.",
-    "why_it_matters": "Relevance to Bangladesh is scored 87/100 (RED). Involving the parties involved, it carries first-order effect on coastal safety; second-order effect on disaster-response asset readiness. first-order effect on border stability; second-order effect on diplomatic bandwidth and defence posture.",
+    "situation": "বঙ্গোপসাগরে একটি আবহাওয়া ব্যবস্থা তীব্রতর হচ্ছে বলে আঞ্চলিক আবহাওয়া সংস্থাগুলো চিহ্নিত করেছে, যা বর্ষা মৌসুমে উপকূলীয় অঞ্চলে প্রভাব ফেলতে পারে।",
+    "why_it_matters": "এই তীব্রতর আবহাওয়া ব্যবস্থাটি বাংলাদেশের উপকূলীয় অঞ্চলে বন্যা, ভূমিধস এবং অবকাঠামোগত ক্ষতির ঝুঁকি বাড়াতে পারে, যা দেশের জলবায়ু সহনশীলতা এবং দুর্যোগ ব্যবস্থাপনা সক্ষমতার উপর চাপ সৃষ্টি করবে। এর ফলে খাদ্য নিরাপত্তা, জনস্বাস্থ্য এবং অর্থনৈতিক কর্মকাণ্ড ব্যাহত হওয়ার সম্ভাবনা রয়েছে, যা বাংলাদেশের নিরাপত্তা ও স্থিতিশীলতার জন্য একটি গুরুত্বপূর্ণ বিষয়।",
     "do": [
       {
         "action": "Confirm early-warning dissemination and pre-position response assets.",
@@ -1594,18 +1594,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:44:23.127740Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0628-us-tariff:en": {
     "event_id": "evt-2026-0628-us-tariff",
     "title": "United States adjusts tariff schedule on selected textile categories",
-    "situation": "A revision to the US tariff schedule affected selected textile and apparel categories, prompting exporter associations to assess the impact.",
-    "why_it_matters": "Relevance to Bangladesh is scored 64/100 (AMBER). Involving United States, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves.",
+    "situation": "The United States has revised its tariff schedule, impacting specific categories of textiles and apparel. Exporter associations are currently evaluating the consequences of this adjustment.",
+    "why_it_matters": "This US tariff revision directly affects Bangladesh's textile and apparel export sector, a significant contributor to the national economy. The immediate impact will be on the cost competitiveness of Bangladeshi goods in the US market. Second-order effects could include shifts in export volumes, potential pressure on domestic manufacturing costs, and a need for Bangladeshi exporters to adapt their product mix or explore alternative markets to mitigate any negative financial repercussions.",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -1676,18 +1676,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.788069Z",
+      "generated_at": "2026-07-06T21:44:31.464933Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0628-us-tariff:bn": {
     "event_id": "evt-2026-0628-us-tariff",
     "title": "United States adjusts tariff schedule on selected textile categories",
-    "situation": "A revision to the US tariff schedule affected selected textile and apparel categories, prompting exporter associations to assess the impact.",
-    "why_it_matters": "Relevance to Bangladesh is scored 64/100 (AMBER). Involving United States, it carries first-order effect on export earnings and jobs; second-order effect on foreign-exchange reserves.",
+    "situation": "মার্কিন যুক্তরাষ্ট্র নির্বাচিত টেক্সটাইল এবং পোশাকের ক্যাটাগরিতে শুল্কের সময়সূচী সংশোধন করেছে। এই পরিবর্তনের ফলে রপ্তানিকারক সমিতিগুলি এর প্রভাব মূল্যায়ন করছে।",
+    "why_it_matters": "মার্কিন যুক্তরাষ্ট্রের শুল্কের সময়সূচীতে এই পরিবর্তন বাংলাদেশের টেক্সটাইল রপ্তানির উপর প্রভাব ফেলতে পারে। এর ফলে রপ্তানি আয় এবং উৎপাদনশীলতার উপর প্রথম স্তরের প্রভাব পড়তে পারে। দ্বিতীয় স্তরের প্রভাব হিসেবে, এটি বাংলাদেশের সামগ্রিক বাণিজ্য ভারসাম্য এবং বৈদেশিক মুদ্রার রিজার্ভের উপরও প্রভাব ফেলতে পারে, যা দেশের অর্থনৈতিক স্থিতিশীলতার জন্য গুরুত্বপূর্ণ।",
     "do": [
       {
         "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
@@ -1758,18 +1758,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.789054Z",
+      "generated_at": "2026-07-06T21:44:39.344132Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0627-election-distant:en": {
     "event_id": "evt-2026-0627-election-distant",
     "title": "General election concludes in a South American nation",
-    "situation": "A national election concluded with a peaceful transfer of power, drawing routine international congratulatory statements.",
-    "why_it_matters": "Relevance to Bangladesh is scored 37/100 (GREEN). Involving Chile, it carries first-order effect on partner relationships; second-order effect on negotiating leverage across files.",
+    "situation": "A general election has concluded in Chile, resulting in a peaceful transfer of power. International actors have issued congratulatory statements.",
+    "why_it_matters": "The conclusion of a general election and peaceful transfer of power in Chile is a routine diplomatic event. For Bangladesh, this signifies continued stability in a South American partner, potentially reinforcing existing diplomatic ties and offering a stable environment for bilateral engagement. The international congratulatory statements underscore a global norm of democratic processes, which aligns with Bangladesh's own diplomatic posture.",
     "do": [
       {
         "action": "Engage constructively while preserving balance among partners.",
@@ -1827,18 +1827,18 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.789054Z",
+      "generated_at": "2026-07-06T21:44:47.342474Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.7,
       "confidence_label": "medium"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   },
   "evt-2026-0627-election-distant:bn": {
     "event_id": "evt-2026-0627-election-distant",
     "title": "General election concludes in a South American nation",
-    "situation": "A national election concluded with a peaceful transfer of power, drawing routine international congratulatory statements.",
-    "why_it_matters": "Relevance to Bangladesh is scored 37/100 (GREEN). Involving Chile, it carries first-order effect on partner relationships; second-order effect on negotiating leverage across files.",
+    "situation": "পরিস্থিতি: দক্ষিণ আমেরিকার একটি দেশে সাধারণ নির্বাচন অনুষ্ঠিত হয়েছে এবং শান্তিপূর্ণভাবে ক্ষমতা হস্তান্তর সম্পন্ন হয়েছে। আন্তর্জাতিক সম্প্রদায় থেকে এই উপলক্ষে অভিনন্দন বার্তা এসেছে।",
+    "why_it_matters": "বিশ্লেষণ: এই নির্বাচন এবং শান্তিপূর্ণ ক্ষমতা হস্তান্তর বাংলাদেশের জন্য একটি ইতিবাচক ঘটনা। এটি একটি গণতান্ত্রিক প্রক্রিয়ার সফল সমাপ্তি নির্দেশ করে, যা আন্তর্জাতিক অঙ্গনে স্থিতিশীলতা বাড়ায়। এই ধরনের ঘটনা বাংলাদেশের সাথে দ্বিপাক্ষিক সম্পর্ক জোরদার করতে সহায়ক হতে পারে এবং আঞ্চলিক স্থিতিশীলতা বজায় রাখতে ভূমিকা রাখতে পারে।",
     "do": [
       {
         "action": "Engage constructively while preserving balance among partners.",
@@ -1896,11 +1896,11 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.789054Z",
+      "generated_at": "2026-07-06T21:45:20.363435Z",
       "model_version": "drishti-doavoid/0.1.0",
       "confidence": 0.7,
       "confidence_label": "medium"
     },
-    "narrative_source": "deterministic"
+    "narrative_source": "llm"
   }
 }

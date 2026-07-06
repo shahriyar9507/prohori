@@ -1,7 +1,7 @@
 {
   "SAR-10": {
     "target_id": "SAR-10",
-    "generated_at_utc": "2026-07-06T18:19:10.813245+00:00",
+    "generated_at_utc": "2026-07-06T21:45:26.390749+00:00",
     "last_fix": {
       "lat": 21.72,
       "lon": 91.88
@@ -48,7 +48,7 @@
     "chain_of_custody_sha256": "bd075ca6d6be3a720c08afc3012596a17f0fbdc5e62207e2c3a8202f392ef2b1",
     "confidence": 0.82,
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.813245Z",
+      "generated_at": "2026-07-06T21:45:26.390749Z",
       "model_version": "shomudro-interdiction/0.1.0",
       "confidence": 0.82,
       "confidence_label": "high"
@@ -56,7 +56,7 @@
   },
   "SAR-11": {
     "target_id": "SAR-11",
-    "generated_at_utc": "2026-07-06T18:19:10.814255+00:00",
+    "generated_at_utc": "2026-07-06T21:45:26.391751+00:00",
     "last_fix": {
       "lat": 20.62,
       "lon": 92.18
@@ -103,7 +103,7 @@
     "chain_of_custody_sha256": "2a668889d55be92372414a708171afa9f17ce5123a409e561db43b2bf7c1d09b",
     "confidence": 0.83,
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.814255Z",
+      "generated_at": "2026-07-06T21:45:26.391751Z",
       "model_version": "shomudro-interdiction/0.1.0",
       "confidence": 0.83,
       "confidence_label": "high"
@@ -111,7 +111,7 @@
   },
   "SAR-09": {
     "target_id": "SAR-09",
-    "generated_at_utc": "2026-07-06T18:19:10.814255+00:00",
+    "generated_at_utc": "2026-07-06T21:45:26.391751+00:00",
     "last_fix": {
       "lat": 21.3009,
       "lon": 90.4009
@@ -152,7 +152,7 @@
     "chain_of_custody_sha256": "02c4a96ff2fa1228ac426a66e0630d68e95a0af2ba7d236b3a96b694393d300b",
     "confidence": 0.75,
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.814255Z",
+      "generated_at": "2026-07-06T21:45:26.391751Z",
       "model_version": "shomudro-interdiction/0.1.0",
       "confidence": 0.75,
       "confidence_label": "high"
@@ -160,7 +160,7 @@
   },
   "SAR-12": {
     "target_id": "SAR-12",
-    "generated_at_utc": "2026-07-06T18:19:10.815233+00:00",
+    "generated_at_utc": "2026-07-06T21:45:26.392752+00:00",
     "last_fix": {
       "lat": 20.05,
       "lon": 91.6
@@ -195,7 +195,7 @@
     "chain_of_custody_sha256": "7dc92e0885687968fdc67ce1c7c5d47976f5e07b087c042af15d526a35950677",
     "confidence": 0.63,
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.815233Z",
+      "generated_at": "2026-07-06T21:45:26.392752Z",
       "model_version": "shomudro-interdiction/0.1.0",
       "confidence": 0.63,
       "confidence_label": "medium"
@@ -203,7 +203,7 @@
   },
   "STS-7-10": {
     "target_id": "STS-7-10",
-    "generated_at_utc": "2026-07-06T18:19:10.816255+00:00",
+    "generated_at_utc": "2026-07-06T21:45:26.392752+00:00",
     "last_fix": {
       "lat": 21.30045,
       "lon": 90.40045
@@ -244,7 +244,7 @@
     "chain_of_custody_sha256": "6467da227d2467cacb3227a353299c7965f22bd2389314e4711783f2477574ec",
     "confidence": 0.8,
     "meta": {
-      "generated_at": "2026-07-06T18:19:10.816255Z",
+      "generated_at": "2026-07-06T21:45:26.392752Z",
       "model_version": "shomudro-interdiction/0.1.0",
       "confidence": 0.8,
       "confidence_label": "high"

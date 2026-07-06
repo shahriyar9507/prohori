@@ -11,6 +11,8 @@ the requested language from the SAME grounded facts — it never adds claims.
 """
 from __future__ import annotations
 
+import re
+
 from app.llm import complete, is_enabled
 from app.modules.drishti import knowledge
 from app.schemas.common import AIMeta, Evidence, label_for
@@ -69,8 +71,12 @@ async def _llm_narrative(scored: ScoredEvent, language: str) -> tuple[str, str] 
     system = (
         "You are DRISHTI, a Bangladesh-first strategic-intelligence analyst. "
         "Write neutrally toward all foreign states. Use ONLY the facts provided; "
-        "do not add new claims, numbers, or entities. Output two short paragraphs "
-        f"in {lang_name}: (1) SITUATION, (2) WHY IT MATTERS FOR BANGLADESH."
+        "do not add new claims, numbers, or entities. Do NOT use markdown, "
+        "asterisks, or headings. Respond in " + lang_name + " and output EXACTLY "
+        "these two labeled lines and nothing else:\n"
+        "SITUATION: <one concise paragraph describing what happened>\n"
+        "ANALYSIS: <one concise paragraph on why it matters for Bangladesh, "
+        "including first- and second-order effects>"
     )
     user = (
         f"Title: {e.title}\nSummary: {e.summary}\nActors: {', '.join(e.actors)}\n"
@@ -80,10 +86,21 @@ async def _llm_narrative(scored: ScoredEvent, language: str) -> tuple[str, str] 
     out = await complete(system, user)
     if not out:
         return None
-    parts = [p.strip() for p in out.split("\n") if p.strip()]
+
+    # Robustly split on the SITUATION:/ANALYSIS: markers (labels may be localized
+    # by the model, so fall back to paragraph splitting if markers are absent).
+    text = out.replace("*", "").replace("#", "").strip()
+    m_s = re.search(r"SITUATION\s*[:：]", text, re.I)
+    m_a = re.search(r"ANALYSIS\s*[:：]", text, re.I)
+    if m_s and m_a and m_a.start() > m_s.start():
+        situation = text[m_s.end():m_a.start()].strip()
+        why = text[m_a.end():].strip()
+        if situation and why:
+            return situation, why
+    parts = [p.strip() for p in text.split("\n") if p.strip()]
     if len(parts) >= 2:
         return parts[0], " ".join(parts[1:])
-    return out, out
+    return text, text
 
 
 async def generate_brief(scored: ScoredEvent, language: str = "en") -> DoAvoidBrief:

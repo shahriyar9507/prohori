@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-06T18:19:10.810233+00:00",
+  "generated_at_utc": "2026-07-06T21:45:26.388751+00:00",
   "scene_id": "S1A_BOB_20260706_AOI1",
   "pass_time_utc": "2026-07-06T00:10:00Z",
   "eez_bbox": [
@@ -236,7 +236,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "generated_at": "2026-07-06T21:45:26.387752Z",
         "model_version": "shomudro-darkrisk/0.1.0",
         "confidence": 0.82,
         "confidence_label": "high"
@@ -289,7 +289,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "generated_at": "2026-07-06T21:45:26.387752Z",
         "model_version": "shomudro-darkrisk/0.1.0",
         "confidence": 0.83,
         "confidence_label": "high"
@@ -335,7 +335,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "generated_at": "2026-07-06T21:45:26.387752Z",
         "model_version": "shomudro-darkrisk/0.1.0",
         "confidence": 0.75,
         "confidence_label": "high"
@@ -374,7 +374,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "generated_at": "2026-07-06T21:45:26.387752Z",
         "model_version": "shomudro-darkrisk/0.1.0",
         "confidence": 0.63,
         "confidence_label": "medium"
@@ -418,7 +418,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "generated_at": "2026-07-06T21:45:26.388751Z",
         "model_version": "shomudro-sts-rules/0.1.0",
         "confidence": 0.8,
         "confidence_label": "high"

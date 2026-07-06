@@ -50,6 +50,8 @@ async def main() -> None:
         for lang in ("en", "bn"):
             b = await generate_brief(score_event(e), lang)
             briefs[f"{e.id}:{lang}"] = b.model_dump(mode="json")
+            print(f"  brief {e.id}:{lang} -> {b.narrative_source}")
+            await asyncio.sleep(6)  # respect Gemini free-tier ~10 req/min
     _write("drishti/briefs.json", briefs)
 
     # ── RAKKHOK ──────────────────────────────────────────────

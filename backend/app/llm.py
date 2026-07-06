@@ -8,6 +8,8 @@ depends on an external service being reachable.
 """
 from __future__ import annotations
 
+import asyncio
+
 from app.config import get_settings
 
 
@@ -27,17 +29,24 @@ async def complete(system: str, user: str, *, max_tokens: int = 700, temperature
         from openai import AsyncOpenAI  # imported lazily so the dep is optional
     except Exception:  # noqa: BLE001
         return None
-    try:
-        client = AsyncOpenAI(api_key=settings.llm_api_key, base_url=settings.llm_base_url)
-        resp = await client.chat.completions.create(
-            model=settings.llm_model,
-            messages=[
-                {"role": "system", "content": system},
-                {"role": "user", "content": user},
-            ],
-            max_tokens=max_tokens,
-            temperature=temperature,
-        )
-        return (resp.choices[0].message.content or "").strip() or None
-    except Exception:  # noqa: BLE001 — never break the request path on LLM failure
-        return None
+    client = AsyncOpenAI(api_key=settings.llm_api_key, base_url=settings.llm_base_url)
+    for attempt in range(3):
+        try:
+            resp = await client.chat.completions.create(
+                model=settings.llm_model,
+                messages=[
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                max_tokens=max_tokens,
+                temperature=temperature,
+            )
+            return (resp.choices[0].message.content or "").strip() or None
+        except Exception as exc:  # noqa: BLE001 — never break the request path on LLM failure
+            msg = str(exc).lower()
+            rate_limited = any(k in msg for k in ("429", "resource_exhausted", "rate", "quota"))
+            if attempt < 2 and rate_limited:
+                await asyncio.sleep(22 * (attempt + 1))  # back off, then retry
+                continue
+            return None
+    return None
