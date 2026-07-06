@@ -134,11 +134,13 @@ prohori/
 
 | Requirement | Where |
 |---|---|
-| AI/ML is central & meaningful | Event extraction, RAG briefs, SAR CV, RUL — see [`docs/MODEL_AND_DATA_CARD.md`](docs/MODEL_AND_DATA_CARD.md) |
-| Live public URL | *(added on deployment)* |
+| AI/ML is central & meaningful | Relevance scoring, RAG Do/Avoid briefs, SAR↔AIS dark matching, Weibull RUL — see [`docs/MODEL_AND_DATA_CARD.md`](docs/MODEL_AND_DATA_CARD.md) |
+| Live public URL | Static self-contained build — deploy per [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) |
 | Public GitHub repo w/ README | ✅ this repository |
 | Commit history in competition window | ✅ developed May–July 2026 |
+| Project report (≤8 pp) | [`docs/REPORT.md`](docs/REPORT.md) |
 | Model & Data Card | [`docs/MODEL_AND_DATA_CARD.md`](docs/MODEL_AND_DATA_CARD.md) |
+| Demo script & submission checklist | [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) |
 | Third-party attribution | [`docs/ATTRIBUTION.md`](docs/ATTRIBUTION.md) |
 
 ---
