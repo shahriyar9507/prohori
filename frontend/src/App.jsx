@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useStrings } from './i18n.js'
 import DrishtiView from './modules/DrishtiView.jsx'
 import RakkhokView from './modules/RakkhokView.jsx'
+import ShomudroView from './modules/ShomudroView.jsx'
 
 const MODULES = [
   { key: 'drishti', bn: 'দৃষ্টি' },
@@ -45,11 +46,7 @@ export default function App() {
       <main className="main">
         {active === 'drishti' && <DrishtiView lang={lang} />}
         {active === 'rakkhok' && <RakkhokView lang={lang} />}
-        {active === 'shomudro' && (
-          <div className="placeholder">
-            {t.modules[active]} — {t.comingSoon}
-          </div>
-        )}
+        {active === 'shomudro' && <ShomudroView lang={lang} />}
       </main>
     </div>
   )

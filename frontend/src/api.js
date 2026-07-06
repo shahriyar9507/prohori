@@ -36,4 +36,8 @@ export const api = {
   assets: (force) => get(`/api/rakkhok/assets${force ? `?force=${force}` : ''}`),
   rulRanking: (limit = 8) => get(`/api/rakkhok/rul-ranking?limit=${limit}`),
   fleetAlerts: () => get('/api/rakkhok/alerts'),
+
+  // SHOMUDRO
+  picture: () => get('/api/shomudro/picture'),
+  interdiction: (targetId) => get(`/api/shomudro/interdiction/${encodeURIComponent(targetId)}`),
 }

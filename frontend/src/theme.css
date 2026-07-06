@@ -194,6 +194,30 @@ body {
 .alert-row .lvl { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .lvl-red { background: var(--red); } .lvl-amber { background: var(--amber); } .lvl-yellow { background: #eab308; }
 
+/* ─── SHOMUDRO — maritime map & interdiction ─────────────────────────── */
+.map-wrap { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; }
+@media (max-width: 980px) { .map-wrap { grid-template-columns: 1fr; } }
+.map { height: 560px; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; }
+.maplibregl-popup-content { background: var(--bg-panel); color: var(--text); border: 1px solid var(--accent-bright);
+  border-radius: 8px; font-family: var(--font); font-size: 12px; }
+.maplibregl-popup-content strong { color: var(--accent-bright); }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin: 8px 0 0; font-size: 12px; color: var(--text-dim); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+.contact-row { display: flex; align-items: center; gap: 10px; padding: 9px 8px; border-bottom: 1px solid var(--border);
+  cursor: pointer; }
+.contact-row:hover { background: var(--bg-panel-2); }
+.contact-row.active { outline: 1px solid var(--accent-bright); border-radius: 6px; }
+.contact-row .cid { font-weight: 600; font-size: 13px; flex: 1; }
+
+.packet { font-size: 13px; }
+.packet .pk-row { display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid var(--border); }
+.packet .pk-row .k { color: var(--text-dim); }
+.packet .pk-row .v { font-weight: 600; text-align: right; }
+.packet .coc { margin-top: 8px; font-family: ui-monospace, monospace; font-size: 10px; color: var(--accent-bright);
+  word-break: break-all; background: var(--bg); padding: 8px; border-radius: 6px; border: 1px solid var(--border); }
+
 .muted { color: var(--text-dim); }
 .loading { color: var(--text-dim); font-size: 14px; padding: 20px; text-align: center; }
 .banner { font-size: 12px; color: var(--text-dim); margin-bottom: 10px; }
