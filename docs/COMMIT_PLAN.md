@@ -31,15 +31,14 @@
 - [x] `docs(rakkhok): module README`
 
 ## Phase 3 — Module 3: SHOMUDRO (Maritime Awareness)
-- [ ] `feat(shomudro): Sentinel-1 SAR vessel detection pipeline` — YOLO (xView3-trained) over a Bay of Bengal AOI; cached scene for the demo. **[S2, P0]**
-- [ ] `feat(shomudro): AIS ingestion + track interpolation to pass time` — demo AIS feed + interpolation. **[S1, P0]**
-- [ ] `feat(shomudro): SAR↔AIS dark-vessel matching` — Hungarian matching with gating; radar-visible + AIS-silent = dark. **[S2, P0]**
-- [ ] `feat(shomudro): STS rendezvous rule detector` — distance <200 m, speed ≈0, >30 min; one-party-dark cases. **[S3, P0]**
-- [ ] `feat(shomudro): interdiction packet generator` — last fix, drift prediction, intercept vector, evidence log, chain-of-custody hash. **[S9, P0]**
-- [ ] `test(shomudro): matching accuracy + STS precision tests`
-- [ ] `feat(frontend): live maritime picture (MapLibre EEZ map)` — AIS tracks, SAR detections, dark flags, weather overlay. **[S1]**
-- [ ] `feat(frontend): dark-contact shortlist + interdiction packet view` — ranked daily list; one-click packet. **[S2, S9]**
-- [ ] `docs(shomudro): module README`
+- [x] `feat(shomudro): maritime schemas + geospatial helpers` — haversine/bearing/destination math. **[P0]**
+- [x] `feat(shomudro): SAR↔AIS dark-vessel matching + risk scoring` — gated greedy assignment; radar-visible + AIS-silent = dark; risk-ranked shortlist. **[S2, P0]**
+- [x] `feat(shomudro): STS rendezvous rule detector` — distance <200 m, speed ≈0, >30 min; one-party-dark cases. **[S3, P0]**
+- [x] `feat(shomudro): interdiction packet generator` — last fix, drift prediction, intercept vector, evidence log, chain-of-custody hash. **[S9, P0]**
+- [x] `feat(shomudro): maritime picture assembly + API` — AIS interpolation + unified picture. **[S1, P0]**
+- [x] `test(shomudro): matching, dark-risk, STS, and interdiction tests`
+- [x] `feat(frontend): SHOMUDRO maritime map, dark shortlist & interdiction` — MapLibre EEZ map, ranked shortlist, one-click packet. **[S1, S2, S3, S9]**
+- [x] `docs(shomudro): module README`
 
 ## Phase 4 — Integration & cross-cutting
 - [ ] `feat(core): unified National Situation Dashboard` — single command view over all three modules, role-based. **[C1, P0]**
