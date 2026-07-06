@@ -29,7 +29,7 @@
 
 ## Submission checklist (SciBlitz AI Challenge 2026)
 
-- [ ] **Live public URL** — deploy the frontend (static, self-contained) to Vercel/Netlify; paste in the form.
+- [x] **Live public URL** — **https://frontend-zeta-beryl-51.vercel.app** (deployed to Vercel, static & self-contained, no login).
 - [x] **Public GitHub repo** — `github.com/shahriyar9507/prohori` with README, tech stack, setup, commit history in-window.
 - [ ] **Project report PDF (≤8 pp)** — export [`REPORT.md`](REPORT.md).
 - [ ] **Demo video (3–5 min)** — record the storyline above; unlisted link.
@@ -37,13 +37,11 @@
 - [x] **Track** — E (National Defence).
 - [ ] Confirm the hosted app is awake the evening of July 16 (Final Day prep).
 
-## Deploy the live URL (one of these)
+## Deploy (already done — for reference / redeploy)
 
-**Easiest — Vercel from GitHub (no CLI):**
-1. Go to **vercel.com → Add New → Project → Import** the `prohori` repo.
-2. Vercel reads `vercel.json` automatically (build = static demo mode). Click **Deploy**.
-3. Copy the `*.vercel.app` URL → that's your live public URL. It's fully static, so it never sleeps.
+**Live URL: https://frontend-zeta-beryl-51.vercel.app** (deployed via the Vercel CLI from `frontend/`).
 
-**Alternative — Netlify:** New site from Git → pick `prohori` → build `cd frontend && VITE_STATIC_DEMO=1 npm run build`, publish `frontend/dist`.
-
-**Optional dynamic backend:** deploy `backend/` (FastAPI) to Render/Hugging Face Spaces and set `VITE_API_BASE_URL` on the frontend to make it live-dynamic instead of static.
+- **Redeploy after changes:** `cd frontend && vercel deploy --prod --yes --scope <your-scope> --token <token>`
+- **GitHub auto-deploy (optional):** on vercel.com import the `prohori` repo and set **Root Directory = `frontend`** (the repo is a monorepo — frontend + backend — so Vercel must target the frontend service). `frontend/vercel.json` handles the static build.
+- **Netlify alternative:** New site from Git → base `frontend`, build `VITE_STATIC_DEMO=1 npm run build`, publish `frontend/dist`.
+- **Optional dynamic backend:** deploy `backend/` (FastAPI) to Render/Hugging Face Spaces and set `VITE_API_BASE_URL` on the frontend for live-dynamic mode.

@@ -9,9 +9,11 @@
 
 <br/>
 
+[![Live Demo](https://img.shields.io/badge/▶_LIVE_DEMO-frontend--zeta--beryl--51.vercel.app-22c55e?style=for-the-badge)](https://frontend-zeta-beryl-51.vercel.app)
+
 ![Track](https://img.shields.io/badge/Track_E-National_Defence-0b3d2e?style=for-the-badge)
 ![Event](https://img.shields.io/badge/SciBlitz_AI_Challenge-2026-1e6091?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-in_development-f59e0b?style=for-the-badge)
+![Status](https://img.shields.io/badge/all_3_modules-complete-22c55e?style=for-the-badge)
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688?logo=fastapi&logoColor=white)
