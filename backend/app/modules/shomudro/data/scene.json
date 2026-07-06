@@ -1,0 +1,39 @@
+{
+  "_note": "Cached SHOMUDRO demo scene over the Bay of Bengal (Bangladesh EEZ). SAR detections represent the output of a Sentinel-1 + YOLO(xView3) pass (pre-computed for a fast, judge-safe live demo). AIS tracks are interpolated to the pass time. Positions are illustrative.",
+  "scene_id": "S1A_BOB_20260706_AOI1",
+  "pass_time_utc": "2026-07-06T00:10:00Z",
+  "is_night": true,
+  "eez_bbox": [88.0, 18.0, 93.0, 22.6],
+  "environment": {"current_set_deg": 210, "current_drift_kn": 1.2, "wind_dir_deg": 225, "wind_speed_kn": 14},
+  "trafficking_corridors": [
+    {"name": "Teknaf-St Martin approach", "min_lon": 92.0, "min_lat": 20.5, "max_lon": 92.4, "max_lat": 21.1},
+    {"name": "Outer estuary night route", "min_lon": 91.4, "min_lat": 21.5, "max_lon": 92.0, "max_lat": 22.0}
+  ],
+  "patrol_assets": [
+    {"id": "CG-FPB-102", "name": "CG-FPB-102", "lat": 21.95, "lon": 91.75, "sog": 20.0}
+  ],
+  "ais_tracks": [
+    {"mmsi": "405000111", "name": "Cargo Meghna", "lat": 21.00, "lon": 90.80, "sog": 12.0, "cog": 350, "vessel_class": "class_a", "length_m": 180},
+    {"mmsi": "405000222", "name": "Tanker Padma", "lat": 20.40, "lon": 90.20, "sog": 11.0, "cog": 20, "vessel_class": "class_a", "length_m": 240},
+    {"mmsi": "405000333", "name": "Fishing Ilish", "lat": 21.60, "lon": 91.20, "sog": 3.0, "cog": 120, "vessel_class": "class_b", "length_m": 22},
+    {"mmsi": "405000444", "name": "Cargo Jamuna", "lat": 19.80, "lon": 89.60, "sog": 13.0, "cog": 15, "vessel_class": "class_a", "length_m": 200},
+    {"mmsi": "405000555", "name": "Bulk Karnaphuli", "lat": 20.90, "lon": 91.50, "sog": 10.0, "cog": 300, "vessel_class": "class_a", "length_m": 190},
+    {"mmsi": "405000666", "name": "Fishing Rupsa", "lat": 21.90, "lon": 91.60, "sog": 2.5, "cog": 90, "vessel_class": "class_b", "length_m": 18},
+    {"mmsi": "405000777", "name": "Container Surma", "lat": 20.20, "lon": 90.90, "sog": 14.0, "cog": 340, "vessel_class": "class_a", "length_m": 260},
+    {"mmsi": "405000888", "name": "Coaster Feni", "lat": 21.300, "lon": 90.400, "sog": 0.2, "cog": 210, "vessel_class": "class_b", "length_m": 60}
+  ],
+  "sar_detections": [
+    {"id": "SAR-01", "lat": 21.001, "lon": 90.801, "length_m": 176, "heading": 351, "confidence": 0.95},
+    {"id": "SAR-02", "lat": 20.399, "lon": 90.201, "length_m": 238, "heading": 21, "confidence": 0.96},
+    {"id": "SAR-03", "lat": 21.601, "lon": 91.199, "length_m": 24, "heading": 121, "confidence": 0.72},
+    {"id": "SAR-04", "lat": 19.799, "lon": 89.602, "length_m": 205, "heading": 14, "confidence": 0.94},
+    {"id": "SAR-05", "lat": 20.9009, "lon": 91.4991, "length_m": 188, "heading": 301, "confidence": 0.93},
+    {"id": "SAR-06", "lat": 21.902, "lon": 91.601, "length_m": 17, "heading": 92, "confidence": 0.68},
+    {"id": "SAR-07", "lat": 20.201, "lon": 90.899, "length_m": 255, "heading": 341, "confidence": 0.97},
+    {"id": "SAR-08", "lat": 21.301, "lon": 90.401, "length_m": 58, "heading": 210, "confidence": 0.88},
+    {"id": "SAR-09", "lat": 21.3009, "lon": 90.4009, "length_m": 41, "heading": 205, "confidence": 0.83},
+    {"id": "SAR-10", "lat": 21.72, "lon": 91.88, "length_m": 26, "heading": 150, "confidence": 0.79},
+    {"id": "SAR-11", "lat": 20.62, "lon": 92.18, "length_m": 33, "heading": 95, "confidence": 0.81},
+    {"id": "SAR-12", "lat": 20.05, "lon": 91.60, "length_m": 47, "heading": 40, "confidence": 0.76}
+  ]
+}
