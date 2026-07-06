@@ -10,17 +10,16 @@
 - [x] `chore: initialize PRAHARI repository with decorated foundation` — README, LICENSE (AGPL-3.0), .gitignore, docs (plan, team, architecture, model & data card, attribution), folder scaffold. **(done — a029438)**
 
 ## Phase 1 — Module 1: DRISHTI (Geopolitical Intelligence)
-- [ ] `feat(drishti): FastAPI backend scaffold with evidence-carrying schemas` — app entry, config (env-based), common response envelope (`score/verdict`, `confidence`, `evidence[]`, `generated_at`, `model_version`).
-- [ ] `feat(drishti): Bangladesh Relevance Score engine` — transparent, explainable 0–100 scoring (actor / sector / geography / magnitude components). **[D1, C3, P0]**
-- [ ] `feat(drishti): GDELT ingestion client with cached demo snapshot` — live GDELT + offline fallback so the demo never breaks. **[D1, P0]**
-- [ ] `feat(drishti): Global Event Radar API` — ranked, filterable event feed endpoints. **[D1, P0]**
-- [ ] `feat(drishti): Do/Avoid advisor with RAG + mandatory citations` — two-column national-interest brief; refuses on low evidence; pluggable/sovereign LLM with deterministic fallback. **[D4, C3, P0]**
-- [ ] `feat(drishti): Ask-PRAHARI bilingual Q&A (Bangla + English)` — NL query over the DRISHTI knowledge base. **[C2, P0]**
-- [ ] `test(drishti): relevance scoring + brief structure unit tests`
-- [ ] `feat(frontend): React + Vite + MapLibre scaffold with command-center theme` — dark navy theme, i18n (EN/BN) layer, severity color language. **[C1, C3]**
-- [ ] `feat(frontend): DRISHTI event radar view wired to backend` — ranked feed, filters, relevance badges. **[D1]**
-- [ ] `feat(frontend): Do/Avoid brief panel with evidence chain + Bangla toggle` — expandable citations, confidence, spoken answer. **[D4, C2, C3]**
-- [ ] `docs(drishti): module README + API reference`
+- [x] `feat(drishti): FastAPI backend scaffold with evidence-carrying schemas` — app entry, config (env-based), common response envelope (`score/verdict`, `confidence`, `evidence[]`, `generated_at`, `model_version`).
+- [x] `feat(drishti): Bangladesh Relevance Score engine` — transparent, explainable 0–100 scoring (actor / sector / geography / magnitude components). **[D1, C3, P0]**
+- [x] `feat(drishti): GDELT ingestion client with cached demo snapshot` — live GDELT + offline fallback so the demo never breaks. **[D1, P0]**
+- [x] `feat(drishti): Global Event Radar API` — ranked, filterable event feed endpoints. **[D1, P0]**
+- [x] `feat(drishti): Do/Avoid advisor with RAG + mandatory citations` — two-column national-interest brief; refuses on low evidence; pluggable/sovereign LLM with deterministic fallback. **[D4, C3, P0]**
+- [x] `feat(drishti): Ask-PRAHARI bilingual Q&A (Bangla + English)` — NL query over the DRISHTI knowledge base. **[C2, P0]**
+- [x] `test(drishti): relevance scoring + brief structure unit tests`
+- [x] `feat(frontend): React + Vite + MapLibre scaffold with command-center theme` — dark navy theme, i18n (EN/BN) layer, severity color language. **[C1, C3]**
+- [x] `feat(frontend): DRISHTI view — event radar, Do/Avoid brief, Ask-PRAHARI, evidence chain` — ranked feed, filters, relevance badges, two-column brief with citations, bilingual toggle. **[D1, D4, C2, C3]**
+- [x] `docs(drishti): module README + API reference`
 
 ## Phase 2 — Module 2: RAKKHOK (Asset Readiness)
 - [ ] `feat(rakkhok): 25-asset synthetic fleet registry + digital-twin schema` — mixed fleet, realistic induction years, usage counters. **[R1, P0]**
