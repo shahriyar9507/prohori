@@ -1,0 +1,253 @@
+{
+  "SAR-10": {
+    "target_id": "SAR-10",
+    "generated_at_utc": "2026-07-06T18:19:10.813245+00:00",
+    "last_fix": {
+      "lat": 21.72,
+      "lon": 91.88
+    },
+    "drift_prediction": {
+      "lat": 21.69774,
+      "lon": 91.86392,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 157.2,
+      "distance_nm": 16.42,
+      "eta_min": 49.3
+    },
+    "nearest_asset": "CG-FPB-102",
+    "evidence_log": [
+      {
+        "source": "SAR<->AIS fusion",
+        "detail": "Detected in SAR but no matching AIS transmission (dark).",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Corridor overlay",
+        "detail": "Inside known trafficking corridor: Outer estuary night route.",
+        "weight": 0.35,
+        "url": null
+      },
+      {
+        "source": "Pass metadata",
+        "detail": "Night pass — reduced visual patrol coverage.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "SAR size estimate",
+        "detail": "Small-craft size class (26 m) — common evasion profile.",
+        "weight": 0.15,
+        "url": null
+      }
+    ],
+    "chain_of_custody_sha256": "bd075ca6d6be3a720c08afc3012596a17f0fbdc5e62207e2c3a8202f392ef2b1",
+    "confidence": 0.82,
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.813245Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.82,
+      "confidence_label": "high"
+    }
+  },
+  "SAR-11": {
+    "target_id": "SAR-11",
+    "generated_at_utc": "2026-07-06T18:19:10.814255+00:00",
+    "last_fix": {
+      "lat": 20.62,
+      "lon": 92.18
+    },
+    "drift_prediction": {
+      "lat": 20.59774,
+      "lon": 92.16404,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 164.0,
+      "distance_nm": 84.43,
+      "eta_min": 253.3
+    },
+    "nearest_asset": "CG-FPB-102",
+    "evidence_log": [
+      {
+        "source": "SAR<->AIS fusion",
+        "detail": "Detected in SAR but no matching AIS transmission (dark).",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Corridor overlay",
+        "detail": "Inside known trafficking corridor: Teknaf-St Martin approach.",
+        "weight": 0.35,
+        "url": null
+      },
+      {
+        "source": "Pass metadata",
+        "detail": "Night pass — reduced visual patrol coverage.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "SAR size estimate",
+        "detail": "Small-craft size class (33 m) — common evasion profile.",
+        "weight": 0.15,
+        "url": null
+      }
+    ],
+    "chain_of_custody_sha256": "2a668889d55be92372414a708171afa9f17ce5123a409e561db43b2bf7c1d09b",
+    "confidence": 0.83,
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.814255Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.83,
+      "confidence_label": "high"
+    }
+  },
+  "SAR-09": {
+    "target_id": "SAR-09",
+    "generated_at_utc": "2026-07-06T18:19:10.814255+00:00",
+    "last_fix": {
+      "lat": 21.3009,
+      "lon": 90.4009
+    },
+    "drift_prediction": {
+      "lat": 21.27864,
+      "lon": 90.38487,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 242.4,
+      "distance_nm": 86.2,
+      "eta_min": 258.6
+    },
+    "nearest_asset": "CG-FPB-102",
+    "evidence_log": [
+      {
+        "source": "SAR<->AIS fusion",
+        "detail": "Detected in SAR but no matching AIS transmission (dark).",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Pass metadata",
+        "detail": "Night pass — reduced visual patrol coverage.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "SAR size estimate",
+        "detail": "Small-craft size class (41 m) — common evasion profile.",
+        "weight": 0.15,
+        "url": null
+      }
+    ],
+    "chain_of_custody_sha256": "02c4a96ff2fa1228ac426a66e0630d68e95a0af2ba7d236b3a96b694393d300b",
+    "confidence": 0.75,
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.814255Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.75,
+      "confidence_label": "high"
+    }
+  },
+  "SAR-12": {
+    "target_id": "SAR-12",
+    "generated_at_utc": "2026-07-06T18:19:10.815233+00:00",
+    "last_fix": {
+      "lat": 20.05,
+      "lon": 91.6
+    },
+    "drift_prediction": {
+      "lat": 20.02774,
+      "lon": 91.5841,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 184.6,
+      "distance_nm": 115.79,
+      "eta_min": 347.4
+    },
+    "nearest_asset": "CG-FPB-102",
+    "evidence_log": [
+      {
+        "source": "SAR<->AIS fusion",
+        "detail": "Detected in SAR but no matching AIS transmission (dark).",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Pass metadata",
+        "detail": "Night pass — reduced visual patrol coverage.",
+        "weight": 0.15,
+        "url": null
+      }
+    ],
+    "chain_of_custody_sha256": "7dc92e0885687968fdc67ce1c7c5d47976f5e07b087c042af15d526a35950677",
+    "confidence": 0.63,
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.815233Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.63,
+      "confidence_label": "medium"
+    }
+  },
+  "STS-7-10": {
+    "target_id": "STS-7-10",
+    "generated_at_utc": "2026-07-06T18:19:10.816255+00:00",
+    "last_fix": {
+      "lat": 21.30045,
+      "lon": 90.40045
+    },
+    "drift_prediction": {
+      "lat": 21.27819,
+      "lon": 90.38442,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 242.4,
+      "distance_nm": 86.24,
+      "eta_min": 258.7
+    },
+    "nearest_asset": "CG-FPB-102",
+    "evidence_log": [
+      {
+        "source": "STS rule engine",
+        "detail": "Separation 137 m (< 200 m).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "STS rule engine",
+        "detail": "Loiter duration ~42 min (> 30 min).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "STS rule engine",
+        "detail": "One party is dark (no AIS) — elevated transfer risk.",
+        "weight": 0.3,
+        "url": null
+      }
+    ],
+    "chain_of_custody_sha256": "6467da227d2467cacb3227a353299c7965f22bd2389314e4711783f2477574ec",
+    "confidence": 0.8,
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.816255Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.8,
+      "confidence_label": "high"
+    }
+  }
+}

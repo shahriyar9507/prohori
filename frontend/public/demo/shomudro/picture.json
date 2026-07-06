@@ -1,0 +1,443 @@
+{
+  "generated_at_utc": "2026-07-06T18:19:10.810233+00:00",
+  "scene_id": "S1A_BOB_20260706_AOI1",
+  "pass_time_utc": "2026-07-06T00:10:00Z",
+  "eez_bbox": [
+    88.0,
+    18.0,
+    93.0,
+    22.6
+  ],
+  "ais_tracks": [
+    {
+      "mmsi": "405000111",
+      "name": "Cargo Meghna",
+      "lat": 21.0,
+      "lon": 90.8,
+      "sog": 12.0,
+      "cog": 350.0,
+      "vessel_class": "class_a",
+      "length_m": 180.0
+    },
+    {
+      "mmsi": "405000222",
+      "name": "Tanker Padma",
+      "lat": 20.4,
+      "lon": 90.2,
+      "sog": 11.0,
+      "cog": 20.0,
+      "vessel_class": "class_a",
+      "length_m": 240.0
+    },
+    {
+      "mmsi": "405000333",
+      "name": "Fishing Ilish",
+      "lat": 21.6,
+      "lon": 91.2,
+      "sog": 3.0,
+      "cog": 120.0,
+      "vessel_class": "class_b",
+      "length_m": 22.0
+    },
+    {
+      "mmsi": "405000444",
+      "name": "Cargo Jamuna",
+      "lat": 19.8,
+      "lon": 89.6,
+      "sog": 13.0,
+      "cog": 15.0,
+      "vessel_class": "class_a",
+      "length_m": 200.0
+    },
+    {
+      "mmsi": "405000555",
+      "name": "Bulk Karnaphuli",
+      "lat": 20.9,
+      "lon": 91.5,
+      "sog": 10.0,
+      "cog": 300.0,
+      "vessel_class": "class_a",
+      "length_m": 190.0
+    },
+    {
+      "mmsi": "405000666",
+      "name": "Fishing Rupsa",
+      "lat": 21.9,
+      "lon": 91.6,
+      "sog": 2.5,
+      "cog": 90.0,
+      "vessel_class": "class_b",
+      "length_m": 18.0
+    },
+    {
+      "mmsi": "405000777",
+      "name": "Container Surma",
+      "lat": 20.2,
+      "lon": 90.9,
+      "sog": 14.0,
+      "cog": 340.0,
+      "vessel_class": "class_a",
+      "length_m": 260.0
+    },
+    {
+      "mmsi": "405000888",
+      "name": "Coaster Feni",
+      "lat": 21.3,
+      "lon": 90.4,
+      "sog": 0.2,
+      "cog": 210.0,
+      "vessel_class": "class_b",
+      "length_m": 60.0
+    }
+  ],
+  "sar_detections": [
+    {
+      "id": "SAR-01",
+      "lat": 21.001,
+      "lon": 90.801,
+      "length_m": 176.0,
+      "heading": 351.0,
+      "confidence": 0.95
+    },
+    {
+      "id": "SAR-02",
+      "lat": 20.399,
+      "lon": 90.201,
+      "length_m": 238.0,
+      "heading": 21.0,
+      "confidence": 0.96
+    },
+    {
+      "id": "SAR-03",
+      "lat": 21.601,
+      "lon": 91.199,
+      "length_m": 24.0,
+      "heading": 121.0,
+      "confidence": 0.72
+    },
+    {
+      "id": "SAR-04",
+      "lat": 19.799,
+      "lon": 89.602,
+      "length_m": 205.0,
+      "heading": 14.0,
+      "confidence": 0.94
+    },
+    {
+      "id": "SAR-05",
+      "lat": 20.9009,
+      "lon": 91.4991,
+      "length_m": 188.0,
+      "heading": 301.0,
+      "confidence": 0.93
+    },
+    {
+      "id": "SAR-06",
+      "lat": 21.902,
+      "lon": 91.601,
+      "length_m": 17.0,
+      "heading": 92.0,
+      "confidence": 0.68
+    },
+    {
+      "id": "SAR-07",
+      "lat": 20.201,
+      "lon": 90.899,
+      "length_m": 255.0,
+      "heading": 341.0,
+      "confidence": 0.97
+    },
+    {
+      "id": "SAR-08",
+      "lat": 21.301,
+      "lon": 90.401,
+      "length_m": 58.0,
+      "heading": 210.0,
+      "confidence": 0.88
+    },
+    {
+      "id": "SAR-09",
+      "lat": 21.3009,
+      "lon": 90.4009,
+      "length_m": 41.0,
+      "heading": 205.0,
+      "confidence": 0.83
+    },
+    {
+      "id": "SAR-10",
+      "lat": 21.72,
+      "lon": 91.88,
+      "length_m": 26.0,
+      "heading": 150.0,
+      "confidence": 0.79
+    },
+    {
+      "id": "SAR-11",
+      "lat": 20.62,
+      "lon": 92.18,
+      "length_m": 33.0,
+      "heading": 95.0,
+      "confidence": 0.81
+    },
+    {
+      "id": "SAR-12",
+      "lat": 20.05,
+      "lon": 91.6,
+      "length_m": 47.0,
+      "heading": 40.0,
+      "confidence": 0.76
+    }
+  ],
+  "dark_vessels": [
+    {
+      "detection": {
+        "id": "SAR-10",
+        "lat": 21.72,
+        "lon": 91.88,
+        "length_m": 26.0,
+        "heading": 150.0,
+        "confidence": 0.79
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 90.0,
+      "risk_level": "high",
+      "reasons": [
+        "Detected in SAR but no matching AIS transmission (dark).",
+        "Inside known trafficking corridor: Outer estuary night route.",
+        "Night pass — reduced visual patrol coverage.",
+        "Small-craft size class (26 m) — common evasion profile."
+      ],
+      "evidence": [
+        {
+          "source": "SAR<->AIS fusion",
+          "detail": "Detected in SAR but no matching AIS transmission (dark).",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Corridor overlay",
+          "detail": "Inside known trafficking corridor: Outer estuary night route.",
+          "weight": 0.35,
+          "url": null
+        },
+        {
+          "source": "Pass metadata",
+          "detail": "Night pass — reduced visual patrol coverage.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "SAR size estimate",
+          "detail": "Small-craft size class (26 m) — common evasion profile.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "model_version": "shomudro-darkrisk/0.1.0",
+        "confidence": 0.82,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "SAR-11",
+        "lat": 20.62,
+        "lon": 92.18,
+        "length_m": 33.0,
+        "heading": 95.0,
+        "confidence": 0.81
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 90.0,
+      "risk_level": "high",
+      "reasons": [
+        "Detected in SAR but no matching AIS transmission (dark).",
+        "Inside known trafficking corridor: Teknaf-St Martin approach.",
+        "Night pass — reduced visual patrol coverage.",
+        "Small-craft size class (33 m) — common evasion profile."
+      ],
+      "evidence": [
+        {
+          "source": "SAR<->AIS fusion",
+          "detail": "Detected in SAR but no matching AIS transmission (dark).",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Corridor overlay",
+          "detail": "Inside known trafficking corridor: Teknaf-St Martin approach.",
+          "weight": 0.35,
+          "url": null
+        },
+        {
+          "source": "Pass metadata",
+          "detail": "Night pass — reduced visual patrol coverage.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "SAR size estimate",
+          "detail": "Small-craft size class (33 m) — common evasion profile.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "model_version": "shomudro-darkrisk/0.1.0",
+        "confidence": 0.83,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "SAR-09",
+        "lat": 21.3009,
+        "lon": 90.4009,
+        "length_m": 41.0,
+        "heading": 205.0,
+        "confidence": 0.83
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 55.0,
+      "risk_level": "medium",
+      "reasons": [
+        "Detected in SAR but no matching AIS transmission (dark).",
+        "Night pass — reduced visual patrol coverage.",
+        "Small-craft size class (41 m) — common evasion profile."
+      ],
+      "evidence": [
+        {
+          "source": "SAR<->AIS fusion",
+          "detail": "Detected in SAR but no matching AIS transmission (dark).",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Pass metadata",
+          "detail": "Night pass — reduced visual patrol coverage.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "SAR size estimate",
+          "detail": "Small-craft size class (41 m) — common evasion profile.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "model_version": "shomudro-darkrisk/0.1.0",
+        "confidence": 0.75,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "SAR-12",
+        "lat": 20.05,
+        "lon": 91.6,
+        "length_m": 47.0,
+        "heading": 40.0,
+        "confidence": 0.76
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 40.0,
+      "risk_level": "low",
+      "reasons": [
+        "Detected in SAR but no matching AIS transmission (dark).",
+        "Night pass — reduced visual patrol coverage."
+      ],
+      "evidence": [
+        {
+          "source": "SAR<->AIS fusion",
+          "detail": "Detected in SAR but no matching AIS transmission (dark).",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Pass metadata",
+          "detail": "Night pass — reduced visual patrol coverage.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "model_version": "shomudro-darkrisk/0.1.0",
+        "confidence": 0.63,
+        "confidence_label": "medium"
+      }
+    }
+  ],
+  "sts_events": [
+    {
+      "id": "STS-7-10",
+      "vessel_a": "Coaster Feni",
+      "vessel_b": "DARK SAR-09",
+      "lat": 21.30045,
+      "lon": 90.40045,
+      "distance_m": 136.8,
+      "duration_min": 42.0,
+      "one_party_dark": true,
+      "risk_level": "high",
+      "reasons": [
+        "Separation 137 m (< 200 m).",
+        "Loiter duration ~42 min (> 30 min).",
+        "One party is dark (no AIS) — elevated transfer risk."
+      ],
+      "evidence": [
+        {
+          "source": "STS rule engine",
+          "detail": "Separation 137 m (< 200 m).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "STS rule engine",
+          "detail": "Loiter duration ~42 min (> 30 min).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "STS rule engine",
+          "detail": "One party is dark (no AIS) — elevated transfer risk.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.810233Z",
+        "model_version": "shomudro-sts-rules/0.1.0",
+        "confidence": 0.8,
+        "confidence_label": "high"
+      }
+    }
+  ],
+  "patrol_assets": [
+    {
+      "id": "CG-FPB-102",
+      "name": "CG-FPB-102",
+      "lat": 21.95,
+      "lon": 91.75,
+      "sog": 20.0
+    }
+  ],
+  "counts": {
+    "ais": 8,
+    "sar": 12,
+    "dark": 4,
+    "sts": 1
+  }
+}

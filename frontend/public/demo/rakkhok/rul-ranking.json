@@ -1,0 +1,722 @@
+[
+  {
+    "asset": {
+      "id": "AR-RAD-C01",
+      "name": "RAD-C01",
+      "type": "RAD-C Coastal Surveillance Radar",
+      "force": "army",
+      "base": "Coastal Post, Teknaf",
+      "induction_year": 2013,
+      "design_life_years": 20,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "certification",
+          "label": "System calibration",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2026-08-30",
+          "remaining": 55.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.849,
+          "alert": "amber"
+        },
+        {
+          "type": "consumable",
+          "label": "UPS battery bank",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2027-01-22",
+          "remaining": 200.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.452,
+          "alert": "green"
+        }
+      ],
+      "usage": {
+        "util_per_day": 20.0,
+        "engine_hours": 0.0
+      }
+    },
+    "worst_clock": {
+      "type": "certification",
+      "label": "System calibration",
+      "current": null,
+      "limit": null,
+      "unit": null,
+      "due_date": "2026-08-30",
+      "remaining": 55.0,
+      "remaining_kind": "days",
+      "pct_consumed": 0.849,
+      "alert": "amber"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "AR-RAD-C01",
+        "asset_name": "RAD-C01",
+        "clock": "certification",
+        "level": "amber",
+        "days_remaining": 55.0,
+        "message": "RAD-C01: System calibration due in 55 days."
+      }
+    ],
+    "rul_days": 55.0,
+    "rul_confidence": 0.55,
+    "failure_probability_90d": 0.8,
+    "evidence": [
+      {
+        "source": "RUL · calendar-limited",
+        "detail": "No usage-based wear driver; RUL set by nearest calendar/consumable deadline.",
+        "weight": 0.6,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'System calibration' (amber).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.55,
+      "confidence_label": "medium"
+    }
+  },
+  {
+    "asset": {
+      "id": "AR-GEN-200",
+      "name": "GEN-200",
+      "type": "GEN-200 Field Generator",
+      "force": "army",
+      "base": "Cantonment, Jashore",
+      "induction_year": 2005,
+      "design_life_years": 20,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "engine_tbo",
+          "label": "Major service",
+          "current": 2900.0,
+          "limit": 3000.0,
+          "unit": "hours",
+          "due_date": null,
+          "remaining": 100.0,
+          "remaining_kind": "hours",
+          "pct_consumed": 0.967,
+          "alert": "amber"
+        },
+        {
+          "type": "consumable",
+          "label": "Coolant/filter service",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2026-07-21",
+          "remaining": 15.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.959,
+          "alert": "red"
+        }
+      ],
+      "usage": {
+        "util_per_day": 10.0,
+        "engine_hours": 29500.0
+      }
+    },
+    "worst_clock": {
+      "type": "consumable",
+      "label": "Coolant/filter service",
+      "current": null,
+      "limit": null,
+      "unit": null,
+      "due_date": "2026-07-21",
+      "remaining": 15.0,
+      "remaining_kind": "days",
+      "pct_consumed": 0.959,
+      "alert": "red"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "AR-GEN-200",
+        "asset_name": "GEN-200",
+        "clock": "engine_tbo",
+        "level": "amber",
+        "days_remaining": -1.0,
+        "message": "GEN-200: Major service due in 100 hours (97% used)."
+      },
+      {
+        "asset_id": "AR-GEN-200",
+        "asset_name": "GEN-200",
+        "clock": "consumable",
+        "level": "red",
+        "days_remaining": 15.0,
+        "message": "GEN-200: Coolant/filter service due in 15 days."
+      }
+    ],
+    "rul_days": 10.0,
+    "rul_confidence": 0.85,
+    "failure_probability_90d": 0.588,
+    "evidence": [
+      {
+        "source": "RUL · Weibull survival",
+        "detail": "Driving clock 'Major service': 2900/3000 hours consumed (97%), Weibull k=2.5.",
+        "weight": 0.7,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'Coolant/filter service' (red).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  {
+    "asset": {
+      "id": "CG-FPB-102",
+      "name": "CG-FPB-102",
+      "type": "FPB Coast Guard Fast Patrol Boat",
+      "force": "coast_guard",
+      "base": "CG Station, Bhola",
+      "induction_year": 2008,
+      "design_life_years": 25,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "engine_tbo",
+          "label": "Engine overhaul",
+          "current": 3950.0,
+          "limit": 4000.0,
+          "unit": "hours",
+          "due_date": null,
+          "remaining": 50.0,
+          "remaining_kind": "hours",
+          "pct_consumed": 0.988,
+          "alert": "amber"
+        },
+        {
+          "type": "hull_survey",
+          "label": "Hull survey",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2027-01-12",
+          "remaining": 190.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.479,
+          "alert": "green"
+        }
+      ],
+      "usage": {
+        "util_per_day": 6.0,
+        "engine_hours": 15500.0
+      }
+    },
+    "worst_clock": {
+      "type": "engine_tbo",
+      "label": "Engine overhaul",
+      "current": 3950.0,
+      "limit": 4000.0,
+      "unit": "hours",
+      "due_date": null,
+      "remaining": 50.0,
+      "remaining_kind": "hours",
+      "pct_consumed": 0.988,
+      "alert": "amber"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "CG-FPB-102",
+        "asset_name": "CG-FPB-102",
+        "clock": "engine_tbo",
+        "level": "amber",
+        "days_remaining": -1.0,
+        "message": "CG-FPB-102: Engine overhaul due in 50 hours (99% used)."
+      }
+    ],
+    "rul_days": 8.3,
+    "rul_confidence": 0.85,
+    "failure_probability_90d": 0.306,
+    "evidence": [
+      {
+        "source": "RUL · Weibull survival",
+        "detail": "Driving clock 'Engine overhaul': 3950/4000 hours consumed (99%), Weibull k=2.5.",
+        "weight": 0.7,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'Engine overhaul' (amber).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  {
+    "asset": {
+      "id": "NV-OPV-012",
+      "name": "OPV-012",
+      "type": "OPV-2 Offshore Patrol Vessel",
+      "force": "navy",
+      "base": "BNS Sheikh Mujib, Khulna",
+      "induction_year": 2006,
+      "design_life_years": 35,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "engine_tbo",
+          "label": "Main engine overhaul",
+          "current": 5450.0,
+          "limit": 6000.0,
+          "unit": "hours",
+          "due_date": null,
+          "remaining": 550.0,
+          "remaining_kind": "hours",
+          "pct_consumed": 0.908,
+          "alert": "amber"
+        },
+        {
+          "type": "hull_survey",
+          "label": "Dry-dock hull survey",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2027-03-03",
+          "remaining": 240.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.342,
+          "alert": "green"
+        }
+      ],
+      "usage": {
+        "util_per_day": 7.5,
+        "engine_hours": 33000.0
+      }
+    },
+    "worst_clock": {
+      "type": "engine_tbo",
+      "label": "Main engine overhaul",
+      "current": 5450.0,
+      "limit": 6000.0,
+      "unit": "hours",
+      "due_date": null,
+      "remaining": 550.0,
+      "remaining_kind": "hours",
+      "pct_consumed": 0.908,
+      "alert": "amber"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "NV-OPV-012",
+        "asset_name": "OPV-012",
+        "clock": "engine_tbo",
+        "level": "amber",
+        "days_remaining": -1.0,
+        "message": "OPV-012: Main engine overhaul due in 550 hours (91% used)."
+      }
+    ],
+    "rul_days": 73.3,
+    "rul_confidence": 0.85,
+    "failure_probability_90d": 0.234,
+    "evidence": [
+      {
+        "source": "RUL · Weibull survival",
+        "detail": "Driving clock 'Main engine overhaul': 5450/6000 hours consumed (91%), Weibull k=2.5.",
+        "weight": 0.7,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'Main engine overhaul' (amber).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  {
+    "asset": {
+      "id": "NV-FPB-022",
+      "name": "FPB-022",
+      "type": "FPB-2 Fast Patrol Boat",
+      "force": "navy",
+      "base": "BNS Issa Khan, Chattogram",
+      "induction_year": 2011,
+      "design_life_years": 25,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "engine_tbo",
+          "label": "Engine overhaul",
+          "current": 3600.0,
+          "limit": 4000.0,
+          "unit": "hours",
+          "due_date": null,
+          "remaining": 400.0,
+          "remaining_kind": "hours",
+          "pct_consumed": 0.9,
+          "alert": "amber"
+        },
+        {
+          "type": "consumable",
+          "label": "Firefighting system service",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2026-09-29",
+          "remaining": 85.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.767,
+          "alert": "amber"
+        }
+      ],
+      "usage": {
+        "util_per_day": 5.0,
+        "engine_hours": 12000.0
+      }
+    },
+    "worst_clock": {
+      "type": "engine_tbo",
+      "label": "Engine overhaul",
+      "current": 3600.0,
+      "limit": 4000.0,
+      "unit": "hours",
+      "due_date": null,
+      "remaining": 400.0,
+      "remaining_kind": "hours",
+      "pct_consumed": 0.9,
+      "alert": "amber"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "NV-FPB-022",
+        "asset_name": "FPB-022",
+        "clock": "engine_tbo",
+        "level": "amber",
+        "days_remaining": -1.0,
+        "message": "FPB-022: Engine overhaul due in 400 hours (90% used)."
+      },
+      {
+        "asset_id": "NV-FPB-022",
+        "asset_name": "FPB-022",
+        "clock": "consumable",
+        "level": "amber",
+        "days_remaining": 85.0,
+        "message": "FPB-022: Firefighting system service due in 85 days."
+      }
+    ],
+    "rul_days": 80.0,
+    "rul_confidence": 0.85,
+    "failure_probability_90d": 0.231,
+    "evidence": [
+      {
+        "source": "RUL · Weibull survival",
+        "detail": "Driving clock 'Engine overhaul': 3600/4000 hours consumed (90%), Weibull k=2.5.",
+        "weight": 0.7,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'Engine overhaul' (amber).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  {
+    "asset": {
+      "id": "NV-FRG-001",
+      "name": "FRG-001",
+      "type": "FRG-1 Frigate",
+      "force": "navy",
+      "base": "BNS Issa Khan, Chattogram",
+      "induction_year": 2001,
+      "design_life_years": 35,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "engine_tbo",
+          "label": "Main engine overhaul",
+          "current": 4200.0,
+          "limit": 6000.0,
+          "unit": "hours",
+          "due_date": null,
+          "remaining": 1800.0,
+          "remaining_kind": "hours",
+          "pct_consumed": 0.7,
+          "alert": "green"
+        },
+        {
+          "type": "hull_survey",
+          "label": "Dry-dock hull survey",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2026-12-03",
+          "remaining": 150.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.589,
+          "alert": "yellow"
+        }
+      ],
+      "usage": {
+        "util_per_day": 8.0,
+        "engine_hours": 41000.0
+      }
+    },
+    "worst_clock": {
+      "type": "hull_survey",
+      "label": "Dry-dock hull survey",
+      "current": null,
+      "limit": null,
+      "unit": null,
+      "due_date": "2026-12-03",
+      "remaining": 150.0,
+      "remaining_kind": "days",
+      "pct_consumed": 0.589,
+      "alert": "yellow"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "NV-FRG-001",
+        "asset_name": "FRG-001",
+        "clock": "hull_survey",
+        "level": "yellow",
+        "days_remaining": 150.0,
+        "message": "FRG-001: Dry-dock hull survey due in 150 days."
+      }
+    ],
+    "rul_days": 225.0,
+    "rul_confidence": 0.85,
+    "failure_probability_90d": 0.18,
+    "evidence": [
+      {
+        "source": "RUL · Weibull survival",
+        "detail": "Driving clock 'Main engine overhaul': 4200/6000 hours consumed (70%), Weibull k=2.5.",
+        "weight": 0.7,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'Dry-dock hull survey' (yellow).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  {
+    "asset": {
+      "id": "CG-IPV-104",
+      "name": "CG-IPV-104",
+      "type": "IPV-2 Inshore Patrol Vessel",
+      "force": "coast_guard",
+      "base": "CG Station, Mongla",
+      "induction_year": 2010,
+      "design_life_years": 25,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "engine_tbo",
+          "label": "Engine overhaul",
+          "current": 2600.0,
+          "limit": 4000.0,
+          "unit": "hours",
+          "due_date": null,
+          "remaining": 1400.0,
+          "remaining_kind": "hours",
+          "pct_consumed": 0.65,
+          "alert": "green"
+        },
+        {
+          "type": "hull_survey",
+          "label": "Hull survey",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2026-09-14",
+          "remaining": 70.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.808,
+          "alert": "amber"
+        }
+      ],
+      "usage": {
+        "util_per_day": 5.5,
+        "engine_hours": 13500.0
+      }
+    },
+    "worst_clock": {
+      "type": "hull_survey",
+      "label": "Hull survey",
+      "current": null,
+      "limit": null,
+      "unit": null,
+      "due_date": "2026-09-14",
+      "remaining": 70.0,
+      "remaining_kind": "days",
+      "pct_consumed": 0.808,
+      "alert": "amber"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "CG-IPV-104",
+        "asset_name": "CG-IPV-104",
+        "clock": "hull_survey",
+        "level": "amber",
+        "days_remaining": 70.0,
+        "message": "CG-IPV-104: Hull survey due in 70 days."
+      }
+    ],
+    "rul_days": 254.5,
+    "rul_confidence": 0.85,
+    "failure_probability_90d": 0.17,
+    "evidence": [
+      {
+        "source": "RUL · Weibull survival",
+        "detail": "Driving clock 'Engine overhaul': 2600/4000 hours consumed (65%), Weibull k=2.5.",
+        "weight": 0.7,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'Hull survey' (amber).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  {
+    "asset": {
+      "id": "NV-MSL-005",
+      "name": "MSL-005",
+      "type": "MSL Missile Boat",
+      "force": "navy",
+      "base": "BNS Sheikh Mujib, Khulna",
+      "induction_year": 2003,
+      "design_life_years": 30,
+      "status": "operational",
+      "clocks": [
+        {
+          "type": "engine_tbo",
+          "label": "Engine overhaul",
+          "current": 3100.0,
+          "limit": 4000.0,
+          "unit": "hours",
+          "due_date": null,
+          "remaining": 900.0,
+          "remaining_kind": "hours",
+          "pct_consumed": 0.775,
+          "alert": "green"
+        },
+        {
+          "type": "certification",
+          "label": "Weapon-system certification",
+          "current": null,
+          "limit": null,
+          "unit": null,
+          "due_date": "2026-07-31",
+          "remaining": 25.0,
+          "remaining_kind": "days",
+          "pct_consumed": 0.932,
+          "alert": "red"
+        }
+      ],
+      "usage": {
+        "util_per_day": 4.0,
+        "engine_hours": 20000.0
+      }
+    },
+    "worst_clock": {
+      "type": "certification",
+      "label": "Weapon-system certification",
+      "current": null,
+      "limit": null,
+      "unit": null,
+      "due_date": "2026-07-31",
+      "remaining": 25.0,
+      "remaining_kind": "days",
+      "pct_consumed": 0.932,
+      "alert": "red"
+    },
+    "computed_status": "operational",
+    "alerts": [
+      {
+        "asset_id": "NV-MSL-005",
+        "asset_name": "MSL-005",
+        "clock": "certification",
+        "level": "red",
+        "days_remaining": 25.0,
+        "message": "MSL-005: Weapon-system certification due in 25 days."
+      }
+    ],
+    "rul_days": 225.0,
+    "rul_confidence": 0.85,
+    "failure_probability_90d": 0.154,
+    "evidence": [
+      {
+        "source": "RUL · Weibull survival",
+        "detail": "Driving clock 'Engine overhaul': 3100/4000 hours consumed (78%), Weibull k=2.5.",
+        "weight": 0.7,
+        "url": null
+      },
+      {
+        "source": "Worst-clock rule",
+        "detail": "Status driven by 'Weapon-system certification' (red).",
+        "weight": 0.6,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-06T18:19:10.799255Z",
+      "model_version": "rakkhok-rul-weibull/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  }
+]

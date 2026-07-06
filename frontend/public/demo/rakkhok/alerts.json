@@ -1,0 +1,178 @@
+[
+  {
+    "asset_id": "AF-HEM-051",
+    "asset_name": "HELI-M-051",
+    "clock": "consumable",
+    "level": "red",
+    "days_remaining": -6.0,
+    "message": "HELI-M-051: Life-raft certification OVERDUE -6 days."
+  },
+  {
+    "asset_id": "AR-GEN-200",
+    "asset_name": "GEN-200",
+    "clock": "consumable",
+    "level": "red",
+    "days_remaining": 15.0,
+    "message": "GEN-200: Coolant/filter service due in 15 days."
+  },
+  {
+    "asset_id": "NV-CRV-003",
+    "asset_name": "CRV-003",
+    "clock": "hull_survey",
+    "level": "red",
+    "days_remaining": 20.0,
+    "message": "CRV-003: Dry-dock hull survey due in 20 days."
+  },
+  {
+    "asset_id": "NV-MSL-005",
+    "asset_name": "MSL-005",
+    "clock": "certification",
+    "level": "red",
+    "days_remaining": 25.0,
+    "message": "MSL-005: Weapon-system certification due in 25 days."
+  },
+  {
+    "asset_id": "AF-MPA-201",
+    "asset_name": "MPA-201",
+    "clock": "airframe_hours",
+    "level": "amber",
+    "days_remaining": -1.0,
+    "message": "MPA-201: Airframe life due in 150 hours (99% used)."
+  },
+  {
+    "asset_id": "AF-HEL-017",
+    "asset_name": "HELI-017",
+    "clock": "engine_tbo",
+    "level": "amber",
+    "days_remaining": -1.0,
+    "message": "HELI-017: Engine TBO due in 250 hours (92% used)."
+  },
+  {
+    "asset_id": "NV-OPV-012",
+    "asset_name": "OPV-012",
+    "clock": "engine_tbo",
+    "level": "amber",
+    "days_remaining": -1.0,
+    "message": "OPV-012: Main engine overhaul due in 550 hours (91% used)."
+  },
+  {
+    "asset_id": "NV-FPB-022",
+    "asset_name": "FPB-022",
+    "clock": "engine_tbo",
+    "level": "amber",
+    "days_remaining": -1.0,
+    "message": "FPB-022: Engine overhaul due in 400 hours (90% used)."
+  },
+  {
+    "asset_id": "CG-FPB-102",
+    "asset_name": "CG-FPB-102",
+    "clock": "engine_tbo",
+    "level": "amber",
+    "days_remaining": -1.0,
+    "message": "CG-FPB-102: Engine overhaul due in 50 hours (99% used)."
+  },
+  {
+    "asset_id": "AR-GEN-200",
+    "asset_name": "GEN-200",
+    "clock": "engine_tbo",
+    "level": "amber",
+    "days_remaining": -1.0,
+    "message": "GEN-200: Major service due in 100 hours (97% used)."
+  },
+  {
+    "asset_id": "AR-RAD-C01",
+    "asset_name": "RAD-C01",
+    "clock": "certification",
+    "level": "amber",
+    "days_remaining": 55.0,
+    "message": "RAD-C01: System calibration due in 55 days."
+  },
+  {
+    "asset_id": "AF-FGT-071",
+    "asset_name": "FGT-071",
+    "clock": "certification",
+    "level": "amber",
+    "days_remaining": 60.0,
+    "message": "FGT-071: Airworthiness cert due in 60 days."
+  },
+  {
+    "asset_id": "CG-IPV-104",
+    "asset_name": "CG-IPV-104",
+    "clock": "hull_survey",
+    "level": "amber",
+    "days_remaining": 70.0,
+    "message": "CG-IPV-104: Hull survey due in 70 days."
+  },
+  {
+    "asset_id": "AF-HEL-017",
+    "asset_name": "HELI-017",
+    "clock": "certification",
+    "level": "amber",
+    "days_remaining": 75.0,
+    "message": "HELI-017: Airworthiness cert due in 75 days."
+  },
+  {
+    "asset_id": "NV-FPB-022",
+    "asset_name": "FPB-022",
+    "clock": "consumable",
+    "level": "amber",
+    "days_remaining": 85.0,
+    "message": "FPB-022: Firefighting system service due in 85 days."
+  },
+  {
+    "asset_id": "AR-APC-303",
+    "asset_name": "APC-303",
+    "clock": "engine_tbo",
+    "level": "yellow",
+    "days_remaining": -1.0,
+    "message": "APC-303: Powerpack overhaul due in 800 hours (82% used)."
+  },
+  {
+    "asset_id": "AR-HEL-A09",
+    "asset_name": "HELI-A09",
+    "clock": "engine_tbo",
+    "level": "yellow",
+    "days_remaining": -1.0,
+    "message": "HELI-A09: Engine TBO due in 600 hours (80% used)."
+  },
+  {
+    "asset_id": "AR-HEL-A09",
+    "asset_name": "HELI-A09",
+    "clock": "certification",
+    "level": "yellow",
+    "days_remaining": 110.0,
+    "message": "HELI-A09: Airworthiness cert due in 110 days."
+  },
+  {
+    "asset_id": "AR-APC-303",
+    "asset_name": "APC-303",
+    "clock": "certification",
+    "level": "yellow",
+    "days_remaining": 130.0,
+    "message": "APC-303: Fleet certification due in 130 days."
+  },
+  {
+    "asset_id": "NV-FRG-001",
+    "asset_name": "FRG-001",
+    "clock": "hull_survey",
+    "level": "yellow",
+    "days_remaining": 150.0,
+    "message": "FRG-001: Dry-dock hull survey due in 150 days."
+  },
+  {
+    "asset_id": "CG-SAR-105",
+    "asset_name": "CG-SAR-105",
+    "clock": "consumable",
+    "level": "yellow",
+    "days_remaining": 160.0,
+    "message": "CG-SAR-105: Rescue-equipment service due in 160 days."
+  },
+  {
+    "asset_id": "AR-TRK-501",
+    "asset_name": "TRK-501",
+    "clock": "certification",
+    "level": "yellow",
+    "days_remaining": 175.0,
+    "message": "TRK-501: Roadworthiness due in 175 days."
+  }
+]

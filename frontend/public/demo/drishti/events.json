@@ -1,0 +1,840 @@
+{
+  "generated_at_utc": "2026-07-06T18:19:10.782048+00:00",
+  "total": 10,
+  "events": [
+    {
+      "event": {
+        "id": "evt-2026-0705-border",
+        "title": "Reported cross-border security incident along the Myanmar frontier",
+        "summary": "Local authorities reported an incident near the Bangladesh–Myanmar border area, prompting heightened patrol activity in the region.",
+        "event_date": "2026-07-05",
+        "actors": [
+          "Myanmar",
+          "Bangladesh"
+        ],
+        "sectors": [
+          "security"
+        ],
+        "location": "Bandarban border area",
+        "latitude": 21.8,
+        "longitude": 92.4,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": -6.5,
+        "tone": -4.2
+      },
+      "relevance_score": 91.9,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 95.0,
+          "weight": 0.3,
+          "reason": "Touches the 'security' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 100.0,
+          "weight": 0.15,
+          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 55.8,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=-6.5, tone=-4.2); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'security' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=-6.5, tone=-4.2); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0629-bimstec",
+        "title": "BIMSTEC members discuss regional connectivity framework",
+        "summary": "Member states of the Bay of Bengal regional grouping discussed a connectivity and trade-facilitation framework at a ministerial meeting.",
+        "event_date": "2026-06-29",
+        "actors": [
+          "BIMSTEC",
+          "Bangladesh",
+          "India",
+          "Myanmar",
+          "Thailand"
+        ],
+        "sectors": [
+          "diplomacy",
+          "trade"
+        ],
+        "location": "Bay of Bengal region",
+        "latitude": 16.8,
+        "longitude": 96.1,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": 5.0,
+        "tone": 2.4
+      },
+      "relevance_score": 90.9,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 100.0,
+          "weight": 0.3,
+          "reason": "Touches the 'trade' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 100.0,
+          "weight": 0.15,
+          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 39.6,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=5.0, tone=2.4); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'trade' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=5.0, tone=2.4); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0703-port",
+        "title": "Foreign consortium proposes deep-sea port investment on Bay of Bengal coast",
+        "summary": "An international consortium tabled a financing proposal for deep-sea port and logistics infrastructure near the Bay of Bengal, citing regional trade-corridor ambitions.",
+        "event_date": "2026-07-03",
+        "actors": [
+          "Bangladesh",
+          "China"
+        ],
+        "sectors": [
+          "trade",
+          "security",
+          "energy"
+        ],
+        "location": "Bay of Bengal",
+        "latitude": 21.4,
+        "longitude": 91.9,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": 3.4,
+        "tone": 0.5
+      },
+      "relevance_score": 88.4,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 100.0,
+          "weight": 0.3,
+          "reason": "Touches the 'trade' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 100.0,
+          "weight": 0.15,
+          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 22.4,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=3.4, tone=0.5); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'trade' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=3.4, tone=0.5); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0701-cyclone",
+        "title": "Weather agencies track intensifying system in the Bay of Bengal",
+        "summary": "Regional meteorological agencies flagged an intensifying weather system over the Bay of Bengal, with potential coastal impact during the monsoon period.",
+        "event_date": "2026-07-01",
+        "actors": [
+          "Bangladesh"
+        ],
+        "sectors": [
+          "climate",
+          "security"
+        ],
+        "location": "Bay of Bengal",
+        "latitude": 18.5,
+        "longitude": 89.0,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": -2.0,
+        "tone": -2.5
+      },
+      "relevance_score": 86.8,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 95.0,
+          "weight": 0.3,
+          "reason": "Touches the 'security' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 100.0,
+          "weight": 0.15,
+          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 22.0,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=-2.0, tone=-2.5); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'security' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=-2.0, tone=-2.5); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0701-teesta",
+        "title": "India and Bangladesh resume Teesta water-sharing technical talks",
+        "summary": "Water-resource officials from both countries reopened technical discussions on dry-season flow allocation of the Teesta river, a long-pending item affecting northern Bangladesh agriculture.",
+        "event_date": "2026-07-01",
+        "actors": [
+          "Bangladesh",
+          "India"
+        ],
+        "sectors": [
+          "water",
+          "diplomacy"
+        ],
+        "location": "Teesta Basin",
+        "latitude": 26.1,
+        "longitude": 88.9,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": 4.0,
+        "tone": 1.5
+      },
+      "relevance_score": 86.5,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 90.0,
+          "weight": 0.3,
+          "reason": "Touches the 'water' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 100.0,
+          "weight": 0.15,
+          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 30.0,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=4.0, tone=1.5); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'water' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=4.0, tone=1.5); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0630-eu-rmg",
+        "title": "European Union opens review of garment import preferences",
+        "summary": "The EU began a scheduled review of trade-preference arrangements covering ready-made garment imports, a category central to Bangladesh's export earnings.",
+        "event_date": "2026-06-30",
+        "actors": [
+          "European Union",
+          "Bangladesh"
+        ],
+        "sectors": [
+          "trade",
+          "labour"
+        ],
+        "location": "Brussels",
+        "latitude": 50.85,
+        "longitude": 4.35,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": 1.0,
+        "tone": -0.8
+      },
+      "relevance_score": 86.4,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 100.0,
+          "weight": 0.3,
+          "reason": "Touches the 'trade' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 100.0,
+          "weight": 0.15,
+          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 9.2,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=1.0, tone=-0.8); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'trade' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=1.0, tone=-0.8); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0702-labour",
+        "title": "Gulf state announces revised overseas-worker quota policy",
+        "summary": "A major Gulf labour-destination country published a revised recruitment-quota framework for South Asian workers, with implications for remittance inflows.",
+        "event_date": "2026-07-02",
+        "actors": [
+          "Saudi Arabia",
+          "Bangladesh"
+        ],
+        "sectors": [
+          "labour",
+          "diplomacy"
+        ],
+        "location": "Riyadh",
+        "latitude": 24.7,
+        "longitude": 46.7,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": 2.0,
+        "tone": -1.0
+      },
+      "relevance_score": 80.7,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 95.0,
+          "weight": 0.3,
+          "reason": "Touches the 'labour' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 65.0,
+          "weight": 0.15,
+          "reason": "Occurs in the immediate South Asia / Indian Ocean region."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 16.0,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=2.0, tone=-1.0); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'labour' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Occurs in the immediate South Asia / Indian Ocean region.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=2.0, tone=-1.0); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0628-us-tariff",
+        "title": "United States adjusts tariff schedule on selected textile categories",
+        "summary": "A revision to the US tariff schedule affected selected textile and apparel categories, prompting exporter associations to assess the impact.",
+        "event_date": "2026-06-28",
+        "actors": [
+          "United States"
+        ],
+        "sectors": [
+          "trade"
+        ],
+        "location": "Washington",
+        "latitude": 38.9,
+        "longitude": -77.0,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": 0.5,
+        "tone": -1.2
+      },
+      "relevance_score": 64.5,
+      "severity": "amber",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 72.0,
+          "weight": 0.4,
+          "reason": "Involves a major trade / security / labour partner (United States)."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 100.0,
+          "weight": 0.3,
+          "reason": "Touches the 'trade' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 30.0,
+          "weight": 0.15,
+          "reason": "Occurs outside the immediate region (global spillover only)."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 7.8,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=0.5, tone=-1.2); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Involves a major trade / security / labour partner (United States).",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'trade' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Occurs outside the immediate region (global spillover only).",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=0.5, tone=-1.2); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0704-shipping",
+        "title": "Shipping-lane disruption raises freight costs on key export routes",
+        "summary": "Reported disruption along a major maritime shipping lane increased freight and insurance costs on routes used for regional exports and energy imports.",
+        "event_date": "2026-07-04",
+        "actors": [
+          "Egypt",
+          "Yemen"
+        ],
+        "sectors": [
+          "trade",
+          "energy"
+        ],
+        "location": "Red Sea corridor",
+        "latitude": 20.0,
+        "longitude": 38.5,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": -4.0,
+        "tone": -3.0
+      },
+      "relevance_score": 45.9,
+      "severity": "amber",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 15.0,
+          "weight": 0.4,
+          "reason": "No directly Bangladesh-relevant actor identified."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 100.0,
+          "weight": 0.3,
+          "reason": "Touches the 'trade' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 30.0,
+          "weight": 0.15,
+          "reason": "Occurs outside the immediate region (global spillover only)."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 36.0,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=-4.0, tone=-3.0); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "No directly Bangladesh-relevant actor identified.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'trade' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Occurs outside the immediate region (global spillover only).",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=-4.0, tone=-3.0); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-2026-0627-election-distant",
+        "title": "General election concludes in a South American nation",
+        "summary": "A national election concluded with a peaceful transfer of power, drawing routine international congratulatory statements.",
+        "event_date": "2026-06-27",
+        "actors": [
+          "Chile"
+        ],
+        "sectors": [
+          "diplomacy"
+        ],
+        "location": "Santiago",
+        "latitude": -33.45,
+        "longitude": -70.66,
+        "source": "GDELT (demo)",
+        "url": null,
+        "goldstein": 3.0,
+        "tone": 2.0
+      },
+      "relevance_score": 36.9,
+      "severity": "green",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 15.0,
+          "weight": 0.4,
+          "reason": "No directly Bangladesh-relevant actor identified."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 75.0,
+          "weight": 0.3,
+          "reason": "Touches the 'diplomacy' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 30.0,
+          "weight": 0.15,
+          "reason": "Occurs outside the immediate region (global spillover only)."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 26.0,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=3.0, tone=2.0); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "No directly Bangladesh-relevant actor identified.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'diplomacy' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Occurs outside the immediate region (global spillover only).",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=3.0, tone=2.0); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-06T18:19:10.782048Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 1.0,
+        "confidence_label": "high"
+      }
+    }
+  ],
+  "filters_applied": {
+    "sector": null,
+    "severity": null,
+    "min_score": "0.0"
+  },
+  "live_source": false
+}

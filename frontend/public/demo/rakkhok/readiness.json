@@ -1,0 +1,47 @@
+{
+  "generated_at_utc": "2026-07-06T18:19:10.799255+00:00",
+  "overall": {
+    "scope": "fleet",
+    "total": 25,
+    "operational": 23,
+    "maintenance": 1,
+    "grounded": 1,
+    "readiness_pct": 92.0
+  },
+  "by_force": [
+    {
+      "scope": "army",
+      "total": 7,
+      "operational": 7,
+      "maintenance": 0,
+      "grounded": 0,
+      "readiness_pct": 100.0
+    },
+    {
+      "scope": "navy",
+      "total": 7,
+      "operational": 7,
+      "maintenance": 0,
+      "grounded": 0,
+      "readiness_pct": 100.0
+    },
+    {
+      "scope": "air_force",
+      "total": 6,
+      "operational": 4,
+      "maintenance": 1,
+      "grounded": 1,
+      "readiness_pct": 66.7
+    },
+    {
+      "scope": "coast_guard",
+      "total": 5,
+      "operational": 5,
+      "maintenance": 0,
+      "grounded": 0,
+      "readiness_pct": 100.0
+    }
+  ],
+  "red_alerts": 4,
+  "amber_alerts": 11
+}
