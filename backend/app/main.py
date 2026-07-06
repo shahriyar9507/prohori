@@ -51,3 +51,6 @@ def health() -> dict[str, str]:
 
 
 # ─── Module routers are registered here as each module lands ──────────────
+from app.modules.drishti.router import router as drishti_router  # noqa: E402
+
+app.include_router(drishti_router)
