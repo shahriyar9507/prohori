@@ -1,0 +1,17 @@
+# ─── PRAHARI backend (FastAPI) ────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+httpx==0.28.1
+python-dotenv==1.0.1
+
+# ─── DRISHTI (module 1) ───────────────────────────────────
+# GDELT ingestion uses httpx (above). No heavy deps for the
+# relevance engine — it is a transparent, explainable heuristic.
+
+# ─── Optional LLM provider (Do/Avoid brief, Bangla Q&A) ───
+# OpenAI-compatible client; can point at a local Ollama/vLLM
+# endpoint (sovereign) OR a hosted API. Falls back gracefully
+# to a deterministic template when no provider is configured.
+openai==1.59.6
