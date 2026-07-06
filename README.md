@@ -17,7 +17,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688?logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-frontend-61DAFB?logo=react&logoColor=black)
 ![MapLibre](https://img.shields.io/badge/MapLibre-GL-1e6091?logo=maplibre&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-AGPL--3.0-green)
 
 </div>
 

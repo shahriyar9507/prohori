@@ -7,7 +7,7 @@
 ---
 
 ## Phase 0 — Foundation
-- [x] `chore: initialize PRAHARI repository with decorated foundation` — README, LICENSE (MIT), .gitignore, docs (plan, team, architecture, model & data card, attribution), folder scaffold. **(done — a029438)**
+- [x] `chore: initialize PRAHARI repository with decorated foundation` — README, LICENSE (AGPL-3.0), .gitignore, docs (plan, team, architecture, model & data card, attribution), folder scaffold. **(done — a029438)**
 
 ## Phase 1 — Module 1: DRISHTI (Geopolitical Intelligence)
 - [ ] `feat(drishti): FastAPI backend scaffold with evidence-carrying schemas` — app entry, config (env-based), common response envelope (`score/verdict`, `confidence`, `evidence[]`, `generated_at`, `model_version`).
