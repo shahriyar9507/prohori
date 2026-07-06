@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useStrings } from './i18n.js'
+import DrishtiView from './modules/DrishtiView.jsx'
 
 const MODULES = [
   { key: 'drishti', bn: 'দৃষ্টি' },
@@ -41,9 +42,13 @@ export default function App() {
       </header>
 
       <main className="main">
-        <div className="placeholder">
-          {t.modules[active]} — {t.comingSoon}
-        </div>
+        {active === 'drishti' ? (
+          <DrishtiView lang={lang} />
+        ) : (
+          <div className="placeholder">
+            {t.modules[active]} — {t.comingSoon}
+          </div>
+        )}
       </main>
     </div>
   )
