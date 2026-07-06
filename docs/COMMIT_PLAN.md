@@ -22,14 +22,13 @@
 - [x] `docs(drishti): module README + API reference`
 
 ## Phase 2 — Module 2: RAKKHOK (Asset Readiness)
-- [ ] `feat(rakkhok): 25-asset synthetic fleet registry + digital-twin schema` — mixed fleet, realistic induction years, usage counters. **[R1, P0]**
-- [ ] `feat(rakkhok): service-life & expiry tracker with 180/90/30-day alerts` — multiple clocks (airframe / TBO / hull survey / consumable / certification); grounded-by-worst-clock. **[R2, P0]**
-- [ ] `feat(rakkhok): Remaining-Useful-Life predictor` — gradient boosting + Weibull survival on usage counters; fleet ranked by failure risk. **[R3, P0]**
-- [ ] `feat(rakkhok): fleet readiness roll-up API` — asset → unit → base → force mission-capable %. **[R1, P0]**
-- [ ] `test(rakkhok): RUL eval (RMSE + lead-time) + expiry alert tests`
-- [ ] `feat(frontend): fleet health dashboard with big-number readiness tiles` — drill-down to tail/hull number. **[R1]**
-- [ ] `feat(frontend): RUL ranking + live service-life alert view` — the "service this one first" screen. **[R2, R3]**
-- [ ] `docs(rakkhok): module README`
+- [x] `feat(rakkhok): asset schemas + service-life clock engine` — multiple clocks (airframe / TBO / hull survey / consumable / certification); grounded-by-worst-clock. **[R2, P0]**
+- [x] `feat(rakkhok): Weibull survival RUL predictor` — survival on usage counters; RUL days + 90-day failure probability. **[R3, P0]**
+- [x] `feat(rakkhok): 25-asset synthetic fleet registry + digital twins` — mixed fleet, realistic induction years, usage counters. **[R1, P0]**
+- [x] `feat(rakkhok): fleet readiness roll-up + API` — asset → force mission-capable %. **[R1, P0]**
+- [x] `test(rakkhok): fleet, clocks, RUL, and readiness roll-up tests`
+- [x] `feat(frontend): RAKKHOK fleet dashboard, RUL ranking & alerts` — big-number readiness tiles, per-force bars, service-first ranking, alert feed. **[R1, R2, R3]**
+- [x] `docs(rakkhok): module README`
 
 ## Phase 3 — Module 3: SHOMUDRO (Maritime Awareness)
 - [ ] `feat(shomudro): Sentinel-1 SAR vessel detection pipeline` — YOLO (xView3-trained) over a Bay of Bengal AOI; cached scene for the demo. **[S2, P0]**

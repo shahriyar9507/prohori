@@ -105,7 +105,7 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for data flows, data sources 
 We build **module by module**, each to deploy-ready demo quality:
 
 - [x] **Module 1 — DRISHTI** ✅ : GDELT ingestion → relevance ranking (D1) · RAG Do/Avoid brief with citations (D4) · Bangla Q&A (C2) · React command-center view.
-- [ ] **Module 2 — RAKKHOK** : 25-asset registry · expiry alerts (R1–R2) · simple RUL model (R3).
+- [x] **Module 2 — RAKKHOK** ✅ : 25-asset registry · expiry alerts (R1–R2) · Weibull RUL model (R3) · fleet readiness dashboard.
 - [ ] **Module 3 — SHOMUDRO** : Sentinel-1 detection · AIS overlay & dark matching (S1–S2) · STS rule detector (S3) · interdiction packet (S9).
 - [ ] **Integration** : unified National Situation Dashboard (C1) · explainability layer (C3) · live deployment.
 
