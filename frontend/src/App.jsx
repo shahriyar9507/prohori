@@ -19,7 +19,8 @@ export default function App() {
     <div className={`app ${lang === 'bn' ? 'lang-bn' : ''}`}>
       <header className="topbar">
         <div className="brand">
-          <h1>🛡️ PRAHARI</h1>
+          <div className="mark">🛡️</div>
+          <h1>PRAHARI</h1>
           <span className="tag">{t.tagline}</span>
         </div>
 
@@ -36,6 +37,7 @@ export default function App() {
         </nav>
 
         <div className="controls">
+          <span className="status-live"><i />LIVE</span>
           <div className="lang-toggle">
             <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>EN</button>
             <button className={lang === 'bn' ? 'active' : ''} onClick={() => setLang('bn')}>বাং</button>

@@ -26,6 +26,7 @@ export default function ShomudroView({ lang }) {
   const t = useStrings(lang)
   const mapRef = useRef(null)
   const mapObj = useRef(null)
+  const rafRef = useRef(0)
   const [pic, setPic] = useState(null)
   const [selected, setSelected] = useState(null)
   const [packet, setPacket] = useState(null)
@@ -61,11 +62,27 @@ export default function ShomudroView({ lang }) {
         paint: { 'circle-radius': 3, 'circle-color': '#64748b', 'circle-opacity': 0.7 } })
 
       map.addSource('dark', { type: 'geojson', data: fc(pic.dark_vessels.map((d) => pt(d.detection.lon, d.detection.lat, { id: d.detection.id, risk: d.risk_score, level: d.risk_level }))) })
+      // Animated glow halo beneath the solid marker — draws the eye to threats.
+      map.addLayer({ id: 'dark-pulse', type: 'circle', source: 'dark',
+        paint: { 'circle-color': '#ff4d6a', 'circle-opacity': 0.35, 'circle-radius': 14, 'circle-blur': 0.6 } })
       map.addLayer({ id: 'dark', type: 'circle', source: 'dark',
         paint: {
-          'circle-radius': ['interpolate', ['linear'], ['get', 'risk'], 30, 6, 100, 12],
-          'circle-color': '#ef4444', 'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5, 'circle-opacity': 0.85,
+          'circle-radius': ['interpolate', ['linear'], ['get', 'risk'], 30, 6, 100, 13],
+          'circle-color': '#ff4d6a', 'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5, 'circle-opacity': 0.9,
         } })
+      // Pulse loop.
+      let r = 14, dir = 1
+      const pulse = () => {
+        r += dir * 0.45
+        if (r > 32) dir = -1
+        if (r < 14) dir = 1
+        if (map.getLayer('dark-pulse')) {
+          map.setPaintProperty('dark-pulse', 'circle-radius', r)
+          map.setPaintProperty('dark-pulse', 'circle-opacity', Math.max(0, 0.4 * (1 - (r - 14) / 18)))
+        }
+        rafRef.current = requestAnimationFrame(pulse)
+      }
+      pulse()
 
       map.addSource('sts', { type: 'geojson', data: fc(pic.sts_events.map((e) => pt(e.lon, e.lat, { id: e.id }))) })
       map.addLayer({ id: 'sts', type: 'circle', source: 'sts',
@@ -75,16 +92,26 @@ export default function ShomudroView({ lang }) {
       map.addLayer({ id: 'patrol', type: 'circle', source: 'patrol',
         paint: { 'circle-radius': 7, 'circle-color': '#22c55e', 'circle-stroke-color': '#0a1020', 'circle-stroke-width': 2 } })
 
-      const clickable = (layer, kind) => {
-        map.on('click', layer, (e) => {
-          const id = e.features[0].properties.id
-          setSelected(id)
+      const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 14 })
+      const clickable = (layer, label) => {
+        map.on('click', layer, (e) => setSelected(e.features[0].properties.id))
+        map.on('mouseenter', layer, (e) => {
+          map.getCanvas().style.cursor = 'pointer'
+          const p = e.features[0].properties
+          const html = layer === 'dark'
+            ? `<strong>${p.id}</strong><br/>Dark contact · risk ${Math.round(p.risk)} (${p.level})`
+            : `<strong>${p.id}</strong><br/>STS rendezvous`
+          popup.setLngLat(e.lngLat).setHTML(html).addTo(map)
         })
-        map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer' })
-        map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = '' })
+        map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; popup.remove() })
       }
-      clickable('dark'); clickable('sts')
+      clickable('dark', 'dark'); clickable('sts', 'sts')
     })
+
+    return () => {
+      cancelAnimationFrame(rafRef.current)
+      if (mapObj.current) { mapObj.current.remove(); mapObj.current = null }
+    }
   }, [pic])
 
   // Fetch the interdiction packet when a target is selected.
