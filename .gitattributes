@@ -1,0 +1,15 @@
+# Normalize line endings: treat as text, check out with LF.
+* text=auto eol=lf
+
+# Explicit binaries (never normalize)
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.tif binary
+*.tiff binary
+*.pt binary
+*.pth binary
+*.onnx binary
