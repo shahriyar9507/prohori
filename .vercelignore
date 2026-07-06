@@ -1,0 +1,10 @@
+# Keep the Vercel upload lean — build happens in Vercel's environment.
+**/node_modules
+**/__pycache__
+*.pyc
+.venv
+backend/.venv
+backend/.pytest_cache
+frontend/dist
+dist
+*.log
