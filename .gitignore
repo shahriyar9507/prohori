@@ -94,3 +94,7 @@ yarn-error.log*
 
 # AIS capture artifacts
 backend/scripts/ais_snapshot.json
+
+# SAR pipeline artifacts (large/binary)
+backend/scripts/sar.tif
+backend/scripts/sar_detections.json

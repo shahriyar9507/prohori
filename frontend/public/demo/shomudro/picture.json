@@ -8,7 +8,7 @@
     93.5,
     23.0
   ],
-  "source": "Global Fishing Watch (satellite AIS) — real Bay of Bengal data",
+  "source": "Real: Global Fishing Watch (satellite AIS) + Sentinel-1 SAR (Copernicus)",
   "ais_tracks": [
     {
       "mmsi": "405006627",
@@ -275,7 +275,160 @@
       "flag": "BGD"
     }
   ],
-  "sar_detections": [],
+  "sar_detections": [
+    {
+      "id": "SARR-0",
+      "lat": 20.8713,
+      "lon": 90.46973,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-1",
+      "lat": 20.85917,
+      "lon": 90.48257,
+      "length_m": 86.8,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-2",
+      "lat": 20.82323,
+      "lon": 90.5136,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-3",
+      "lat": 20.81472,
+      "lon": 90.51908,
+      "length_m": 100.2,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-4",
+      "lat": 20.79873,
+      "lon": 90.52083,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-5",
+      "lat": 20.7824,
+      "lon": 90.5437,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-6",
+      "lat": 20.71637,
+      "lon": 90.2063,
+      "length_m": 86.8,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-7",
+      "lat": 20.68953,
+      "lon": 90.42983,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-8",
+      "lat": 20.5619,
+      "lon": 90.32017,
+      "length_m": 86.8,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-9",
+      "lat": 20.54767,
+      "lon": 90.35377,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-10",
+      "lat": 20.53693,
+      "lon": 90.35237,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-11",
+      "lat": 20.50403,
+      "lon": 90.3491,
+      "length_m": 86.8,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-12",
+      "lat": 20.41879,
+      "lon": 90.22201,
+      "length_m": 86.8,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-13",
+      "lat": 20.30698,
+      "lon": 90.58302,
+      "length_m": 100.2,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-14",
+      "lat": 20.29574,
+      "lon": 90.20599,
+      "length_m": 86.8,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-15",
+      "lat": 20.28493,
+      "lon": 90.28237,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-16",
+      "lat": 20.26557,
+      "lon": 90.62023,
+      "length_m": 86.8,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-17",
+      "lat": 20.2448,
+      "lon": 90.63237,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    },
+    {
+      "id": "SARR-18",
+      "lat": 20.24247,
+      "lon": 90.6347,
+      "length_m": 70.9,
+      "heading": null,
+      "confidence": 0.99
+    }
+  ],
   "dark_vessels": [
     {
       "detection": {
@@ -4031,8 +4184,15 @@
   ],
   "counts": {
     "ais": 24,
-    "sar": 0,
+    "sar": 19,
     "dark": 60,
     "sts": 40
-  }
+  },
+  "sar_scene": "Sentinel-1 GRD (Copernicus)",
+  "sar_aoi_bbox": [
+    90.2,
+    20.2,
+    90.9,
+    20.9
+  ]
 }

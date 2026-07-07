@@ -2,3 +2,9 @@
 -r requirements.txt
 pytest==8.3.4
 pytest-asyncio==0.25.2
+
+# Real-data pipeline scripts (fetch_gfw.py, fetch_sar.py, capture_ais.py)
+numpy>=1.26
+scipy>=1.11
+tifffile>=2024.1.0
+websockets>=12.0
