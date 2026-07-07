@@ -61,7 +61,10 @@ body::before {
   background:
     radial-gradient(1100px 620px at 78% -8%, rgba(59, 130, 246, 0.16), transparent 60%),
     radial-gradient(900px 560px at 8% 10%, rgba(34, 211, 238, 0.10), transparent 55%),
-    radial-gradient(1000px 700px at 50% 115%, rgba(45, 212, 167, 0.07), transparent 60%);
+    radial-gradient(1000px 700px at 50% 115%, rgba(45, 212, 167, 0.07), transparent 60%),
+    linear-gradient(rgba(56, 189, 248, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.028) 1px, transparent 1px);
+  background-size: auto, auto, auto, 44px 44px, 44px 44px;
 }
 
 .lang-bn, .lang-bn button, .lang-bn input { font-family: var(--bangla); }
@@ -268,9 +271,31 @@ body::before {
 /* ─── SHOMUDRO map ───────────────────────────────────────────────────── */
 .map-wrap { display: grid; grid-template-columns: 1.65fr 1fr; gap: 18px; }
 @media (max-width: 980px) { .map-wrap { grid-template-columns: 1fr; } }
+.map-shell { position: relative; }
 .map { height: 580px; border-radius: var(--radius); border: 1px solid var(--stroke); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
 .map::after { content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: var(--radius);
   box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.55); }
+
+/* Map view switcher (Dark / Satellite / Streets) */
+.view-switch { position: absolute; top: 14px; left: 14px; z-index: 5; display: flex; gap: 3px; padding: 4px;
+  border-radius: 12px; background: rgba(10, 17, 34, 0.82); backdrop-filter: blur(12px); border: 1px solid var(--stroke-strong); box-shadow: var(--shadow); }
+.view-switch button { background: transparent; color: var(--text-dim); border: none; cursor: pointer;
+  padding: 7px 13px; border-radius: 8px; font-size: 12px; font-weight: 700; font-family: inherit; letter-spacing: .02em; transition: .18s; }
+.view-switch button:hover { color: var(--text); }
+.view-switch button.active { background: var(--grad-accent); color: #04121f; box-shadow: var(--glow-accent); }
+
+/* Cyber HUD panel: glowing corner brackets */
+.hud { position: relative; }
+.hud::before, .hud::after { content: ''; position: absolute; width: 15px; height: 15px; pointer-events: none; opacity: .55; }
+.hud::before { top: 7px; left: 7px; border-top: 2px solid var(--accent); border-left: 2px solid var(--accent); border-radius: 3px 0 0 0; }
+.hud::after { bottom: 7px; right: 7px; border-bottom: 2px solid var(--accent); border-right: 2px solid var(--accent); border-radius: 0 0 3px 0; }
+
+.profile-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
+.profile-title { font-weight: 750; font-size: 16px; letter-spacing: -0.01em; line-height: 1.25; }
+.profile-type { flex-shrink: 0; font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--accent); background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 9px; border-radius: 20px; }
+.profile-reasons { margin: 12px 0 0; padding-left: 16px; }
+.profile-reasons li { font-size: 12px; color: var(--text-dim); margin-bottom: 6px; line-height: 1.45; }
 .maplibregl-popup-content { background: rgba(10, 17, 34, 0.92); backdrop-filter: blur(12px); color: var(--text);
   border: 1px solid var(--stroke-strong); border-radius: 12px; font-family: var(--sans); font-size: 12px; box-shadow: var(--shadow-lg); }
 .maplibregl-popup-content strong { color: var(--accent); }
