@@ -306,6 +306,29 @@ body::before {
   background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.025) 0 2px, transparent 2px 4px); }
 .ship-svg { position: relative; z-index: 1; width: 70%; max-height: 84px;
   filter: drop-shadow(0 0 10px var(--ship-col)); }
+.sar-chip-img { position: relative; z-index: 1; width: 96px; height: 96px; border-radius: 8px; image-rendering: pixelated;
+  border: 1px solid var(--stroke-strong); box-shadow: 0 0 18px rgba(148, 163, 184, 0.45); }
+.chip-tag { position: absolute; bottom: 8px; right: 10px; z-index: 2; font-size: 9px; font-weight: 700; letter-spacing: .06em;
+  color: var(--text); background: rgba(0, 0, 0, 0.6); border: 1px solid var(--stroke); padding: 2px 8px; border-radius: 20px; }
+
+/* Confidence bar (low / medium / high) */
+.confbar { margin-top: 14px; }
+.confbar-caption { font-size: 11px; color: var(--text-dim); margin-bottom: 6px; }
+.confbar-track { height: 8px; border-radius: 5px; overflow: hidden;
+  background: linear-gradient(90deg, rgba(255, 77, 106, 0.22), rgba(255, 176, 32, 0.22), rgba(45, 212, 167, 0.22)); }
+.confbar-track > span { display: block; height: 100%; border-radius: 5px; background: var(--grad-accent); box-shadow: var(--glow-accent); }
+.confbar-labels { display: flex; justify-content: space-between; font-size: 9.5px; color: var(--text-faint); margin-top: 5px; text-transform: uppercase; letter-spacing: .06em; }
+
+/* Interactive layer panel (pro MDA console) */
+.layer-panel { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+.lp-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--text-faint); margin-right: 2px; }
+.layer-item { display: inline-flex; align-items: center; gap: 7px; cursor: pointer; font-family: inherit; color: var(--text);
+  background: var(--glass); border: 1px solid var(--stroke); border-radius: 20px; padding: 6px 11px; font-size: 12px; transition: .16s; }
+.layer-item:hover { border-color: var(--stroke-strong); }
+.layer-item.off { opacity: 0.42; }
+.layer-item i { width: 9px; height: 9px; border-radius: 50%; }
+.layer-item .li-count { font-family: var(--mono); font-size: 11px; color: var(--text-dim); background: rgba(255, 255, 255, 0.06); padding: 1px 7px; border-radius: 10px; }
+.layer-item .li-eye { font-size: 11px; }
 .maplibregl-popup-content { background: rgba(10, 17, 34, 0.92); backdrop-filter: blur(12px); color: var(--text);
   border: 1px solid var(--stroke-strong); border-radius: 12px; font-family: var(--sans); font-size: 12px; box-shadow: var(--shadow-lg); }
 .maplibregl-popup-content strong { color: var(--accent); }

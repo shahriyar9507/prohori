@@ -46,10 +46,14 @@ export default function ShomudroView({ lang }) {
   const [view, setView] = useState('dark')
   const [contact, setContact] = useState(null)   // { kind, data }
   const [packet, setPacket] = useState(null)
+  const [chips, setChips] = useState({})
+  const [layers, setLayers] = useState({ sarscene: false, ais: true, sar: true, dark: true, sts: true })
 
   useEffect(() => {
     let alive = true
     api.picture().then((p) => { if (alive) { setPic(p); picRef.current = p } }).catch(() => {})
+    fetch(`${import.meta.env.BASE_URL}demo/shomudro/sar_chips.json`)
+      .then((r) => r.json()).then((c) => alive && setChips(c)).catch(() => {})
     return () => { alive = false }
   }, [])
 
@@ -70,6 +74,13 @@ export default function ShomudroView({ lang }) {
     mapObj.current = map
 
     map.on('load', () => {
+      // Real Sentinel-1 radar scene overlaid on the map (hidden until toggled).
+      map.addSource('sarscene', { type: 'image',
+        url: `${import.meta.env.BASE_URL}demo/shomudro/sar_scene.png`,
+        coordinates: [[90.2, 20.9], [90.9, 20.9], [90.9, 20.2], [90.2, 20.2]] })
+      map.addLayer({ id: 'sarscene', type: 'raster', source: 'sarscene',
+        paint: { 'raster-opacity': 0.9 }, layout: { visibility: 'none' } })
+
       map.addSource('ais', { type: 'geojson', data: fc(pic.ais_tracks.map((a) => pt(a.lon, a.lat, { kind: 'vessel', id: a.mmsi }))) })
       map.addLayer({ id: 'ais', type: 'circle', source: 'ais',
         paint: { 'circle-radius': 5, 'circle-color': '#38bdf8', 'circle-stroke-color': '#0a1020', 'circle-stroke-width': 1.5 } })
@@ -129,6 +140,19 @@ export default function ShomudroView({ lang }) {
     if (src) src.setTiles([BASEMAPS[v].url])
   }
 
+  function toggleLayer(key) {
+    setLayers((prev) => {
+      const on = !prev[key]
+      const map = mapObj.current
+      if (map) {
+        const ids = key === 'dark' ? ['dark', 'dark-pulse'] : [key]
+        ids.forEach((id) => map.getLayer(id) && map.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none'))
+        if (key === 'sarscene' && on) map.fitBounds([[90.2, 20.2], [90.9, 20.9]], { padding: 60, duration: 900 })
+      }
+      return { ...prev, [key]: on }
+    })
+  }
+
   function selectFeature(kind, id) {
     const p = picRef.current
     if (!p) return
@@ -177,17 +201,27 @@ export default function ShomudroView({ lang }) {
               ))}
             </div>
           </div>
-          <div className="legend">
-            <span><i style={{ background: '#38bdf8' }} />{t.aisTracks}</span>
-            {pic?.counts?.sar > 0 && <span><i style={{ background: '#e2e8f0' }} />{t.sarDetections}</span>}
-            <span><i style={{ background: '#ff4d6a' }} />{t.darkContacts}</span>
-            <span><i style={{ background: '#f59e0b' }} />{t.stsEvents}</span>
-            <span><i style={{ background: '#22c55e' }} />CG patrol</span>
+          <div className="layer-panel">
+            <span className="lp-title">{t.layers}</span>
+            {[
+              { k: 'sarscene', c: '#94a3b8', label: t.sarScene, count: null },
+              { k: 'ais', c: '#38bdf8', label: t.aisTracks, count: pic?.counts.ais },
+              { k: 'sar', c: '#e2e8f0', label: t.sarDetections, count: pic?.counts.sar, hide: !(pic?.counts.sar > 0) },
+              { k: 'dark', c: '#ff4d6a', label: t.darkContacts, count: pic?.counts.dark },
+              { k: 'sts', c: '#f59e0b', label: t.stsEvents, count: pic?.counts.sts },
+            ].filter((x) => !x.hide).map((x) => (
+              <button key={x.k} className={`layer-item ${layers[x.k] ? 'on' : 'off'}`} onClick={() => toggleLayer(x.k)}>
+                <i style={{ background: x.c }} />
+                <span className="li-label">{x.label}</span>
+                {x.count != null && <span className="li-count">{x.count}</span>}
+                <span className="li-eye">{layers[x.k] ? '👁' : '🚫'}</span>
+              </button>
+            ))}
           </div>
         </div>
 
         <div>
-          <ContactProfile contact={contact} t={t} />
+          <ContactProfile contact={contact} t={t} chips={chips} />
           {packet && <InterdictionPanel packet={packet} t={t} />}
 
           <div className="panel" style={{ marginTop: 12 }}>
@@ -216,10 +250,22 @@ function Row({ k, v }) {
   return <div className="pk-row"><span className="k">{k}</span><span className="v">{v}</span></div>
 }
 
-function ContactProfile({ contact, t }) {
+function ConfidenceBar({ value, t }) {
+  const pct = Math.round((value || 0) * 100)
+  return (
+    <div className="confbar">
+      <div className="confbar-caption">{t.confVessel}</div>
+      <div className="confbar-track"><span style={{ width: `${pct}%` }} /></div>
+      <div className="confbar-labels"><span>{t.low}</span><span>{t.medium}</span><span>{t.high}</span></div>
+    </div>
+  )
+}
+
+function ContactProfile({ contact, t, chips }) {
   if (!contact) return <div className="panel hud"><div className="section-title">{t.contactProfile}</div><div className="placeholder">{t.clickContact}</div></div>
   const { kind, data } = contact
   const pos = (lat, lon) => `${lat.toFixed(4)}°, ${lon.toFixed(4)}°`
+  const chip = kind === 'sar' && chips ? chips[data.id] : null
 
   let title, typeLabel, rows
   if (kind === 'vessel') {
@@ -249,7 +295,8 @@ function ContactProfile({ contact, t }) {
     <div className="panel hud profile">
       <div className="section-title">{t.contactProfile}</div>
       <div className="ship-photo" style={{ '--ship-col': col }}>
-        <ShipIcon category={cat} color={col} />
+        {chip ? <img className="sar-chip-img" src={chip} alt="SAR chip" /> : <ShipIcon category={cat} color={col} />}
+        {chip && <span className="chip-tag">◉ {t.radarChip}</span>}
       </div>
       <div className="profile-head">
         <div className="profile-title">{title}</div>
@@ -257,7 +304,9 @@ function ContactProfile({ contact, t }) {
       </div>
       <div className="packet">
         {rows.map(([k, v], i) => <Row key={i} k={k} v={v} />)}
+        {kind === 'sar' && <Row k={t.detectionMethod} v={t.automatic} />}
       </div>
+      {kind === 'sar' && <ConfidenceBar value={data.confidence} t={t} />}
       {data.reasons && (
         <ul className="profile-reasons">
           {data.reasons.map((r, i) => <li key={i}>{r}</li>)}

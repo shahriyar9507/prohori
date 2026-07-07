@@ -64,6 +64,9 @@ export const STRINGS = {
     typeVessel: 'AIS vessel', typeSar: 'Sentinel-1 radar contact',
     typeDark: 'Dark contact (AIS gap)', typeSts: 'Ship-to-ship encounter',
     viewDark: 'Dark', viewSat: 'Satellite', viewMap: 'Map',
+    layers: 'Layers', sarScene: 'SAR scene', cgPatrol: 'CG patrol',
+    confVessel: "Confidence it's a vessel", low: 'low', medium: 'medium', high: 'high',
+    detectionMethod: 'Detection method', automatic: 'Automatic', radarChip: 'SAR chip',
   },
   bn: {
     tagline: 'দ্য সেন্টিনেল · জাতীয় কৌশলগত গোয়েন্দা',
@@ -129,6 +132,9 @@ export const STRINGS = {
     typeVessel: 'AIS জাহাজ', typeSar: 'Sentinel-1 রাডার কন্টাক্ট',
     typeDark: 'ডার্ক কন্টাক্ট (AIS gap)', typeSts: 'জাহাজ-থেকে-জাহাজ মিলন',
     viewDark: 'ডার্ক', viewSat: 'স্যাটেলাইট', viewMap: 'ম্যাপ',
+    layers: 'লেয়ার', sarScene: 'SAR দৃশ্য', cgPatrol: 'কোস্ট গার্ড',
+    confVessel: 'জাহাজ হওয়ার আস্থা', low: 'কম', medium: 'মাঝারি', high: 'উচ্চ',
+    detectionMethod: 'শনাক্তকরণ পদ্ধতি', automatic: 'স্বয়ংক্রিয়', radarChip: 'SAR চিপ',
   },
 }
 
