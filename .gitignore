@@ -91,3 +91,6 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# AIS capture artifacts
+backend/scripts/ais_snapshot.json
