@@ -1,253 +1,3002 @@
 {
-  "SAR-10": {
-    "target_id": "SAR-10",
-    "generated_at_utc": "2026-07-06T21:45:26.390749+00:00",
+  "GAP-0": {
+    "target_id": "GAP-0",
+    "generated_at_utc": "2026-07-07T17:04:20.885829+00:00",
     "last_fix": {
-      "lat": 21.72,
-      "lon": 91.88
+      "lat": 18.1566,
+      "lon": 89.4419
     },
     "drift_prediction": {
-      "lat": 21.69774,
-      "lon": 91.86392,
+      "lat": 18.13434,
+      "lon": 89.42618,
       "bearing_deg": 213.9,
       "speed_kn": 1.61,
       "window_min": 60.0
     },
     "intercept": {
-      "bearing_deg": 157.2,
-      "distance_nm": 16.42,
-      "eta_min": 49.3
+      "bearing_deg": 210.2,
+      "distance_nm": 263.92,
+      "eta_min": 791.8
     },
-    "nearest_asset": "CG-FPB-102",
-    "evidence_log": [
-      {
-        "source": "SAR<->AIS fusion",
-        "detail": "Detected in SAR but no matching AIS transmission (dark).",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Corridor overlay",
-        "detail": "Inside known trafficking corridor: Outer estuary night route.",
-        "weight": 0.35,
-        "url": null
-      },
-      {
-        "source": "Pass metadata",
-        "detail": "Night pass — reduced visual patrol coverage.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "SAR size estimate",
-        "detail": "Small-craft size class (26 m) — common evasion profile.",
-        "weight": 0.15,
-        "url": null
-      }
-    ],
-    "chain_of_custody_sha256": "bd075ca6d6be3a720c08afc3012596a17f0fbdc5e62207e2c3a8202f392ef2b1",
-    "confidence": 0.82,
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "f2b2ee8851834f18e6ecbc521678c79d91a670cb68b36a702afcaea30aaa1651",
+    "confidence": 0.85,
     "meta": {
-      "generated_at": "2026-07-06T21:45:26.390749Z",
+      "generated_at": "2026-07-07T17:04:20.885829Z",
       "model_version": "shomudro-interdiction/0.1.0",
-      "confidence": 0.82,
+      "confidence": 0.85,
       "confidence_label": "high"
     }
   },
-  "SAR-11": {
-    "target_id": "SAR-11",
-    "generated_at_utc": "2026-07-06T21:45:26.391751+00:00",
+  "GAP-1": {
+    "target_id": "GAP-1",
+    "generated_at_utc": "2026-07-07T17:04:20.886874+00:00",
     "last_fix": {
-      "lat": 20.62,
-      "lon": 92.18
+      "lat": 17.9308,
+      "lon": 90.4253
     },
     "drift_prediction": {
-      "lat": 20.59774,
-      "lon": 92.16404,
+      "lat": 17.90854,
+      "lon": 90.4096,
       "bearing_deg": 213.9,
       "speed_kn": 1.61,
       "window_min": 60.0
     },
     "intercept": {
-      "bearing_deg": 164.0,
-      "distance_nm": 84.43,
-      "eta_min": 253.3
+      "bearing_deg": 197.6,
+      "distance_nm": 254.17,
+      "eta_min": 762.5
     },
-    "nearest_asset": "CG-FPB-102",
-    "evidence_log": [
-      {
-        "source": "SAR<->AIS fusion",
-        "detail": "Detected in SAR but no matching AIS transmission (dark).",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Corridor overlay",
-        "detail": "Inside known trafficking corridor: Teknaf-St Martin approach.",
-        "weight": 0.35,
-        "url": null
-      },
-      {
-        "source": "Pass metadata",
-        "detail": "Night pass — reduced visual patrol coverage.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "SAR size estimate",
-        "detail": "Small-craft size class (33 m) — common evasion profile.",
-        "weight": 0.15,
-        "url": null
-      }
-    ],
-    "chain_of_custody_sha256": "2a668889d55be92372414a708171afa9f17ce5123a409e561db43b2bf7c1d09b",
-    "confidence": 0.83,
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "0553e51fe8f5422ed448b2befb483028bff988408de49514ba960b95875e4923",
+    "confidence": 0.85,
     "meta": {
-      "generated_at": "2026-07-06T21:45:26.391751Z",
+      "generated_at": "2026-07-07T17:04:20.886874Z",
       "model_version": "shomudro-interdiction/0.1.0",
-      "confidence": 0.83,
+      "confidence": 0.85,
       "confidence_label": "high"
     }
   },
-  "SAR-09": {
-    "target_id": "SAR-09",
-    "generated_at_utc": "2026-07-06T21:45:26.391751+00:00",
+  "GAP-2": {
+    "target_id": "GAP-2",
+    "generated_at_utc": "2026-07-07T17:04:20.886874+00:00",
     "last_fix": {
-      "lat": 21.3009,
-      "lon": 90.4009
+      "lat": 17.9273,
+      "lon": 92.7868
     },
     "drift_prediction": {
-      "lat": 21.27864,
-      "lon": 90.38487,
+      "lat": 17.90504,
+      "lon": 92.7711,
       "bearing_deg": 213.9,
       "speed_kn": 1.61,
       "window_min": 60.0
     },
     "intercept": {
-      "bearing_deg": 242.4,
-      "distance_nm": 86.2,
-      "eta_min": 258.6
+      "bearing_deg": 166.5,
+      "distance_nm": 249.6,
+      "eta_min": 748.8
     },
-    "nearest_asset": "CG-FPB-102",
-    "evidence_log": [
-      {
-        "source": "SAR<->AIS fusion",
-        "detail": "Detected in SAR but no matching AIS transmission (dark).",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Pass metadata",
-        "detail": "Night pass — reduced visual patrol coverage.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "SAR size estimate",
-        "detail": "Small-craft size class (41 m) — common evasion profile.",
-        "weight": 0.15,
-        "url": null
-      }
-    ],
-    "chain_of_custody_sha256": "02c4a96ff2fa1228ac426a66e0630d68e95a0af2ba7d236b3a96b694393d300b",
-    "confidence": 0.75,
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "2e4b793f211b4e434b0f401dc2d7c92eda3c98198e222623a4fdaab4e30cc8ac",
+    "confidence": 0.85,
     "meta": {
-      "generated_at": "2026-07-06T21:45:26.391751Z",
+      "generated_at": "2026-07-07T17:04:20.886874Z",
       "model_version": "shomudro-interdiction/0.1.0",
-      "confidence": 0.75,
+      "confidence": 0.85,
       "confidence_label": "high"
     }
   },
-  "SAR-12": {
-    "target_id": "SAR-12",
-    "generated_at_utc": "2026-07-06T21:45:26.392752+00:00",
+  "GAP-3": {
+    "target_id": "GAP-3",
+    "generated_at_utc": "2026-07-07T17:04:20.886874+00:00",
     "last_fix": {
-      "lat": 20.05,
-      "lon": 91.6
+      "lat": 19.982,
+      "lon": 88.4164
     },
     "drift_prediction": {
-      "lat": 20.02774,
-      "lon": 91.5841,
+      "lat": 19.95974,
+      "lon": 88.40051,
       "bearing_deg": 213.9,
       "speed_kn": 1.61,
       "window_min": 60.0
     },
     "intercept": {
-      "bearing_deg": 184.6,
-      "distance_nm": 115.79,
-      "eta_min": 347.4
+      "bearing_deg": 238.1,
+      "distance_nm": 222.58,
+      "eta_min": 667.8
     },
-    "nearest_asset": "CG-FPB-102",
-    "evidence_log": [
-      {
-        "source": "SAR<->AIS fusion",
-        "detail": "Detected in SAR but no matching AIS transmission (dark).",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Pass metadata",
-        "detail": "Night pass — reduced visual patrol coverage.",
-        "weight": 0.15,
-        "url": null
-      }
-    ],
-    "chain_of_custody_sha256": "7dc92e0885687968fdc67ce1c7c5d47976f5e07b087c042af15d526a35950677",
-    "confidence": 0.63,
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "5a9802c714fa524dbbdf391b7c9865bb2049095ce9ee82e29e6ff0d8a571db71",
+    "confidence": 0.85,
     "meta": {
-      "generated_at": "2026-07-06T21:45:26.392752Z",
+      "generated_at": "2026-07-07T17:04:20.886874Z",
       "model_version": "shomudro-interdiction/0.1.0",
-      "confidence": 0.63,
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-4": {
+    "target_id": "GAP-4",
+    "generated_at_utc": "2026-07-07T17:04:20.886874+00:00",
+    "last_fix": {
+      "lat": 18.1043,
+      "lon": 91.899
+    },
+    "drift_prediction": {
+      "lat": 18.08204,
+      "lon": 91.88328,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 178.1,
+      "distance_nm": 232.36,
+      "eta_min": 697.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "dd339837c99e9d3d6843cfd35eabec0403ddc226c59e3995b2ab98b568b65181",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.886874Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-5": {
+    "target_id": "GAP-5",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 19.7552,
+      "lon": 89.1058
+    },
+    "drift_prediction": {
+      "lat": 19.73294,
+      "lon": 89.08993,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 228.8,
+      "distance_nm": 199.98,
+      "eta_min": 600.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "a79b2b6d3f54d352d1a903c88e13a6443c92d0ec93173f476ad21af38e6ed49a",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-6": {
+    "target_id": "GAP-6",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 19.6504,
+      "lon": 88.3894
+    },
+    "drift_prediction": {
+      "lat": 19.62814,
+      "lon": 88.37354,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 234.3,
+      "distance_nm": 235.26,
+      "eta_min": 705.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "93a72c5ecccfc8c3dd0dca80503a4f0513030387fc187c0509e685a86bea4111",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-8": {
+    "target_id": "GAP-8",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 20.1917,
+      "lon": 87.8823
+    },
+    "drift_prediction": {
+      "lat": 20.16944,
+      "lon": 87.86638,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 244.5,
+      "distance_nm": 242.43,
+      "eta_min": 727.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "1355541e0174fe299e8387483b1c1ab8466c264692241c853d1b1b4b7eafdae9",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-9": {
+    "target_id": "GAP-9",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 18.3338,
+      "lon": 90.0919
+    },
+    "drift_prediction": {
+      "lat": 18.31154,
+      "lon": 90.07616,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 203.7,
+      "distance_nm": 237.95,
+      "eta_min": 713.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "619acd97fdc31652abcb38039fcc641b1fe058ab079e2bfd30fd4f91e8d2e866",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-10": {
+    "target_id": "GAP-10",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 20.108,
+      "lon": 90.4173
+    },
+    "drift_prediction": {
+      "lat": 20.08574,
+      "lon": 90.40139,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 214.3,
+      "distance_nm": 135.06,
+      "eta_min": 405.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "9729b0db77c444f6ba8e3e1de761bdd60d62beccb87cebc4d39c76a4b5c584ea",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-11": {
+    "target_id": "GAP-11",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 18.4277,
+      "lon": 89.921
+    },
+    "drift_prediction": {
+      "lat": 18.40544,
+      "lon": 89.90525,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.4,
+      "distance_nm": 236.84,
+      "eta_min": 710.5
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "965f6d236c75f7db2ad0f01b4bf74fb4dd8ec147769bee63a96de3b8ed4f584b",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-12": {
+    "target_id": "GAP-12",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 20.274,
+      "lon": 87.5707
+    },
+    "drift_prediction": {
+      "lat": 20.25174,
+      "lon": 87.55478,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 247.3,
+      "distance_nm": 256.14,
+      "eta_min": 768.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "1a05d18e9fab6d6a4d67e71defcacd78fbcd865a26918533ba2c11507fadd388",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-13": {
+    "target_id": "GAP-13",
+    "generated_at_utc": "2026-07-07T17:04:20.887849+00:00",
+    "last_fix": {
+      "lat": 20.1622,
+      "lon": 88.3857
+    },
+    "drift_prediction": {
+      "lat": 20.13994,
+      "lon": 88.36979,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 240.8,
+      "distance_nm": 218.36,
+      "eta_min": 655.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "c8e240d38c78455ea32c470ba2e57cd13e58f4615920d6af807c1984a51184a9",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.887849Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-14": {
+    "target_id": "GAP-14",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 19.3979,
+      "lon": 90.8777
+    },
+    "drift_prediction": {
+      "lat": 19.37564,
+      "lon": 90.86186,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 198.0,
+      "distance_nm": 162.42,
+      "eta_min": 487.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "cec4f4e35ccb0b40a3efe36be51f1bcacfacf2a1c3a5997dc0fda934fd6c7061",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-15": {
+    "target_id": "GAP-15",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 18.7802,
+      "lon": 89.4497
+    },
+    "drift_prediction": {
+      "lat": 18.75794,
+      "lon": 89.43392,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 214.6,
+      "distance_nm": 231.78,
+      "eta_min": 695.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "4ab4a2eb1b06046aa598ad58d7cc1c79ebb4e5bc4ebbead7cd32f9b5bd521a29",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-16": {
+    "target_id": "GAP-16",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 18.1385,
+      "lon": 88.9104
+    },
+    "drift_prediction": {
+      "lat": 18.11624,
+      "lon": 88.89468,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 215.5,
+      "distance_nm": 280.91,
+      "eta_min": 842.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "af5035e0dd3203ba75780dabf5da058a3ad6b7b06088643da12c8ad20ad9754b",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-17": {
+    "target_id": "GAP-17",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 17.324,
+      "lon": 90.204
+    },
+    "drift_prediction": {
+      "lat": 17.30174,
+      "lon": 90.18835,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 197.8,
+      "distance_nm": 292.71,
+      "eta_min": 878.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "d3a4ef50d409893774ba631164f42c1fbabb3b3c4785057a84d3b5921b3b0431",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-18": {
+    "target_id": "GAP-18",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 20.565,
+      "lon": 92.0634
+    },
+    "drift_prediction": {
+      "lat": 20.54274,
+      "lon": 92.04745,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 168.8,
+      "distance_nm": 86.12,
+      "eta_min": 258.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "d527cf37b10da77d2b506dbe73c7782694eefaf0dae1b3b353b5e2393b9ec389",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-19": {
+    "target_id": "GAP-19",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 19.8306,
+      "lon": 92.1962
+    },
+    "drift_prediction": {
+      "lat": 19.80834,
+      "lon": 92.18032,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 169.3,
+      "distance_nm": 130.83,
+      "eta_min": 392.5
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "a5e16fe746551c34a2cf4089875f00d02fbaa0d7c9f8f8044272a1848d4b3c60",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-20": {
+    "target_id": "GAP-20",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 19.2739,
+      "lon": 90.5793
+    },
+    "drift_prediction": {
+      "lat": 19.25164,
+      "lon": 90.56348,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 202.6,
+      "distance_nm": 175.19,
+      "eta_min": 525.6
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "bb17f6267ac94cee0473b3fc8249d66d5d5e7823dfa2d45061a11af33cbc750f",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-21": {
+    "target_id": "GAP-21",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 19.6192,
+      "lon": 89.5686
+    },
+    "drift_prediction": {
+      "lat": 19.59694,
+      "lon": 89.55274,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 221.5,
+      "distance_nm": 187.54,
+      "eta_min": 562.6
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "b9b3ec92dd6966a26abe79b550ceb4ba964fa55082cfaacc5e9ca2133073dabc",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-23": {
+    "target_id": "GAP-23",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 18.6877,
+      "lon": 92.3623
+    },
+    "drift_prediction": {
+      "lat": 18.66544,
+      "lon": 92.34653,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 170.2,
+      "distance_nm": 200.05,
+      "eta_min": 600.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "8c9ce8ea1e117a21208a7bd4bee8cb447497c8fb7557f443eb2e07a57f559b2e",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-24": {
+    "target_id": "GAP-24",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 19.5389,
+      "lon": 88.9162
+    },
+    "drift_prediction": {
+      "lat": 19.51664,
+      "lon": 88.90035,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 228.1,
+      "distance_nm": 216.66,
+      "eta_min": 650.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "88fa2320cdb17bd849141391923780e05bf8e889b9bb84f41b4b1eb1e048f636",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-25": {
+    "target_id": "GAP-25",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 21.1052,
+      "lon": 90.0016
+    },
+    "drift_prediction": {
+      "lat": 21.08294,
+      "lon": 89.98559,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 242.5,
+      "distance_nm": 111.46,
+      "eta_min": 334.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "814741e0ef9878534d7350a066f3234622085c172bfc98efbfc6c70650791bc4",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-27": {
+    "target_id": "GAP-27",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 20.4418,
+      "lon": 88.0117
+    },
+    "drift_prediction": {
+      "lat": 20.41954,
+      "lon": 87.99576,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 247.1,
+      "distance_nm": 229.37,
+      "eta_min": 688.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "41f4a7239793c1b3a513b757779f28a0a62f0c1e7faca3191700754058b59cea",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-28": {
+    "target_id": "GAP-28",
+    "generated_at_utc": "2026-07-07T17:04:20.888856+00:00",
+    "last_fix": {
+      "lat": 19.4199,
+      "lon": 88.5697
+    },
+    "drift_prediction": {
+      "lat": 19.39764,
+      "lon": 88.55386,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 230.1,
+      "distance_nm": 236.03,
+      "eta_min": 708.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "50fac58fee6f6bfe6e6c8918680bff9f49a84e1c717982e82eeb8828c0fe4956",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.888856Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-29": {
+    "target_id": "GAP-29",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 20.2195,
+      "lon": 87.9376
+    },
+    "drift_prediction": {
+      "lat": 20.19724,
+      "lon": 87.92168,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 244.6,
+      "distance_nm": 238.89,
+      "eta_min": 716.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "8d40366792ce5bcef6bb24e920a584a11f10c825a3a1d99216225fccba237c4a",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-30": {
+    "target_id": "GAP-30",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 18.7811,
+      "lon": 90.1952
+    },
+    "drift_prediction": {
+      "lat": 18.75884,
+      "lon": 90.17942,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 205.0,
+      "distance_nm": 211.01,
+      "eta_min": 633.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "d670681aa7dce076a0028bbeb86ce4a3e3e0fa8aa9a74c424420bda8ba405548",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-31": {
+    "target_id": "GAP-31",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 18.072,
+      "lon": 90.5173
+    },
+    "drift_prediction": {
+      "lat": 18.04974,
+      "lon": 90.50159,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 197.0,
+      "distance_nm": 244.53,
+      "eta_min": 733.6
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "751e83d19bdb9b5f9dcf4909a11679724039f6a95d1c71c1942994b38a5e8416",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-32": {
+    "target_id": "GAP-32",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 20.5466,
+      "lon": 92.1421
+    },
+    "drift_prediction": {
+      "lat": 20.52434,
+      "lon": 92.12615,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 166.1,
+      "distance_nm": 88.15,
+      "eta_min": 264.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "7511d612ab262eaa0af07310ade9b0b9e47addebff48db3efed5545b5356906c",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-33": {
+    "target_id": "GAP-33",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 17.1916,
+      "lon": 91.2403
+    },
+    "drift_prediction": {
+      "lat": 17.16934,
+      "lon": 91.22466,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 186.0,
+      "distance_nm": 288.57,
+      "eta_min": 865.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "5a64037b2eab87905a7e4b4e7f8a5a02f6450980430aabdf71b6c28914c88d82",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-34": {
+    "target_id": "GAP-34",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 19.6545,
+      "lon": 90.7137
+    },
+    "drift_prediction": {
+      "lat": 19.63224,
+      "lon": 90.69784,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 203.2,
+      "distance_nm": 151.17,
+      "eta_min": 453.5
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "eb73d9b1c60be56e021f55f5c049c629c512b76903fad733d960d74804857fa3",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-35": {
+    "target_id": "GAP-35",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 17.0977,
+      "lon": 92.1388
+    },
+    "drift_prediction": {
+      "lat": 17.07544,
+      "lon": 92.12317,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 175.8,
+      "distance_nm": 293.43,
+      "eta_min": 880.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "debc90ceb54b85ef22e8605b66e65dc21792cca11c08a934163de5a341835087",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-36": {
+    "target_id": "GAP-36",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 20.4301,
+      "lon": 92.1984
+    },
+    "drift_prediction": {
+      "lat": 20.40784,
+      "lon": 92.18246,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 165.3,
+      "distance_nm": 95.7,
+      "eta_min": 287.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "87eb910b17d9ef6c1d3fb1625d5b6198db27c8cce955207730c0de33c208be1e",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-37": {
+    "target_id": "GAP-37",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 17.6991,
+      "lon": 92.0608
+    },
+    "drift_prediction": {
+      "lat": 17.67684,
+      "lon": 92.04512,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 176.2,
+      "distance_nm": 257.1,
+      "eta_min": 771.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "e4bda74343c018b933f0cccaece5088cce4a14706706476459fd821e6137b9c3",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-38": {
+    "target_id": "GAP-38",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 20.0302,
+      "lon": 90.5499
+    },
+    "drift_prediction": {
+      "lat": 20.00794,
+      "lon": 90.534,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 210.5,
+      "distance_nm": 135.06,
+      "eta_min": 405.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "d8b9c0c46db500dfc172005756360448500453158a95d793423b66ba29f9d122",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-39": {
+    "target_id": "GAP-39",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 19.1632,
+      "lon": 90.056
+    },
+    "drift_prediction": {
+      "lat": 19.14094,
+      "lon": 90.04019,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 210.0,
+      "distance_nm": 194.12,
+      "eta_min": 582.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "5299f01043dc15fa0658be989d34e9690d73223c830629c3a7fae317e06c303e",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-40": {
+    "target_id": "GAP-40",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 19.3384,
+      "lon": 89.4908
+    },
+    "drift_prediction": {
+      "lat": 19.31614,
+      "lon": 89.47497,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 219.4,
+      "distance_nm": 203.33,
+      "eta_min": 610.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "d38c7e229a9324721bed3551ff39f675754bdf8548432d43cd24172946d52d1b",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-41": {
+    "target_id": "GAP-41",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 20.1718,
+      "lon": 90.7359
+    },
+    "drift_prediction": {
+      "lat": 20.14954,
+      "lon": 90.71999,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.3,
+      "distance_nm": 122.54,
+      "eta_min": 367.6
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "aefa1a264af5423fae24de9cc76d12183c5ada1ca7955d23b638492d10f14cad",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-42": {
+    "target_id": "GAP-42",
+    "generated_at_utc": "2026-07-07T17:04:20.889858+00:00",
+    "last_fix": {
+      "lat": 19.6572,
+      "lon": 87.8615
+    },
+    "drift_prediction": {
+      "lat": 19.63494,
+      "lon": 87.84564,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 238.3,
+      "distance_nm": 259.49,
+      "eta_min": 778.5
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "2231aeacb49ac573f3fe9567a24f00c48e401974aa6b56814d30d6d95eb5e870",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.889858Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-43": {
+    "target_id": "GAP-43",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 20.3653,
+      "lon": 87.8861
+    },
+    "drift_prediction": {
+      "lat": 20.34304,
+      "lon": 87.87017,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 246.8,
+      "distance_nm": 237.71,
+      "eta_min": 713.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "10e08b76ebdfa25367bc54e0f7ec2e91964fec01c88be876900986593b75d5e3",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-45": {
+    "target_id": "GAP-45",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 19.4281,
+      "lon": 90.6963
+    },
+    "drift_prediction": {
+      "lat": 19.40584,
+      "lon": 90.68046,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 201.7,
+      "distance_nm": 164.14,
+      "eta_min": 492.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "8598b6a1bd3bac8cac23fcbc8870c8d52a4f24636fd4ce0b5e62f5203076210b",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-46": {
+    "target_id": "GAP-46",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 18.4757,
+      "lon": 87.4014
+    },
+    "drift_prediction": {
+      "lat": 18.45344,
+      "lon": 87.38565,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 230.3,
+      "distance_nm": 323.29,
+      "eta_min": 969.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "d38d4ca0d83f97a35671a27a39f819c40384102635e9d8e25e3d09891b5b4618",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-47": {
+    "target_id": "GAP-47",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 18.7278,
+      "lon": 92.4692
+    },
+    "drift_prediction": {
+      "lat": 18.70554,
+      "lon": 92.45343,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 168.4,
+      "distance_nm": 198.78,
+      "eta_min": 596.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "f4e734b131ac0857e4708e3233b69d24eff9a9589f73c441745b9da28c1ad00c",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-48": {
+    "target_id": "GAP-48",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 20.3052,
+      "lon": 88.2258
+    },
+    "drift_prediction": {
+      "lat": 20.28294,
+      "lon": 88.20987,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 243.9,
+      "distance_nm": 222.1,
+      "eta_min": 666.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "79e6244623f9045c85e87e05c3284646e7d1295f69ea45163bf4ea6f8333fecd",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-49": {
+    "target_id": "GAP-49",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 20.4247,
+      "lon": 90.0899
+    },
+    "drift_prediction": {
+      "lat": 20.40244,
+      "lon": 90.07396,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 225.6,
+      "distance_nm": 132.05,
+      "eta_min": 396.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "30fea5d635e1b408b0410993f8508b6eebb0f2c742e912d4af64d7f44e3255b1",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-50": {
+    "target_id": "GAP-50",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 19.5876,
+      "lon": 89.1398
+    },
+    "drift_prediction": {
+      "lat": 19.56534,
+      "lon": 89.12394,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 226.3,
+      "distance_nm": 205.5,
+      "eta_min": 616.5
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "07818627f649195f646c25716875263259c1b27a287e7df0b621cadf024f2290",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-51": {
+    "target_id": "GAP-51",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 17.2667,
+      "lon": 87.0557
+    },
+    "drift_prediction": {
+      "lat": 17.24444,
+      "lon": 87.04006,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 224.1,
+      "distance_nm": 388.24,
+      "eta_min": 1164.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "bbe1431ff90c6c09a58b4491bc803a1bb72fe82eeec64b89d7696ab51f3de08d",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-52": {
+    "target_id": "GAP-52",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 18.4555,
+      "lon": 87.7411
+    },
+    "drift_prediction": {
+      "lat": 18.43324,
+      "lon": 87.72535,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 227.8,
+      "distance_nm": 309.83,
+      "eta_min": 929.5
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "5a53fb1dbbfb5fd0c2f2c915bbc4aab7a2f03ad0f677797805a5ed03d7764f66",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.890857Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-54": {
+    "target_id": "GAP-54",
+    "generated_at_utc": "2026-07-07T17:04:20.890857+00:00",
+    "last_fix": {
+      "lat": 21.2153,
+      "lon": 88.4483
+    },
+    "drift_prediction": {
+      "lat": 21.19304,
+      "lon": 88.43228,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 256.8,
+      "distance_nm": 190.73,
+      "eta_min": 572.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "6b7f0ceb3fe963e4970fcb78a2a14e0638e71a41f4ecb9401dcca7d780d64fc7",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-55": {
+    "target_id": "GAP-55",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 20.8075,
+      "lon": 89.0401
+    },
+    "drift_prediction": {
+      "lat": 20.78524,
+      "lon": 89.02412,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 245.9,
+      "distance_nm": 167.69,
+      "eta_min": 503.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "9a491131b49cfc84c823bf085a81570c0386b7a63ba38c70d402e85f7146f60c",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-56": {
+    "target_id": "GAP-56",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 18.6469,
+      "lon": 89.4091
+    },
+    "drift_prediction": {
+      "lat": 18.62464,
+      "lon": 89.39333,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 214.0,
+      "distance_nm": 239.73,
+      "eta_min": 719.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "5e18c9371ed78e8519716e552735662d6d05cc73f11355882d9dcda985741c47",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-57": {
+    "target_id": "GAP-57",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 17.0921,
+      "lon": 90.4928
+    },
+    "drift_prediction": {
+      "lat": 17.06984,
+      "lon": 90.47717,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 194.0,
+      "distance_nm": 301.72,
+      "eta_min": 905.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "350b96c8282a00a112d38a4f02eefdee0629a19ec126b3b42977b19d54bfff61",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-58": {
+    "target_id": "GAP-58",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 18.8503,
+      "lon": 92.5655
+    },
+    "drift_prediction": {
+      "lat": 18.82804,
+      "lon": 92.54972,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 166.4,
+      "distance_nm": 192.77,
+      "eta_min": 578.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "7ccf3fb2295bae5f02500874ee6a03fffc4515e566b837e571cd271c8cb43332",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-7": {
+    "target_id": "GAP-7",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 18.6887,
+      "lon": 89.262
+    },
+    "drift_prediction": {
+      "lat": 18.66644,
+      "lon": 89.24623,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 216.0,
+      "distance_nm": 242.35,
+      "eta_min": 727.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "4c902be900e24ba04d63ec6c9972f2af359cde80b21d8fcff0097c7dccb9d649",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-22": {
+    "target_id": "GAP-22",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 20.2445,
+      "lon": 90.7579
+    },
+    "drift_prediction": {
+      "lat": 20.22224,
+      "lon": 90.74198,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.7,
+      "distance_nm": 118.11,
+      "eta_min": 354.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "3fa6eb7483a05f9e3883719335d0f2997cb6999a8ae5e2d175ca17c32634a83c",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-26": {
+    "target_id": "GAP-26",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 17.9781,
+      "lon": 92.679
+    },
+    "drift_prediction": {
+      "lat": 17.95584,
+      "lon": 92.6633,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 167.7,
+      "distance_nm": 245.28,
+      "eta_min": 735.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "f5f9007683bca09e9cd7fb90aae72ddfd453bd48c994b01be1c48636996e06f5",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-44": {
+    "target_id": "GAP-44",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 17.6421,
+      "lon": 89.0134
+    },
+    "drift_prediction": {
+      "lat": 17.61984,
+      "lon": 88.99772,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 211.4,
+      "distance_nm": 302.91,
+      "eta_min": 908.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "b7247d4c243f5269e9ea27d2aa21030dcf5ffe1ff49e7cf14fb23d7147794210",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-53": {
+    "target_id": "GAP-53",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 19.537,
+      "lon": 92.4701
+    },
+    "drift_prediction": {
+      "lat": 19.51474,
+      "lon": 92.45425,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 164.7,
+      "distance_nm": 151.47,
+      "eta_min": 454.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "9506d5eb2844477eba1be9c38429e3b25b9789e030dcb7cb136b20c460600734",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "GAP-59": {
+    "target_id": "GAP-59",
+    "generated_at_utc": "2026-07-07T17:04:20.891870+00:00",
+    "last_fix": {
+      "lat": 21.4357,
+      "lon": 91.1641
+    },
+    "drift_prediction": {
+      "lat": 21.41344,
+      "lon": 91.14805,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 226.3,
+      "distance_nm": 46.54,
+      "eta_min": 139.6
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "1d0987e25746fb1a686de3556bf33b6114c5c2cf48f411883483230c9f60c8c1",
+    "confidence": 0.85,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.891870Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.85,
+      "confidence_label": "high"
+    }
+  },
+  "ENC-0": {
+    "target_id": "ENC-0",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.2649,
+      "lon": 89.3544
+    },
+    "drift_prediction": {
+      "lat": 17.24264,
+      "lon": 89.33876,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.2,
+      "distance_nm": 313.8,
+      "eta_min": 941.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "c6fa2e8a27d563cb16592e78e955de0192d31a3217ae74201c94ba6a5b3f5095",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
       "confidence_label": "medium"
     }
   },
-  "STS-7-10": {
-    "target_id": "STS-7-10",
-    "generated_at_utc": "2026-07-06T21:45:26.392752+00:00",
+  "ENC-1": {
+    "target_id": "ENC-1",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
     "last_fix": {
-      "lat": 21.30045,
-      "lon": 90.40045
+      "lat": 17.2649,
+      "lon": 89.3544
     },
     "drift_prediction": {
-      "lat": 21.27819,
-      "lon": 90.38442,
+      "lat": 17.24264,
+      "lon": 89.33876,
       "bearing_deg": 213.9,
       "speed_kn": 1.61,
       "window_min": 60.0
     },
     "intercept": {
-      "bearing_deg": 242.4,
-      "distance_nm": 86.24,
-      "eta_min": 258.7
+      "bearing_deg": 206.2,
+      "distance_nm": 313.8,
+      "eta_min": 941.4
     },
-    "nearest_asset": "CG-FPB-102",
-    "evidence_log": [
-      {
-        "source": "STS rule engine",
-        "detail": "Separation 137 m (< 200 m).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "STS rule engine",
-        "detail": "Loiter duration ~42 min (> 30 min).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "STS rule engine",
-        "detail": "One party is dark (no AIS) — elevated transfer risk.",
-        "weight": 0.3,
-        "url": null
-      }
-    ],
-    "chain_of_custody_sha256": "6467da227d2467cacb3227a353299c7965f22bd2389314e4711783f2477574ec",
-    "confidence": 0.8,
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "10d3348ed0439fbf56aa96e959b2f3db211adfb1592b6c43040e7b6973a0d545",
+    "confidence": 0.7,
     "meta": {
-      "generated_at": "2026-07-06T21:45:26.392752Z",
+      "generated_at": "2026-07-07T17:04:20.892844Z",
       "model_version": "shomudro-interdiction/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-2": {
+    "target_id": "ENC-2",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.5678,
+      "lon": 89.0925
+    },
+    "drift_prediction": {
+      "lat": 17.54554,
+      "lon": 89.07683,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 210.2,
+      "distance_nm": 304.52,
+      "eta_min": 913.6
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "07e337f1398aaed066de340690eac4d44d21250479922d6cbde9b6d042a43aeb",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-3": {
+    "target_id": "ENC-3",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.5678,
+      "lon": 89.0925
+    },
+    "drift_prediction": {
+      "lat": 17.54554,
+      "lon": 89.07683,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 210.2,
+      "distance_nm": 304.52,
+      "eta_min": 913.6
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "ee06fdd55295252adbf3d12922bedf722ad962f995a16093e49355eca2e4b3ad",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-4": {
+    "target_id": "ENC-4",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0192,
+      "lon": 89.0392
+    },
+    "drift_prediction": {
+      "lat": 16.99694,
+      "lon": 89.02358,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 335.01,
+      "eta_min": 1005.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "198c811c6f9f9722e499350e8c577df7a40d3fc5d8a03d331fc90a1a1227520d",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-5": {
+    "target_id": "ENC-5",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0192,
+      "lon": 89.0392
+    },
+    "drift_prediction": {
+      "lat": 16.99694,
+      "lon": 89.02358,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 335.01,
+      "eta_min": 1005.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "4fd67b9431e371f846f9d2bb3bb66018ce4103d82458b656748255f0542269ce",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-6": {
+    "target_id": "ENC-6",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.019,
+      "lon": 89.0388
+    },
+    "drift_prediction": {
+      "lat": 16.99674,
+      "lon": 89.02318,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 335.04,
+      "eta_min": 1005.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "dbc1e997950da92fbc4dcbbc5214d0a19267bdd227f87e0d5a09321600c0a7e5",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-7": {
+    "target_id": "ENC-7",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0191,
+      "lon": 89.0395
+    },
+    "drift_prediction": {
+      "lat": 16.99684,
+      "lon": 89.02388,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 335.01,
+      "eta_min": 1005.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "79542ae68877e23a82527e3b79c64164fab23390540a73f649bc2b173e6e0aa5",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-8": {
+    "target_id": "ENC-8",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0207,
+      "lon": 89.0378
+    },
+    "drift_prediction": {
+      "lat": 16.99844,
+      "lon": 89.02218,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 334.97,
+      "eta_min": 1004.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "6ed0f6f46fba598fb8fca22c70f9d6cf646245a1b5713dc190b5c2c407ac0e6b",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-9": {
+    "target_id": "ENC-9",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0191,
+      "lon": 89.0395
+    },
+    "drift_prediction": {
+      "lat": 16.99684,
+      "lon": 89.02388,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 335.01,
+      "eta_min": 1005.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "668c598924cdd6a89aa29635410b6e6e2fbf6623e8e87c696ecaef0009f434b2",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-10": {
+    "target_id": "ENC-10",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0207,
+      "lon": 89.0378
+    },
+    "drift_prediction": {
+      "lat": 16.99844,
+      "lon": 89.02218,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 334.97,
+      "eta_min": 1004.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "9f58cff233291427562e917a9f2bd81a375a30f561ce1a4dc518f6c2197c4bc7",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-11": {
+    "target_id": "ENC-11",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.019,
+      "lon": 89.0388
+    },
+    "drift_prediction": {
+      "lat": 16.99674,
+      "lon": 89.02318,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 335.04,
+      "eta_min": 1005.1
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "9f2087fd2d39a966520b74ebeeab5511fb57e9e449d893ced98bba572fcd7541",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-12": {
+    "target_id": "ENC-12",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0214,
+      "lon": 89.0371
+    },
+    "drift_prediction": {
+      "lat": 16.99914,
+      "lon": 89.02148,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 334.95,
+      "eta_min": 1004.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "2b2081962a390aeb1cd4c8036f1dded30870192fade74069ad40e4e532ea9543",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-13": {
+    "target_id": "ENC-13",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.0214,
+      "lon": 89.0371
+    },
+    "drift_prediction": {
+      "lat": 16.99914,
+      "lon": 89.02148,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 207.9,
+      "distance_nm": 334.95,
+      "eta_min": 1004.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "4448e1d8cbd946c8c77c68ce9f7b492e20a503e61f02e0aef059d7c25666fd25",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-14": {
+    "target_id": "ENC-14",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.6405,
+      "lon": 89.4831
+    },
+    "drift_prediction": {
+      "lat": 17.61824,
+      "lon": 89.46743,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.8,
+      "distance_nm": 290.28,
+      "eta_min": 870.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "3e519a7604248704651eb8308067cdc3d9d8cb7ba4c35001e12a592e20d2713a",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-15": {
+    "target_id": "ENC-15",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.6405,
+      "lon": 89.4831
+    },
+    "drift_prediction": {
+      "lat": 17.61824,
+      "lon": 89.46743,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.8,
+      "distance_nm": 290.28,
+      "eta_min": 870.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "bb67a963f57b60cae781947917dd9e5649d514cba85a695bdb0c6b5e85bee660",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-16": {
+    "target_id": "ENC-16",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.6396,
+      "lon": 89.4861
+    },
+    "drift_prediction": {
+      "lat": 17.61734,
+      "lon": 89.47043,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.7,
+      "distance_nm": 290.25,
+      "eta_min": 870.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "8e5d9b343b7fa00b9f3b823fc2bf8277ee13c204cb2aa87d9ee27a52bdd2cfea",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-17": {
+    "target_id": "ENC-17",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.6396,
+      "lon": 89.4861
+    },
+    "drift_prediction": {
+      "lat": 17.61734,
+      "lon": 89.47043,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.7,
+      "distance_nm": 290.25,
+      "eta_min": 870.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "2bcbb500e06512f86d861ed0a4bbb3f879b40da2e09264a04c474c79631c5c49",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.892844Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-18": {
+    "target_id": "ENC-18",
+    "generated_at_utc": "2026-07-07T17:04:20.892844+00:00",
+    "last_fix": {
+      "lat": 17.6395,
+      "lon": 89.4861
+    },
+    "drift_prediction": {
+      "lat": 17.61724,
+      "lon": 89.47043,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.7,
+      "distance_nm": 290.26,
+      "eta_min": 870.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "8a8e5cdc29265144fc7d53a20bb9a10c4e60b34a84b92265edbce7ff450fd74f",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-19": {
+    "target_id": "ENC-19",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.6395,
+      "lon": 89.4861
+    },
+    "drift_prediction": {
+      "lat": 17.61724,
+      "lon": 89.47043,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 206.7,
+      "distance_nm": 290.26,
+      "eta_min": 870.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "a13451b66bd16090ce8496706f10a4fd88a061e2b712f830c55eca8a9c9b4031",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-20": {
+    "target_id": "ENC-20",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5723,
+      "lon": 89.3024
+    },
+    "drift_prediction": {
+      "lat": 17.55004,
+      "lon": 89.28673,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.2,
+      "distance_nm": 298.58,
+      "eta_min": 895.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "f064b60cc728d043586da48350651af81133e2d60e0e14f99f0238a838e7f654",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-21": {
+    "target_id": "ENC-21",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5723,
+      "lon": 89.3024
+    },
+    "drift_prediction": {
+      "lat": 17.55004,
+      "lon": 89.28673,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.2,
+      "distance_nm": 298.58,
+      "eta_min": 895.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "b900e7324a3107865100de43b69ef773b8f4077bd9b5d22cf04029dc7191ab6f",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-22": {
+    "target_id": "ENC-22",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5729,
+      "lon": 89.3
+    },
+    "drift_prediction": {
+      "lat": 17.55064,
+      "lon": 89.28433,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.2,
+      "distance_nm": 298.61,
+      "eta_min": 895.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "b6067f388adfcb1af8bbfb4c652c4191c12186812018d9d0e325c7e406613a73",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-23": {
+    "target_id": "ENC-23",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5727,
+      "lon": 89.3004
+    },
+    "drift_prediction": {
+      "lat": 17.55044,
+      "lon": 89.28473,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.2,
+      "distance_nm": 298.61,
+      "eta_min": 895.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "1f0a7228b921f54be6f2002543249040bff4fba4a74242f60f9eb251fca87a62",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-24": {
+    "target_id": "ENC-24",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5727,
+      "lon": 89.3004
+    },
+    "drift_prediction": {
+      "lat": 17.55044,
+      "lon": 89.28473,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.2,
+      "distance_nm": 298.61,
+      "eta_min": 895.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "8ba6be85ba2173a0706238cb61f21a26fe744d7b3d66a324d34b24e305a646e9",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-25": {
+    "target_id": "ENC-25",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5729,
+      "lon": 89.3
+    },
+    "drift_prediction": {
+      "lat": 17.55064,
+      "lon": 89.28433,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 208.2,
+      "distance_nm": 298.61,
+      "eta_min": 895.8
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "0bbc38632fa02d52f0f2e1a33579c96f8aac9801d2b031acc388ba0694d9f743",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-26": {
+    "target_id": "ENC-26",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.4525,
+      "lon": 89.1342
+    },
+    "drift_prediction": {
+      "lat": 17.43024,
+      "lon": 89.11854,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 209.2,
+      "distance_nm": 309.44,
+      "eta_min": 928.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "421a9d88007fbaa73b0e3606059f4cb7295b1d4160e6b9f99b94363651ee9661",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-27": {
+    "target_id": "ENC-27",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.4525,
+      "lon": 89.1342
+    },
+    "drift_prediction": {
+      "lat": 17.43024,
+      "lon": 89.11854,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 209.2,
+      "distance_nm": 309.44,
+      "eta_min": 928.3
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "aa4a4491b4a4e1a4b26d5655f13de909c3325024f724f48aa59e23ab9b75621b",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-28": {
+    "target_id": "ENC-28",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.4585,
+      "lon": 89.1336
+    },
+    "drift_prediction": {
+      "lat": 17.43624,
+      "lon": 89.11794,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 209.2,
+      "distance_nm": 309.14,
+      "eta_min": 927.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "b1035ff627acfdde98bd39221b61b021a958093a8785be5661e0fad755bb3ca7",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-29": {
+    "target_id": "ENC-29",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.4585,
+      "lon": 89.1336
+    },
+    "drift_prediction": {
+      "lat": 17.43624,
+      "lon": 89.11794,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 209.2,
+      "distance_nm": 309.14,
+      "eta_min": 927.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "9821d312f174690d6c8794e41252306352eedd085da15f837e0978c58004c6f2",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-30": {
+    "target_id": "ENC-30",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5848,
+      "lon": 89.9209
+    },
+    "drift_prediction": {
+      "lat": 17.56254,
+      "lon": 89.90523,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 201.9,
+      "distance_nm": 283.29,
+      "eta_min": 849.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "bfe5fb10b7ea1059b2c68cb7e927e84ed2a5b4d126af349f01301e70598f1fe0",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-31": {
+    "target_id": "ENC-31",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.5848,
+      "lon": 89.9209
+    },
+    "drift_prediction": {
+      "lat": 17.56254,
+      "lon": 89.90523,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 201.9,
+      "distance_nm": 283.29,
+      "eta_min": 849.9
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "1c60768f18c861e586b6be5e98dfbe71a8d7147172f0516d3ed21d6719da8c39",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-32": {
+    "target_id": "ENC-32",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.2347,
+      "lon": 89.8955
+    },
+    "drift_prediction": {
+      "lat": 17.21244,
+      "lon": 89.87986,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 200.7,
+      "distance_nm": 303.47,
+      "eta_min": 910.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "7456d2deb7974ebb5d7c52a342d01c1da3bd8b67fed46f7acbcc1b16a3cc1173",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-33": {
+    "target_id": "ENC-33",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.2347,
+      "lon": 89.8955
+    },
+    "drift_prediction": {
+      "lat": 17.21244,
+      "lon": 89.87986,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 200.7,
+      "distance_nm": 303.47,
+      "eta_min": 910.4
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "68bdc76acf40d6cd33db1052675750be54796214fbb3e8f7ce3ec96bb8115f80",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-34": {
+    "target_id": "ENC-34",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.0994,
+      "lon": 89.3154
+    },
+    "drift_prediction": {
+      "lat": 17.07714,
+      "lon": 89.29977,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 205.8,
+      "distance_nm": 323.74,
+      "eta_min": 971.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "ca6a4f8817133e7e6f83f9ee3d87a2c0d0b3aad6ab873934a3c3786f2fd52c56",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-35": {
+    "target_id": "ENC-35",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.0994,
+      "lon": 89.3154
+    },
+    "drift_prediction": {
+      "lat": 17.07714,
+      "lon": 89.29977,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 205.8,
+      "distance_nm": 323.74,
+      "eta_min": 971.2
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "6c428be0b129b72af77127caf8d759966e1ed1940ba4aa7677dbd0498898efef",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-36": {
+    "target_id": "ENC-36",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.249,
+      "lon": 89.6446
+    },
+    "drift_prediction": {
+      "lat": 17.22674,
+      "lon": 89.62896,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 203.3,
+      "distance_nm": 307.9,
+      "eta_min": 923.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "c4f684ebada68cb6018ecf516fa995a2abe5811b055f535717d9546174227ba1",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-37": {
+    "target_id": "ENC-37",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.249,
+      "lon": 89.6446
+    },
+    "drift_prediction": {
+      "lat": 17.22674,
+      "lon": 89.62896,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 203.3,
+      "distance_nm": 307.9,
+      "eta_min": 923.7
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "0c3b9368f6258c090bb5144ee7b8e7e2cf3363941a28918ead16d7b45cfb0903",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-38": {
+    "target_id": "ENC-38",
+    "generated_at_utc": "2026-07-07T17:04:20.894375+00:00",
+    "last_fix": {
+      "lat": 17.1754,
+      "lon": 89.9736
+    },
+    "drift_prediction": {
+      "lat": 17.15314,
+      "lon": 89.95796,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 199.7,
+      "distance_nm": 305.32,
+      "eta_min": 916.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "5407686c3c471e520a8c7375e6c9aa3d3a38f1383c4f4a8e021f85f2801ea0f2",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.894375Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
+    }
+  },
+  "ENC-39": {
+    "target_id": "ENC-39",
+    "generated_at_utc": "2026-07-07T17:04:20.896002+00:00",
+    "last_fix": {
+      "lat": 17.1754,
+      "lon": 89.9736
+    },
+    "drift_prediction": {
+      "lat": 17.15314,
+      "lon": 89.95796,
+      "bearing_deg": 213.9,
+      "speed_kn": 1.61,
+      "window_min": 60.0
+    },
+    "intercept": {
+      "bearing_deg": 199.7,
+      "distance_nm": 305.32,
+      "eta_min": 916.0
+    },
+    "nearest_asset": "CG-OPV-101",
+    "evidence_log": [],
+    "chain_of_custody_sha256": "b4a46424bc41748ac14efa9470f5ff87a9e8000670154008cad26cc5e13d7684",
+    "confidence": 0.7,
+    "meta": {
+      "generated_at": "2026-07-07T17:04:20.896002Z",
+      "model_version": "shomudro-interdiction/0.1.0",
+      "confidence": 0.7,
+      "confidence_label": "medium"
     }
   }
 }

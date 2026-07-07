@@ -126,13 +126,14 @@ export default function ShomudroView({ lang }) {
     <div>
       <div className="section-title">
         {t.maritimePicture}
-        {pic && <span className="banner"> · {t.passTime}: {pic.pass_time_utc} · scene {pic.scene_id}</span>}
+        {pic?.source && <span className="realbadge">🛰️ REAL · GFW</span>}
+        {pic && <span className="banner"> · {pic.source ? pic.source : `scene ${pic.scene_id}`}</span>}
       </div>
 
       {pic && (
-        <div className="tiles" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div className="tiles" style={{ gridTemplateColumns: `repeat(${pic.source ? 3 : 4}, 1fr)` }}>
           <div className="tile"><div className="num" style={{ color: '#38bdf8' }}>{pic.counts.ais}</div><div className="lbl">{t.aisTracks}</div></div>
-          <div className="tile"><div className="num" style={{ color: '#94a3b8' }}>{pic.counts.sar}</div><div className="lbl">{t.sarDetections}</div></div>
+          {!pic.source && <div className="tile"><div className="num" style={{ color: '#94a3b8' }}>{pic.counts.sar}</div><div className="lbl">{t.sarDetections}</div></div>}
           <div className="tile bad"><div className="num">{pic.counts.dark}</div><div className="lbl">{t.darkContacts}</div></div>
           <div className="tile warn"><div className="num">{pic.counts.sts}</div><div className="lbl">{t.stsEvents}</div></div>
         </div>
@@ -143,7 +144,7 @@ export default function ShomudroView({ lang }) {
           <div className="map" ref={mapRef} />
           <div className="legend">
             <span><i style={{ background: '#38bdf8' }} />{t.aisTracks}</span>
-            <span><i style={{ background: '#64748b' }} />{t.sarDetections}</span>
+            {!pic?.source && <span><i style={{ background: '#64748b' }} />{t.sarDetections}</span>}
             <span><i style={{ background: '#ef4444' }} />{t.darkContacts}</span>
             <span><i style={{ background: '#f59e0b' }} />{t.stsEvents}</span>
             <span><i style={{ background: '#22c55e' }} />CG patrol</span>

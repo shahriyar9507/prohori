@@ -1,443 +1,4038 @@
 {
-  "generated_at_utc": "2026-07-06T21:45:26.388751+00:00",
-  "scene_id": "S1A_BOB_20260706_AOI1",
-  "pass_time_utc": "2026-07-06T00:10:00Z",
+  "generated_at_utc": "2026-07-07T17:03:57.685828+00:00",
+  "scene_id": "GFW-BOB-REAL",
+  "pass_time_utc": "2026-07-07T17:03:57.685828+00:00",
   "eez_bbox": [
-    88.0,
-    18.0,
-    93.0,
-    22.6
+    87.0,
+    17.0,
+    93.5,
+    23.0
   ],
+  "source": "Global Fishing Watch (satellite AIS) — real Bay of Bengal data",
   "ais_tracks": [
     {
-      "mmsi": "405000111",
-      "name": "Cargo Meghna",
-      "lat": 21.0,
-      "lon": 90.8,
-      "sog": 12.0,
-      "cog": 350.0,
-      "vessel_class": "class_a",
-      "length_m": 180.0
-    },
-    {
-      "mmsi": "405000222",
-      "name": "Tanker Padma",
-      "lat": 20.4,
-      "lon": 90.2,
-      "sog": 11.0,
-      "cog": 20.0,
-      "vessel_class": "class_a",
-      "length_m": 240.0
-    },
-    {
-      "mmsi": "405000333",
-      "name": "Fishing Ilish",
-      "lat": 21.6,
-      "lon": 91.2,
-      "sog": 3.0,
-      "cog": 120.0,
+      "mmsi": "405006627",
+      "name": "FV_EDEN_02",
+      "lat": 20.8932,
+      "lon": 91.5959,
+      "sog": 0.0,
+      "cog": 0.0,
       "vessel_class": "class_b",
-      "length_m": 22.0
+      "length_m": null,
+      "flag": "BGD"
     },
     {
-      "mmsi": "405000444",
-      "name": "Cargo Jamuna",
-      "lat": 19.8,
-      "lon": 89.6,
-      "sog": 13.0,
-      "cog": 15.0,
-      "vessel_class": "class_a",
-      "length_m": 200.0
-    },
-    {
-      "mmsi": "405000555",
-      "name": "Bulk Karnaphuli",
-      "lat": 20.9,
-      "lon": 91.5,
-      "sog": 10.0,
-      "cog": 300.0,
-      "vessel_class": "class_a",
-      "length_m": 190.0
-    },
-    {
-      "mmsi": "405000666",
-      "name": "Fishing Rupsa",
-      "lat": 21.9,
-      "lon": 91.6,
-      "sog": 2.5,
-      "cog": 90.0,
+      "mmsi": "405060000",
+      "name": "JALPORI",
+      "lat": 21.8998,
+      "lon": 91.8081,
+      "sog": 0.0,
+      "cog": 0.0,
       "vessel_class": "class_b",
-      "length_m": 18.0
+      "length_m": null,
+      "flag": "BGD"
     },
     {
-      "mmsi": "405000777",
-      "name": "Container Surma",
-      "lat": 20.2,
-      "lon": 90.9,
-      "sog": 14.0,
-      "cog": 340.0,
-      "vessel_class": "class_a",
-      "length_m": 260.0
-    },
-    {
-      "mmsi": "405000888",
-      "name": "Coaster Feni",
-      "lat": 21.3,
-      "lon": 90.4,
-      "sog": 0.2,
-      "cog": 210.0,
+      "mmsi": "419819198",
+      "name": "KITHION",
+      "lat": 19.9501,
+      "lon": 87.4458,
+      "sog": 0.0,
+      "cog": 0.0,
       "vessel_class": "class_b",
-      "length_m": 60.0
+      "length_m": null,
+      "flag": "IND"
+    },
+    {
+      "mmsi": "356853000",
+      "name": "MAERSK JAKARTA",
+      "lat": 22.1303,
+      "lon": 91.7784,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "PAN"
+    },
+    {
+      "mmsi": "405008815",
+      "name": "FV SILVER SEA",
+      "lat": 21.2444,
+      "lon": 91.7859,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "BGD"
+    },
+    {
+      "mmsi": "417083641",
+      "name": "IMULA 0836 MTR",
+      "lat": 17.0718,
+      "lon": 88.3977,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "417156741",
+      "name": "IMULA 1567 MTR",
+      "lat": 17.6378,
+      "lon": 89.3767,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "417190341",
+      "name": "unknown",
+      "lat": 17.3184,
+      "lon": 88.8069,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "419820096",
+      "name": "THOOTHOOR MATHA",
+      "lat": 19.9897,
+      "lon": 87.8556,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "IND"
+    },
+    {
+      "mmsi": "413098356",
+      "name": "JINTAI296",
+      "lat": 22.2741,
+      "lon": 91.7159,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "CHN"
+    },
+    {
+      "mmsi": "419900160",
+      "name": "MATSYA DRUSTHI",
+      "lat": 19.004,
+      "lon": 87.2765,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "IND"
+    },
+    {
+      "mmsi": "525100571",
+      "name": "DUTA 1",
+      "lat": 19.9541,
+      "lon": 90.1038,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "IDN"
+    },
+    {
+      "mmsi": "312902000",
+      "name": "MIKASA",
+      "lat": 22.1785,
+      "lon": 91.7885,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "BLZ"
+    },
+    {
+      "mmsi": "506006950",
+      "name": "ANAWAR HLWAN 963",
+      "lat": 19.2482,
+      "lon": 93.2779,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "MMR"
+    },
+    {
+      "mmsi": "312697000",
+      "name": "ENZIAN",
+      "lat": 22.1827,
+      "lon": 91.789,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "BLZ"
+    },
+    {
+      "mmsi": "506007010",
+      "name": "ANAWAR HLWAN 951",
+      "lat": 19.2062,
+      "lon": 93.3244,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "MMR"
+    },
+    {
+      "mmsi": "417178641",
+      "name": "IMULA 1786 MTR",
+      "lat": 17.2734,
+      "lon": 88.8559,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "417226541",
+      "name": "IMULA 2265 MTR",
+      "lat": 17.5947,
+      "lon": 89.3772,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "417018926",
+      "name": "IMULA 0189 TCO",
+      "lat": 17.6985,
+      "lon": 89.6807,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "417164141",
+      "name": "unknown",
+      "lat": 17.4442,
+      "lon": 88.8176,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "664513000",
+      "name": "FULL ALWAYS 168",
+      "lat": 19.3277,
+      "lon": 90.1318,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "SYC"
+    },
+    {
+      "mmsi": "664146000",
+      "name": "FARQUHAR NO.1",
+      "lat": 20.038,
+      "lon": 90.7299,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "SYC"
+    },
+    {
+      "mmsi": "417200841",
+      "name": "IMULA 2008 MTR",
+      "lat": 17.0208,
+      "lon": 89.0369,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "LKA"
+    },
+    {
+      "mmsi": "405009322",
+      "name": "FV SHAHPURI 01",
+      "lat": 20.9622,
+      "lon": 91.1121,
+      "sog": 0.0,
+      "cog": 0.0,
+      "vessel_class": "class_b",
+      "length_m": null,
+      "flag": "BGD"
     }
   ],
-  "sar_detections": [
-    {
-      "id": "SAR-01",
-      "lat": 21.001,
-      "lon": 90.801,
-      "length_m": 176.0,
-      "heading": 351.0,
-      "confidence": 0.95
-    },
-    {
-      "id": "SAR-02",
-      "lat": 20.399,
-      "lon": 90.201,
-      "length_m": 238.0,
-      "heading": 21.0,
-      "confidence": 0.96
-    },
-    {
-      "id": "SAR-03",
-      "lat": 21.601,
-      "lon": 91.199,
-      "length_m": 24.0,
-      "heading": 121.0,
-      "confidence": 0.72
-    },
-    {
-      "id": "SAR-04",
-      "lat": 19.799,
-      "lon": 89.602,
-      "length_m": 205.0,
-      "heading": 14.0,
-      "confidence": 0.94
-    },
-    {
-      "id": "SAR-05",
-      "lat": 20.9009,
-      "lon": 91.4991,
-      "length_m": 188.0,
-      "heading": 301.0,
-      "confidence": 0.93
-    },
-    {
-      "id": "SAR-06",
-      "lat": 21.902,
-      "lon": 91.601,
-      "length_m": 17.0,
-      "heading": 92.0,
-      "confidence": 0.68
-    },
-    {
-      "id": "SAR-07",
-      "lat": 20.201,
-      "lon": 90.899,
-      "length_m": 255.0,
-      "heading": 341.0,
-      "confidence": 0.97
-    },
-    {
-      "id": "SAR-08",
-      "lat": 21.301,
-      "lon": 90.401,
-      "length_m": 58.0,
-      "heading": 210.0,
-      "confidence": 0.88
-    },
-    {
-      "id": "SAR-09",
-      "lat": 21.3009,
-      "lon": 90.4009,
-      "length_m": 41.0,
-      "heading": 205.0,
-      "confidence": 0.83
-    },
-    {
-      "id": "SAR-10",
-      "lat": 21.72,
-      "lon": 91.88,
-      "length_m": 26.0,
-      "heading": 150.0,
-      "confidence": 0.79
-    },
-    {
-      "id": "SAR-11",
-      "lat": 20.62,
-      "lon": 92.18,
-      "length_m": 33.0,
-      "heading": 95.0,
-      "confidence": 0.81
-    },
-    {
-      "id": "SAR-12",
-      "lat": 20.05,
-      "lon": 91.6,
-      "length_m": 47.0,
-      "heading": 40.0,
-      "confidence": 0.76
-    }
-  ],
+  "sar_detections": [],
   "dark_vessels": [
     {
       "detection": {
-        "id": "SAR-10",
-        "lat": 21.72,
-        "lon": 91.88,
-        "length_m": 26.0,
-        "heading": 150.0,
-        "confidence": 0.79
+        "id": "GAP-0",
+        "lat": 18.1566,
+        "lon": 89.4419,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
       },
       "matched": false,
       "matched_mmsi": null,
       "match_distance_m": null,
-      "risk_score": 90.0,
+      "risk_score": 82.0,
       "risk_level": "high",
       "reasons": [
-        "Detected in SAR but no matching AIS transmission (dark).",
-        "Inside known trafficking corridor: Outer estuary night route.",
-        "Night pass — reduced visual patrol coverage.",
-        "Small-craft size class (26 m) — common evasion profile."
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: unknown; name: WIN MARINE 12 NET4."
       ],
       "evidence": [
         {
-          "source": "SAR<->AIS fusion",
-          "detail": "Detected in SAR but no matching AIS transmission (dark).",
-          "weight": 0.4,
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
           "url": null
         },
         {
-          "source": "Corridor overlay",
-          "detail": "Inside known trafficking corridor: Outer estuary night route.",
-          "weight": 0.35,
-          "url": null
-        },
-        {
-          "source": "Pass metadata",
-          "detail": "Night pass — reduced visual patrol coverage.",
-          "weight": 0.15,
-          "url": null
-        },
-        {
-          "source": "SAR size estimate",
-          "detail": "Small-craft size class (26 m) — common evasion profile.",
-          "weight": 0.15,
+          "source": "GFW vessel",
+          "detail": "Vessel flag: unknown; name: WIN MARINE 12 NET4.",
+          "weight": 0.3,
           "url": null
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T21:45:26.387752Z",
-        "model_version": "shomudro-darkrisk/0.1.0",
-        "confidence": 0.82,
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
         "confidence_label": "high"
       }
     },
     {
       "detection": {
-        "id": "SAR-11",
-        "lat": 20.62,
-        "lon": 92.18,
-        "length_m": 33.0,
-        "heading": 95.0,
-        "confidence": 0.81
+        "id": "GAP-1",
+        "lat": 17.9308,
+        "lon": 90.4253,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
       },
       "matched": false,
       "matched_mmsi": null,
       "match_distance_m": null,
-      "risk_score": 90.0,
+      "risk_score": 82.0,
       "risk_level": "high",
       "reasons": [
-        "Detected in SAR but no matching AIS transmission (dark).",
-        "Inside known trafficking corridor: Teknaf-St Martin approach.",
-        "Night pass — reduced visual patrol coverage.",
-        "Small-craft size class (33 m) — common evasion profile."
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: CHN; name: 0005-00."
       ],
       "evidence": [
         {
-          "source": "SAR<->AIS fusion",
-          "detail": "Detected in SAR but no matching AIS transmission (dark).",
-          "weight": 0.4,
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
           "url": null
         },
         {
-          "source": "Corridor overlay",
-          "detail": "Inside known trafficking corridor: Teknaf-St Martin approach.",
-          "weight": 0.35,
-          "url": null
-        },
-        {
-          "source": "Pass metadata",
-          "detail": "Night pass — reduced visual patrol coverage.",
-          "weight": 0.15,
-          "url": null
-        },
-        {
-          "source": "SAR size estimate",
-          "detail": "Small-craft size class (33 m) — common evasion profile.",
-          "weight": 0.15,
+          "source": "GFW vessel",
+          "detail": "Vessel flag: CHN; name: 0005-00.",
+          "weight": 0.3,
           "url": null
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T21:45:26.387752Z",
-        "model_version": "shomudro-darkrisk/0.1.0",
-        "confidence": 0.83,
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
         "confidence_label": "high"
       }
     },
     {
       "detection": {
-        "id": "SAR-09",
-        "lat": 21.3009,
-        "lon": 90.4009,
-        "length_m": 41.0,
-        "heading": 205.0,
-        "confidence": 0.83
+        "id": "GAP-2",
+        "lat": 17.9273,
+        "lon": 92.7868,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
       },
       "matched": false,
       "matched_mmsi": null,
       "match_distance_m": null,
-      "risk_score": 55.0,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LKA; name: ROSHAN1-NET5."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LKA; name: ROSHAN1-NET5.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-3",
+        "lat": 19.982,
+        "lon": 88.4164,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: unknown; name: unknown."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: unknown; name: unknown.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-4",
+        "lat": 18.1043,
+        "lon": 91.899,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: unknown; name: ZHANGYUANYU24-13 86%."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: unknown; name: ZHANGYUANYU24-13 86%.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-5",
+        "lat": 19.7552,
+        "lon": 89.1058,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: ITT JAGUAR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: ITT JAGUAR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-6",
+        "lat": 19.6504,
+        "lon": 88.3894,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LBR; name: ANARITA."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LBR; name: ANARITA.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-8",
+        "lat": 20.1917,
+        "lon": 87.8823,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: CG 34."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: CG 34.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-9",
+        "lat": 18.3338,
+        "lon": 90.0919,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: ITT JAGUAR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: ITT JAGUAR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-10",
+        "lat": 20.108,
+        "lon": 90.4173,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LBR; name: GAS ELIXIR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LBR; name: GAS ELIXIR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-11",
+        "lat": 18.4277,
+        "lon": 89.921,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LBR; name: MT STAR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LBR; name: MT STAR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-12",
+        "lat": 20.274,
+        "lon": 87.5707,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: CG 34."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: CG 34.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-13",
+        "lat": 20.1622,
+        "lon": 88.3857,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: CG 34."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: CG 34.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-14",
+        "lat": 19.3979,
+        "lon": 90.8777,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LBR; name: GAS ELIXIR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LBR; name: GAS ELIXIR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-15",
+        "lat": 18.7802,
+        "lon": 89.4497,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: MHL; name: COMMON ATLAS."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: MHL; name: COMMON ATLAS.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-16",
+        "lat": 18.1385,
+        "lon": 88.9104,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: VNM; name: TAN BINH 267."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: VNM; name: TAN BINH 267.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-17",
+        "lat": 17.324,
+        "lon": 90.204,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: MHL; name: PORTHOS."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: MHL; name: PORTHOS.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-18",
+        "lat": 20.565,
+        "lon": 92.0634,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: INLACO BRIGHT."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: INLACO BRIGHT.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-19",
+        "lat": 19.8306,
+        "lon": 92.1962,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LBR; name: SINO OCEAN."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LBR; name: SINO OCEAN.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-20",
+        "lat": 19.2739,
+        "lon": 90.5793,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: MARMARA S."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: MARMARA S.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-21",
+        "lat": 19.6192,
+        "lon": 89.5686,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: HKG; name: XING PING."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: HKG; name: XING PING.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-23",
+        "lat": 18.6877,
+        "lon": 92.3623,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: unknown; name: LONGLINE BUOY 0897%."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: unknown; name: LONGLINE BUOY 0897%.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-24",
+        "lat": 19.5389,
+        "lon": 88.9162,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: ICG 40."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: ICG 40.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-25",
+        "lat": 21.1052,
+        "lon": 90.0016,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: MHL; name: FOLEGANDROS."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: MHL; name: FOLEGANDROS.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-27",
+        "lat": 20.4418,
+        "lon": 88.0117,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: unknown; name: ZHANGYUANYU22-13 91%."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: unknown; name: ZHANGYUANYU22-13 91%.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-28",
+        "lat": 19.4199,
+        "lon": 88.5697,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: unknown; name: LUQINGYUANYU107- 96%."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: unknown; name: LUQINGYUANYU107- 96%.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-29",
+        "lat": 20.2195,
+        "lon": 87.9376,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: MHL; name: ARCH SEALTIEL."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: MHL; name: ARCH SEALTIEL.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-30",
+        "lat": 18.7811,
+        "lon": 90.1952,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: HKG; name: TIGER SPRING."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: HKG; name: TIGER SPRING.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-31",
+        "lat": 18.072,
+        "lon": 90.5173,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: SOL FORTUNE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: SOL FORTUNE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-32",
+        "lat": 20.5466,
+        "lon": 92.1421,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: LOTUS LEADER."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: LOTUS LEADER.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-33",
+        "lat": 17.1916,
+        "lon": 91.2403,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: SOL FORTUNE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: SOL FORTUNE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-34",
+        "lat": 19.6545,
+        "lon": 90.7137,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: SUMMER SKY."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: SUMMER SKY.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-35",
+        "lat": 17.0977,
+        "lon": 92.1388,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: SOL STRIDE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: SOL STRIDE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-36",
+        "lat": 20.4301,
+        "lon": 92.1984,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LBR; name: ARVIKA."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LBR; name: ARVIKA.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-37",
+        "lat": 17.6991,
+        "lon": 92.0608,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: MARMARA S."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: MARMARA S.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-38",
+        "lat": 20.0302,
+        "lon": 90.5499,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: SN QUEEN."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: SN QUEEN.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-39",
+        "lat": 19.1632,
+        "lon": 90.056,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: CHN; name: VI CHI NO 8."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: CHN; name: VI CHI NO 8.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-40",
+        "lat": 19.3384,
+        "lon": 89.4908,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: SGP; name: THERESA."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: SGP; name: THERESA.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-41",
+        "lat": 20.1718,
+        "lon": 90.7359,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: MHL; name: ROWAYTON EAGLE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: MHL; name: ROWAYTON EAGLE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-42",
+        "lat": 19.6572,
+        "lon": 87.8615,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: MHL; name: IRIE IRIS."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: MHL; name: IRIE IRIS.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-43",
+        "lat": 20.3653,
+        "lon": 87.8861,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: ICG 40."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: ICG 40.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-45",
+        "lat": 19.4281,
+        "lon": 90.6963,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: PRIMAVERA II."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: PRIMAVERA II.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-46",
+        "lat": 18.4757,
+        "lon": 87.4014,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: PAN; name: EVER SUPERIOR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: PAN; name: EVER SUPERIOR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-47",
+        "lat": 18.7278,
+        "lon": 92.4692,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: LBR; name: LONGROW."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: LBR; name: LONGROW.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-48",
+        "lat": 20.3052,
+        "lon": 88.2258,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: CG 34."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: CG 34.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-49",
+        "lat": 20.4247,
+        "lon": 90.0899,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: NIU; name: OU BO 7666."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: NIU; name: OU BO 7666.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-50",
+        "lat": 19.5876,
+        "lon": 89.1398,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: KOR; name: ASIAN GRACE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: KOR; name: ASIAN GRACE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-51",
+        "lat": 17.2667,
+        "lon": 87.0557,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: MAT NEPTUNE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: MAT NEPTUNE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-52",
+        "lat": 18.4555,
+        "lon": 87.7411,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: DNK; name: TORM TITAN."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: DNK; name: TORM TITAN.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-54",
+        "lat": 21.2153,
+        "lon": 88.4483,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: ICGS AMRIT KAUR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: ICGS AMRIT KAUR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-55",
+        "lat": 20.8075,
+        "lon": 89.0401,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: IND; name: CG 34."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: IND; name: CG 34.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-56",
+        "lat": 18.6469,
+        "lon": 89.4091,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: MYS; name: ASB MUTIARA 8."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: MYS; name: ASB MUTIARA 8.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-57",
+        "lat": 17.0921,
+        "lon": 90.4928,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: HKG; name: XIN HAITONG 28."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: HKG; name: XIN HAITONG 28.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-58",
+        "lat": 18.8503,
+        "lon": 92.5655,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 82.0,
+      "risk_level": "high",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: CYP; name: CAPE ARAXOS."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: CYP; name: CAPE ARAXOS.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-7",
+        "lat": 18.6887,
+        "lon": 89.262,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 68.0,
       "risk_level": "medium",
       "reasons": [
-        "Detected in SAR but no matching AIS transmission (dark).",
-        "Night pass — reduced visual patrol coverage.",
-        "Small-craft size class (41 m) — common evasion profile."
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: BGD; name: HR AARAI."
       ],
       "evidence": [
         {
-          "source": "SAR<->AIS fusion",
-          "detail": "Detected in SAR but no matching AIS transmission (dark).",
-          "weight": 0.4,
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
           "url": null
         },
         {
-          "source": "Pass metadata",
-          "detail": "Night pass — reduced visual patrol coverage.",
-          "weight": 0.15,
-          "url": null
-        },
-        {
-          "source": "SAR size estimate",
-          "detail": "Small-craft size class (41 m) — common evasion profile.",
-          "weight": 0.15,
+          "source": "GFW vessel",
+          "detail": "Vessel flag: BGD; name: HR AARAI.",
+          "weight": 0.3,
           "url": null
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T21:45:26.387752Z",
-        "model_version": "shomudro-darkrisk/0.1.0",
-        "confidence": 0.75,
+        "generated_at": "2026-07-07T17:04:15.162968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
         "confidence_label": "high"
       }
     },
     {
       "detection": {
-        "id": "SAR-12",
-        "lat": 20.05,
-        "lon": 91.6,
-        "length_m": 47.0,
-        "heading": 40.0,
-        "confidence": 0.76
+        "id": "GAP-22",
+        "lat": 20.2445,
+        "lon": 90.7579,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
       },
       "matched": false,
       "matched_mmsi": null,
       "match_distance_m": null,
-      "risk_score": 40.0,
-      "risk_level": "low",
+      "risk_score": 68.0,
+      "risk_level": "medium",
       "reasons": [
-        "Detected in SAR but no matching AIS transmission (dark).",
-        "Night pass — reduced visual patrol coverage."
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: BGD; name: BNS SHADHINOTA."
       ],
       "evidence": [
         {
-          "source": "SAR<->AIS fusion",
-          "detail": "Detected in SAR but no matching AIS transmission (dark).",
-          "weight": 0.4,
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
           "url": null
         },
         {
-          "source": "Pass metadata",
-          "detail": "Night pass — reduced visual patrol coverage.",
-          "weight": 0.15,
+          "source": "GFW vessel",
+          "detail": "Vessel flag: BGD; name: BNS SHADHINOTA.",
+          "weight": 0.3,
           "url": null
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T21:45:26.387752Z",
-        "model_version": "shomudro-darkrisk/0.1.0",
-        "confidence": 0.63,
-        "confidence_label": "medium"
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-26",
+        "lat": 17.9781,
+        "lon": 92.679,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 68.0,
+      "risk_level": "medium",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: BGD; name: MEGHNA PRIDE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: BGD; name: MEGHNA PRIDE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-44",
+        "lat": 17.6421,
+        "lon": 89.0134,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 68.0,
+      "risk_level": "medium",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: BGD; name: MEGHNA PARADISE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: BGD; name: MEGHNA PARADISE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-53",
+        "lat": 19.537,
+        "lon": 92.4701,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 68.0,
+      "risk_level": "medium",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: BGD; name: MEGHNA PARADISE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: BGD; name: MEGHNA PARADISE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.168968+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "detection": {
+        "id": "GAP-59",
+        "lat": 21.4357,
+        "lon": 91.1641,
+        "length_m": 30.0,
+        "heading": null,
+        "confidence": 0.9
+      },
+      "matched": false,
+      "matched_mmsi": null,
+      "match_distance_m": null,
+      "risk_score": 68.0,
+      "risk_level": "medium",
+      "reasons": [
+        "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+        "Vessel flag: BGD; name: NISHAN."
+      ],
+      "evidence": [
+        {
+          "source": "GFW AIS-gap",
+          "detail": "Real AIS-gap event: vessel stopped transmitting (Global Fishing Watch).",
+          "weight": 0.6,
+          "url": null
+        },
+        {
+          "source": "GFW vessel",
+          "detail": "Vessel flag: BGD; name: NISHAN.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:15.169969+00:00",
+        "model_version": "shomudro-gfw-gap/1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
       }
     }
   ],
   "sts_events": [
     {
-      "id": "STS-7-10",
-      "vessel_a": "Coaster Feni",
-      "vessel_b": "DARK SAR-09",
-      "lat": 21.30045,
-      "lon": 90.40045,
-      "distance_m": 136.8,
-      "duration_min": 42.0,
-      "one_party_dark": true,
-      "risk_level": "high",
+      "id": "ENC-0",
+      "vessel_a": "IMULA 0836 MTR",
+      "vessel_b": "IMULA 0330 KLT",
+      "lat": 17.2649,
+      "lon": 89.3544,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
       "reasons": [
-        "Separation 137 m (< 200 m).",
-        "Loiter duration ~42 min (> 30 min).",
-        "One party is dark (no AIS) — elevated transfer risk."
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0836 MTR (LKA) met IMULA 0330 KLT."
       ],
       "evidence": [
         {
-          "source": "STS rule engine",
-          "detail": "Separation 137 m (< 200 m).",
-          "weight": 0.3,
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
           "url": null
         },
         {
-          "source": "STS rule engine",
-          "detail": "Loiter duration ~42 min (> 30 min).",
-          "weight": 0.3,
-          "url": null
-        },
-        {
-          "source": "STS rule engine",
-          "detail": "One party is dark (no AIS) — elevated transfer risk.",
+          "source": "GFW vessels",
+          "detail": "IMULA 0836 MTR (LKA) met IMULA 0330 KLT.",
           "weight": 0.3,
           "url": null
         }
       ],
       "meta": {
-        "generated_at": "2026-07-06T21:45:26.388751Z",
-        "model_version": "shomudro-sts-rules/0.1.0",
-        "confidence": 0.8,
-        "confidence_label": "high"
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-1",
+      "vessel_a": "IMULA 0330 KLT",
+      "vessel_b": "IMULA 0836 MTR",
+      "lat": 17.2649,
+      "lon": 89.3544,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0330 KLT (LKA) met IMULA 0836 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0330 KLT (LKA) met IMULA 0836 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-2",
+      "vessel_a": "IMULA 1485 MTR",
+      "vessel_b": "IMULA 0836 MTR",
+      "lat": 17.5678,
+      "lon": 89.0925,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1485 MTR (LKA) met IMULA 0836 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1485 MTR (LKA) met IMULA 0836 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-3",
+      "vessel_a": "IMULA 0836 MTR",
+      "vessel_b": "IMULA 1485 MTR",
+      "lat": 17.5678,
+      "lon": 89.0925,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0836 MTR (LKA) met IMULA 1485 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0836 MTR (LKA) met IMULA 1485 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-4",
+      "vessel_a": "IMULA 2008 MTR",
+      "vessel_b": "IMUL-A 1263 MTR",
+      "lat": 17.0192,
+      "lon": 89.0392,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 2008 MTR (LKA) met IMUL-A 1263 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 2008 MTR (LKA) met IMUL-A 1263 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-5",
+      "vessel_a": "IMUL-A 1263 MTR",
+      "vessel_b": "IMULA 2008 MTR",
+      "lat": 17.0192,
+      "lon": 89.0392,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMUL-A 1263 MTR (LKA) met IMULA 2008 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMUL-A 1263 MTR (LKA) met IMULA 2008 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-6",
+      "vessel_a": "CHEJANA  02",
+      "vessel_b": "IMULA 2008 MTR",
+      "lat": 17.019,
+      "lon": 89.0388,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "CHEJANA  02 (?) met IMULA 2008 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "CHEJANA  02 (?) met IMULA 2008 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-7",
+      "vessel_a": "IMULA1828.MTR",
+      "vessel_b": "IMULA 2008 MTR",
+      "lat": 17.0191,
+      "lon": 89.0395,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA1828.MTR (LKA) met IMULA 2008 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA1828.MTR (LKA) met IMULA 2008 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-8",
+      "vessel_a": "IMUL-A 1263 MTR",
+      "vessel_b": "CHEJANA  02",
+      "lat": 17.0207,
+      "lon": 89.0378,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMUL-A 1263 MTR (LKA) met CHEJANA  02."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMUL-A 1263 MTR (LKA) met CHEJANA  02.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-9",
+      "vessel_a": "IMULA 2008 MTR",
+      "vessel_b": "IMULA1828.MTR",
+      "lat": 17.0191,
+      "lon": 89.0395,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 2008 MTR (LKA) met IMULA1828.MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 2008 MTR (LKA) met IMULA1828.MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-10",
+      "vessel_a": "CHEJANA  02",
+      "vessel_b": "IMUL-A 1263 MTR",
+      "lat": 17.0207,
+      "lon": 89.0378,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "CHEJANA  02 (?) met IMUL-A 1263 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "CHEJANA  02 (?) met IMUL-A 1263 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-11",
+      "vessel_a": "IMULA 2008 MTR",
+      "vessel_b": "CHEJANA  02",
+      "lat": 17.019,
+      "lon": 89.0388,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 2008 MTR (LKA) met CHEJANA  02."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 2008 MTR (LKA) met CHEJANA  02.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-12",
+      "vessel_a": "CHEJANA  02",
+      "vessel_b": "IMULA1828.MTR",
+      "lat": 17.0214,
+      "lon": 89.0371,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "CHEJANA  02 (?) met IMULA1828.MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "CHEJANA  02 (?) met IMULA1828.MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-13",
+      "vessel_a": "IMULA1828.MTR",
+      "vessel_b": "CHEJANA  02",
+      "lat": 17.0214,
+      "lon": 89.0371,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA1828.MTR (LKA) met CHEJANA  02."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA1828.MTR (LKA) met CHEJANA  02.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-14",
+      "vessel_a": "IMULA 1282 MTR",
+      "vessel_b": "IMULA 0189 TCO",
+      "lat": 17.6405,
+      "lon": 89.4831,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1282 MTR (LKA) met IMULA 0189 TCO."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1282 MTR (LKA) met IMULA 0189 TCO.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-15",
+      "vessel_a": "IMULA 0189 TCO",
+      "vessel_b": "IMULA 1282 MTR",
+      "lat": 17.6405,
+      "lon": 89.4831,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0189 TCO (LKA) met IMULA 1282 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0189 TCO (LKA) met IMULA 1282 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-16",
+      "vessel_a": "IMULA 0573 NBO",
+      "vessel_b": "IMULA 1282 MTR",
+      "lat": 17.6396,
+      "lon": 89.4861,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0573 NBO (LKA) met IMULA 1282 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0573 NBO (LKA) met IMULA 1282 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-17",
+      "vessel_a": "IMULA 1282 MTR",
+      "vessel_b": "IMULA 0573 NBO",
+      "lat": 17.6396,
+      "lon": 89.4861,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1282 MTR (LKA) met IMULA 0573 NBO."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1282 MTR (LKA) met IMULA 0573 NBO.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-18",
+      "vessel_a": "IMULA 0573 NBO",
+      "vessel_b": "IMULA 0189 TCO",
+      "lat": 17.6395,
+      "lon": 89.4861,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0573 NBO (LKA) met IMULA 0189 TCO."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0573 NBO (LKA) met IMULA 0189 TCO.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-19",
+      "vessel_a": "IMULA 0189 TCO",
+      "vessel_b": "IMULA 0573 NBO",
+      "lat": 17.6395,
+      "lon": 89.4861,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0189 TCO (LKA) met IMULA 0573 NBO."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0189 TCO (LKA) met IMULA 0573 NBO.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-20",
+      "vessel_a": "IMULA 1567 MTR",
+      "vessel_b": "IMULA 1095 GLE",
+      "lat": 17.5723,
+      "lon": 89.3024,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1567 MTR (LKA) met IMULA 1095 GLE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1567 MTR (LKA) met IMULA 1095 GLE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-21",
+      "vessel_a": "IMULA 1095 GLE",
+      "vessel_b": "IMULA 1567 MTR",
+      "lat": 17.5723,
+      "lon": 89.3024,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1095 GLE (LKA) met IMULA 1567 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1095 GLE (LKA) met IMULA 1567 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.834011+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-22",
+      "vessel_a": "IMULA 0646 KLT",
+      "vessel_b": "IMULA 1095 GLE",
+      "lat": 17.5729,
+      "lon": 89.3,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0646 KLT (LKA) met IMULA 1095 GLE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0646 KLT (LKA) met IMULA 1095 GLE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-23",
+      "vessel_a": "IMULA 1567 MTR",
+      "vessel_b": "IMULA 0646 KLT",
+      "lat": 17.5727,
+      "lon": 89.3004,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1567 MTR (LKA) met IMULA 0646 KLT."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1567 MTR (LKA) met IMULA 0646 KLT.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-24",
+      "vessel_a": "IMULA 0646 KLT",
+      "vessel_b": "IMULA 1567 MTR",
+      "lat": 17.5727,
+      "lon": 89.3004,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0646 KLT (LKA) met IMULA 1567 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0646 KLT (LKA) met IMULA 1567 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-25",
+      "vessel_a": "IMULA 1095 GLE",
+      "vessel_b": "IMULA 0646 KLT",
+      "lat": 17.5729,
+      "lon": 89.3,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1095 GLE (LKA) met IMULA 0646 KLT."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1095 GLE (LKA) met IMULA 0646 KLT.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-26",
+      "vessel_a": "IMULA 0773 CHW",
+      "vessel_b": "IMULA 1824 MTR",
+      "lat": 17.4525,
+      "lon": 89.1342,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0773 CHW (LKA) met IMULA 1824 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0773 CHW (LKA) met IMULA 1824 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-27",
+      "vessel_a": "IMULA 1824 MTR",
+      "vessel_b": "IMULA 0773 CHW",
+      "lat": 17.4525,
+      "lon": 89.1342,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1824 MTR (LKA) met IMULA 0773 CHW."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1824 MTR (LKA) met IMULA 0773 CHW.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-28",
+      "vessel_a": "IMULA 0773 CHW",
+      "vessel_b": "IMULA 1095 GLE",
+      "lat": 17.4585,
+      "lon": 89.1336,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0773 CHW (LKA) met IMULA 1095 GLE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0773 CHW (LKA) met IMULA 1095 GLE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-29",
+      "vessel_a": "IMULA 1095 GLE",
+      "vessel_b": "IMULA 0773 CHW",
+      "lat": 17.4585,
+      "lon": 89.1336,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1095 GLE (LKA) met IMULA 0773 CHW."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1095 GLE (LKA) met IMULA 0773 CHW.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-30",
+      "vessel_a": "IMULA2144MTR",
+      "vessel_b": "MTR1617 MAHESH",
+      "lat": 17.5848,
+      "lon": 89.9209,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA2144MTR (LKA) met MTR1617 MAHESH."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA2144MTR (LKA) met MTR1617 MAHESH.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-31",
+      "vessel_a": "MTR1617 MAHESH",
+      "vessel_b": "IMULA2144MTR",
+      "lat": 17.5848,
+      "lon": 89.9209,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "MTR1617 MAHESH (LKA) met IMULA2144MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "MTR1617 MAHESH (LKA) met IMULA2144MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-32",
+      "vessel_a": "IMULA 1411 MTR",
+      "vessel_b": "IMULA 1234 MTR",
+      "lat": 17.2347,
+      "lon": 89.8955,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1411 MTR (LKA) met IMULA 1234 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1411 MTR (LKA) met IMULA 1234 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-33",
+      "vessel_a": "IMULA 1234 MTR",
+      "vessel_b": "IMULA 1411 MTR",
+      "lat": 17.2347,
+      "lon": 89.8955,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1234 MTR (LKA) met IMULA 1411 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1234 MTR (LKA) met IMULA 1411 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-34",
+      "vessel_a": "IMULA 1641 MTR",
+      "vessel_b": "IMULA 0573 TLE",
+      "lat": 17.0994,
+      "lon": 89.3154,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1641 MTR (LKA) met IMULA 0573 TLE."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1641 MTR (LKA) met IMULA 0573 TLE.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-35",
+      "vessel_a": "IMULA 0573 TLE",
+      "vessel_b": "IMULA 1641 MTR",
+      "lat": 17.0994,
+      "lon": 89.3154,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0573 TLE (LKA) met IMULA 1641 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0573 TLE (LKA) met IMULA 1641 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-36",
+      "vessel_a": "IMULA 1411 MTR",
+      "vessel_b": "IMULA 0494 KLT",
+      "lat": 17.249,
+      "lon": 89.6446,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1411 MTR (LKA) met IMULA 0494 KLT."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1411 MTR (LKA) met IMULA 0494 KLT.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-37",
+      "vessel_a": "IMULA 0494 KLT",
+      "vessel_b": "IMULA 1411 MTR",
+      "lat": 17.249,
+      "lon": 89.6446,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 0494 KLT (LKA) met IMULA 1411 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 0494 KLT (LKA) met IMULA 1411 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-38",
+      "vessel_a": "IMULA 1702 MTR",
+      "vessel_b": "IMULA 1282 MTR",
+      "lat": 17.1754,
+      "lon": 89.9736,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1702 MTR (LKA) met IMULA 1282 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1702 MTR (LKA) met IMULA 1282 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
+      }
+    },
+    {
+      "id": "ENC-39",
+      "vessel_a": "IMULA 1282 MTR",
+      "vessel_b": "IMULA 1702 MTR",
+      "lat": 17.1754,
+      "lon": 89.9736,
+      "distance_m": 200.0,
+      "duration_min": 60.0,
+      "one_party_dark": false,
+      "risk_level": "medium",
+      "reasons": [
+        "Real vessel-to-vessel encounter (Global Fishing Watch).",
+        "IMULA 1282 MTR (LKA) met IMULA 1702 MTR."
+      ],
+      "evidence": [
+        {
+          "source": "GFW encounter",
+          "detail": "Real vessel-to-vessel encounter (Global Fishing Watch).",
+          "weight": 0.5,
+          "url": null
+        },
+        {
+          "source": "GFW vessels",
+          "detail": "IMULA 1282 MTR (LKA) met IMULA 1702 MTR.",
+          "weight": 0.3,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-07T17:04:20.835001+00:00",
+        "model_version": "shomudro-gfw-encounter/1.0",
+        "confidence": 0.7,
+        "confidence_label": "medium"
       }
     }
   ],
   "patrol_assets": [
     {
-      "id": "CG-FPB-102",
-      "name": "CG-FPB-102",
+      "id": "CG-OPV-101",
+      "name": "CG-OPV-101",
       "lat": 21.95,
       "lon": 91.75,
       "sog": 20.0
     }
   ],
   "counts": {
-    "ais": 8,
-    "sar": 12,
-    "dark": 4,
-    "sts": 1
+    "ais": 24,
+    "sar": 0,
+    "dark": 60,
+    "sts": 40
   }
 }
