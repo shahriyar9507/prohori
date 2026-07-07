@@ -1,0 +1,24 @@
+# Render Blueprint — free deploy of the PRAHARI FastAPI backend (live Ask-PRAHARI).
+# Usage: on render.com → New → Blueprint → connect the `prohori` repo → it reads
+# this file → set the LLM_API_KEY secret (your Gemini key) → Apply.
+# Then set VITE_API_BASE_URL on the frontend to the resulting URL and redeploy.
+services:
+  - type: web
+    name: prahari-backend
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: LLM_API_KEY          # set in the Render dashboard (secret) — your Gemini key
+        sync: false
+      - key: LLM_BASE_URL
+        value: https://generativelanguage.googleapis.com/v1beta/openai/
+      - key: LLM_MODEL
+        value: gemini-2.5-flash-lite
+      - key: DRISHTI_USE_LIVE_GDELT
+        value: "False"
+      - key: CORS_ORIGINS
+        value: https://frontend-zeta-beryl-51.vercel.app,http://localhost:5173

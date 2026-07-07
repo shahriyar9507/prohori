@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useStrings } from './i18n.js'
 import DrishtiView from './modules/DrishtiView.jsx'
 import RakkhokView from './modules/RakkhokView.jsx'
@@ -13,7 +13,10 @@ const MODULES = [
 export default function App() {
   const [lang, setLang] = useState('en')
   const [active, setActive] = useState('drishti')
+  const [theme, setTheme] = useState('light')   // white mode first
   const t = useStrings(lang)
+
+  useEffect(() => { document.documentElement.setAttribute('data-theme', theme) }, [theme])
 
   return (
     <div className={`app ${lang === 'bn' ? 'lang-bn' : ''}`}>
@@ -38,6 +41,9 @@ export default function App() {
 
         <div className="controls">
           <span className="status-live"><i />LIVE</span>
+          <button className="theme-toggle" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} title="Toggle theme">
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
           <div className="lang-toggle">
             <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>EN</button>
             <button className={lang === 'bn' ? 'active' : ''} onClick={() => setLang('bn')}>বাং</button>

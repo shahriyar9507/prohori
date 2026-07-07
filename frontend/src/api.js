@@ -39,21 +39,25 @@ async function staticAsk(question, language) {
     const hay = [s.event.title, s.event.summary, ...s.event.actors, ...s.event.sectors].join(' ').toLowerCase()
     return qtok.reduce((n, w) => n + (hay.includes(w) ? 1 : 0), 0)
   }
-  const matches = _events.events.map((s) => [scoreOf(s), s]).filter(([n]) => n > 0)
+  let matches = _events.events.map((s) => [scoreOf(s), s]).filter(([n]) => n > 0)
     .sort((a, b) => b[0] - a[0]).slice(0, 4).map(([, s]) => s)
+  // General question (no keyword hit) → ground on the most relevant live events.
+  const general = matches.length === 0
+  if (general) matches = _events.events.slice(0, 3)
 
   const top = matches[0]
+  const list = matches.slice(0, 3).map((m) => `“${m.event.title}” (${Math.round(m.relevance_score)}/100)`)
   let answer
-  if (!top) {
-    answer = language === 'bn'
-      ? 'এই মুহূর্তে DRISHTI ফিডে এই প্রশ্নের সাথে সরাসরি সম্পর্কিত কোনো ঘটনা পাওয়া যায়নি।'
-      : 'No event directly related to this question is currently in the DRISHTI feed.'
-  } else if (language === 'bn') {
-    answer = `সবচেয়ে প্রাসঙ্গিক ঘটনা: “${top.event.title}” (বাংলাদেশ প্রাসঙ্গিকতা স্কোর ${Math.round(top.relevance_score)}/১০০)। বিস্তারিত সুপারিশের জন্য সংশ্লিষ্ট ঘটনার Do/Avoid ব্রিফ দেখুন।`
+  if (language === 'bn') {
+    answer = general
+      ? `এই মুহূর্তে বাংলাদেশের জন্য সবচেয়ে গুরুত্বপূর্ণ বিষয়গুলো: ${list.join('; ')}। প্রতিটি ঘটনায় ক্লিক করে করণীয়/বর্জনীয় ব্রিফ ও চার্ট দেখুন।`
+      : `সবচেয়ে প্রাসঙ্গিক ঘটনা: “${top.event.title}” (স্কোর ${Math.round(top.relevance_score)}/১০০)। বিস্তারিত সুপারিশের জন্য এর প্রতিবেদন খুলুন।`
   } else {
-    answer = `The most relevant event is “${top.event.title}” (Bangladesh Relevance ${Math.round(top.relevance_score)}/100, severity ${top.severity}). ${top.event.summary} Open that event's Do/Avoid brief for specific recommendations.`
+    answer = general
+      ? `The most pressing items for Bangladesh right now: ${list.join('; ')}. Open any event for its Do/Avoid brief, charts, and evidence.`
+      : `The most relevant event is “${top.event.title}” (Bangladesh Relevance ${Math.round(top.relevance_score)}/100, severity ${top.severity}). ${top.event.summary} Open its report for specific recommendations.`
   }
-  const conf = Math.min(0.9, 0.3 + matches.length * 0.2)
+  const conf = general ? 0.55 : Math.min(0.9, 0.3 + matches.length * 0.2)
   return {
     question, language, answer,
     referenced_events: matches.map((s) => s.event.id),
@@ -87,8 +91,16 @@ export const api = {
     }
     return get(`/api/drishti/events/${encodeURIComponent(eventId)}/brief?language=${language}`)
   },
-  ask: async (question, language = 'en') =>
-    STATIC ? staticAsk(question, language) : post('/api/drishti/ask', { question, language }),
+  econ: () => jget(`${import.meta.env.BASE_URL}demo/drishti/econ.json`),
+  ask: async (question, language = 'en') => {
+    // Prefer a live backend (real Gemini) when configured; fall back to the
+    // client-side grounded answer so the demo never breaks.
+    const base = import.meta.env.VITE_API_BASE_URL
+    if (base) {
+      try { return await post('/api/drishti/ask', { question, language }) } catch { /* fall through */ }
+    }
+    return STATIC ? staticAsk(question, language) : post('/api/drishti/ask', { question, language })
+  },
 
   // RAKKHOK
   readiness: () => (STATIC ? demo('rakkhok/readiness.json') : get('/api/rakkhok/readiness')),

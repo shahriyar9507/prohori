@@ -1,22 +1,415 @@
 {
-  "evt-2026-0701-teesta:en": {
-    "event_id": "evt-2026-0701-teesta",
-    "title": "India and Bangladesh resume Teesta water-sharing technical talks",
-    "situation": "Bangladesh and India have resumed technical discussions regarding the sharing of Teesta river water during the dry season. This issue has been a long-standing concern, particularly for agricultural activities in northern Bangladesh.",
-    "why_it_matters": "The resumption of these talks is significant for Bangladesh as the Teesta river's dry-season flow directly impacts its agricultural sector, a key component of the national economy. A resolution could improve agricultural productivity and livelihoods in affected regions. Conversely, continued delays or an unfavorable agreement could exacerbate water scarcity issues, potentially leading to economic strain and social challenges in northern Bangladesh. This also has implications for broader bilateral relations, as water-sharing agreements are often sensitive diplomatic issues.",
+  "evt-bangladesh-to-import-three-more-lng-shipment:en": {
+    "event_id": "evt-bangladesh-to-import-three-more-lng-shipment",
+    "title": "Bangladesh to import three more LNG shipments to beat energy crisis",
+    "situation": "Bangladesh is scheduled to import three additional shipments of Liquefied Natural Gas (LNG) as a measure to address its current energy crisis.",
+    "why_it_matters": "This trade decision directly impacts Bangladesh's energy sector by aiming to stabilize domestic supply, with first-order effects on energy availability and second-order implications for national economic stability and resource management, indicating a critical national concern.",
     "do": [
+      {
+        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
+        "rationale": "[trade] national-interest action.",
+        "citations": [
+          "PREC-TRADE-DIVERSIFY"
+        ]
+      },
+      {
+        "action": "Open early technical engagement with the counterpart to shape the outcome.",
+        "rationale": "[trade] national-interest action.",
+        "citations": [
+          "PREC-REGIONAL-CONNECTIVITY"
+        ]
+      },
+      {
+        "action": "Review energy-import route exposure and near-term supply cover.",
+        "rationale": "[energy] national-interest action.",
+        "citations": [
+          "PREC-INFRA-DEBT"
+        ]
+      }
+    ],
+    "avoid": [
+      {
+        "action": "Avoid reactive public statements before the trade impact is quantified.",
+        "rationale": "[trade] risk to avoid.",
+        "citations": [
+          "PREC-TRADE-DIVERSIFY"
+        ]
+      },
+      {
+        "action": "Avoid committing to financing terms before a debt-sustainability review.",
+        "rationale": "[energy] risk to avoid.",
+        "citations": [
+          "PREC-INFRA-DEBT"
+        ]
+      }
+    ],
+    "hedges": [
+      "Accelerate market and product diversification to reduce single-buyer dependence.",
+      "Diversify supply routes and maintain strategic reserves."
+    ],
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
+    "refused": false,
+    "refusal_reason": null,
+    "evidence": [
+      {
+        "source": "Actor analysis",
+        "detail": "Bangladesh is a direct party to this event.",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Sector analysis",
+        "detail": "Touches the 'trade' sector (high national-interest weight).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "Geographic analysis",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "Magnitude analysis",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · infrastructure financing",
+        "detail": "Large infrastructure financing and debt sustainability: Major externally-financed infrastructure can advance connectivity but warrants scrutiny of financing terms, debt sustainability, and strategic control clauses before commitment.",
+        "weight": 0.5,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · regional cooperation",
+        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
+        "weight": 0.5,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · trade-exposure analysis",
+        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
+        "weight": 0.5,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-07T22:41:32.000295Z",
+      "model_version": "drishti-doavoid/0.1.0",
+      "confidence": 0.81,
+      "confidence_label": "high"
+    },
+    "narrative_source": "llm"
+  },
+  "evt-bangladesh-to-import-three-more-lng-shipment:bn": {
+    "event_id": "evt-bangladesh-to-import-three-more-lng-shipment",
+    "title": "Bangladesh to import three more LNG shipments to beat energy crisis",
+    "situation": "বাংলাদেশ তার জ্বালানি সংকট মোকাবিলায় আরও তিনটি এলএনজি চালান আমদানি করবে।",
+    "why_it_matters": "এই পদক্ষেপটি বাংলাদেশের",
+    "do": [
+      {
+        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
+        "rationale": "[trade] national-interest action.",
+        "citations": [
+          "PREC-TRADE-DIVERSIFY"
+        ]
+      },
+      {
+        "action": "Open early technical engagement with the counterpart to shape the outcome.",
+        "rationale": "[trade] national-interest action.",
+        "citations": [
+          "PREC-REGIONAL-CONNECTIVITY"
+        ]
+      },
+      {
+        "action": "Review energy-import route exposure and near-term supply cover.",
+        "rationale": "[energy] national-interest action.",
+        "citations": [
+          "PREC-INFRA-DEBT"
+        ]
+      }
+    ],
+    "avoid": [
+      {
+        "action": "Avoid reactive public statements before the trade impact is quantified.",
+        "rationale": "[trade] risk to avoid.",
+        "citations": [
+          "PREC-TRADE-DIVERSIFY"
+        ]
+      },
+      {
+        "action": "Avoid committing to financing terms before a debt-sustainability review.",
+        "rationale": "[energy] risk to avoid.",
+        "citations": [
+          "PREC-INFRA-DEBT"
+        ]
+      }
+    ],
+    "hedges": [
+      "Accelerate market and product diversification to reduce single-buyer dependence.",
+      "Diversify supply routes and maintain strategic reserves."
+    ],
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
+    "refused": false,
+    "refusal_reason": null,
+    "evidence": [
+      {
+        "source": "Actor analysis",
+        "detail": "Bangladesh is a direct party to this event.",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Sector analysis",
+        "detail": "Touches the 'trade' sector (high national-interest weight).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "Geographic analysis",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "Magnitude analysis",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · infrastructure financing",
+        "detail": "Large infrastructure financing and debt sustainability: Major externally-financed infrastructure can advance connectivity but warrants scrutiny of financing terms, debt sustainability, and strategic control clauses before commitment.",
+        "weight": 0.5,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · regional cooperation",
+        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
+        "weight": 0.5,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · trade-exposure analysis",
+        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
+        "weight": 0.5,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-07T22:41:40.980516Z",
+      "model_version": "drishti-doavoid/0.1.0",
+      "confidence": 0.81,
+      "confidence_label": "high"
+    },
+    "narrative_source": "llm"
+  },
+  "evt-china-backs-bangladeshs-teesta-project-brush:en": {
+    "event_id": "evt-china-backs-bangladeshs-teesta-project-brush",
+    "title": "China Backs Bangladeshs Teesta Project, Brushes Aside Indias Security Concerns",
+    "situation": "China has expressed support for a Teesta project in Bangladesh, while simultaneously dismissing security concerns raised by India regarding the same project.",
+    "why_it_matters": "This development signifies Bangladesh's progress in securing foreign backing for a critical water sector initiative. The dismissal of India's security concerns by China indicates potential geopolitical implications and highlights the involvement of multiple foreign states in Bangladesh's strategic projects, impacting regional security dynamics.",
+    "do": [
+      {
+        "action": "Verify facts through the established border-liaison mechanism before acting.",
+        "rationale": "[security] national-interest action.",
+        "citations": [
+          "PREC-BORDER-DEESCALATE"
+        ]
+      },
+      {
+        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
+        "rationale": "[security] national-interest action.",
+        "citations": [
+          "PREC-BORDER-DEESCALATE"
+        ]
+      },
       {
         "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
         "rationale": "[water] national-interest action.",
         "citations": [
           "PREC-WATER-TRANSBOUNDARY"
         ]
+      }
+    ],
+    "avoid": [
+      {
+        "action": "Avoid public escalation before verification.",
+        "rationale": "[security] risk to avoid.",
+        "citations": [
+          "PREC-BORDER-DEESCALATE"
+        ]
       },
       {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
         "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "hedges": [
+      "Prepare contingency posture while prioritizing de-escalation.",
+      "Advance domestic water-storage and efficiency measures in parallel."
+    ],
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
+    "refused": false,
+    "refusal_reason": null,
+    "evidence": [
+      {
+        "source": "Actor analysis",
+        "detail": "Bangladesh is a direct party to this event.",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Sector analysis",
+        "detail": "Touches the 'security' sector (high national-interest weight).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "Geographic analysis",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "Magnitude analysis",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · border management",
+        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
+        "weight": 0.5,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
+        "weight": 0.5,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-07T22:41:50.158475Z",
+      "model_version": "drishti-doavoid/0.1.0",
+      "confidence": 0.71,
+      "confidence_label": "medium"
+    },
+    "narrative_source": "llm"
+  },
+  "evt-china-backs-bangladeshs-teesta-project-brush:bn": {
+    "event_id": "evt-china-backs-bangladeshs-teesta-project-brush",
+    "title": "China Backs Bangladeshs Teesta Project, Brushes Aside Indias Security Concerns",
+    "situation": "চীন বাংলাদেশের তিস্তা প্রকল্পে সমর্থন জানিয়েছে এবং ভারতের নিরাপত্তা উদ্বেগ উপেক্ষা করেছে। এই ঘটনাটি বাংলাদেশ, ভারত ও চীনের মধ্যে জল ও নিরাপত্তা খাতে সম্পর্ককে প্রভাবিত করছে।",
+    "why_it_matters": "বাংলাদেশের তিস্তা প্রকল্পের জন্য চীনের সমর্থন দেশের জলসম্পদ ব্যবস্থাপনার ক্ষেত্রে সরাসরি প্রভাব ফেলবে। একইসাথে, ভারতের নিরাপত্তা উদ্বেগ উপেক্ষা করার বিষয়টি বাংলাদেশ-ভারত দ্বিপাক্ষিক সম্পর্কে সম্ভাব্য ভূ-রাজনৈতিক প্রভাব ফেলবে, যা বাংলাদেশের জন্য সতর্ক কূটনৈতিক পদক্ষেপের প্রয়োজনীয়তা তৈরি করতে পারে।",
+    "do": [
+      {
+        "action": "Verify facts through the established border-liaison mechanism before acting.",
+        "rationale": "[security] national-interest action.",
+        "citations": [
+          "PREC-BORDER-DEESCALATE"
+        ]
+      },
+      {
+        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
+        "rationale": "[security] national-interest action.",
+        "citations": [
+          "PREC-BORDER-DEESCALATE"
+        ]
+      },
+      {
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "avoid": [
+      {
+        "action": "Avoid public escalation before verification.",
+        "rationale": "[security] risk to avoid.",
+        "citations": [
+          "PREC-BORDER-DEESCALATE"
+        ]
+      },
+      {
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "hedges": [
+      "Prepare contingency posture while prioritizing de-escalation.",
+      "Advance domestic water-storage and efficiency measures in parallel."
+    ],
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
+    "refused": false,
+    "refusal_reason": null,
+    "evidence": [
+      {
+        "source": "Actor analysis",
+        "detail": "Bangladesh is a direct party to this event.",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Sector analysis",
+        "detail": "Touches the 'security' sector (high national-interest weight).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "Geographic analysis",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "Magnitude analysis",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · border management",
+        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
+        "weight": 0.5,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
+        "weight": 0.5,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-07T22:42:04.439209Z",
+      "model_version": "drishti-doavoid/0.1.0",
+      "confidence": 0.71,
+      "confidence_label": "medium"
+    },
+    "narrative_source": "llm"
+  },
+  "evt-bangladesh-seeks-china-s-backing-for-teesta:en": {
+    "event_id": "evt-bangladesh-seeks-china-s-backing-for-teesta",
+    "title": "Bangladesh seeks China’s backing for Teesta river project, raising concerns over India ties",
+    "situation": "Bangladesh is seeking China's support for a project on the Teesta river, an action that has generated concerns regarding Bangladesh's relationship with India.",
+    "why_it_matters": "This development directly impacts Bangladesh's diplomatic ties with India, potentially creating strain over a shared water resource. A second-order effect could be a shift in regional strategic dynamics, influencing Bangladesh's balancing act between major powers and future cooperation on transboundary rivers.",
+    "do": [
+      {
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
         ]
       }
     ],
@@ -27,18 +420,10 @@
         "citations": [
           "PREC-WATER-TRANSBOUNDARY"
         ]
-      },
-      {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
       }
     ],
     "hedges": [
-      "Advance domestic water-storage and efficiency measures in parallel.",
-      "Keep parallel channels open with all major partners."
+      "Advance domestic water-storage and efficiency measures in parallel."
     ],
     "decision_window": "Hours to a few days — this sits inside an active decision window.",
     "refused": false,
@@ -64,14 +449,8 @@
       },
       {
         "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=4.0, tone=1.5); stronger cooperation or conflict raises significance.",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
         "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
         "url": null
       },
       {
@@ -82,31 +461,24 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T21:42:19.736231Z",
+      "generated_at": "2026-07-07T22:42:36.472727Z",
       "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
+      "confidence": 0.61,
+      "confidence_label": "medium"
     },
     "narrative_source": "llm"
   },
-  "evt-2026-0701-teesta:bn": {
-    "event_id": "evt-2026-0701-teesta",
-    "title": "India and Bangladesh resume Teesta water-sharing technical talks",
-    "situation": "ভারত ও বাংলাদেশের জলসম্পদ কর্মকর্তারা শুষ্ক মৌসুমে তিস্তা নদীর জলবন্টন নিয়ে কারিগরি আলোচনা পুনরায় শুরু করেছেন। এই বিষয়টি দীর্ঘকাল ধরে অমীমাংসিত ছিল এবং বাংলাদেশের উত্তরাঞ্চলের কৃষিকাজকে প্রভাবিত করে।",
-    "why_it_matters": "তিস্তা নদীর জলবন্টন নিয়ে আলোচনা পুনরায় শুরু হওয়া বাংলাদেশের জন্য গুরুত্বপূর্ণ কারণ এটি উত্তরাঞ্চলের কৃষিকাজের উপর সরাসরি প্রভাব ফেলে। এই আলোচনা সফল হলে শুষ্ক মৌসুমে জল সরবরাহের নিশ্চয়তা পাওয়া যাবে, যা কৃষকদের জন্য অত্যন্ত জরুরি। এটি দুই দেশের মধ্যে দ্বিপাক্ষিক সম্পর্ককেও শক্তিশালী করবে এবং ভবিষ্যতে অন্যান্য জলসম্পদ সংক্রান্ত বিষয়ে সহযোগিতার পথ খুলে দেবে। প্রথমত, কৃষিক্ষেত্রে স্থিতিশীলতা আসবে। দ্বিতীয়ত, এটি আঞ্চলিক জল ব্যবস্থাপনায় বাংলাদেশের অবস্থানকে দৃঢ় করবে।",
+  "evt-bangladesh-seeks-china-s-backing-for-teesta:bn": {
+    "event_id": "evt-bangladesh-seeks-china-s-backing-for-teesta",
+    "title": "Bangladesh seeks China’s backing for Teesta river project, raising concerns over India ties",
+    "situation": "SITUATION: বাংলাদেশ তিস্তা নদী প্রকল্পের জন্য চীনের সমর্থন চাইছে। এই পদক্ষেপ ভারতের সাথে বাংলাদেশের সম্পর্কের বিষয়ে উদ্বেগ সৃষ্টি করছে।",
+    "why_it_matters": "ANALYSIS",
     "do": [
       {
         "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
         "rationale": "[water] national-interest action.",
         "citations": [
           "PREC-WATER-TRANSBOUNDARY"
-        ]
-      },
-      {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
         ]
       }
     ],
@@ -117,18 +489,10 @@
         "citations": [
           "PREC-WATER-TRANSBOUNDARY"
         ]
-      },
-      {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
       }
     ],
     "hedges": [
-      "Advance domestic water-storage and efficiency measures in parallel.",
-      "Keep parallel channels open with all major partners."
+      "Advance domestic water-storage and efficiency measures in parallel."
     ],
     "decision_window": "Hours to a few days — this sits inside an active decision window.",
     "refused": false,
@@ -154,14 +518,8 @@
       },
       {
         "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=4.0, tone=1.5); stronger cooperation or conflict raises significance.",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
         "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
         "url": null
       },
       {
@@ -172,577 +530,38 @@
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T21:42:28.635355Z",
+      "generated_at": "2026-07-07T22:42:46.322091Z",
       "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0703-port:en": {
-    "event_id": "evt-2026-0703-port",
-    "title": "Foreign consortium proposes deep-sea port investment on Bay of Bengal coast",
-    "situation": "A foreign consortium has submitted a financing proposal for the development of deep-sea port and logistics infrastructure situated along the Bay of Bengal coast. The consortium cited ambitions related to regional trade corridors as the basis for their proposal.",
-    "why_it_matters": "This development is highly relevant to Bangladesh due to its strategic location on the Bay of Bengal and its potential to enhance regional trade connectivity. The proposed port could significantly boost Bangladesh's trade capacity and economic growth, potentially attracting further foreign investment. From a security perspective, increased maritime infrastructure could bolster Bangladesh's naval presence and influence in the Bay of Bengal. The energy sector could also benefit through improved logistics for energy imports and exports. The involvement of a foreign consortium, particularly given the mention of regional trade corridors, necessitates careful consideration of Bangladesh's strategic interests and potential geopolitical implications.",
-    "do": [
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Verify facts through the established border-liaison mechanism before acting.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Review energy-import route exposure and near-term supply cover.",
-        "rationale": "[energy] national-interest action.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Avoid public escalation before verification.",
-        "rationale": "[security] risk to avoid.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Avoid committing to financing terms before a debt-sustainability review.",
-        "rationale": "[energy] risk to avoid.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence.",
-      "Prepare contingency posture while prioritizing de-escalation.",
-      "Diversify supply routes and maintain strategic reserves."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=3.4, tone=0.5); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · border management",
-        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · infrastructure financing",
-        "detail": "Large infrastructure financing and debt sustainability: Major externally-financed infrastructure can advance connectivity but warrants scrutiny of financing terms, debt sustainability, and strategic control clauses before commitment.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:42:37.398938Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.95,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0703-port:bn": {
-    "event_id": "evt-2026-0703-port",
-    "title": "Foreign consortium proposes deep-sea port investment on Bay of Bengal coast",
-    "situation": "একটি আন্তর্জাতিক কনসোর্টিয়াম বঙ্গোপসাগরের উপকূলে একটি গভীর সমুদ্র বন্দর এবং লজিস্টিক অবকাঠামো নির্মাণের জন্য একটি অর্থায়নের প্রস্তাব পেশ করেছে, যা আঞ্চলিক বাণিজ্য করিডোর প্রতিষ্ঠার উচ্চাকাঙ্ক্ষা দ্বারা চালিত।",
-    "why_it_matters": "এই প্রস্তাবটি বাংলাদেশের জন্য উল্লেখযোগ্য কারণ এটি আঞ্চলিক বাণিজ্য ও নিরাপত্তা উভয় ক্ষেত্রেই প্রভাব ফেলতে পারে। প্রথমত, এটি বাংলাদেশের অর্থনীতিতে নতুন বাণিজ্য পথ খুলে দিতে পারে এবং অর্থনৈতিক প্রবৃদ্ধি বাড়াতে পারে। দ্বিতীয়ত, এই ধরনের অবকাঠামো নির্মাণ আঞ্চলিক নিরাপত্তা পরিস্থিতিতে পরিবর্তন আনতে পারে, যা বাংলাদেশের কৌশলগত অবস্থানকে আরও গুরুত্বপূর্ণ করে তুলবে।",
-    "do": [
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Verify facts through the established border-liaison mechanism before acting.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Review energy-import route exposure and near-term supply cover.",
-        "rationale": "[energy] national-interest action.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Avoid public escalation before verification.",
-        "rationale": "[security] risk to avoid.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Avoid committing to financing terms before a debt-sustainability review.",
-        "rationale": "[energy] risk to avoid.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence.",
-      "Prepare contingency posture while prioritizing de-escalation.",
-      "Diversify supply routes and maintain strategic reserves."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=3.4, tone=0.5); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · border management",
-        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · infrastructure financing",
-        "detail": "Large infrastructure financing and debt sustainability: Major externally-financed infrastructure can advance connectivity but warrants scrutiny of financing terms, debt sustainability, and strategic control clauses before commitment.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:42:46.037510Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.95,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0702-labour:en": {
-    "event_id": "evt-2026-0702-labour",
-    "title": "Gulf state announces revised overseas-worker quota policy",
-    "situation": "Saudi Arabia, a significant destination for Bangladeshi overseas workers, has announced a revised recruitment quota framework for South Asian laborers.",
-    "why_it_matters": "This policy change by Saudi Arabia directly impacts Bangladesh's labor sector by potentially altering the number of its citizens who can seek employment there. A significant consequence for Bangladesh would be the effect on remittance inflows, a crucial component of its foreign exchange reserves and national income. This could necessitate diplomatic engagement to understand the specifics of the revised policy and its implications for Bangladeshi workers and the national economy.",
-    "do": [
-      {
-        "action": "Engage the destination country's labour ministry to clarify and shape the policy.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Model the remittance and balance-of-payments impact across scenarios.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid assuming the change is permanent before official clarification.",
-        "rationale": "[labour] risk to avoid.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "hedges": [
-      "Expand recruitment channels to additional destination markets to spread risk.",
-      "Keep parallel channels open with all major partners."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'labour' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Occurs in the immediate South Asia / Indian Ocean region.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=2.0, tone=-1.0); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · remittance exposure",
-        "detail": "Remittance dependence on a small set of destinations: Overseas-worker remittances are a primary source of foreign exchange; quota or policy changes in a major destination country transmit quickly to the balance of payments, making destination diversification strategic.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:42:53.884935Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0702-labour:bn": {
-    "event_id": "evt-2026-0702-labour",
-    "title": "Gulf state announces revised overseas-worker quota policy",
-    "situation": "সৌদি আরব দক্ষিণ এশীয় শ্রমিকদের জন্য একটি সংশোধিত নিয়োগ-কোটাসংক্রান্ত নীতি ঘোষণা করেছে।",
-    "why_it_matters": "এই নীতি বাংলাদেশের জন্য গুরুত্বপূর্ণ কারণ এটি সৌদি আরবে কর্মরত বাংলাদেশি শ্রমিকদের সংখ্যা এবং তাদের পাঠানো রেমিটেন্সের উপর প্রভাব ফেলতে পারে। এর ফলে বাংলাদেশের বৈদেশিক মুদ্রার রিজার্ভ এবং শ্রমবাজারের উপর প্রথম ও দ্বিতীয় স্তরের প্রভাব পড়তে পারে।",
-    "do": [
-      {
-        "action": "Engage the destination country's labour ministry to clarify and shape the policy.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Model the remittance and balance-of-payments impact across scenarios.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid assuming the change is permanent before official clarification.",
-        "rationale": "[labour] risk to avoid.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "hedges": [
-      "Expand recruitment channels to additional destination markets to spread risk.",
-      "Keep parallel channels open with all major partners."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'labour' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Occurs in the immediate South Asia / Indian Ocean region.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=2.0, tone=-1.0); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · remittance exposure",
-        "detail": "Remittance dependence on a small set of destinations: Overseas-worker remittances are a primary source of foreign exchange; quota or policy changes in a major destination country transmit quickly to the balance of payments, making destination diversification strategic.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:43:02.332790Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0705-border:en": {
-    "event_id": "evt-2026-0705-border",
-    "title": "Reported cross-border security incident along the Myanmar frontier",
-    "situation": "Local authorities reported a security incident near the Bangladesh-Myanmar border, leading to increased patrol activity in the area.",
-    "why_it_matters": "This incident along the Myanmar frontier raises security concerns for Bangladesh, potentially impacting border management and regional stability. Heightened patrols suggest a need to monitor the situation closely to prevent any spillover effects that could affect national security or lead to increased refugee flows.",
-    "do": [
-      {
-        "action": "Verify facts through the established border-liaison mechanism before acting.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid public escalation before verification.",
-        "rationale": "[security] risk to avoid.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      }
-    ],
-    "hedges": [
-      "Prepare contingency posture while prioritizing de-escalation."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'security' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=-6.5, tone=-4.2); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · border management",
-        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:43:10.240641Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.7,
+      "confidence": 0.61,
       "confidence_label": "medium"
     },
     "narrative_source": "llm"
   },
-  "evt-2026-0705-border:bn": {
-    "event_id": "evt-2026-0705-border",
-    "title": "Reported cross-border security incident along the Myanmar frontier",
-    "situation": "বাংলাদেশের মিয়ানমার সীমান্ত অঞ্চলে একটি নিরাপত্তা সংক্রান্ত ঘটনা ঘটেছে বলে স্থানীয় কর্তৃপক্ষ জানিয়েছে, যার ফলে ওই এলাকায় টহল কার্যক্রম বৃদ্ধি করা হয়েছে।",
-    "why_it_matters": "এই ঘটনাটি বাংলাদেশের সীমান্ত নিরাপত্তা এবং আঞ্চলিক স্থিতিশীলতার জন্য তাৎপর্যপূর্ণ। প্রথমত, এটি সীমান্ত এলাকায় উত্তেজনা বাড়াতে পারে এবং দুই দেশের মধ্যে কূটনৈতিক সম্পর্ককে প্রভাবিত করতে পারে। দ্বিতীয়ত, এই ধরনের ঘটনা সীমান্ত পারাপার এবং সংশ্লিষ্ট বাণিজ্যিক কার্যক্রমে বিঘ্ন ঘটাতে পারে, যা বাংলাদেশের অর্থনীতিতে পরোক্ষ প্রভাব ফেলতে পারে। এছাড়াও, এটি রোহিঙ্গা শরণার্থী পরিস্থিতি এবং সীমান্ত ব্যবস্থাপনা সংক্রান্ত বাংলাদেশের নীতিগুলির উপর অতিরিক্ত চাপ সৃষ্টি করতে পারে।",
+  "evt-opinion-why-india-should-be-very-very-alarme:en": {
+    "event_id": "evt-opinion-why-india-should-be-very-very-alarme",
+    "title": "Opinion | Why India Should Be Very, Very Alarmed About China's Teesta Move In Bangladesh",
+    "situation": "SITUATION: An opinion piece discusses a development regarding China's involvement with the Teesta River in Bangladesh, which is",
+    "why_it_matters": "SITUATION: An opinion piece discusses a development regarding China's involvement with the Teesta River in Bangladesh, which is",
     "do": [
       {
-        "action": "Verify facts through the established border-liaison mechanism before acting.",
-        "rationale": "[security] national-interest action.",
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
         "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
+          "PREC-WATER-TRANSBOUNDARY"
         ]
       }
     ],
     "avoid": [
       {
-        "action": "Avoid public escalation before verification.",
-        "rationale": "[security] risk to avoid.",
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
         "citations": [
-          "PREC-BORDER-DEESCALATE"
+          "PREC-WATER-TRANSBOUNDARY"
         ]
       }
     ],
     "hedges": [
-      "Prepare contingency posture while prioritizing de-escalation."
+      "Advance domestic water-storage and efficiency measures in parallel."
     ],
     "decision_window": "Hours to a few days — this sits inside an active decision window.",
     "refused": false,
@@ -756,7 +575,7 @@
       },
       {
         "source": "Sector analysis",
-        "detail": "Touches the 'security' sector (high national-interest weight).",
+        "detail": "Touches the 'water' sector (high national-interest weight).",
         "weight": 0.3,
         "url": null
       },
@@ -768,79 +587,50 @@
       },
       {
         "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=-6.5, tone=-4.2); stronger cooperation or conflict raises significance.",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
         "weight": 0.15,
         "url": null
       },
       {
-        "source": "PRAHARI reference note · border management",
-        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
         "weight": 0.5,
         "url": null
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T21:43:18.591174Z",
+      "generated_at": "2026-07-07T22:42:55.658427Z",
       "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.7,
+      "confidence": 0.61,
       "confidence_label": "medium"
     },
     "narrative_source": "llm"
   },
-  "evt-2026-0630-eu-rmg:en": {
-    "event_id": "evt-2026-0630-eu-rmg",
-    "title": "European Union opens review of garment import preferences",
-    "situation": "The European Union has initiated a scheduled review of its trade-preference arrangements for ready-made garment imports.",
-    "why_it_matters": "This review is significant for Bangladesh as ready-made garments constitute a central component of its export earnings. Any changes to these preferences could impact Bangladesh's export revenue and potentially affect labor conditions within the garment sector. The outcome of this review will be a key factor in determining the future trade relationship between the EU and Bangladesh concerning this vital industry.",
+  "evt-opinion-why-india-should-be-very-very-alarme:bn": {
+    "event_id": "evt-opinion-why-india-should-be-very-very-alarme",
+    "title": "Opinion | Why India Should Be Very, Very Alarmed About China's Teesta Move In Bangladesh",
+    "situation": "SITUATION: একটি মতামত নিবন্ধে বলা হয়েছে যে বাংলাদেশের তিস্তা নদী সংক্রান্ত চীনের পদক্ষেপে ভারতের অত্যন্ত সতর্ক হওয়া উচিত। এটি",
+    "why_it_matters": "SITUATION: একটি মতামত নিবন্ধে বলা হয়েছে যে বাংলাদেশের তিস্তা নদী সংক্রান্ত চীনের পদক্ষেপে ভারতের অত্যন্ত সতর্ক হওয়া উচিত। এটি",
     "do": [
       {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
         "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Engage the destination country's labour ministry to clarify and shape the policy.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Model the remittance and balance-of-payments impact across scenarios.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
+          "PREC-WATER-TRANSBOUNDARY"
         ]
       }
     ],
     "avoid": [
       {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
         "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Avoid assuming the change is permanent before official clarification.",
-        "rationale": "[labour] risk to avoid.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
+          "PREC-WATER-TRANSBOUNDARY"
         ]
       }
     ],
     "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence.",
-      "Expand recruitment channels to additional destination markets to spread risk."
+      "Advance domestic water-storage and efficiency measures in parallel."
     ],
     "decision_window": "Hours to a few days — this sits inside an active decision window.",
     "refused": false,
@@ -854,7 +644,7 @@
       },
       {
         "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
+        "detail": "Touches the 'water' sector (high national-interest weight).",
         "weight": 0.3,
         "url": null
       },
@@ -866,1039 +656,297 @@
       },
       {
         "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=1.0, tone=-0.8); stronger cooperation or conflict raises significance.",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
         "weight": 0.15,
         "url": null
       },
       {
-        "source": "PRAHARI reference note · remittance exposure",
-        "detail": "Remittance dependence on a small set of destinations: Overseas-worker remittances are a primary source of foreign exchange; quota or policy changes in a major destination country transmit quickly to the balance of payments, making destination diversification strategic.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
         "weight": 0.5,
         "url": null
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T21:43:26.736231Z",
+      "generated_at": "2026-07-07T22:43:04.545023Z",
       "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.9,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0630-eu-rmg:bn": {
-    "event_id": "evt-2026-0630-eu-rmg",
-    "title": "European Union opens review of garment import preferences",
-    "situation": "ইউরোপীয় ইউনিয়ন তৈরি পোশাক আমদানির ক্ষেত্রে বাণিজ্য-পছন্দ ব্যবস্থার একটি নির্ধারিত পর্যালোচনা শুরু করেছে, যা বাংলাদেশের রপ্তানি আয়ের একটি প্রধান খাত।",
-    "why_it_matters": "এই পর্যালোচনাটি বাংলাদেশের জন্য অত্যন্ত গুরুত্বপূর্ণ কারণ তৈরি পোশাক দেশটির রপ্তানি আয়ের একটি বড় অংশ। যদি এই পর্যালোচনায় আমদানির ক্ষেত্রে কোনো পরিবর্তন আনা হয়, তবে তা বাংলাদেশের পোশাক শিল্পের প্রতিযোগিতা সক্ষমতা এবং শ্রমিকদের কর্মসংস্থানের উপর প্রভাব ফেলতে পারে। প্রথমত, এটি রপ্তানি আয় এবং বৈদেশিক মুদ্রার উপর সরাসরি প্রভাব ফেলবে। দ্বিতীয়ত, এটি পোশাক শিল্পের উৎপাদন, বিনিয়োগ এবং শ্রমিকদের মজুরি ও কাজের পরিবেশের উপর পরোক্ষ প্রভাব ফেলতে পারে।",
-    "do": [
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Engage the destination country's labour ministry to clarify and shape the policy.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      },
-      {
-        "action": "Model the remittance and balance-of-payments impact across scenarios.",
-        "rationale": "[labour] national-interest action.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Avoid assuming the change is permanent before official clarification.",
-        "rationale": "[labour] risk to avoid.",
-        "citations": [
-          "PREC-LABOUR-REMITTANCE"
-        ]
-      }
-    ],
-    "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence.",
-      "Expand recruitment channels to additional destination markets to spread risk."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=1.0, tone=-0.8); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · remittance exposure",
-        "detail": "Remittance dependence on a small set of destinations: Overseas-worker remittances are a primary source of foreign exchange; quota or policy changes in a major destination country transmit quickly to the balance of payments, making destination diversification strategic.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:43:34.850995Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.9,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0704-shipping:en": {
-    "event_id": "evt-2026-0704-shipping",
-    "title": "Shipping-lane disruption raises freight costs on key export routes",
-    "situation": "Disruption along a major maritime shipping lane has led to increased freight and insurance costs for routes crucial for regional exports and energy imports.",
-    "why_it_matters": "This disruption directly impacts Bangladesh's trade sector by raising the costs of exporting goods and importing energy. Higher freight and insurance expenses can reduce the competitiveness of Bangladeshi exports and increase the cost of essential energy resources, potentially affecting domestic prices and economic stability.",
-    "do": [
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Review energy-import route exposure and near-term supply cover.",
-        "rationale": "[energy] national-interest action.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Avoid committing to financing terms before a debt-sustainability review.",
-        "rationale": "[energy] risk to avoid.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence.",
-      "Diversify supply routes and maintain strategic reserves."
-    ],
-    "decision_window": "Roughly 30–90 days — act within the current staff-work cycle.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "No directly Bangladesh-relevant actor identified.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Occurs outside the immediate region (global spillover only).",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=-4.0, tone=-3.0); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · infrastructure financing",
-        "detail": "Large infrastructure financing and debt sustainability: Major externally-financed infrastructure can advance connectivity but warrants scrutiny of financing terms, debt sustainability, and strategic control clauses before commitment.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:43:42.928305Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.9,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0704-shipping:bn": {
-    "event_id": "evt-2026-0704-shipping",
-    "title": "Shipping-lane disruption raises freight costs on key export routes",
-    "situation": "একটি প্রধান সামুদ্রিক শিপিং রুটে বিঘ্ন ঘটায় আঞ্চলিক রপ্তানি ও জ্বালানি আমদানির রুটে মালবাহী ও বীমা খরচ বৃদ্ধি পেয়েছে।",
-    "why_it_matters": "এই ঘটনা বাংলাদেশের রপ্তানি পণ্যের পরিবহন ব্যয় বাড়াতে পারে এবং জ্বালানি আমদানির খরচও বৃদ্ধি করতে পারে, যা দেশের অর্থনীতিতে প্রভাব ফেলবে।",
-    "do": [
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Review energy-import route exposure and near-term supply cover.",
-        "rationale": "[energy] national-interest action.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Avoid committing to financing terms before a debt-sustainability review.",
-        "rationale": "[energy] risk to avoid.",
-        "citations": [
-          "PREC-INFRA-DEBT"
-        ]
-      }
-    ],
-    "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence.",
-      "Diversify supply routes and maintain strategic reserves."
-    ],
-    "decision_window": "Roughly 30–90 days — act within the current staff-work cycle.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "No directly Bangladesh-relevant actor identified.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Occurs outside the immediate region (global spillover only).",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=-4.0, tone=-3.0); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · infrastructure financing",
-        "detail": "Large infrastructure financing and debt sustainability: Major externally-financed infrastructure can advance connectivity but warrants scrutiny of financing terms, debt sustainability, and strategic control clauses before commitment.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:43:50.999353Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.9,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0629-bimstec:en": {
-    "event_id": "evt-2026-0629-bimstec",
-    "title": "BIMSTEC members discuss regional connectivity framework",
-    "situation": "BIMSTEC member states, including Bangladesh, India, Myanmar, and Thailand, convened a ministerial meeting to discuss a regional connectivity and trade-facilitation framework.",
-    "why_it_matters": "This discussion is highly relevant to Bangladesh as it directly addresses the potential for enhanced regional trade and infrastructure development. Improved connectivity could lead to increased trade volumes, reduced transit times for goods, and greater economic integration for Bangladesh within the Bay of Bengal region. This could also foster stronger diplomatic ties and potentially attract foreign investment, though it may also necessitate adjustments to domestic trade policies and infrastructure to fully capitalize on these opportunities.",
-    "do": [
-      {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      }
-    ],
-    "hedges": [
-      "Keep parallel channels open with all major partners.",
-      "Accelerate market and product diversification to reduce single-buyer dependence."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=5.0, tone=2.4); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:43:58.944925Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0629-bimstec:bn": {
-    "event_id": "evt-2026-0629-bimstec",
-    "title": "BIMSTEC members discuss regional connectivity framework",
-    "situation": "বঙ্গোপসাগরীয় আঞ্চলিক জোটের সদস্য রাষ্ট্রগুলো একটি মন্ত্রী পর্যায়ের বৈঠকে আঞ্চলিক সংযোগ ও বাণিজ্য-সুবিধা বিষয়ক একটি কাঠামোর বিষয়ে আলোচনা করেছে।",
-    "why_it_matters": "এই আলোচনা বাংলাদেশের জন্য গুরুত্বপূর্ণ কারণ এটি আঞ্চলিক বাণিজ্য বৃদ্ধি এবং অর্থনৈতিক সম্পর্ক জোরদার করার সুযোগ তৈরি করতে পারে। প্রথমত, উন্নত সংযোগ ব্যবস্থা বাংলাদেশের পণ্য ও পরিষেবার জন্য নতুন বাজার উন্মুক্ত করতে পারে। দ্বিতীয়ত, এই উদ্যোগের ফলে আঞ্চলিক সরবরাহ শৃঙ্খল শক্তিশালী হতে পারে, যা বাংলাদেশের অর্থনীতিকে আরও স্থিতিশীল করে তুলবে।",
-    "do": [
-      {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      },
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      }
-    ],
-    "hedges": [
-      "Keep parallel channels open with all major partners.",
-      "Accelerate market and product diversification to reduce single-buyer dependence."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=5.0, tone=2.4); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:44:06.846715Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0701-cyclone:en": {
-    "event_id": "evt-2026-0701-cyclone",
-    "title": "Weather agencies track intensifying system in the Bay of Bengal",
-    "situation": "A weather system in the Bay of Bengal is intensifying and may affect coastal areas during the monsoon season.",
-    "why_it_matters": "This intensifying weather system poses a direct threat to Bangladesh's coastal regions, potentially causing damage to infrastructure and displacement of populations. The monsoon period is critical for agriculture, and disruptions could impact food security. Furthermore, increased storm activity in the Bay of Bengal could necessitate enhanced disaster preparedness and response measures, diverting resources and attention from other national priorities.",
-    "do": [
-      {
-        "action": "Confirm early-warning dissemination and pre-position response assets.",
-        "rationale": "[climate] national-interest action.",
-        "citations": [
-          "PREC-CLIMATE-PREPARE"
-        ]
-      },
-      {
-        "action": "Verify facts through the established border-liaison mechanism before acting.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid delaying coastal advisories pending further certainty.",
-        "rationale": "[climate] risk to avoid.",
-        "citations": [
-          "PREC-CLIMATE-PREPARE"
-        ]
-      },
-      {
-        "action": "Avoid public escalation before verification.",
-        "rationale": "[security] risk to avoid.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      }
-    ],
-    "hedges": [
-      "Ready search-and-rescue and relief logistics for rapid activation.",
-      "Prepare contingency posture while prioritizing de-escalation."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'security' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=-2.0, tone=-2.5); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · border management",
-        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · disaster preparedness",
-        "detail": "Cyclone preparedness and coastal readiness: Early-warning lead time and pre-positioned response assets materially reduce loss of life and economic damage during Bay of Bengal cyclone events.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:44:15.039669Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0701-cyclone:bn": {
-    "event_id": "evt-2026-0701-cyclone",
-    "title": "Weather agencies track intensifying system in the Bay of Bengal",
-    "situation": "বঙ্গোপসাগরে একটি আবহাওয়া ব্যবস্থা তীব্রতর হচ্ছে বলে আঞ্চলিক আবহাওয়া সংস্থাগুলো চিহ্নিত করেছে, যা বর্ষা মৌসুমে উপকূলীয় অঞ্চলে প্রভাব ফেলতে পারে।",
-    "why_it_matters": "এই তীব্রতর আবহাওয়া ব্যবস্থাটি বাংলাদেশের উপকূলীয় অঞ্চলে বন্যা, ভূমিধস এবং অবকাঠামোগত ক্ষতির ঝুঁকি বাড়াতে পারে, যা দেশের জলবায়ু সহনশীলতা এবং দুর্যোগ ব্যবস্থাপনা সক্ষমতার উপর চাপ সৃষ্টি করবে। এর ফলে খাদ্য নিরাপত্তা, জনস্বাস্থ্য এবং অর্থনৈতিক কর্মকাণ্ড ব্যাহত হওয়ার সম্ভাবনা রয়েছে, যা বাংলাদেশের নিরাপত্তা ও স্থিতিশীলতার জন্য একটি গুরুত্বপূর্ণ বিষয়।",
-    "do": [
-      {
-        "action": "Confirm early-warning dissemination and pre-position response assets.",
-        "rationale": "[climate] national-interest action.",
-        "citations": [
-          "PREC-CLIMATE-PREPARE"
-        ]
-      },
-      {
-        "action": "Verify facts through the established border-liaison mechanism before acting.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      },
-      {
-        "action": "Maintain proportionate patrol posture and keep diplomatic channels open.",
-        "rationale": "[security] national-interest action.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid delaying coastal advisories pending further certainty.",
-        "rationale": "[climate] risk to avoid.",
-        "citations": [
-          "PREC-CLIMATE-PREPARE"
-        ]
-      },
-      {
-        "action": "Avoid public escalation before verification.",
-        "rationale": "[security] risk to avoid.",
-        "citations": [
-          "PREC-BORDER-DEESCALATE"
-        ]
-      }
-    ],
-    "hedges": [
-      "Ready search-and-rescue and relief logistics for rapid activation.",
-      "Prepare contingency posture while prioritizing de-escalation."
-    ],
-    "decision_window": "Hours to a few days — this sits inside an active decision window.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Bangladesh is a direct party to this event.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'security' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=-2.0, tone=-2.5); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · border management",
-        "detail": "Border-incident de-escalation practice: Localized border incidents are best contained through established border-liaison mechanisms and factual verification before public escalation, preserving space for diplomacy.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · disaster preparedness",
-        "detail": "Cyclone preparedness and coastal readiness: Early-warning lead time and pre-positioned response assets materially reduce loss of life and economic damage during Bay of Bengal cyclone events.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:44:23.127740Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0628-us-tariff:en": {
-    "event_id": "evt-2026-0628-us-tariff",
-    "title": "United States adjusts tariff schedule on selected textile categories",
-    "situation": "The United States has revised its tariff schedule, impacting specific categories of textiles and apparel. Exporter associations are currently evaluating the consequences of this adjustment.",
-    "why_it_matters": "This US tariff revision directly affects Bangladesh's textile and apparel export sector, a significant contributor to the national economy. The immediate impact will be on the cost competitiveness of Bangladeshi goods in the US market. Second-order effects could include shifts in export volumes, potential pressure on domestic manufacturing costs, and a need for Bangladeshi exporters to adapt their product mix or explore alternative markets to mitigate any negative financial repercussions.",
-    "do": [
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      }
-    ],
-    "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence."
-    ],
-    "decision_window": "Roughly 30–90 days — act within the current staff-work cycle.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Involves a major trade / security / labour partner (United States).",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Occurs outside the immediate region (global spillover only).",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=0.5, tone=-1.2); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:44:31.464933Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0628-us-tariff:bn": {
-    "event_id": "evt-2026-0628-us-tariff",
-    "title": "United States adjusts tariff schedule on selected textile categories",
-    "situation": "মার্কিন যুক্তরাষ্ট্র নির্বাচিত টেক্সটাইল এবং পোশাকের ক্যাটাগরিতে শুল্কের সময়সূচী সংশোধন করেছে। এই পরিবর্তনের ফলে রপ্তানিকারক সমিতিগুলি এর প্রভাব মূল্যায়ন করছে।",
-    "why_it_matters": "মার্কিন যুক্তরাষ্ট্রের শুল্কের সময়সূচীতে এই পরিবর্তন বাংলাদেশের টেক্সটাইল রপ্তানির উপর প্রভাব ফেলতে পারে। এর ফলে রপ্তানি আয় এবং উৎপাদনশীলতার উপর প্রথম স্তরের প্রভাব পড়তে পারে। দ্বিতীয় স্তরের প্রভাব হিসেবে, এটি বাংলাদেশের সামগ্রিক বাণিজ্য ভারসাম্য এবং বৈদেশিক মুদ্রার রিজার্ভের উপরও প্রভাব ফেলতে পারে, যা দেশের অর্থনৈতিক স্থিতিশীলতার জন্য গুরুত্বপূর্ণ।",
-    "do": [
-      {
-        "action": "Assess exposure of affected export categories and quantify the earnings at risk.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      },
-      {
-        "action": "Open early technical engagement with the counterpart to shape the outcome.",
-        "rationale": "[trade] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid reactive public statements before the trade impact is quantified.",
-        "rationale": "[trade] risk to avoid.",
-        "citations": [
-          "PREC-TRADE-DIVERSIFY"
-        ]
-      }
-    ],
-    "hedges": [
-      "Accelerate market and product diversification to reduce single-buyer dependence."
-    ],
-    "decision_window": "Roughly 30–90 days — act within the current staff-work cycle.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "Involves a major trade / security / labour partner (United States).",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'trade' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Occurs outside the immediate region (global spillover only).",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=0.5, tone=-1.2); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · trade-exposure analysis",
-        "detail": "Export concentration risk in ready-made garments: A large share of export earnings concentrated in one sector and a few destination markets amplifies exposure to any single buyer's policy shift; diversification of both product and market reduces shock.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:44:39.344132Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.8,
-      "confidence_label": "high"
-    },
-    "narrative_source": "llm"
-  },
-  "evt-2026-0627-election-distant:en": {
-    "event_id": "evt-2026-0627-election-distant",
-    "title": "General election concludes in a South American nation",
-    "situation": "A general election has concluded in Chile, resulting in a peaceful transfer of power. International actors have issued congratulatory statements.",
-    "why_it_matters": "The conclusion of a general election and peaceful transfer of power in Chile is a routine diplomatic event. For Bangladesh, this signifies continued stability in a South American partner, potentially reinforcing existing diplomatic ties and offering a stable environment for bilateral engagement. The international congratulatory statements underscore a global norm of democratic processes, which aligns with Bangladesh's own diplomatic posture.",
-    "do": [
-      {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "avoid": [
-      {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
-        "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
-        ]
-      }
-    ],
-    "hedges": [
-      "Keep parallel channels open with all major partners."
-    ],
-    "decision_window": "No immediate deadline — monitor and revisit as the situation develops.",
-    "refused": false,
-    "refusal_reason": null,
-    "evidence": [
-      {
-        "source": "Actor analysis",
-        "detail": "No directly Bangladesh-relevant actor identified.",
-        "weight": 0.4,
-        "url": null
-      },
-      {
-        "source": "Sector analysis",
-        "detail": "Touches the 'diplomacy' sector (high national-interest weight).",
-        "weight": 0.3,
-        "url": null
-      },
-      {
-        "source": "Geographic analysis",
-        "detail": "Occurs outside the immediate region (global spillover only).",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=3.0, tone=2.0); stronger cooperation or conflict raises significance.",
-        "weight": 0.15,
-        "url": null
-      },
-      {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
-        "weight": 0.5,
-        "url": null
-      }
-    ],
-    "meta": {
-      "generated_at": "2026-07-06T21:44:47.342474Z",
-      "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.7,
+      "confidence": 0.61,
       "confidence_label": "medium"
     },
     "narrative_source": "llm"
   },
-  "evt-2026-0627-election-distant:bn": {
-    "event_id": "evt-2026-0627-election-distant",
-    "title": "General election concludes in a South American nation",
-    "situation": "পরিস্থিতি: দক্ষিণ আমেরিকার একটি দেশে সাধারণ নির্বাচন অনুষ্ঠিত হয়েছে এবং শান্তিপূর্ণভাবে ক্ষমতা হস্তান্তর সম্পন্ন হয়েছে। আন্তর্জাতিক সম্প্রদায় থেকে এই উপলক্ষে অভিনন্দন বার্তা এসেছে।",
-    "why_it_matters": "বিশ্লেষণ: এই নির্বাচন এবং শান্তিপূর্ণ ক্ষমতা হস্তান্তর বাংলাদেশের জন্য একটি ইতিবাচক ঘটনা। এটি একটি গণতান্ত্রিক প্রক্রিয়ার সফল সমাপ্তি নির্দেশ করে, যা আন্তর্জাতিক অঙ্গনে স্থিতিশীলতা বাড়ায়। এই ধরনের ঘটনা বাংলাদেশের সাথে দ্বিপাক্ষিক সম্পর্ক জোরদার করতে সহায়ক হতে পারে এবং আঞ্চলিক স্থিতিশীলতা বজায় রাখতে ভূমিকা রাখতে পারে।",
+  "evt-china-s-teesta-push-in-bangladesh-raises-str:en": {
+    "event_id": "evt-china-s-teesta-push-in-bangladesh-raises-str",
+    "title": "China's Teesta push in Bangladesh raises strategic concerns for India",
+    "situation": "SITUATION: China is pursuing initiatives related to the Teesta river in Bangladesh, an action that has generated strategic concerns for",
+    "why_it_matters": "SITUATION: China is pursuing initiatives related to the Teesta river in Bangladesh, an action that has generated strategic concerns for",
     "do": [
       {
-        "action": "Engage constructively while preserving balance among partners.",
-        "rationale": "[diplomacy] national-interest action.",
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
         "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
+          "PREC-WATER-TRANSBOUNDARY"
         ]
       }
     ],
     "avoid": [
       {
-        "action": "Avoid commitments that constrain flexibility with other partners.",
-        "rationale": "[diplomacy] risk to avoid.",
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
         "citations": [
-          "PREC-REGIONAL-CONNECTIVITY"
+          "PREC-WATER-TRANSBOUNDARY"
         ]
       }
     ],
     "hedges": [
-      "Keep parallel channels open with all major partners."
+      "Advance domestic water-storage and efficiency measures in parallel."
     ],
-    "decision_window": "No immediate deadline — monitor and revisit as the situation develops.",
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
     "refused": false,
     "refusal_reason": null,
     "evidence": [
       {
         "source": "Actor analysis",
-        "detail": "No directly Bangladesh-relevant actor identified.",
+        "detail": "Bangladesh is a direct party to this event.",
         "weight": 0.4,
         "url": null
       },
       {
         "source": "Sector analysis",
-        "detail": "Touches the 'diplomacy' sector (high national-interest weight).",
+        "detail": "Touches the 'water' sector (high national-interest weight).",
         "weight": 0.3,
         "url": null
       },
       {
         "source": "Geographic analysis",
-        "detail": "Occurs outside the immediate region (global spillover only).",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
         "weight": 0.15,
         "url": null
       },
       {
         "source": "Magnitude analysis",
-        "detail": "Intensity from GDELT signals (Goldstein=3.0, tone=2.0); stronger cooperation or conflict raises significance.",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
         "weight": 0.15,
         "url": null
       },
       {
-        "source": "PRAHARI reference note · regional cooperation",
-        "detail": "Regional connectivity frameworks: Participation in regional connectivity and trade-facilitation frameworks can expand market access while balancing relationships among multiple partners.",
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
         "weight": 0.5,
         "url": null
       }
     ],
     "meta": {
-      "generated_at": "2026-07-06T21:45:20.363435Z",
+      "generated_at": "2026-07-07T22:43:13.444343Z",
       "model_version": "drishti-doavoid/0.1.0",
-      "confidence": 0.7,
+      "confidence": 0.61,
+      "confidence_label": "medium"
+    },
+    "narrative_source": "llm"
+  },
+  "evt-china-s-teesta-push-in-bangladesh-raises-str:bn": {
+    "event_id": "evt-china-s-teesta-push-in-bangladesh-raises-str",
+    "title": "China's Teesta push in Bangladesh raises strategic concerns for India",
+    "situation": "বাংলাদেশে চীনের তিস্তা বিষয়ক কার্যক্রম ভারতের কৌশলগত উদ্বেগের কারণ হয়েছে।",
+    "why_it_matters": "এই পরিস্থিতি বাংলাদেশের জন্য গুরুত্বপূর্ণ কারণ",
+    "do": [
+      {
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "avoid": [
+      {
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "hedges": [
+      "Advance domestic water-storage and efficiency measures in parallel."
+    ],
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
+    "refused": false,
+    "refusal_reason": null,
+    "evidence": [
+      {
+        "source": "Actor analysis",
+        "detail": "Bangladesh is a direct party to this event.",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Sector analysis",
+        "detail": "Touches the 'water' sector (high national-interest weight).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "Geographic analysis",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "Magnitude analysis",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
+        "weight": 0.5,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-07T22:43:22.454228Z",
+      "model_version": "drishti-doavoid/0.1.0",
+      "confidence": 0.61,
+      "confidence_label": "medium"
+    },
+    "narrative_source": "llm"
+  },
+  "evt-beyond-the-water-why-india-is-concerned-abou:en": {
+    "event_id": "evt-beyond-the-water-why-india-is-concerned-abou",
+    "title": "Beyond The Water: Why India Is Concerned About China's Teesta Project In Bangladesh",
+    "situation": "SITUATION: China is involved in a Teesta Project in Bangladesh. India has expressed concern regarding China's involvement in this water sector",
+    "why_it_matters": "SITUATION: China is involved in a Teesta Project in Bangladesh. India has expressed concern regarding China's involvement in this water sector",
+    "do": [
+      {
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "avoid": [
+      {
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "hedges": [
+      "Advance domestic water-storage and efficiency measures in parallel."
+    ],
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
+    "refused": false,
+    "refusal_reason": null,
+    "evidence": [
+      {
+        "source": "Actor analysis",
+        "detail": "Bangladesh is a direct party to this event.",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Sector analysis",
+        "detail": "Touches the 'water' sector (high national-interest weight).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "Geographic analysis",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "Magnitude analysis",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
+        "weight": 0.5,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-07T22:43:32.071300Z",
+      "model_version": "drishti-doavoid/0.1.0",
+      "confidence": 0.61,
+      "confidence_label": "medium"
+    },
+    "narrative_source": "llm"
+  },
+  "evt-beyond-the-water-why-india-is-concerned-abou:bn": {
+    "event_id": "evt-beyond-the-water-why-india-is-concerned-abou",
+    "title": "Beyond The Water: Why India Is Concerned About China's Teesta Project In Bangladesh",
+    "situation": "SITUATION: বাংলাদেশে চীনের তিস্তা প্রকল্প নিয়ে ভারত উদ্বেগ প্রকাশ করেছে। এই উদ্বেগ শুধুমাত্র জল খাতকে ছাড়িয়ে বিস্তৃত।",
+    "why_it_matters": "ANALYSIS",
+    "do": [
+      {
+        "action": "Sustain the technical dialogue and propose joint data-sharing on flow.",
+        "rationale": "[water] national-interest action.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "avoid": [
+      {
+        "action": "Avoid linking the water file to unrelated bilateral disputes.",
+        "rationale": "[water] risk to avoid.",
+        "citations": [
+          "PREC-WATER-TRANSBOUNDARY"
+        ]
+      }
+    ],
+    "hedges": [
+      "Advance domestic water-storage and efficiency measures in parallel."
+    ],
+    "decision_window": "Hours to a few days — this sits inside an active decision window.",
+    "refused": false,
+    "refusal_reason": null,
+    "evidence": [
+      {
+        "source": "Actor analysis",
+        "detail": "Bangladesh is a direct party to this event.",
+        "weight": 0.4,
+        "url": null
+      },
+      {
+        "source": "Sector analysis",
+        "detail": "Touches the 'water' sector (high national-interest weight).",
+        "weight": 0.3,
+        "url": null
+      },
+      {
+        "source": "Geographic analysis",
+        "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "Magnitude analysis",
+        "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
+        "weight": 0.15,
+        "url": null
+      },
+      {
+        "source": "PRAHARI reference note · transboundary water",
+        "detail": "Transboundary river flow negotiations: Dry-season flow allocation on shared rivers is best pursued through sustained technical dialogue with data-sharing; linkage to unrelated disputes tends to stall progress.",
+        "weight": 0.5,
+        "url": null
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-07-07T22:43:41.775053Z",
+      "model_version": "drishti-doavoid/0.1.0",
+      "confidence": 0.61,
       "confidence_label": "medium"
     },
     "narrative_source": "llm"
