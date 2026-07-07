@@ -296,6 +296,16 @@ body::before {
   color: var(--accent); background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 9px; border-radius: 20px; }
 .profile-reasons { margin: 12px 0 0; padding-left: 16px; }
 .profile-reasons li { font-size: 12px; color: var(--text-dim); margin-bottom: 6px; line-height: 1.45; }
+
+/* Ship "photo" frame — vessel silhouette on a tinted, scanlined panel */
+.ship-photo { position: relative; height: 118px; border-radius: 12px; margin-bottom: 13px; overflow: hidden;
+  display: grid; place-items: center; background: var(--bg-2); border: 1px solid var(--stroke); }
+.ship-photo::before { content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 45%, var(--ship-col), transparent 65%); opacity: 0.16; }
+.ship-photo::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.025) 0 2px, transparent 2px 4px); }
+.ship-svg { position: relative; z-index: 1; width: 70%; max-height: 84px;
+  filter: drop-shadow(0 0 10px var(--ship-col)); }
 .maplibregl-popup-content { background: rgba(10, 17, 34, 0.92); backdrop-filter: blur(12px); color: var(--text);
   border: 1px solid var(--stroke-strong); border-radius: 12px; font-family: var(--sans); font-size: 12px; box-shadow: var(--shadow-lg); }
 .maplibregl-popup-content strong { color: var(--accent); }

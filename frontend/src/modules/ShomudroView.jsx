@@ -2,6 +2,17 @@ import { useEffect, useRef, useState } from 'react'
 import maplibregl from 'maplibre-gl'
 import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
+import ShipIcon from '../components/ShipIcon.jsx'
+
+// Map a contact to a vessel silhouette category + accent color.
+function shipVisual(kind, data) {
+  if (kind === 'vessel') return ['fishing', '#38bdf8']
+  if (kind === 'sar') return [(data.length_m || 0) > 120 ? 'cargo' : 'fishing', '#cbd5e1']
+  if (kind === 'dark') return ['dark', '#ff4d6a']
+  if (kind === 'sts') return ['sts', '#f59e0b']
+  if (kind === 'patrol') return ['patrol', '#22c55e']
+  return ['generic', '#38bdf8']
+}
 
 // Free basemaps (no key / no billing): real satellite (Esri), dark, streets.
 const BASEMAPS = {
@@ -233,9 +244,13 @@ function ContactProfile({ contact, t }) {
     rows = [[t.position, pos(data.lat, data.lon)], [t.speed, `${data.sog} kn`]]
   }
 
+  const [cat, col] = shipVisual(kind, kind === 'dark' ? data.detection : data)
   return (
     <div className="panel hud profile">
       <div className="section-title">{t.contactProfile}</div>
+      <div className="ship-photo" style={{ '--ship-col': col }}>
+        <ShipIcon category={cat} color={col} />
+      </div>
       <div className="profile-head">
         <div className="profile-title">{title}</div>
         <span className="profile-type">{typeLabel}</span>
