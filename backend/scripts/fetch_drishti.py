@@ -152,14 +152,14 @@ async def main() -> None:
         if len(top) >= 14:
             break
 
-    print(f"2) Gemini briefs for top {min(6, len(top))} (EN+BN)… enabled={is_enabled()}")
+    print(f"2) Gemini briefs for all {len(top)} events (EN+BN)… enabled={is_enabled()}")
     briefs: dict[str, dict] = {}
-    for s in top[:6]:
+    for s in top:
         for lang in ("en", "bn"):
             b = await generate_brief(s, lang)
             briefs[f"{s.event.id}:{lang}"] = b.model_dump(mode="json")
             print(f"   {s.event.id[:34]}:{lang} -> {b.narrative_source}")
-            await asyncio.sleep(4)
+            await asyncio.sleep(1)  # billing key: high limits, minimal spacing
 
     print("3) World Bank…")
     econ = fetch_worldbank()

@@ -1,89 +1,7 @@
 {
-  "generated_at_utc": "2026-07-07T22:44:32.543828+00:00",
+  "generated_at_utc": "2026-07-08T09:44:38.945507+00:00",
   "total": 14,
   "events": [
-    {
-      "event": {
-        "id": "evt-bangladesh-to-import-three-more-lng-shipment",
-        "title": "Bangladesh to import three more LNG shipments to beat energy crisis",
-        "summary": "Bangladesh to import three more LNG shipments to beat energy crisis",
-        "event_date": "2026-06-17",
-        "actors": [
-          "Bangladesh"
-        ],
-        "sectors": [
-          "trade",
-          "energy"
-        ],
-        "location": null,
-        "latitude": null,
-        "longitude": null,
-        "source": "bdnews24.com (Google News)",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6NnpkVmdabmtYQUljTzRPMVI0N09zd0hINlZReEZXTzNUdkFLaGo2alFaVXN6c3hRdFJHTzAyRGc3Q2JFbjRLMFRGVTZBckVEMGItUw?oc=5",
-        "goldstein": -5.0,
-        "tone": -5.0
-      },
-      "relevance_score": 92.5,
-      "severity": "red",
-      "components": [
-        {
-          "name": "Actor relevance",
-          "score": 100.0,
-          "weight": 0.4,
-          "reason": "Bangladesh is a direct party to this event."
-        },
-        {
-          "name": "Sector relevance",
-          "score": 100.0,
-          "weight": 0.3,
-          "reason": "Touches the 'trade' sector (high national-interest weight)."
-        },
-        {
-          "name": "Geographic proximity",
-          "score": 100.0,
-          "weight": 0.15,
-          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
-        },
-        {
-          "name": "Event magnitude",
-          "score": 50.0,
-          "weight": 0.15,
-          "reason": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance."
-        }
-      ],
-      "evidence": [
-        {
-          "source": "Actor analysis",
-          "detail": "Bangladesh is a direct party to this event.",
-          "weight": 0.4,
-          "url": null
-        },
-        {
-          "source": "Sector analysis",
-          "detail": "Touches the 'trade' sector (high national-interest weight).",
-          "weight": 0.3,
-          "url": null
-        },
-        {
-          "source": "Geographic analysis",
-          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
-          "weight": 0.15,
-          "url": null
-        },
-        {
-          "source": "Magnitude analysis",
-          "detail": "Intensity from GDELT signals (Goldstein=-5.0, tone=-5.0); stronger cooperation or conflict raises significance.",
-          "weight": 0.15,
-          "url": null
-        }
-      ],
-      "meta": {
-        "generated_at": "2026-07-07T22:41:25.123937Z",
-        "model_version": "drishti-relevance-heuristic/0.1.0",
-        "confidence": 0.85,
-        "confidence_label": "high"
-      }
-    },
     {
       "event": {
         "id": "evt-china-backs-bangladeshs-teesta-project-brush",
@@ -162,7 +80,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.107830Z",
+        "generated_at": "2026-07-08T09:32:42.835360Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -245,7 +163,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.083734Z",
+        "generated_at": "2026-07-08T09:32:42.827345Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -328,7 +246,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.092283Z",
+        "generated_at": "2026-07-08T09:32:42.829345Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -411,7 +329,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.096282Z",
+        "generated_at": "2026-07-08T09:32:42.831350Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -494,7 +412,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.098794Z",
+        "generated_at": "2026-07-08T09:32:42.832346Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -577,7 +495,88 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.113398Z",
+        "generated_at": "2026-07-08T09:32:42.836369Z",
+        "model_version": "drishti-relevance-heuristic/0.1.0",
+        "confidence": 0.85,
+        "confidence_label": "high"
+      }
+    },
+    {
+      "event": {
+        "id": "evt-vietnam-s-textile-strategy-highlights-bangla",
+        "title": "Vietnam’s textile strategy highlights Bangladesh’s competitiveness challenge",
+        "summary": "Vietnam’s textile strategy highlights Bangladesh’s competitiveness challenge",
+        "event_date": "2026-07-08",
+        "actors": [
+          "Bangladesh"
+        ],
+        "sectors": [
+          "trade"
+        ],
+        "location": null,
+        "latitude": null,
+        "longitude": null,
+        "source": "Textile Today (Google News)",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUUxHSWJ1ZWJIU2lNaVNYUm1WaG1EZHlpRl8xVl9uV1h2Q1d0ZjBZZ1IwMUNYdE1kVHI5dHhtSllQYkNWU3VYUGctWGVYQVRrTURHclp4Tml5N2NxWUl2UFJhbktkcVd2a0V4MkhVV19nOVZFbnpoaVFMMkFTbGtIeXVOZ2NTdGM4NHhSV25INVpWRTRxS2J3dE94TGxYaGl2bHd3VEh0VHoxdw?oc=5",
+        "goldstein": -2.5,
+        "tone": -2.5
+      },
+      "relevance_score": 88.8,
+      "severity": "red",
+      "components": [
+        {
+          "name": "Actor relevance",
+          "score": 100.0,
+          "weight": 0.4,
+          "reason": "Bangladesh is a direct party to this event."
+        },
+        {
+          "name": "Sector relevance",
+          "score": 100.0,
+          "weight": 0.3,
+          "reason": "Touches the 'trade' sector (high national-interest weight)."
+        },
+        {
+          "name": "Geographic proximity",
+          "score": 100.0,
+          "weight": 0.15,
+          "reason": "Directly concerns Bangladesh territory or the Bay of Bengal."
+        },
+        {
+          "name": "Event magnitude",
+          "score": 25.0,
+          "weight": 0.15,
+          "reason": "Intensity from GDELT signals (Goldstein=-2.5, tone=-2.5); stronger cooperation or conflict raises significance."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "Actor analysis",
+          "detail": "Bangladesh is a direct party to this event.",
+          "weight": 0.4,
+          "url": null
+        },
+        {
+          "source": "Sector analysis",
+          "detail": "Touches the 'trade' sector (high national-interest weight).",
+          "weight": 0.3,
+          "url": null
+        },
+        {
+          "source": "Geographic analysis",
+          "detail": "Directly concerns Bangladesh territory or the Bay of Bengal.",
+          "weight": 0.15,
+          "url": null
+        },
+        {
+          "source": "Magnitude analysis",
+          "detail": "Intensity from GDELT signals (Goldstein=-2.5, tone=-2.5); stronger cooperation or conflict raises significance.",
+          "weight": 0.15,
+          "url": null
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-07-08T09:32:42.822423Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -660,7 +659,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.072167Z",
+        "generated_at": "2026-07-08T09:32:42.823347Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -741,7 +740,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.073163Z",
+        "generated_at": "2026-07-08T09:32:42.823347Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -823,7 +822,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.073163Z",
+        "generated_at": "2026-07-08T09:32:42.823347Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -905,7 +904,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.073163Z",
+        "generated_at": "2026-07-08T09:32:42.823347Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -987,7 +986,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.077699Z",
+        "generated_at": "2026-07-08T09:32:42.825346Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -1068,7 +1067,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.077699Z",
+        "generated_at": "2026-07-08T09:32:42.825346Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
@@ -1149,7 +1148,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-07-07T22:41:25.078721Z",
+        "generated_at": "2026-07-08T09:32:42.825346Z",
         "model_version": "drishti-relevance-heuristic/0.1.0",
         "confidence": 0.85,
         "confidence_label": "high"
