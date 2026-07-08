@@ -1,156 +1,291 @@
 {
-  "_note": "Illustrative DRISHTI demo snapshot in GDELT-normalized form. Events are realistic scenario types for demonstration; they are not live reporting. Tone is kept neutral toward all states per PRAHARI design law #1.",
-  "snapshot_date": "2026-07-06",
+  "_note": "Real events (Google News snapshot) — grounds the live backend Q&A.",
+  "snapshot_date": "2026-07-07",
   "events": [
     {
-      "id": "evt-2026-0701-teesta",
-      "title": "India and Bangladesh resume Teesta water-sharing technical talks",
-      "summary": "Water-resource officials from both countries reopened technical discussions on dry-season flow allocation of the Teesta river, a long-pending item affecting northern Bangladesh agriculture.",
-      "event_date": "2026-07-01",
-      "actors": ["Bangladesh", "India"],
-      "sectors": ["water", "diplomacy"],
-      "location": "Teesta Basin",
-      "latitude": 26.1,
-      "longitude": 88.9,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": 4.0,
-      "tone": 1.5
+      "id": "evt-bangladesh-to-import-three-more-lng-shipment",
+      "title": "Bangladesh to import three more LNG shipments to beat energy crisis",
+      "summary": "Bangladesh to import three more LNG shipments to beat energy crisis",
+      "event_date": "2026-06-17",
+      "actors": [
+        "Bangladesh"
+      ],
+      "sectors": [
+        "trade",
+        "energy"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "bdnews24.com (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6NnpkVmdabmtYQUljTzRPMVI0N09zd0hINlZReEZXTzNUdkFLaGo2alFaVXN6c3hRdFJHTzAyRGc3Q2JFbjRLMFRGVTZBckVEMGItUw?oc=5",
+      "goldstein": -5.0,
+      "tone": -5.0
     },
     {
-      "id": "evt-2026-0703-port",
-      "title": "Foreign consortium proposes deep-sea port investment on Bay of Bengal coast",
-      "summary": "An international consortium tabled a financing proposal for deep-sea port and logistics infrastructure near the Bay of Bengal, citing regional trade-corridor ambitions.",
-      "event_date": "2026-07-03",
-      "actors": ["Bangladesh", "China"],
-      "sectors": ["trade", "security", "energy"],
-      "location": "Bay of Bengal",
-      "latitude": 21.4,
-      "longitude": 91.9,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": 3.4,
-      "tone": 0.5
-    },
-    {
-      "id": "evt-2026-0702-labour",
-      "title": "Gulf state announces revised overseas-worker quota policy",
-      "summary": "A major Gulf labour-destination country published a revised recruitment-quota framework for South Asian workers, with implications for remittance inflows.",
-      "event_date": "2026-07-02",
-      "actors": ["Saudi Arabia", "Bangladesh"],
-      "sectors": ["labour", "diplomacy"],
-      "location": "Riyadh",
-      "latitude": 24.7,
-      "longitude": 46.7,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": 2.0,
-      "tone": -1.0
-    },
-    {
-      "id": "evt-2026-0705-border",
-      "title": "Reported cross-border security incident along the Myanmar frontier",
-      "summary": "Local authorities reported an incident near the Bangladesh–Myanmar border area, prompting heightened patrol activity in the region.",
-      "event_date": "2026-07-05",
-      "actors": ["Myanmar", "Bangladesh"],
-      "sectors": ["security"],
-      "location": "Bandarban border area",
-      "latitude": 21.8,
-      "longitude": 92.4,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": -6.5,
-      "tone": -4.2
-    },
-    {
-      "id": "evt-2026-0630-eu-rmg",
-      "title": "European Union opens review of garment import preferences",
-      "summary": "The EU began a scheduled review of trade-preference arrangements covering ready-made garment imports, a category central to Bangladesh's export earnings.",
-      "event_date": "2026-06-30",
-      "actors": ["European Union", "Bangladesh"],
-      "sectors": ["trade", "labour"],
-      "location": "Brussels",
-      "latitude": 50.85,
-      "longitude": 4.35,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": 1.0,
-      "tone": -0.8
-    },
-    {
-      "id": "evt-2026-0704-shipping",
-      "title": "Shipping-lane disruption raises freight costs on key export routes",
-      "summary": "Reported disruption along a major maritime shipping lane increased freight and insurance costs on routes used for regional exports and energy imports.",
-      "event_date": "2026-07-04",
-      "actors": ["Egypt", "Yemen"],
-      "sectors": ["trade", "energy"],
-      "location": "Red Sea corridor",
-      "latitude": 20.0,
-      "longitude": 38.5,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": -4.0,
-      "tone": -3.0
-    },
-    {
-      "id": "evt-2026-0629-bimstec",
-      "title": "BIMSTEC members discuss regional connectivity framework",
-      "summary": "Member states of the Bay of Bengal regional grouping discussed a connectivity and trade-facilitation framework at a ministerial meeting.",
+      "id": "evt-china-backs-bangladeshs-teesta-project-brush",
+      "title": "China Backs Bangladeshs Teesta Project, Brushes Aside Indias Security Concerns",
+      "summary": "China Backs Bangladeshs Teesta Project, Brushes Aside Indias Security Concerns",
       "event_date": "2026-06-29",
-      "actors": ["BIMSTEC", "Bangladesh", "India", "Myanmar", "Thailand"],
-      "sectors": ["diplomacy", "trade"],
-      "location": "Bay of Bengal region",
-      "latitude": 16.8,
-      "longitude": 96.1,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": 5.0,
-      "tone": 2.4
+      "actors": [
+        "Bangladesh",
+        "India",
+        "China"
+      ],
+      "sectors": [
+        "security",
+        "water"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "ABP Live English (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNa0xCUUMxUTVheENBZEMtcVR2VVN4RlA1c3UydWFqc3F3bEJrNWNYaWNhTDFxNXZpOW9uSEFRc0VVVWxfMTlBUUJWeXRVc3hnUS1kWjBUWUhwWGFodERkVU9tSHFacGZ2VktSN1dqd3A1MFdGQ2NDUm1DMkwxMlJjMTNyU01Ya044bHlPeVl6eXlSMXdEcUpaVWZQVklYUlRoT3VCaFltUWtTQzUyNUZlU3QyMXVaTG1B0gG-AUFVX3lxTE5UOUZxRURrbktqblFScGszY29RN3RyTXU3ell6UW4zTGJoZnhnVWw3WUp6MVBScEdvS0RZR29QN0pVTjBaYU44ekl5OVk3N0IyX3g4N0VnS29peWlnVEFxYV9tSFJzekZFRUx4U2JMOG9sNHFOSlFQNnlxZ2p4emtsejBzeElZQjNRN0FfMmNTeDZkazY2OVVHRmNIbElrd0JLTUROTk1IWkd4ZzlXWWFyWHZTY2l4RVFoZHQ5VFE?oc=5",
+      "goldstein": -5.0,
+      "tone": -5.0
     },
     {
-      "id": "evt-2026-0701-cyclone",
-      "title": "Weather agencies track intensifying system in the Bay of Bengal",
-      "summary": "Regional meteorological agencies flagged an intensifying weather system over the Bay of Bengal, with potential coastal impact during the monsoon period.",
+      "id": "evt-bangladesh-seeks-china-s-backing-for-teesta",
+      "title": "Bangladesh seeks China’s backing for Teesta river project, raising concerns over India ties",
+      "summary": "Bangladesh seeks China’s backing for Teesta river project, raising concerns over India ties",
+      "event_date": "2026-07-05",
+      "actors": [
+        "Bangladesh",
+        "India",
+        "China"
+      ],
+      "sectors": [
+        "water"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "Telegraph India (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWGlrTVRtM0xwZS1mcVFyc2w1TlV5SXlkcmdIZHBTSWlNelhPNXMxcGpoZnNiTjc3QjNIYllPU3h6MWVEcUVTTEVjVHpfMVQySzNWN2NTbEQtdjYxOUljbzR3SExLelNOSUp1amJkRkY1TXFIVV9ndkRUaWxjWm1ha2hPUlNXVGF0ZjZaZ05SQ29mRTctcVd0dXdheHpRQXpYaEFzQlA1Q1VMV2laZ3lPemt3RHN0VmZzOE1YajJPOVNHVnZQQW9WYU1ndVZicEJfclhzTdIB2gFBVV95cUxPeTdibzJaS1NNT1hhaDU0STdmbWRMM3JaNWplRDdPa1NhRlJOUEV5TFRKZnZYS3NhTTRaQVk0X2VvUllzemtSX2JfLWFZaUhzQWE4Uk8xcjdoN29Cc0dENWFWUTU0MGJZaVFRNjVjcy1vemxfcWpNbC1ndlhUaVNlSW9vdkppVDNJSjZiZDZYLWFpdmdGLTVLaVVXMEZRWTdFQmVlMWRkMTAyU2g1QTRwYXBKTGZOMHFhdEVmOGJxQkJ6blJhYlAwamRMdk53Y3JGdTE0Vmh4WlZzUQ?oc=5",
+      "goldstein": -5.0,
+      "tone": -5.0
+    },
+    {
+      "id": "evt-opinion-why-india-should-be-very-very-alarme",
+      "title": "Opinion | Why India Should Be Very, Very Alarmed About China's Teesta Move In Bangladesh",
+      "summary": "Opinion | Why India Should Be Very, Very Alarmed About China's Teesta Move In Bangladesh",
+      "event_date": "2026-07-02",
+      "actors": [
+        "Bangladesh",
+        "India",
+        "China"
+      ],
+      "sectors": [
+        "water"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "NDTV (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2NJWVM1a3NUZmZ0bzhkd0JRQlh3M2dXd0FJLXB3NXNaU0dkTmV4UGM1eUV6aHpUcUlJb0tVRWVKRklIdHl4VkstenRIU3M1Q2dncFpFMlN4WFBEbW5BeHNnZjgtb3otN0NobEs2WmpxdlFKUW95V09qMDd0aGdvem16U251LW10cFpSbHVESm9rLWxLSUlTZHdLNnZqZ09mTHlfQTVZcVhrWEFwc1JUSFQtMVM?oc=5",
+      "goldstein": -5.0,
+      "tone": -5.0
+    },
+    {
+      "id": "evt-china-s-teesta-push-in-bangladesh-raises-str",
+      "title": "China's Teesta push in Bangladesh raises strategic concerns for India",
+      "summary": "China's Teesta push in Bangladesh raises strategic concerns for India",
       "event_date": "2026-07-01",
-      "actors": ["Bangladesh"],
-      "sectors": ["climate", "security"],
-      "location": "Bay of Bengal",
-      "latitude": 18.5,
-      "longitude": 89.0,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": -2.0,
+      "actors": [
+        "Bangladesh",
+        "India",
+        "China"
+      ],
+      "sectors": [
+        "water"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "WION (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTlNHcEgxTWZuaC16OWVCYzFleE42LTVESjE5ZlFzYnhaUl8wRlpDLTRCT3JxQVBSRHVvc1BYSjNtREtFLTdDUUFCSW1fTmRPcXdqZXFDZkdZdnNxR2ZiYW5uRWUwZnJHWjk2TnB1aElqR21vXzZTMGtTYVBybXlWcVV0MXJ4VXhXeHdJb2JfMUZfYWQ2OS1fa1ZZQUNLXzFyWms3UVQ5TlZlWmE5UEV6YkxjaUzSAboBQVVfeXFMTkF5RmdENDhXYTZ3R21hSkxoalIzSmM2MVptVnJIQTAyb1duZTRib3kzQnBuZTQ5czJGbnBPcjI4dFVJUklxSl9ZWmg0a09sdHZEeWFXY0ZLQ0pLRS1kWjFKcWh3bjIydURRNlRHaWJYaEZaWEV6U2ZEdlJwVDVmQTFFSV90d0o4SXNjNmVUR2JnMVY1MHZSZlhsQnh1R3lLYVpPVU82Y1AyRkFNbkhEbXVWbkl1MlI0dmVR?oc=5",
+      "goldstein": -5.0,
+      "tone": -5.0
+    },
+    {
+      "id": "evt-beyond-the-water-why-india-is-concerned-abou",
+      "title": "Beyond The Water: Why India Is Concerned About China's Teesta Project In Bangladesh",
+      "summary": "Beyond The Water: Why India Is Concerned About China's Teesta Project In Bangladesh",
+      "event_date": "2026-06-30",
+      "actors": [
+        "Bangladesh",
+        "India",
+        "China"
+      ],
+      "sectors": [
+        "water"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "News18 (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcHg5T2RHbWpuR1RlZmxvMlpBOFE3bk16MExzbnVodnNzaDZiWm1qZzlpb1EzZlV4SWJDSWpkVkRWd1d1emZPMjBVdXhGdUFfbkdnRll1QjJHMUpBWDlfLVhFU0s1b09taHdjYXdUNGlIaTdmNzJIcWUyNU9NQ3p0Qk5TT2wtdFMyTW9HbWVmOGhoR0VEb0NKSmtOYk1sNV9KMFBERElXUVlhc1o5WHVxYTBCeVJpSWxKTGFFZm1uWmtHR3c5N3dPM1Jmdm0ybmvSAdQBQVVfeXFMTmJIMzBscmYyTXZwazVia1dlUXpWNWdCZ0Q0ZVl5SlNtZU1faXlmVUxpS28zc3lnQ3hhRWs5Qjc5RFpGcnRLQkJfT3Y2WFNzakZlTWJkQmZfa1p3Ui1EMC10TnJPcEI0UUotMUdJLVdGakpZa1ZNUEFCZEtNNl9xbWJtblJVVjlBdU40ODNPV2xna2RVcUF3NzVyMngwSVRPLU94TERWRzd6a0hGNEtUejY0QkR6WDdfaXdycHNkSDNTaFRZOWdCMG93Sngza1RhMTRTbmU?oc=5",
+      "goldstein": -5.0,
+      "tone": -5.0
+    },
+    {
+      "id": "evt-china-brushes-aside-india-s-concern-over-tee",
+      "title": "China brushes aside India’s 'concern' over Teesta project in Bangladesh",
+      "summary": "China brushes aside India’s 'concern' over Teesta project in Bangladesh",
+      "event_date": "2026-06-26",
+      "actors": [
+        "Bangladesh",
+        "India",
+        "China"
+      ],
+      "sectors": [
+        "water"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "The Financial Express (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObVR6czFYaW9WY3IyVUQzUTJlNXBzUkhTNHFxNGRibUhNOWRibFNlTnFPQnZFczRzVHhxZllCZ0dHUjY0RzlUYnFnSHFldjFDbmRBSGZIaHExbGtUM3NEbEhtQ0hWSXBkVFdENWZPekYwTXdTejZsR0haQ3AtcEx1NFZUQy10VjFwWTZoTmdjRHFhX25DdWg3SGJ2a1Y1aUxnc2Z6akV6V002V00zbzE5a2hR?oc=5",
+      "goldstein": -5.0,
+      "tone": -5.0
+    },
+    {
+      "id": "evt-china-bangladesh-vietnam-india-in-the-global",
+      "title": "China, Bangladesh, Vietnam: India in the Global Apparel Race",
+      "summary": "China, Bangladesh, Vietnam: India in the Global Apparel Race",
+      "event_date": "2026-07-07",
+      "actors": [
+        "Bangladesh",
+        "India",
+        "China"
+      ],
+      "sectors": [
+        "trade"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "India's World (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQ080dWJzcmtXRmx5bDVFT0JIYmVGWU9zTzRkS2xOX1ZDZnBMOHVZRG9ISEU2V3pKZ01FUWp6Z2RuVk03THd3eERPVG9oUUtldkM0Uk0tNVY5WWZrUFFEOGRhbjczdGU5U1JLemtOb3VWN2U3cTM5MUpsX3ExQnk4Y2JPeHZrcmdV?oc=5",
+      "goldstein": -2.5,
       "tone": -2.5
     },
     {
-      "id": "evt-2026-0628-us-tariff",
-      "title": "United States adjusts tariff schedule on selected textile categories",
-      "summary": "A revision to the US tariff schedule affected selected textile and apparel categories, prompting exporter associations to assess the impact.",
-      "event_date": "2026-06-28",
-      "actors": ["United States"],
-      "sectors": ["trade"],
-      "location": "Washington",
-      "latitude": 38.9,
-      "longitude": -77.0,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": 0.5,
-      "tone": -1.2
+      "id": "evt-bangladesh-rmg-exports-down-1-6-to-38-7-bn",
+      "title": "| Bangladesh RMG exports down 1.6% to $38.7 bn in FY26; June rebounds",
+      "summary": "| Bangladesh RMG exports down 1.6% to $38.7 bn in FY26; June rebounds",
+      "event_date": "2026-07-07",
+      "actors": [
+        "Bangladesh"
+      ],
+      "sectors": [
+        "trade"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "Fibre2Fashion (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNTFMZXhSZE1seVFUakdqOVRNMElfRG1WS0lvd2d5dTRadFBSZjRSUEpCWHFWRlJrOExicFVOUUU3Mmx6Nm81NW5hUTNMR1JrNjB6ZE9ITDBGTk9FSm1faHpwc3JtdmtPeHZuY0tCUnFXLTFUVWJrb01sUmN6LWI3ZnAwaUFMWEREd0t0Tk9IbDhBR2tqeGRHU0ozVjN2T0FSMEttR2s3VjJuaXR2RnZlVmNqWGNfeTVxSHA1MjVMSU53bVJ4YUVXNThoNXdiS2YwZEdrNUpPMHBld1M3LUZGRkppeUo?oc=5",
+      "goldstein": -2.5,
+      "tone": -2.5
     },
     {
-      "id": "evt-2026-0627-election-distant",
-      "title": "General election concludes in a South American nation",
-      "summary": "A national election concluded with a peaceful transfer of power, drawing routine international congratulatory statements.",
-      "event_date": "2026-06-27",
-      "actors": ["Chile"],
-      "sectors": ["diplomacy"],
-      "location": "Santiago",
-      "latitude": -33.45,
-      "longitude": -70.66,
-      "source": "GDELT (demo)",
-      "url": null,
-      "goldstein": 3.0,
-      "tone": 2.0
+      "id": "evt-eu-gsp-rules-and-bangladesh-s-rmg",
+      "title": "EU GSP rules and Bangladesh’s RMG",
+      "summary": "EU GSP rules and Bangladesh’s RMG",
+      "event_date": "2026-07-07",
+      "actors": [
+        "Bangladesh",
+        "European Union"
+      ],
+      "sectors": [
+        "trade"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "The Daily Star (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX2lEOUpmZlEyVUpjYTZGU21lc1k2TE5mN2hMcnhFVXEzOWNmNjREXy1BUmtWR0hGLV9odjZ6ZVBSbDZ6V05KV0JLU0Jjbmp6MGlRVWo3bDRYZWE2WnBUSjFkTVpWangtcV8zNm1oOFFsSHpLWG45b1NvUXlVTFhJSWRSV21lYl84aHNzeC1rUVNuZXUyYWc?oc=5",
+      "goldstein": -2.5,
+      "tone": -2.5
+    },
+    {
+      "id": "evt-eu-share-erodes-as-bangladesh-rmg-exports-sl",
+      "title": "EU share erodes as Bangladesh RMG exports slip 1.64pc to $38.70b in FY26",
+      "summary": "EU share erodes as Bangladesh RMG exports slip 1.64pc to $38.70b in FY26",
+      "event_date": "2026-07-07",
+      "actors": [
+        "Bangladesh",
+        "European Union"
+      ],
+      "sectors": [
+        "trade"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "The Financial Express (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ0tFbU9xTVFHZXBuX002VjBieGYwdFR2enAtNGJGNXZSYlZSbmpTVC1oQlh3bjlwc0JhWnNYeFEyZUtrT245eUg3cmpJcVBZLVpraUJEYnV1Y05VOXFJRWVlNmdPcjEwekktdV8wNWJYS3FqQVBSdGhMbU00SVBkSF9lWkl3NXF0dndhWDJBSjNVTHZaQVhacWp5emZDRlFONUMxTkpjQUM0bjFJVzZZ?oc=5",
+      "goldstein": -2.5,
+      "tone": -2.5
+    },
+    {
+      "id": "evt-bangladesh-loses-out-as-cambodia-vietnam-cap",
+      "title": "Bangladesh loses out as Cambodia, Vietnam capture China's apparel market share: RAPID",
+      "summary": "Bangladesh loses out as Cambodia, Vietnam capture China's apparel market share: RAPID",
+      "event_date": "2026-07-06",
+      "actors": [
+        "Bangladesh",
+        "China"
+      ],
+      "sectors": [
+        "trade"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "The Business Standard (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORFdpbmN6cnNfaWVjX210eGtDaEdIWkdvbXBNYjhoeHEycmQzeHRfcW9rRjZYMHdoQVl4bVNfYkhhYWx1WFNIczNwRWQ4SlphNW1iaUUzd0RwdU1mZExubDl0dTB2YTg0NVRTMTNjTTBXbEhsRlNIWk5KNG5ZMG4tLXdMRjJBWG9GVWJJSGtVTHZwV3I0T3JzR3psbnMxWFVlSllhZnhjc1ZWUGZiaXBoczFnMGxvSHVBbGpuNVJReEPSAcYBQVVfeXFMUFh1QTNvempUSlZMd0hRbWVCRG9rY1F0c05FZzV4aXFuejktOVl5OTczRWtJR0FxYzJFZk13TXU0WmQ4bWxqNEt2R044NHRTRGZEVF9xNTVjTVRneEhieERGZmo0Wlkzb1paUmZJRFY0ZnluUlY5b1VXMFZsWXpDZGhOeHdNZWJ4aUZKTFdnQ3p3XzBlRF9nQ2pXOEhyZnNtSEdWcWpicW5kZ05DQTVPWFJKX1FOdlBRdTc1TkpvOS1IMTJUVHNn?oc=5",
+      "goldstein": -2.5,
+      "tone": -2.5
+    },
+    {
+      "id": "evt-rebuilding-bangladesh-s-apparel-edge-at-home",
+      "title": "Rebuilding Bangladesh's apparel edge, at home first",
+      "summary": "Rebuilding Bangladesh's apparel edge, at home first",
+      "event_date": "2026-07-06",
+      "actors": [
+        "Bangladesh"
+      ],
+      "sectors": [
+        "trade"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "Textile Today (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeHctM1JIWE56VmhYbC1XZ3RkWlBGTWZCWVI0TWNSQXFtTm83dXFVaTZORlJ3dGwtNU8zRHl2VGNoV1Q5U2UxSnFTTHBzUmlpM3U1T0RTWVVsbVJpYlM0V2VYZ0hWR3ROc0NZNHRSdTBObHVTNUhCaE5vSV9OLVdodEx0WG16cl9Y?oc=5",
+      "goldstein": -2.5,
+      "tone": -2.5
+    },
+    {
+      "id": "evt-free-trade-zones-can-sharpen-bangladesh-s-po",
+      "title": "Free Trade Zones can sharpen Bangladesh’s post-LDC competitiveness",
+      "summary": "Free Trade Zones can sharpen Bangladesh’s post-LDC competitiveness",
+      "event_date": "2026-07-06",
+      "actors": [
+        "Bangladesh"
+      ],
+      "sectors": [
+        "trade"
+      ],
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "source": "The Business Standard (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNXZZZXRlLTgzQ3Y3MzBFWGJrM2xpR3VuMkJNVjU4V1lBX2xBcmVTSG95b0dVOXVJYWMxRTZSUFJqNEpCNTZ0akhiNkVrSFhfSlVxR3ZtM0E3TnVndzYyQXM2dVhCQkxGekNVa0YxRmlLNTRKdi00eGVGZXlkZmk4Qmw4bE45akJ0ZzRCUGJtbUFkR0R5ZzA2WUFPYXdwV0NwalBZdFRzb1FMOVltaEFWYm1lOUNtSVc5dTFDSNIBvAFBVV95cUxQNXZZZXRlLTgzQ3Y3MzBFWGJrM2xpR3VuMkJNVjU4V1lBX2xBcmVTSG95b0dVOXVJYWMxRTZSUFJqNEpCNTZ0akhiNkVrSFhfSlVxR3ZtM0E3TnVndzYyQXM2dVhCQkxGekNVa0YxRmlLNTRKdi00eGVGZXlkZmk4Qmw4bE45akJ0ZzRCUGJtbUFkR0R5ZzA2WUFPYXdwV0NwalBZdFRzb1FMOVltaEFWYm1lOUNtSVc5dTFDSA?oc=5",
+      "goldstein": -2.5,
+      "tone": -2.5
     }
   ]
 }
