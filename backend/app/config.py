@@ -33,8 +33,10 @@ class Settings(BaseSettings):
     # or a hosted OpenAI-compatible API. Empty api_key => deterministic
     # fallback brief (the app never breaks during judging).
     llm_api_key: str = ""
-    llm_base_url: str = "https://api.openai.com/v1"
-    llm_model: str = "gpt-4o-mini"
+    # Defaults match the deployed provider (Gemini via its OpenAI-compatible
+    # gateway — see render.yaml); any OpenAI-compatible endpoint works.
+    llm_base_url: str = "https://generativelanguage.googleapis.com/v1beta/openai/"
+    llm_model: str = "gemini-2.5-flash-lite"
 
     @property
     def cors_origin_list(self) -> list[str]:
