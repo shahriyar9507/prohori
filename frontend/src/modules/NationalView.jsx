@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
+import { Satellite, Shield, Waves, AlertTriangle, ArrowRight } from 'lucide-react'
+
+const MOD_ICON = { drishti: Satellite, rakkhok: Shield, shomudro: Waves }
 
 // Live UTC clock.
 function useClock() {
@@ -72,19 +75,19 @@ export default function NationalView({ lang, go }) {
   // Unified cross-module alert stream.
   const stream = useMemo(() => {
     const out = []
-    redEvents.slice(0, 4).forEach((s) => out.push({ mod: 'drishti', icon: '🛰️', sev: 'red', title: s.event.title, sub: `DRISHTI · relevance ${Math.round(s.relevance_score)}`, go: 'drishti' }))
-    fleetAlerts.filter((a) => a.level === 'red').slice(0, 4).forEach((a) => out.push({ mod: 'rakkhok', icon: '🛡️', sev: 'red', title: a.message, sub: 'RAKKHOK · service-life', go: 'rakkhok' }))
-    ;(pic?.dark_vessels || []).slice(0, 3).forEach((d, i) => out.push({ mod: 'shomudro', icon: '🌊', sev: 'amber', title: `Dark contact ${d.id || i + 1} — AIS-silent radar return`, sub: 'SHOMUDRO · maritime', go: 'shomudro' }))
-    amberEvents.slice(0, 3).forEach((s) => out.push({ mod: 'drishti', icon: '🛰️', sev: 'amber', title: s.event.title, sub: `DRISHTI · relevance ${Math.round(s.relevance_score)}`, go: 'drishti' }))
+    redEvents.slice(0, 4).forEach((s) => out.push({ mod: 'drishti', sev: 'red', title: s.event.title, sub: `DRISHTI · relevance ${Math.round(s.relevance_score)}`, go: 'drishti' }))
+    fleetAlerts.filter((a) => a.level === 'red').slice(0, 4).forEach((a) => out.push({ mod: 'rakkhok', sev: 'red', title: a.message, sub: 'RAKKHOK · service-life', go: 'rakkhok' }))
+    ;(pic?.dark_vessels || []).slice(0, 3).forEach((d, i) => out.push({ mod: 'shomudro', sev: 'amber', title: `Dark contact ${d.id || i + 1} — AIS-silent radar return`, sub: 'SHOMUDRO · maritime', go: 'shomudro' }))
+    amberEvents.slice(0, 3).forEach((s) => out.push({ mod: 'drishti', sev: 'amber', title: s.event.title, sub: `DRISHTI · relevance ${Math.round(s.relevance_score)}`, go: 'drishti' }))
     return out.slice(0, 12)
   }, [redEvents, amberEvents, fleetAlerts, pic])
 
   const cards = [
-    { key: 'drishti', icon: '🛰️', bn: 'দৃষ্টি', name: 'DRISHTI', tag: 'Geopolitical intelligence', grad: 'grad-cyan',
+    { key: 'drishti', bn: 'দৃষ্টি', name: 'DRISHTI', tag: 'Geopolitical intelligence', grad: 'grad-cyan',
       big: events.length, bigLbl: t.totalEvents, a: [`${redEvents.length} ${t.redAlerts.toLowerCase()}`, `${amberEvents.length} ${t.amberAlerts.toLowerCase()}`], val: events.length ? Math.min(100, (redEvents.length / events.length) * 100) : 0 },
-    { key: 'rakkhok', icon: '🛡️', bn: 'রক্ষক', name: 'RAKKHOK', tag: 'Asset readiness', grad: 'grad-amber',
+    { key: 'rakkhok', bn: 'রক্ষক', name: 'RAKKHOK', tag: 'Asset readiness', grad: 'grad-amber',
       big: ready != null ? `${ready}%` : '—', bigLbl: t.readinessPct, a: [`${readiness?.red_alerts ?? 0} ${t.redAlerts.toLowerCase()}`, `${readiness?.overall?.grounded ?? 0} ${t.grounded.toLowerCase()}`], val: ready ?? 0 },
-    { key: 'shomudro', icon: '🌊', bn: 'সমুদ্র', name: 'SHOMUDRO', tag: 'Maritime awareness', grad: 'grad-teal',
+    { key: 'shomudro', bn: 'সমুদ্র', name: 'SHOMUDRO', tag: 'Maritime awareness', grad: 'grad-teal',
       big: dark ?? '—', bigLbl: t.darkContacts, a: [`${sts ?? 0} ${t.stsEvents.toLowerCase()}`, `${pic?.counts?.sar ?? 0} ${t.sarDetections.toLowerCase()}`], val: dark != null ? Math.min(100, dark * 1.4) : 0 },
   ]
 
@@ -106,32 +109,38 @@ export default function NationalView({ lang, go }) {
 
       {/* Three module status cards */}
       <div className="nat-cards">
-        {cards.map((c, i) => (
-          <button key={c.key} className="nat-card reveal" style={{ animationDelay: `${i * 90}ms` }} onClick={() => go(c.key)}>
-            <div className="ncd-head">
-              <span className={`ncd-icon ${c.grad}`}>{c.icon}</span>
-              <div className="ncd-t"><b>{c.name}</b><span>{lang === 'bn' ? c.bn : c.tag}</span></div>
-            </div>
-            <div className="ncd-big"><CountBig value={c.big} /><span>{c.bigLbl}</span></div>
-            <div className="ncd-bar"><i className={c.grad} style={{ width: `${c.val}%` }} /></div>
-            <div className="ncd-a">{c.a.map((x, j) => <span key={j}>{x}</span>)}</div>
-            <div className="ncd-open">{t.viewSource.replace('↗', '')}→</div>
-          </button>
-        ))}
+        {cards.map((c, i) => {
+          const Icon = MOD_ICON[c.key]
+          return (
+            <button key={c.key} className="nat-card reveal" style={{ animationDelay: `${i * 90}ms` }} onClick={() => go(c.key)}>
+              <div className="ncd-head">
+                <span className={`ncd-icon ${c.grad}`}><Icon size={26} color="#fff" strokeWidth={2.2} /></span>
+                <div className="ncd-t"><b>{c.name}</b><span>{lang === 'bn' ? c.bn : c.tag}</span></div>
+              </div>
+              <div className="ncd-big"><CountBig value={c.big} /><span>{c.bigLbl}</span></div>
+              <div className="ncd-bar"><i className={c.grad} style={{ width: `${c.val}%` }} /></div>
+              <div className="ncd-a">{c.a.map((x, j) => <span key={j}>{x}</span>)}</div>
+              <div className="ncd-open">{t.openModule} <ArrowRight size={14} className="ti" /></div>
+            </button>
+          )
+        })}
       </div>
 
       {/* Cross-module live alert stream */}
-      <div className="section-title nat-stitle">🚨 {t.serviceLifeAlerts.includes('সতর্কতা') ? 'জাতীয় সতর্কতা প্রবাহ' : 'National alert stream'}
+      <div className="section-title nat-stitle"><AlertTriangle size={17} className="ti" /> {lang === 'bn' ? 'জাতীয় সতর্কতা প্রবাহ' : 'National alert stream'}
         <span className="realbadge">{stream.length}</span></div>
       <div className="nat-stream">
-        {stream.map((a, i) => (
-          <button key={i} className={`nsr reveal sel-${a.sev}`} style={{ animationDelay: `${i * 45}ms` }} onClick={() => go(a.go)}>
-            <span className="nsr-ic">{a.icon}</span>
-            <span className={`nsr-band sev-${a.sev}`} />
-            <div className="nsr-body"><div className="nsr-title">{a.title}</div><div className="nsr-sub">{a.sub}</div></div>
-            <span className="nsr-go">→</span>
-          </button>
-        ))}
+        {stream.map((a, i) => {
+          const Icon = MOD_ICON[a.mod]
+          return (
+            <button key={i} className={`nsr reveal sel-${a.sev}`} style={{ animationDelay: `${i * 45}ms` }} onClick={() => go(a.go)}>
+              <span className={`nsr-ic ic-${a.mod}`}><Icon size={20} /></span>
+              <span className={`nsr-band sev-${a.sev}`} />
+              <div className="nsr-body"><div className="nsr-title">{a.title}</div><div className="nsr-sub">{a.sub}</div></div>
+              <ArrowRight size={16} className="nsr-go" />
+            </button>
+          )
+        })}
         {!stream.length && <div className="placeholder">{t.loading}</div>}
       </div>
     </div>

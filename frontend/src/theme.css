@@ -765,3 +765,67 @@ body::before {
   .nat-hero { flex-direction: column; text-align: center; }
   .region-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Feather icons · modern KPI cards · modern data table
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* Inline icon alignment (lucide/Feather SVGs sitting next to text). */
+.ti { vertical-align: -0.16em; flex-shrink: 0; }
+.mt-ic { vertical-align: -0.16em; margin-right: 6px; }
+.mini-title, .section-title { display: flex; align-items: center; gap: 7px; }
+.mini-title .pnl-tag { margin-left: auto; }
+
+/* ─── Modern KPI card (icon chip · value · delta · sparkline) ─────────── */
+.kpi-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 18px; }
+.kpi-card { position: relative; overflow: hidden; background: var(--glass); border: 1px solid var(--stroke);
+  border-radius: 16px; padding: 15px 16px 8px; box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }
+.kpi-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.kc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.kc-chip { width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center; }
+.kc-delta { display: inline-flex; align-items: center; gap: 3px; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.kc-delta.up { color: var(--green); background: var(--green-bg); }
+.kc-delta.down { color: var(--red); background: var(--red-bg); }
+.kc-val { font-size: 27px; font-weight: 800; font-family: var(--mono); line-height: 1; }
+.kc-unit { font-size: 15px; color: var(--text-dim); margin-left: 2px; font-family: var(--sans); }
+.kc-label { font-size: 12px; color: var(--text-dim); margin-top: 5px; }
+.kc-spark { height: 30px; margin: 8px -16px -8px; }
+.spark { width: 100%; height: 100%; display: block; }
+
+/* ─── Modern data table (RAKKHOK) ────────────────────────────────────── */
+.table-card { padding-top: 10px; }
+.mtable-wrap { overflow-x: auto; margin: 0 -4px; }
+.mtable { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+.mtable thead th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--text-faint); font-weight: 700; padding: 10px 12px; border-bottom: 1px solid var(--stroke); white-space: nowrap; }
+.mtable th.ta-r, .mtable td.ta-r { text-align: right; }
+.mtable tbody tr { cursor: pointer; transition: background .12s; }
+.mtable tbody tr:hover { background: var(--glass-2); }
+.mtable tbody tr.on { background: color-mix(in srgb, var(--accent) 10%, transparent); box-shadow: inset 3px 0 0 var(--accent); }
+.mtable td { padding: 10px 12px; border-bottom: 1px solid var(--stroke); vertical-align: middle; }
+.mtable tbody tr:last-child td { border-bottom: none; }
+.mt-asset { display: flex; align-items: center; gap: 11px; }
+.mt-av { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; flex-shrink: 0;
+  background: var(--glass-2); border: 1px solid var(--stroke); }
+.mt-av.st-operational { color: var(--green); border-color: color-mix(in srgb, var(--green) 40%, transparent); }
+.mt-av.st-maintenance { color: var(--amber); border-color: color-mix(in srgb, var(--amber) 40%, transparent); }
+.mt-av.st-grounded { color: var(--red); border-color: color-mix(in srgb, var(--red) 40%, transparent); }
+.mt-nm b { font-size: 13.5px; display: block; } .mt-nm span { font-size: 11px; color: var(--text-faint); }
+.mt-force { text-transform: capitalize; color: var(--text-dim); }
+.pill { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 11.5px; font-weight: 700; text-transform: capitalize; }
+.pill.st-operational { color: var(--green); background: var(--green-bg); }
+.pill.st-maintenance { color: var(--amber); background: var(--amber-bg); }
+.pill.st-grounded { color: var(--red); background: var(--red-bg); }
+.mt-risk { display: flex; align-items: center; gap: 8px; min-width: 90px; }
+.mt-risk .bar { flex: 1; min-width: 54px; height: 7px; background: var(--track); border-radius: 5px; overflow: hidden; }
+.mt-risk .bar span { display: block; height: 100%; border-radius: 5px; }
+.mt-risk b { font-family: var(--mono); font-size: 12.5px; }
+.mt-rul { font-family: var(--mono); font-size: 16px; } .mt-d { font-size: 11px; color: var(--text-faint); }
+
+/* Stream icons — one hue per module. */
+.nsr-ic { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--glass-2); }
+.nsr-ic.ic-drishti { color: #22d3ee; } .nsr-ic.ic-rakkhok { color: #f59e0b; } .nsr-ic.ic-shomudro { color: #14b8a6; }
+.ncd-open { display: inline-flex; align-items: center; gap: 5px; }
+
+@media (max-width: 1100px) { .kpi-row { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .kpi-row { grid-template-columns: repeat(2, 1fr); } .hide-sm { display: none; } }

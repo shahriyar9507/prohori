@@ -4,11 +4,12 @@ import DrishtiView from './modules/DrishtiView.jsx'
 import RakkhokView from './modules/RakkhokView.jsx'
 import ShomudroView from './modules/ShomudroView.jsx'
 import NationalView from './modules/NationalView.jsx'
+import { Satellite, Shield, Waves, Flag } from 'lucide-react'
 
 const MODULES = [
-  { key: 'drishti', bn: 'দৃষ্টি', icon: '🛰️' },
-  { key: 'rakkhok', bn: 'রক্ষক', icon: '🛡️' },
-  { key: 'shomudro', bn: 'সমুদ্র', icon: '🌊' },
+  { key: 'drishti', bn: 'দৃষ্টি', Icon: Satellite },
+  { key: 'rakkhok', bn: 'রক্ষক', Icon: Shield },
+  { key: 'shomudro', bn: 'সমুদ্র', Icon: Waves },
 ]
 
 export default function App() {
@@ -31,7 +32,7 @@ export default function App() {
         <nav className="modules">
           {/* National Situation — its own page, reached by this button */}
           <button className={`module-tab nat-btn ${active === 'national' ? 'active' : ''}`} onClick={() => setActive('national')}>
-            🇧🇩 {t.nationalSituation}
+            <Flag size={15} className="mt-ic" />{t.nationalSituation}
           </button>
           <span className="nav-div" />
           {MODULES.map((m) => (
@@ -40,7 +41,7 @@ export default function App() {
               className={`module-tab ${active === m.key ? 'active' : ''}`}
               onClick={() => setActive(m.key)}
             >
-              <span className="mt-ic">{m.icon}</span>{lang === 'bn' ? m.bn : t.modules[m.key]}
+              <m.Icon size={15} className="mt-ic" />{lang === 'bn' ? m.bn : t.modules[m.key]}
             </button>
           ))}
         </nav>

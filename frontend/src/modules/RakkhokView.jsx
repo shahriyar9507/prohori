@@ -3,6 +3,8 @@ import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
 import EquipmentIcon from '../components/EquipmentIcon.jsx'
 import EvidenceChain from '../components/EvidenceChain.jsx'
+import KpiCard from '../components/KpiCard.jsx'
+import { Gauge, CheckCircle2, Wrench, AlertOctagon, Bell, ShieldAlert } from 'lucide-react'
 
 function riskColor(p) {
   if (p >= 0.6) return 'var(--red)'
@@ -73,21 +75,25 @@ export default function RakkhokView({ lang }) {
 
   if (!readiness) return <div className="loading">{t.loading}</div>
   const o = readiness.overall
+  // Real per-force values reshaped as KPI sparklines (not synthetic).
+  const forceSpark = {
+    ready: readiness.by_force.map((f) => f.readiness_pct),
+    op: readiness.by_force.map((f) => f.operational),
+    maint: readiness.by_force.map((f) => Math.max(0, f.total - f.operational - f.grounded)),
+    gnd: readiness.by_force.map((f) => f.grounded),
+  }
 
   return (
     <div>
-      {/* Big-number readiness tiles */}
-      <div className="section-title">{t.fleetReadiness}</div>
-      <div className="tiles">
-        <div className="tile readiness">
-          <div className="num" style={{ color: pctColor(o.readiness_pct) }}>{o.readiness_pct}%</div>
-          <div className="lbl">{t.readinessPct}</div>
-        </div>
-        <div className="tile ok"><div className="num">{o.operational}</div><div className="lbl">{t.operational}</div></div>
-        <div className="tile warn"><div className="num">{o.maintenance}</div><div className="lbl">{t.maintenance}</div></div>
-        <div className="tile bad"><div className="num">{o.grounded}</div><div className="lbl">{t.grounded}</div></div>
-        <div className="tile bad"><div className="num">{readiness.red_alerts}</div><div className="lbl">{t.redAlerts}</div></div>
-        <div className="tile warn"><div className="num">{readiness.amber_alerts}</div><div className="lbl">{t.amberAlerts}</div></div>
+      {/* Readiness KPI cards */}
+      <div className="section-title"><Gauge size={17} className="ti" /> {t.fleetReadiness}</div>
+      <div className="kpi-row">
+        <KpiCard icon={Gauge} label={t.readinessPct} value={o.readiness_pct} unit="%" tone={o.readiness_pct >= 80 ? 'green' : o.readiness_pct >= 60 ? 'amber' : 'red'} spark={forceSpark.ready} />
+        <KpiCard icon={CheckCircle2} label={t.operational} value={o.operational} tone="green" spark={forceSpark.op} />
+        <KpiCard icon={Wrench} label={t.maintenance} value={o.maintenance} tone="amber" spark={forceSpark.maint} />
+        <KpiCard icon={AlertOctagon} label={t.grounded} value={o.grounded} tone="red" spark={forceSpark.gnd} />
+        <KpiCard icon={ShieldAlert} label={t.redAlerts} value={readiness.red_alerts} tone="red" />
+        <KpiCard icon={Bell} label={t.amberAlerts} value={readiness.amber_alerts} tone="amber" />
       </div>
 
       {/* Per-force readiness */}
@@ -104,28 +110,46 @@ export default function RakkhokView({ lang }) {
       </div>
 
       <div className="two-col rk-col">
-        {/* RUL ranking (R3) — clickable, with equipment silhouettes */}
-        <section className="panel">
-          <div className="section-title">{t.rulRanking}</div>
-          {ranking.map((h) => (
-            <div className={`rank-row ${sel?.asset.id === h.asset.id ? 'active' : ''}`} key={h.asset.id} onClick={() => setSel(h)}>
-              <span className={`equip-badge st-${h.computed_status}`}><EquipmentIcon type={h.asset.type} size={34} /></span>
-              <div className="rank-name">
-                <div className="rn">{h.asset.name}</div>
-                <div className="rt">{h.asset.type}</div>
-              </div>
-              <div className="risk">
-                <div className="rlabel">
-                  <span>{t.failureRisk}</span>
-                  <span>{Math.round(h.failure_probability_90d * 100)}%</span>
-                </div>
-                <div className="bar">
-                  <span style={{ width: `${Math.round(h.failure_probability_90d * 100)}%`, background: riskColor(h.failure_probability_90d) }} />
-                </div>
-                <div className="rt">{t.rul}: {Math.round(h.rul_days)} {t.days}</div>
-              </div>
-            </div>
-          ))}
+        {/* RUL ranking (R3) — modern table, click a row for the report */}
+        <section className="panel table-card">
+          <div className="section-title"><ShieldAlert size={17} className="ti" /> {t.rulRanking}</div>
+          <div className="mtable-wrap">
+            <table className="mtable">
+              <thead>
+                <tr>
+                  <th>{t.contactType ? 'Asset' : 'Asset'}</th>
+                  <th className="hide-sm">{t.force}</th>
+                  <th>{t.status || 'Status'}</th>
+                  <th>{t.failureRisk}</th>
+                  <th className="ta-r">{t.rul}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ranking.map((h) => {
+                  const fp = Math.round(h.failure_probability_90d * 100)
+                  return (
+                    <tr key={h.asset.id} className={sel?.asset.id === h.asset.id ? 'on' : ''} onClick={() => setSel(h)}>
+                      <td>
+                        <div className="mt-asset">
+                          <span className={`mt-av st-${h.computed_status}`}><EquipmentIcon type={h.asset.type} size={26} /></span>
+                          <div className="mt-nm"><b>{h.asset.name}</b><span>{h.asset.type}</span></div>
+                        </div>
+                      </td>
+                      <td className="hide-sm"><span className="mt-force">{h.asset.force.replace('_', ' ')}</span></td>
+                      <td><span className={`pill st-${h.computed_status}`}>{t[h.computed_status] || h.computed_status}</span></td>
+                      <td>
+                        <div className="mt-risk">
+                          <div className="bar"><span style={{ width: `${fp}%`, background: riskColor(h.failure_probability_90d) }} /></div>
+                          <b style={{ color: riskColor(h.failure_probability_90d) }}>{fp}%</b>
+                        </div>
+                      </td>
+                      <td className="ta-r"><b className="mt-rul">{Math.round(h.rul_days)}</b><span className="mt-d"> {t.days}</span></td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </div>
         </section>
 
         {/* Digital-twin asset health report */}

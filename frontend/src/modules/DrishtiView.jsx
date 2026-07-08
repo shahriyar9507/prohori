@@ -3,8 +3,10 @@ import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
 import EvidenceChain from '../components/EvidenceChain.jsx'
 import EventWorldMap from '../components/WorldMap.jsx'
+import KpiCard from '../components/KpiCard.jsx'
 import { SectorDonut, SeverityDonut, RelevanceBars, EconLine, SentimentBar, ActorBar, DayTrend, sectorColor } from '../components/Charts.jsx'
 import { EarlyWarning, RegionFocus } from '../components/IntelSections.jsx'
+import { Newspaper, AlertTriangle, Bell, Users, Globe2, BarChart3, PieChart, LineChart, Smile, Radio, Flame, MapPinned, Satellite } from 'lucide-react'
 
 const SECTORS = ['trade', 'labour', 'security', 'water', 'energy', 'diplomacy', 'climate']
 const SEVERITIES = ['red', 'amber', 'green']
@@ -182,6 +184,23 @@ export default function DrishtiView({ lang }) {
   }, [events])
   const maxActor = Math.max(1, ...topActors.map((a) => a.value))
 
+  // Per-day series for KPI sparklines (real breakdown by event date).
+  const spark = useMemo(() => {
+    const days = {}
+    events.forEach((s) => {
+      const d = s.event.event_date
+      const b = days[d] || (days[d] = { t: 0, red: 0, amber: 0, act: new Set() })
+      b.t++; if (s.severity === 'red') b.red++; if (s.severity === 'amber') b.amber++
+      ;(s.event.actors || []).forEach((a) => a !== 'Bangladesh' && b.act.add(a))
+    })
+    const keys = Object.keys(days).sort()
+    return {
+      total: keys.map((k) => days[k].t), red: keys.map((k) => days[k].red),
+      amber: keys.map((k) => days[k].amber), actors: keys.map((k) => days[k].act.size),
+    }
+  }, [events])
+  const deltaOf = (a) => (a.length >= 2 ? a[a.length - 1] - a[a.length - 2] : null)
+
   const econSeries = sel ? econ[SECTOR_ECON[sel.event.sectors[0]] || 'GDP (US$)'] : null
   const econLabel = sel ? (SECTOR_ECON[sel.event.sectors[0]] || 'GDP (US$)') : ''
 
@@ -209,13 +228,13 @@ export default function DrishtiView({ lang }) {
       {/* Analytical bento */}
       <div className="bento">
         <div className="bento-kpis">
-          <Kpi value={events.length} label={t.totalEvents} cls="kpi-total" />
-          <Kpi value={sevCounts.red} label={t.redAlerts} cls="kpi-red" />
-          <Kpi value={sevCounts.amber} label={t.amberAlerts} cls="kpi-amber" />
-          <Kpi value={topActors.length} label={t.countriesInPlay} cls="kpi-actors" />
+          <KpiCard icon={Newspaper} label={t.totalEvents} value={events.length} spark={spark.total} delta={deltaOf(spark.total)} tone="blue" />
+          <KpiCard icon={AlertTriangle} label={t.redAlerts} value={sevCounts.red} spark={spark.red} delta={deltaOf(spark.red)} tone="red" />
+          <KpiCard icon={Bell} label={t.amberAlerts} value={sevCounts.amber} spark={spark.amber} delta={deltaOf(spark.amber)} tone="amber" />
+          <KpiCard icon={Users} label={t.countriesInPlay} value={topActors.length} spark={spark.actors} delta={deltaOf(spark.actors)} tone="violet" />
         </div>
         <div className="panel bento-map">
-          <div className="mini-title">🌐 {t.geoFootprint}<span className="pnl-tag">live arcs → Dhaka</span></div>
+          <div className="mini-title"><Globe2 size={15} className="ti" /> {t.geoFootprint}<span className="pnl-tag">live arcs → Dhaka</span></div>
           <EventWorldMap events={events} />
         </div>
         <div className="panel bento-actors">
@@ -231,8 +250,8 @@ export default function DrishtiView({ lang }) {
             {!topActors.length && <div className="placeholder">{t.loading}</div>}
           </div>
         </div>
-        <div className="panel bento-sector accent-blue"><div className="mini-title">🥧 {t.bySector}</div><SectorDonut data={sectorData} /></div>
-        <div className="panel bento-sev accent-red"><div className="mini-title">🥧 {t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
+        <div className="panel bento-sector accent-blue"><div className="mini-title"><PieChart size={15} className="ti" /> {t.bySector}</div><SectorDonut data={sectorData} /></div>
+        <div className="panel bento-sev accent-red"><div className="mini-title"><PieChart size={15} className="ti" /> {t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
       </div>
 
       {/* Early-warning + region focus */}
@@ -242,11 +261,11 @@ export default function DrishtiView({ lang }) {
       </div>
 
       {/* Signal analytics — colourful pie + bar + trend */}
-      <div className="section-title">📊 {t.analytics}</div>
+      <div className="section-title"><BarChart3 size={17} className="ti" /> {t.analytics}</div>
       <div className="analytics-grid">
-        <div className="panel accent-green"><div className="mini-title">😊 {t.sentiment}</div><SentimentBar events={events} /></div>
-        <div className="panel accent-violet"><div className="mini-title">📶 {t.actorVolume}</div><ActorBar actors={topActors} /></div>
-        <div className="panel accent-cyan"><div className="mini-title">📈 {t.signalVolume}</div><DayTrend events={events} /></div>
+        <div className="panel accent-green"><div className="mini-title"><Smile size={15} className="ti" /> {t.sentiment}</div><SentimentBar events={events} /></div>
+        <div className="panel accent-violet"><div className="mini-title"><Radio size={15} className="ti" /> {t.actorVolume}</div><ActorBar actors={topActors} /></div>
+        <div className="panel accent-cyan"><div className="mini-title"><LineChart size={15} className="ti" /> {t.signalVolume}</div><DayTrend events={events} /></div>
       </div>
 
       {/* Intelligence report (opens above the wall on selection) */}
@@ -269,7 +288,7 @@ export default function DrishtiView({ lang }) {
               {briefLoading && <div className="loading">{t.loading}</div>}
               {brief && !brief.refused && (
                 <>
-                  <div className="rt-note">🛰️ {t.realtimeNote}{brief._fallback ? '' : ` · ${t.liveContext}`}</div>
+                  <div className="rt-note"><Satellite size={13} className="ti" /> {t.realtimeNote}{brief._fallback ? '' : ` · ${t.liveContext}`}</div>
                   <div className="why" style={{ marginTop: 10 }}><strong>{t.whyItMatters}:</strong> {brief.why_it_matters}</div>
                   <div className="doavoid">
                     <div className="col-do"><h3>✔ {t.doColumn}</h3>{brief.do.map((r, i) => <div className="rec" key={i}>{r.action}</div>)}</div>
@@ -297,7 +316,7 @@ export default function DrishtiView({ lang }) {
       {/* Trending now */}
       {events.length > 0 && (
         <div className="trending">
-          <span className="trend-tag">🔥 {t.trending}</span>
+          <span className="trend-tag"><Flame size={14} className="ti" /> {t.trending}</span>
           {[...events].sort((a, b) => b.relevance_score - a.relevance_score).slice(0, 3).map((s, i) => (
             <button key={s.event.id} className={`trend-chip sel-${s.severity}`} onClick={() => openReport(s)}>
               <b>#{i + 1}</b> {s.event.title}<span className="tc-score">{Math.round(s.relevance_score)}</span>
@@ -308,7 +327,7 @@ export default function DrishtiView({ lang }) {
 
       {/* Live Intelligence Feed — the news wall */}
       <div className="section-title feed-title">
-        📰 {t.liveNews}
+        <Newspaper size={17} className="ti" /> {t.liveNews}
         <span className="realbadge">{shown.length} {t.totalEvents.toLowerCase()}</span>
         <span className="poll-note">⟳ {t.autoPolling}</span>
       </div>
