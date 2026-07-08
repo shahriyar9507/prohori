@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "vite",
-  "buildCommand": "VITE_STATIC_DEMO=1 npm run build",
+  "buildCommand": "VITE_STATIC_DEMO=1 VITE_API_BASE_URL=https://prahari-backend-5b6b.onrender.com npm run build",
   "outputDirectory": "dist",
-  "installCommand": "npm install"
+  "installCommand": "npm install --legacy-peer-deps"
 }
