@@ -325,13 +325,15 @@ body::before {
 .map::after { content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: var(--radius);
   box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.55); }
 
-/* Map view switcher (Dark / Satellite / Streets) */
-.view-switch { position: absolute; top: 14px; left: 14px; z-index: 5; display: flex; gap: 3px; padding: 4px;
-  border-radius: 12px; background: rgba(10, 17, 34, 0.82); backdrop-filter: blur(12px); border: 1px solid var(--stroke-strong); box-shadow: var(--shadow); }
-.view-switch button { background: transparent; color: var(--text-dim); border: none; cursor: pointer;
+/* Map provider + view switchers */
+.provider-switch, .view-switch { position: absolute; left: 14px; z-index: 5; display: flex; flex-wrap: wrap; gap: 3px; padding: 4px;
+  border-radius: 12px; background: rgba(10, 17, 34, 0.82); backdrop-filter: blur(12px); border: 1px solid var(--stroke-strong); box-shadow: var(--shadow); max-width: calc(100% - 90px); }
+.provider-switch { top: 14px; }
+.view-switch { top: 60px; }
+.provider-switch button, .view-switch button { background: transparent; color: var(--text-dim); border: none; cursor: pointer;
   padding: 7px 13px; border-radius: 8px; font-size: 12px; font-weight: 700; font-family: inherit; letter-spacing: .02em; transition: .18s; }
-.view-switch button:hover { color: var(--text); }
-.view-switch button.active { background: var(--grad-accent); color: #04121f; box-shadow: var(--glow-accent); }
+.provider-switch button:hover, .view-switch button:hover { color: var(--text); }
+.provider-switch button.active, .view-switch button.active { background: var(--grad-accent); color: #04121f; box-shadow: var(--glow-accent); }
 
 /* Cyber HUD panel: glowing corner brackets */
 .hud { position: relative; }
