@@ -76,6 +76,68 @@ export function RelevanceBars({ components }) {
   )
 }
 
+// Sentiment split of the live feed (positive / neutral / negative) — colored bars.
+export function SentimentBar({ events }) {
+  const c = chrome()
+  const tone = (e) => e.goldstein ?? e.tone ?? 0
+  const data = [
+    { name: 'Positive', value: events.filter((s) => tone(s.event) > 1).length, c: '#2dd4a7' },
+    { name: 'Neutral', value: events.filter((s) => Math.abs(tone(s.event)) <= 1).length, c: '#7c9cff' },
+    { name: 'Negative', value: events.filter((s) => tone(s.event) < -1).length, c: '#ff4d6a' },
+  ]
+  return (
+    <ResponsiveContainer width="100%" height={180}>
+      <BarChart data={data} margin={{ left: 2, right: 10, top: 8, bottom: 2 }}>
+        <CartesianGrid vertical={false} stroke={c.grid} />
+        <XAxis dataKey="name" tick={{ fill: c.axis, fontSize: 11 }} axisLine={false} tickLine={false} />
+        <YAxis allowDecimals={false} tick={{ fill: c.axis, fontSize: 11 }} axisLine={false} tickLine={false} width={26} />
+        <Tooltip {...c.tip} cursor={{ fill: 'rgba(255,255,255,0.04)' }} />
+        <Bar dataKey="value" radius={[5, 5, 0, 0]} barSize={40}>
+          {data.map((d) => <Cell key={d.name} fill={d.c} />)}
+        </Bar>
+      </BarChart>
+    </ResponsiveContainer>
+  )
+}
+
+// Top actors by signal count — distinct color per actor (easy identification).
+export function ActorBar({ actors }) {
+  const c = chrome()
+  const data = actors.slice(0, 7)
+  return (
+    <ResponsiveContainer width="100%" height={190}>
+      <BarChart data={data} layout="vertical" margin={{ left: 6, right: 16, top: 4, bottom: 2 }}>
+        <CartesianGrid horizontal={false} stroke={c.grid} />
+        <XAxis type="number" allowDecimals={false} tick={{ fill: c.axis, fontSize: 11 }} axisLine={false} tickLine={false} />
+        <YAxis type="category" dataKey="name" width={92} tick={{ fill: c.axis, fontSize: 11 }} axisLine={false} tickLine={false} />
+        <Tooltip {...c.tip} cursor={{ fill: 'rgba(255,255,255,0.04)' }} />
+        <Bar dataKey="value" radius={[0, 5, 5, 0]} barSize={15}>
+          {data.map((d, i) => <Cell key={d.name} fill={CAT[i % CAT.length]} />)}
+        </Bar>
+      </BarChart>
+    </ResponsiveContainer>
+  )
+}
+
+// Signal volume over time (events per day) — area trend of live coverage.
+export function DayTrend({ events }) {
+  const c = chrome()
+  const by = {}
+  events.forEach((s) => { const d = s.event.event_date; by[d] = (by[d] || 0) + 1 })
+  const data = Object.entries(by).map(([date, value]) => ({ date: date.slice(5), value })).sort((a, b) => (a.date < b.date ? -1 : 1))
+  return (
+    <ResponsiveContainer width="100%" height={180}>
+      <LineChart data={data} margin={{ left: 2, right: 14, top: 8, bottom: 2 }}>
+        <CartesianGrid stroke={c.grid} />
+        <XAxis dataKey="date" tick={{ fill: c.axis, fontSize: 10 }} axisLine={false} tickLine={false} minTickGap={16} />
+        <YAxis allowDecimals={false} tick={{ fill: c.axis, fontSize: 11 }} axisLine={false} tickLine={false} width={26} />
+        <Tooltip {...c.tip} />
+        <Line type="monotone" dataKey="value" stroke="#22d3ee" strokeWidth={2.4} dot={{ r: 2.5, fill: '#22d3ee' }} activeDot={{ r: 5 }} />
+      </LineChart>
+    </ResponsiveContainer>
+  )
+}
+
 // Real World Bank time series (economic context).
 export function EconLine({ series, colorIdx = 0 }) {
   if (!series || series.length === 0) return null

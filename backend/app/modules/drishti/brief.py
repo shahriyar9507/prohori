@@ -12,6 +12,7 @@ the requested language from the SAME grounded facts — it never adds claims.
 from __future__ import annotations
 
 import re
+from datetime import date
 
 from app.llm import complete, is_enabled
 from app.modules.drishti import knowledge
@@ -62,26 +63,59 @@ def _deterministic_narrative(scored: ScoredEvent) -> tuple[str, str]:
     return situation, why
 
 
+async def _live_context() -> str:
+    """A compact digest of today's current headlines, used to ground the brief in
+    the real-time situation (what partners are doing NOW), so an older event is
+    always analyzed against today's live status."""
+    try:
+        from app.modules.drishti.news import get_live_events
+        events = await get_live_events() or []
+    except Exception:  # noqa: BLE001
+        return ""
+    lines = []
+    for e in events[:12]:
+        actors = ", ".join(a for a in e.actors if a.lower() != "bangladesh") or "—"
+        lines.append(f"- ({e.event_date}) {e.title} [{actors}]")
+    return "\n".join(lines)
+
+
 async def _llm_narrative(scored: ScoredEvent, language: str) -> tuple[str, str] | None:
-    """Optionally rephrase the narrative via LLM in the requested language."""
+    """Real-time comparative analysis via LLM in the requested language.
+
+    The target event may be several days old; the model is given TODAY'S live
+    headline context and asked to relate the event to the current situation —
+    what the relevant countries appear to be doing now and the present state of
+    the relationship — producing genuine research, not just a rephrase.
+    """
     if not is_enabled():
         return None
     e = scored.event
+    today = date.today().isoformat()
     lang_name = "Bangla" if language == "bn" else "English"
+    live = await _live_context()
     system = (
         "You are DRISHTI, a Bangladesh-first strategic-intelligence analyst. "
-        "Write neutrally toward all foreign states. Use ONLY the facts provided; "
-        "do not add new claims, numbers, or entities. Do NOT use markdown, "
-        "asterisks, or headings. Respond in " + lang_name + " and output EXACTLY "
+        f"Today's date is {today}. You receive ONE target event (which may be a "
+        "few days old) plus a LIVE CONTEXT of today's current Bangladesh-related "
+        "headlines. Produce a real-time comparative assessment: relate the target "
+        "event to the CURRENT situation — what the relevant countries/partners "
+        "appear to be doing now (cite the live context where relevant), the "
+        "present state of the diplomatic/trade relationship, and how the picture "
+        "has moved since the event. Be analytical, specific and neutral toward all "
+        "foreign states. Do not fabricate precise statistics. No markdown, "
+        "asterisks or headings. Respond in " + lang_name + " and output EXACTLY "
         "these two labeled lines and nothing else:\n"
-        "SITUATION: <one concise paragraph describing what happened>\n"
-        "ANALYSIS: <one concise paragraph on why it matters for Bangladesh, "
-        "including first- and second-order effects>"
+        "SITUATION: <2–3 sentences: what happened and where it stands as of today>\n"
+        "ANALYSIS: <a rich paragraph on why it matters for Bangladesh now — "
+        "first- and second-order effects, the live comparison, and what partners "
+        "are currently doing>"
     )
     user = (
-        f"Title: {e.title}\nSummary: {e.summary}\nActors: {', '.join(e.actors)}\n"
-        f"Sectors: {', '.join(s.value for s in e.sectors)}\n"
-        f"Relevance score: {scored.relevance_score}/100, severity {scored.severity.value}."
+        f"TARGET EVENT\nTitle: {e.title}\nSummary: {e.summary}\n"
+        f"Event date: {e.event_date} (today is {today})\n"
+        f"Actors: {', '.join(e.actors)}\nSectors: {', '.join(s.value for s in e.sectors)}\n"
+        f"Relevance score: {scored.relevance_score}/100, severity {scored.severity.value}.\n\n"
+        f"LIVE CONTEXT — today's current Bangladesh headlines:\n{live or '(none available)'}"
     )
     out = await complete(system, user)
     if not out:

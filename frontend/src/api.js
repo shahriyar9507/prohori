@@ -14,6 +14,16 @@ async function jget(url) {
   if (!res.ok) throw new Error(`GET ${url} → ${res.status}`)
   return res.json()
 }
+// Same, but aborts after `ms` so a cold/slow backend can never hang the UI.
+async function jgetTimeout(url, ms = 22000) {
+  const ctl = new AbortController()
+  const to = setTimeout(() => ctl.abort(), ms)
+  try {
+    const res = await fetch(url, { signal: ctl.signal })
+    if (!res.ok) throw new Error(`GET ${url} → ${res.status}`)
+    return await res.json()
+  } finally { clearTimeout(to) }
+}
 const demo = (p) => jget(`${import.meta.env.BASE_URL}demo/${p}`)
 
 async function get(path) { return jget(`${BASE}${path}`) }
@@ -97,7 +107,7 @@ export const api = {
     // freshly-generated Do/Avoid brief. Baked briefs stay as the offline demo.
     const base = import.meta.env.VITE_API_BASE_URL
     if (base) {
-      try { return await jget(`${base}/api/drishti/events/${encodeURIComponent(eventId)}/brief?language=${language}`) } catch { /* fall through */ }
+      try { return await jgetTimeout(`${base}/api/drishti/events/${encodeURIComponent(eventId)}/brief?language=${language}`) } catch { /* fall through */ }
     }
     if (STATIC) {
       _briefs = _briefs || await demo('drishti/briefs.json')

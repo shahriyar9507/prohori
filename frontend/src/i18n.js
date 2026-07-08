@@ -85,6 +85,11 @@ export const STRINGS = {
     commissioned: 'Commissioned', serviceLife: 'Service life', hoursLogged: 'Hours logged', nextService: 'Next service',
     remainingLife: 'Remaining useful life', missionCap: 'Mission-capable', within180: '180-day window', within90: '90-day window', within30: '30-day window',
     doNow: 'Do now', watch: 'Watch', evidenceBasis: 'Basis & confidence', predicted: 'ML-predicted', assetClass: 'Class', force: 'Force',
+    // new intel sections
+    earlyWarning: 'Early-warning board', regionFocus: 'Region focus', analytics: 'Signal analytics',
+    sentiment: 'Sentiment split', actorVolume: 'Top actors by signal', signalVolume: 'Signal volume over time',
+    trending: 'Trending now', allNews: 'All', national: 'National', openModule: 'Open module',
+    realtimeNote: 'Assessed against today’s live situation', liveContext: 'Live-context research',
   },
   bn: {
     tagline: 'দ্য সেন্টিনেল · জাতীয় কৌশলগত গোয়েন্দা',
@@ -171,6 +176,11 @@ export const STRINGS = {
     commissioned: 'কমিশনকাল', serviceLife: 'সার্ভিস লাইফ', hoursLogged: 'লগকৃত ঘণ্টা', nextService: 'পরবর্তী সার্ভিস',
     remainingLife: 'অবশিষ্ট কার্যকর আয়ু', missionCap: 'মিশন-সক্ষম', within180: '১৮০-দিন সীমা', within90: '৯০-দিন সীমা', within30: '৩০-দিন সীমা',
     doNow: 'এখনই করুন', watch: 'পর্যবেক্ষণ', evidenceBasis: 'ভিত্তি ও আস্থা', predicted: 'ML-পূর্বাভাস', assetClass: 'শ্রেণি', force: 'বাহিনী',
+    // new intel sections
+    earlyWarning: 'আগাম সতর্কতা বোর্ড', regionFocus: 'অঞ্চল ফোকাস', analytics: 'সিগন্যাল বিশ্লেষণ',
+    sentiment: 'অনুভূতি বিভাজন', actorVolume: 'সিগন্যাল অনুযায়ী শীর্ষ পক্ষ', signalVolume: 'সময় অনুযায়ী সিগন্যাল',
+    trending: 'এখন ট্রেন্ডিং', allNews: 'সব', national: 'জাতীয়', openModule: 'মডিউল খুলুন',
+    realtimeNote: 'আজকের লাইভ পরিস্থিতির সাথে তুলনা করে মূল্যায়িত', liveContext: 'লাইভ-প্রেক্ষাপট গবেষণা',
   },
 }
 

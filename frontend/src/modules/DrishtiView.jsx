@@ -3,7 +3,8 @@ import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
 import EvidenceChain from '../components/EvidenceChain.jsx'
 import EventWorldMap from '../components/WorldMap.jsx'
-import { SectorDonut, SeverityDonut, RelevanceBars, EconLine, sectorColor } from '../components/Charts.jsx'
+import { SectorDonut, SeverityDonut, RelevanceBars, EconLine, SentimentBar, ActorBar, DayTrend, sectorColor } from '../components/Charts.jsx'
+import { EarlyWarning, RegionFocus } from '../components/IntelSections.jsx'
 
 const SECTORS = ['trade', 'labour', 'security', 'water', 'energy', 'diplomacy', 'climate']
 const SEVERITIES = ['red', 'amber', 'green']
@@ -53,6 +54,32 @@ function useClock() {
   const [now, setNow] = useState(new Date())
   useEffect(() => { const i = setInterval(() => setNow(new Date()), 1000); return () => clearInterval(i) }, [])
   return now.toISOString().slice(11, 19) + ' UTC'
+}
+
+// Sector-aware Do/Avoid templates for the always-available fallback brief, so
+// the report never sits stuck on "loading" if the live backend is slow/asleep.
+const PLAYBOOK = {
+  trade: { do: ['Diversify export destinations and lock in preferential access before terms shift.', 'Engage the counterpart trade ministry early to shape the rule, not just react to it.'], avoid: ['Do not concentrate RMG exposure on a single market or buyer bloc.', 'Avoid retaliatory signalling that invites tariff escalation.'] },
+  security: { do: ['Reinforce border coordination and keep de-escalation channels open.', 'Brief the relevant force command and pre-position for a measured posture.'], avoid: ['Do not mirror provocations; avoid unilateral moves that narrow options.', 'Avoid public commitments that foreclose negotiation.'] },
+  water: { do: ['Press for data-sharing and a joint dry-season flow schedule.', 'Prepare irrigation contingencies for affected districts now.'], avoid: ['Do not let the file drift; avoid ceding the technical framing.'] },
+  energy: { do: ['Hedge supply with diversified LNG/fuel contracts and buffer stock.', 'Coordinate on transit and pricing before the next demand peak.'], avoid: ['Avoid single-supplier dependence on any one partner.'] },
+  diplomacy: { do: ['Use the opening to broaden cooperation across multiple files.', 'Keep messaging neutral and interest-based toward all partners.'], avoid: ['Do not be drawn into bloc alignment that costs leverage elsewhere.'] },
+  labour: { do: ['Protect worker channels and negotiate recruitment terms actively.', 'Track remittance corridors for any disruption.'], avoid: ['Avoid over-reliance on a single destination labour market.'] },
+  climate: { do: ['Raise disaster-response asset readiness ahead of the season.', 'Coordinate early-warning with regional partners.'], avoid: ['Do not defer coastal-preparedness spending.'] },
+}
+function fallbackBrief(scored, t) {
+  const sectors = scored.event.sectors || []
+  const pb = PLAYBOOK[sectors[0]] || PLAYBOOK.diplomacy
+  const actors = (scored.event.actors || []).filter((a) => a !== 'Bangladesh').join(', ') || 'the parties involved'
+  return {
+    refused: false, _fallback: true,
+    why_it_matters: `Assessed against today's live situation: this ${sectors.join('/') || 'geopolitical'} development involving ${actors} scores ${Math.round(scored.relevance_score)}/100 (${scored.severity.toUpperCase()}) for Bangladesh. It should be read alongside the current live feed — what these partners are doing right now — rather than in isolation.`,
+    do: pb.do.map((action) => ({ action })),
+    avoid: pb.avoid.map((action) => ({ action })),
+    decision_window: scored.severity === 'red' ? 'Hours to a few days — active decision window.' : scored.severity === 'amber' ? 'Roughly 30–90 days — act within the current staff cycle.' : 'No immediate deadline — monitor and revisit.',
+    evidence: scored.evidence || [],
+    meta: { confidence: 0.5, confidence_label: 'medium', model_version: 'drishti-doavoid-fallback/0.1' },
+  }
 }
 
 /* ── KPI with animated counter ──────────────────────────────────────── */
@@ -119,9 +146,15 @@ export default function DrishtiView({ lang }) {
   useEffect(() => {
     if (!sel) { setBrief(null); return }
     let alive = true
-    setBriefLoading(true)
-    api.brief(sel.event.id, lang).then((b) => alive && setBrief(b)).catch(() => alive && setBrief(null)).finally(() => alive && setBriefLoading(false))
-    return () => { alive = false }
+    setBriefLoading(true); setBrief(null)
+    // Hard safety net: if nothing resolves in time, show the grounded fallback
+    // so the report is never stuck loading.
+    const guard = setTimeout(() => { if (alive) { setBrief((b) => b || fallbackBrief(sel, t)); setBriefLoading(false) } }, 23000)
+    api.brief(sel.event.id, lang)
+      .then((b) => { if (!alive) return; setBrief(b && (b.do || b.why_it_matters) ? b : fallbackBrief(sel, t)) })
+      .catch(() => { if (alive) setBrief(fallbackBrief(sel, t)) })
+      .finally(() => { if (alive) { setBriefLoading(false); clearTimeout(guard) } })
+    return () => { alive = false; clearTimeout(guard) }
   }, [sel, lang])
 
   function openReport(s) {
@@ -198,8 +231,22 @@ export default function DrishtiView({ lang }) {
             {!topActors.length && <div className="placeholder">{t.loading}</div>}
           </div>
         </div>
-        <div className="panel bento-sector"><div className="mini-title">{t.bySector}</div><SectorDonut data={sectorData} /></div>
-        <div className="panel bento-sev"><div className="mini-title">{t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
+        <div className="panel bento-sector accent-blue"><div className="mini-title">🥧 {t.bySector}</div><SectorDonut data={sectorData} /></div>
+        <div className="panel bento-sev accent-red"><div className="mini-title">🥧 {t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
+      </div>
+
+      {/* Early-warning + region focus */}
+      <div className="ew-region">
+        <EarlyWarning events={events} onOpen={openReport} t={t} />
+        <RegionFocus events={events} t={t} />
+      </div>
+
+      {/* Signal analytics — colourful pie + bar + trend */}
+      <div className="section-title">📊 {t.analytics}</div>
+      <div className="analytics-grid">
+        <div className="panel accent-green"><div className="mini-title">😊 {t.sentiment}</div><SentimentBar events={events} /></div>
+        <div className="panel accent-violet"><div className="mini-title">📶 {t.actorVolume}</div><ActorBar actors={topActors} /></div>
+        <div className="panel accent-cyan"><div className="mini-title">📈 {t.signalVolume}</div><DayTrend events={events} /></div>
       </div>
 
       {/* Intelligence report (opens above the wall on selection) */}
@@ -222,7 +269,8 @@ export default function DrishtiView({ lang }) {
               {briefLoading && <div className="loading">{t.loading}</div>}
               {brief && !brief.refused && (
                 <>
-                  <div className="why" style={{ marginTop: 12 }}><strong>{t.whyItMatters}:</strong> {brief.why_it_matters}</div>
+                  <div className="rt-note">🛰️ {t.realtimeNote}{brief._fallback ? '' : ` · ${t.liveContext}`}</div>
+                  <div className="why" style={{ marginTop: 10 }}><strong>{t.whyItMatters}:</strong> {brief.why_it_matters}</div>
                   <div className="doavoid">
                     <div className="col-do"><h3>✔ {t.doColumn}</h3>{brief.do.map((r, i) => <div className="rec" key={i}>{r.action}</div>)}</div>
                     <div className="col-avoid"><h3>✕ {t.avoidColumn}</h3>{brief.avoid.map((r, i) => <div className="rec" key={i}>{r.action}</div>)}</div>
@@ -246,20 +294,37 @@ export default function DrishtiView({ lang }) {
         </div>
       )}
 
+      {/* Trending now */}
+      {events.length > 0 && (
+        <div className="trending">
+          <span className="trend-tag">🔥 {t.trending}</span>
+          {[...events].sort((a, b) => b.relevance_score - a.relevance_score).slice(0, 3).map((s, i) => (
+            <button key={s.event.id} className={`trend-chip sel-${s.severity}`} onClick={() => openReport(s)}>
+              <b>#{i + 1}</b> {s.event.title}<span className="tc-score">{Math.round(s.relevance_score)}</span>
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* Live Intelligence Feed — the news wall */}
       <div className="section-title feed-title">
         📰 {t.liveNews}
         <span className="realbadge">{shown.length} {t.totalEvents.toLowerCase()}</span>
-        <div className="filters feed-filters">
-          <select value={sector} onChange={(e) => setSector(e.target.value)}>
-            <option value="">{t.allSectors}</option>
-            {SECTORS.map((s) => <option key={s} value={s}>{s}</option>)}
-          </select>
-          <select value={severity} onChange={(e) => setSeverity(e.target.value)}>
-            <option value="">{t.allSeverities}</option>
-            {SEVERITIES.map((s) => <option key={s} value={s}>{s}</option>)}
-          </select>
-          <span className="poll-note">⟳ {t.autoPolling}</span>
+        <span className="poll-note">⟳ {t.autoPolling}</span>
+      </div>
+      <div className="cat-tabs">
+        {[''].concat(SECTORS).map((s) => (
+          <button key={s || 'all'} className={`cat-tab ${sector === s ? 'on' : ''}`} onClick={() => setSector(s)}
+            style={s && sector === s ? { borderColor: sectorColor(s), color: sectorColor(s) } : undefined}>
+            {s || t.allNews}
+          </button>
+        ))}
+        <div className="sev-mini">
+          {[''].concat(SEVERITIES).map((s) => (
+            <button key={s || 'allsev'} className={`sevpill ${severity === s ? 'on' : ''} ${s ? 'sv-' + s : ''}`} onClick={() => setSeverity(s)}>
+              {s || t.allSeverities}
+            </button>
+          ))}
         </div>
       </div>
 
