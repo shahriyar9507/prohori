@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
-import EquipmentIcon from '../components/EquipmentIcon.jsx'
+import EquipmentPhoto from '../components/EquipmentPhoto.jsx'
 import EvidenceChain from '../components/EvidenceChain.jsx'
 import KpiCard from '../components/KpiCard.jsx'
 import { Gauge, CheckCircle2, Wrench, AlertOctagon, Bell, ShieldAlert } from 'lucide-react'
@@ -131,7 +131,7 @@ export default function RakkhokView({ lang }) {
                     <tr key={h.asset.id} className={sel?.asset.id === h.asset.id ? 'on' : ''} onClick={() => setSel(h)}>
                       <td>
                         <div className="mt-asset">
-                          <span className={`mt-av st-${h.computed_status}`}><EquipmentIcon type={h.asset.type} size={26} /></span>
+                          <span className={`mt-av st-${h.computed_status}`}><EquipmentPhoto type={h.asset.type} size={40} radius={11} /></span>
                           <div className="mt-nm"><b>{h.asset.name}</b><span>{h.asset.type}</span></div>
                         </div>
                       </td>
@@ -190,7 +190,7 @@ function AssetReport({ h, t }) {
   return (
     <div className="panel hud report asset-report">
       <div className="ar-head">
-        <div className={`ar-photo st-${h.computed_status}`}><EquipmentIcon type={a.type} size={82} /></div>
+        <div className={`ar-photo st-${h.computed_status}`}><EquipmentPhoto type={a.type} size={108} radius={16} /></div>
         <div className="ar-id">
           <h2>{a.name}</h2>
           <div className="ar-type">{a.type}</div>

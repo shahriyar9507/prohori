@@ -4,7 +4,7 @@ import DrishtiView from './modules/DrishtiView.jsx'
 import RakkhokView from './modules/RakkhokView.jsx'
 import ShomudroView from './modules/ShomudroView.jsx'
 import NationalView from './modules/NationalView.jsx'
-import { Satellite, Shield, Waves, Flag } from 'lucide-react'
+import { Satellite, Shield, Waves, Flag, Moon, Sun, ShieldCheck } from 'lucide-react'
 
 const MODULES = [
   { key: 'drishti', bn: 'দৃষ্টি', Icon: Satellite },
@@ -24,9 +24,11 @@ export default function App() {
     <div className={`app ${lang === 'bn' ? 'lang-bn' : ''}`}>
       <header className="topbar">
         <div className="brand">
-          <div className="mark">🛡️</div>
-          <h1>PRAHARI</h1>
-          <span className="tag">{t.tagline}</span>
+          <div className="mark"><ShieldCheck size={22} strokeWidth={2.4} /></div>
+          <div className="brand-txt">
+            <h1>PRAHARI <span className="brand-bn">প্রহরী</span></h1>
+            <span className="tag">{t.tagline}</span>
+          </div>
         </div>
 
         <nav className="modules">
@@ -48,8 +50,8 @@ export default function App() {
 
         <div className="controls">
           <span className="status-live"><i />LIVE</span>
-          <button className="theme-toggle" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} title="Toggle theme">
-            {theme === 'light' ? '🌙' : '☀️'}
+          <button className="theme-toggle" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} title={theme === 'light' ? t.themeDark : t.themeLight}>
+            {theme === 'light' ? <Moon size={17} /> : <Sun size={17} />}
           </button>
           <div className="lang-toggle">
             <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>EN</button>

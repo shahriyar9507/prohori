@@ -32,12 +32,13 @@ function useCountUp(target, ms = 900) {
   }, [target, ms])
   return v
 }
-function daysAgo(dateStr) {
+function daysAgo(dateStr, t) {
   const d = new Date(dateStr)
   if (isNaN(d)) return dateStr
   const n = Math.floor((Date.now() - d.getTime()) / 86400000)
-  return n <= 0 ? 'today' : n === 1 ? '1d ago' : `${n}d ago`
+  return n <= 0 ? t.todayWord : `${n}${t.dayAgoWord}`
 }
+function sentLabel(k, t) { return k === 'pos' ? t.sentPos : k === 'neg' ? t.sentNeg : t.sentNeu }
 function cleanSource(s = '') { return s.replace(/\s*\(Google News\)\s*/i, '').trim() || 'News' }
 function initials(s = '') { return cleanSource(s).replace(/[^A-Za-z ]/g, '').split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase() || 'N' }
 function avatarHue(s = '') { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) % 360; return h }
@@ -150,6 +151,7 @@ export default function DrishtiView({ lang }) {
   const [updatedAt, setUpdatedAt] = useState(null)
   const [sector, setSector] = useState('')
   const [severity, setSeverity] = useState('')
+  const [country, setCountry] = useState(null)   // set by clicking the world map
   const [sel, setSel] = useState(null)
   const [brief, setBrief] = useState(null)
   const [briefLoading, setBriefLoading] = useState(false)
@@ -176,15 +178,15 @@ export default function DrishtiView({ lang }) {
   useEffect(() => {
     if (!sel) { setBrief(null); return }
     let alive = true
-    setBriefLoading(true); setBrief(null)
-    // Hard safety net: if nothing resolves in time, show the grounded fallback
-    // so the report is never stuck loading.
-    const guard = setTimeout(() => { if (alive) { setBrief((b) => b || fallbackBrief(sel, t)); setBriefLoading(false) } }, 23000)
+    // INSTANT: show a grounded Do/Avoid brief immediately (no waiting), then
+    // quietly upgrade it with the live LLM analysis when it arrives.
+    setBrief(fallbackBrief(sel, t))
+    setBriefLoading(true)
     api.brief(sel.event.id, lang)
-      .then((b) => { if (!alive) return; setBrief(b && (b.do || b.why_it_matters) ? b : fallbackBrief(sel, t)) })
-      .catch(() => { if (alive) setBrief(fallbackBrief(sel, t)) })
-      .finally(() => { if (alive) { setBriefLoading(false); clearTimeout(guard) } })
-    return () => { alive = false; clearTimeout(guard) }
+      .then((b) => { if (alive && b && !b.refused && (b.do?.length || b.why_it_matters)) setBrief(b) })
+      .catch(() => {})
+      .finally(() => { if (alive) setBriefLoading(false) })
+    return () => { alive = false }
   }, [sel, lang])
 
   function openReport(s) {
@@ -193,7 +195,9 @@ export default function DrishtiView({ lang }) {
   }
 
   const events = data?.events || []
-  const shown = events.filter((s) => (!sector || s.event.sectors.includes(sector)) && (!severity || s.severity === severity))
+  const matchCountry = (s) => !country || (s.event.actors || []).some((a) => { const k = a.toLowerCase(); return k === country || k.includes(country) || country.includes(k) })
+  const shown = events.filter((s) => (!sector || s.event.sectors.includes(sector)) && (!severity || s.severity === severity) && matchCountry(s))
+  const countryLabel = country ? country.replace(/\b\w/g, (c) => c.toUpperCase()) : ''
 
   const sectorData = useMemo(() => {
     const m = {}
@@ -262,8 +266,8 @@ export default function DrishtiView({ lang }) {
           <KpiCard icon={Users} label={t.countriesInPlay} value={topActors.length} spark={spark.actors} delta={deltaOf(spark.actors)} tone="violet" />
         </div>
         <div className="panel bento-map accent-cyan">
-          <div className="mini-title"><Globe2 size={15} className="ti" /> {t.geoFootprint}<span className="pnl-tag">live arcs → Dhaka</span></div>
-          <EventWorldMap events={events} />
+          <div className="mini-title"><Globe2 size={15} className="ti" /> {t.geoFootprint}<span className="pnl-tag">{t.liveArcs}</span></div>
+          <EventWorldMap events={events} onSelectCountry={setCountry} selectedCountry={country} />
         </div>
         <div className="bento-charts">
           <div className="panel bento-actors accent-violet">
@@ -315,10 +319,9 @@ export default function DrishtiView({ lang }) {
             <div>
               <div className="mini-title">{t.relevanceBreakdown}</div>
               <RelevanceBars components={sel.components} />
-              {briefLoading && <div className="loading">{t.loading}</div>}
               {brief && !brief.refused && (
                 <>
-                  <div className="rt-note"><Satellite size={13} className="ti" /> {t.realtimeNote}{brief._fallback ? '' : ` · ${t.liveContext}`}</div>
+                  <div className="rt-note"><Satellite size={13} className="ti" /> {t.realtimeNote}{briefLoading ? <span className="enrich"> · {t.enriching}</span> : (brief._fallback ? '' : ` · ${t.liveContext}`)}</div>
                   <div className="why" style={{ marginTop: 10 }}><strong>{t.whyItMatters}:</strong> {brief.why_it_matters}</div>
                   <div className="doavoid">
                     <div className="col-do"><h3>✔ {t.doColumn}</h3>{brief.do.map((r, i) => <div className="rec" key={i}>{r.action}</div>)}</div>
@@ -359,6 +362,7 @@ export default function DrishtiView({ lang }) {
       <div className="section-title feed-title">
         <Newspaper size={17} className="ti" /> {t.liveNews}
         <span className="realbadge">{shown.length} {t.totalEvents.toLowerCase()}</span>
+        {country && <button className="filter-chip" onClick={() => setCountry(null)}>🌐 {t.filteredBy}: {countryLabel} ✕</button>}
         <span className="poll-note">⟳ {t.autoPolling}</span>
       </div>
       <div className="cat-tabs">
@@ -387,19 +391,19 @@ export default function DrishtiView({ lang }) {
                 <SourceLogo source={s.event.source} />
                 <div className="nc-src">
                   <b>{cleanSource(s.event.source)}</b>
-                  <span>{daysAgo(s.event.event_date)}</span>
+                  <span>{daysAgo(s.event.event_date, t)}</span>
                 </div>
                 <div className={`nc-score sev-${s.severity}`}>{Math.round(s.relevance_score)}</div>
               </div>
               <h3 className="nc-title">{s.event.title}</h3>
               <div className="nc-tags">
-                <span className={`nc-sent ${sent.k}`}>{sent.label}</span>
+                <span className={`nc-sent ${sent.k}`}>{sentLabel(sent.k, t)}</span>
                 {s.event.sectors.slice(0, 3).map((x) => <span className="chip" key={x} style={{ borderColor: sectorColor(x) }}>{x}</span>)}
                 {s.event.actors.filter((a) => a !== 'Bangladesh').slice(0, 2).map((a) => <span className="nc-actor" key={a}>{a}</span>)}
               </div>
               <div className="nc-foot">
                 <span className={`nc-band sev-${s.severity}`} />
-                <span className="nc-open">Open brief →</span>
+                <span className="nc-open">{t.openBrief} →</span>
               </div>
             </article>
           )

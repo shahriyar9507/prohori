@@ -1,4 +1,5 @@
 import { sectorColor } from './Charts.jsx'
+import { AlertTriangle, Map } from 'lucide-react'
 
 const FLAG = {
   India: '🇮🇳', China: '🇨🇳', Myanmar: '🇲🇲', Pakistan: '🇵🇰', Nepal: '🇳🇵', 'Sri Lanka': '🇱🇰',
@@ -18,7 +19,7 @@ export function EarlyWarning({ events, onOpen, t }) {
 
   return (
     <div className="panel accent-red ew">
-      <div className="mini-title">🚨 {t.earlyWarning}<span className="pnl-tag" style={{ color: level.c }}>{t.posture}: {level.k}</span></div>
+      <div className="mini-title"><AlertTriangle size={15} className="ti" /> {t.earlyWarning}<span className="pnl-tag" style={{ color: level.c }}>{t.posture}: {level.k}</span></div>
       <div className="ew-meter">
         <span className="ewm red" style={{ width: `${(red.length / total) * 100}%` }} />
         <span className="ewm amber" style={{ width: `${(amber.length / total) * 100}%` }} />
@@ -57,14 +58,14 @@ export function RegionFocus({ events, t }) {
 
   return (
     <div className="panel accent-teal">
-      <div className="mini-title">🗺️ {t.regionFocus}<span className="pnl-tag">South Asia · partners</span></div>
+      <div className="mini-title"><Map size={15} className="ti" /> {t.regionFocus}<span className="pnl-tag">{t.southAsiaPartners}</span></div>
       <div className="region-grid">
         {tiles.map((c) => {
           const m = mood(c.tone / c.n)
           return (
             <div className="region-tile" key={c.name}>
               <div className="rt-head"><span className="rt-flag">{FLAG[c.name]}</span><b>{c.name}</b><span className="rt-mood" style={{ color: m.c }}>{m.k}</span></div>
-              <div className="rt-n">{c.n} <span>{t.countriesInPlay.toLowerCase().includes('সক্রিয়') ? 'সিগন্যাল' : 'signals'}</span></div>
+              <div className="rt-n">{c.n} <span>{t.signalsWord}</span></div>
               <div className="rt-top">{c.top}</div>
             </div>
           )

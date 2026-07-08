@@ -90,6 +90,11 @@ export const STRINGS = {
     sentiment: 'Sentiment split', actorVolume: 'Top actors by signal', signalVolume: 'Signal volume over time',
     trending: 'Trending now', allNews: 'All', national: 'National', openModule: 'Open module',
     realtimeNote: 'Assessed against today’s live situation', liveContext: 'Live-context research',
+    enriching: 'enriching with live analysis…', filteredBy: 'Filtered by', clearFilter: 'clear',
+    signalsWord: 'signals', todayWord: 'today', dayAgoWord: 'd ago',
+    sentPos: 'positive', sentNeu: 'neutral', sentNeg: 'negative',
+    openBrief: 'Open brief', southAsiaPartners: 'South Asia · partners', liveArcs: 'live arcs → Dhaka',
+    themeDark: 'Dark', themeLight: 'Light',
   },
   bn: {
     tagline: 'দ্য সেন্টিনেল · জাতীয় কৌশলগত গোয়েন্দা',
@@ -181,6 +186,11 @@ export const STRINGS = {
     sentiment: 'অনুভূতি বিভাজন', actorVolume: 'সিগন্যাল অনুযায়ী শীর্ষ পক্ষ', signalVolume: 'সময় অনুযায়ী সিগন্যাল',
     trending: 'এখন ট্রেন্ডিং', allNews: 'সব', national: 'জাতীয়', openModule: 'মডিউল খুলুন',
     realtimeNote: 'আজকের লাইভ পরিস্থিতির সাথে তুলনা করে মূল্যায়িত', liveContext: 'লাইভ-প্রেক্ষাপট গবেষণা',
+    enriching: 'লাইভ বিশ্লেষণ যুক্ত হচ্ছে…', filteredBy: 'ফিল্টার করা হয়েছে', clearFilter: 'মুছুন',
+    signalsWord: 'সিগন্যাল', todayWord: 'আজ', dayAgoWord: ' দিন আগে',
+    sentPos: 'ইতিবাচক', sentNeu: 'নিরপেক্ষ', sentNeg: 'নেতিবাচক',
+    openBrief: 'ব্রিফ খুলুন', southAsiaPartners: 'দক্ষিণ এশিয়া · অংশীদার', liveArcs: 'লাইভ আর্ক → ঢাকা',
+    themeDark: 'ডার্ক', themeLight: 'লাইট',
   },
 }
 
