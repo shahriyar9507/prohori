@@ -12,6 +12,8 @@ services:
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
+      - key: PYTHON_VERSION       # pin to 3.11 (pydantic-core has wheels; 3.14 tries to build from Rust and fails)
+        value: "3.11.9"
       - key: LLM_API_KEY          # set in the Render dashboard (secret) — your Gemini key
         sync: false
       - key: LLM_BASE_URL
