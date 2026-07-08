@@ -9,7 +9,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/▶_LIVE_DEMO-frontend--zeta--beryl--51.vercel.app-22c55e?style=for-the-badge)](https://frontend-zeta-beryl-51.vercel.app)
+[![Live Demo](https://img.shields.io/badge/▶_LIVE_DEMO-prahari.vercel.app-22c55e?style=for-the-badge)](https://prahari.vercel.app)
 
 ![Track](https://img.shields.io/badge/Track_E-National_Defence-0b3d2e?style=for-the-badge)
 ![Event](https://img.shields.io/badge/SciBlitz_AI_Challenge-2026-1e6091?style=for-the-badge)

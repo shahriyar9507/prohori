@@ -29,7 +29,7 @@
 
 ## Submission checklist (SciBlitz AI Challenge 2026)
 
-- [x] **Live public URL** — **https://frontend-zeta-beryl-51.vercel.app** (deployed to Vercel, static & self-contained, no login).
+- [x] **Live public URL** — **https://prahari.vercel.app** (deployed to Vercel, static & self-contained, no login).
 - [x] **Public GitHub repo** — `github.com/shahriyar9507/prohori` with README, tech stack, setup, commit history in-window.
 - [ ] **Project report PDF (≤8 pp)** — export [`REPORT.md`](REPORT.md).
 - [ ] **Demo video (3–5 min)** — record the storyline above; unlisted link.
@@ -39,7 +39,7 @@
 
 ## Deploy (already done — for reference / redeploy)
 
-**Live URL: https://frontend-zeta-beryl-51.vercel.app** (deployed via the Vercel CLI from `frontend/`).
+**Live URL: https://prahari.vercel.app** (deployed via the Vercel CLI from `frontend/`).
 
 - **Redeploy after changes:** `cd frontend && vercel deploy --prod --yes --scope <your-scope> --token <token>`
 - **GitHub auto-deploy (optional):** on vercel.com import the `prohori` repo and set **Root Directory = `frontend`** (the repo is a monorepo — frontend + backend — so Vercel must target the frontend service). `frontend/vercel.json` handles the static build.
