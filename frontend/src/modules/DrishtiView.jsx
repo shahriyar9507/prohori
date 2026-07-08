@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
 import EvidenceChain from '../components/EvidenceChain.jsx'
+import EventWorldMap from '../components/WorldMap.jsx'
 import { SectorDonut, SeverityDonut, RelevanceBars, EconLine, sectorColor } from '../components/Charts.jsx'
 
 const SECTORS = ['trade', 'labour', 'security', 'water', 'energy', 'diplomacy', 'climate']
@@ -13,21 +14,43 @@ const SECTOR_ECON = {
   climate: 'GDP (US$)', health: 'GDP (US$)', other: 'GDP (US$)',
 }
 
+function relAgo(ts, t) {
+  if (!ts) return ''
+  const s = Math.floor((Date.now() - ts) / 1000)
+  if (s < 60) return t.justNow
+  return `${Math.floor(s / 60)} ${t.minAgo}`
+}
+
 export default function DrishtiView({ lang }) {
   const t = useStrings(lang)
   const [data, setData] = useState(null)
   const [econ, setEcon] = useState({})
+  const [live, setLive] = useState(false)
+  const [updatedAt, setUpdatedAt] = useState(null)
   const [sector, setSector] = useState('')
   const [severity, setSeverity] = useState('')
   const [sel, setSel] = useState(null)
   const [brief, setBrief] = useState(null)
   const [briefLoading, setBriefLoading] = useState(false)
+  const [, setTick] = useState(0)
+  const aliveRef = useRef(true)
 
+  // Real-time pipeline: show the baked snapshot instantly, then poll the live
+  // backend (Google News → scored events) and swap it in — refreshing forever.
   useEffect(() => {
-    let alive = true
-    api.events().then((d) => alive && setData(d)).catch(() => {})
-    api.econ().then((e) => alive && setEcon(e)).catch(() => {})
-    return () => { alive = false }
+    aliveRef.current = true
+    api.events().then((d) => aliveRef.current && setData((prev) => prev || d)).catch(() => {})
+    api.econ().then((e) => aliveRef.current && setEcon(e)).catch(() => {})
+    const pull = async () => {
+      const l = await api.eventsLive()
+      if (!aliveRef.current) return
+      if (l && l.events?.length) { setData(l); setLive(true); setUpdatedAt(Date.now()) }
+      else setUpdatedAt((p) => p || Date.now())
+    }
+    pull()
+    const poll = setInterval(pull, 5 * 60 * 1000)
+    const tk = setInterval(() => setTick((x) => x + 1), 30 * 1000)
+    return () => { aliveRef.current = false; clearInterval(poll); clearInterval(tk) }
   }, [])
 
   useEffect(() => {
@@ -51,23 +74,55 @@ export default function DrishtiView({ lang }) {
     events.forEach((s) => { c[s.severity] = (c[s.severity] || 0) + 1 })
     return c
   }, [events])
+  const topActors = useMemo(() => {
+    const m = {}
+    events.forEach((s) => (s.event.actors || []).forEach((a) => { if (a !== 'Bangladesh') m[a] = (m[a] || 0) + 1 }))
+    return Object.entries(m).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value).slice(0, 6)
+  }, [events])
+  const maxActor = Math.max(1, ...topActors.map((a) => a.value))
 
   const econSeries = sel ? econ[SECTOR_ECON[sel.event.sectors[0]] || 'GDP (US$)'] : null
   const econLabel = sel ? (SECTOR_ECON[sel.event.sectors[0]] || 'GDP (US$)') : ''
 
   return (
     <div>
-      <div className="section-title">{t.eventRadar}<span className="realbadge">📰 {t.liveNews}</span></div>
+      <div className="section-title">
+        {t.eventRadar}
+        <span className={`live-pill ${live ? 'on' : ''}`}><i />{t.liveNow}</span>
+        {updatedAt && <span className="live-stamp">{t.updated} {relAgo(updatedAt, t)}</span>}
+        <span className="realbadge">📰 {t.liveNews}</span>
+      </div>
 
-      {/* Intelligence dashboard */}
-      <div className="intel-dash">
-        <div className="tiles" style={{ marginBottom: 0 }}>
-          <div className="tile readiness"><div className="num">{events.length}</div><div className="lbl">{t.totalEvents}</div></div>
-          <div className="tile bad"><div className="num">{sevCounts.red}</div><div className="lbl">{t.redAlerts}</div></div>
-          <div className="tile warn"><div className="num">{sevCounts.amber}</div><div className="lbl">{t.amberAlerts}</div></div>
+      {/* Analytical bento dashboard */}
+      <div className="bento">
+        <div className="bento-kpis">
+          <div className="kpi kpi-total"><div className="num">{events.length}</div><div className="lbl">{t.totalEvents}</div></div>
+          <div className="kpi kpi-red"><div className="num">{sevCounts.red}</div><div className="lbl">{t.redAlerts}</div></div>
+          <div className="kpi kpi-amber"><div className="num">{sevCounts.amber}</div><div className="lbl">{t.amberAlerts}</div></div>
+          <div className="kpi kpi-actors"><div className="num">{topActors.length}</div><div className="lbl">{t.countriesInPlay}</div></div>
         </div>
-        <div className="panel"><div className="mini-title">{t.bySector}</div><SectorDonut data={sectorData} /></div>
-        <div className="panel"><div className="mini-title">{t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
+
+        <div className="panel bento-map">
+          <div className="mini-title">🌐 {t.geoFootprint}</div>
+          <EventWorldMap events={events} />
+        </div>
+
+        <div className="panel bento-actors">
+          <div className="mini-title">{t.topActors}</div>
+          <div className="actor-bars">
+            {topActors.map((a) => (
+              <div className="actor-row" key={a.name}>
+                <span className="an">{a.name}</span>
+                <span className="ab"><i style={{ width: `${(a.value / maxActor) * 100}%` }} /></span>
+                <span className="av">{a.value}</span>
+              </div>
+            ))}
+            {!topActors.length && <div className="placeholder">{t.loading}</div>}
+          </div>
+        </div>
+
+        <div className="panel bento-sector"><div className="mini-title">{t.bySector}</div><SectorDonut data={sectorData} /></div>
+        <div className="panel bento-sev"><div className="mini-title">{t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
       </div>
 
       <div className="two-col">
@@ -82,7 +137,8 @@ export default function DrishtiView({ lang }) {
               <option value="">{t.allSeverities}</option>
               {SEVERITIES.map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
-            {data && <span className="banner">· {data.total} live events</span>}
+            {data && <span className="banner">· {shown.length} {t.totalEvents.toLowerCase()}</span>}
+            <span className="poll-note">⟳ {t.autoPolling}</span>
           </div>
           {!data && <div className="loading">{t.loading}</div>}
           {shown.map((s) => (

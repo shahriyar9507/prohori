@@ -84,7 +84,21 @@ export const api = {
     if (minScore) q.set('min_score', minScore)
     return get(`/api/drishti/events?${q.toString()}`)
   },
+  // Real-time events straight from the live backend (Google News → scored).
+  // Returns null when no live backend is configured or it is unreachable, so
+  // the caller keeps showing the instantly-loaded baked snapshot.
+  eventsLive: async () => {
+    const base = import.meta.env.VITE_API_BASE_URL
+    if (!base) return null
+    try { return await jget(`${base}/api/drishti/events`) } catch { return null }
+  },
   brief: async (eventId, language = 'en') => {
+    // A live event (evt-…) has no baked brief — go to the backend for a real,
+    // freshly-generated Do/Avoid brief. Baked briefs stay as the offline demo.
+    const base = import.meta.env.VITE_API_BASE_URL
+    if (base) {
+      try { return await jget(`${base}/api/drishti/events/${encodeURIComponent(eventId)}/brief?language=${language}`) } catch { /* fall through */ }
+    }
     if (STATIC) {
       _briefs = _briefs || await demo('drishti/briefs.json')
       return _briefs[`${eventId}:${language}`] || _briefs[`${eventId}:en`]

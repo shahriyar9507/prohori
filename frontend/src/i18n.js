@@ -73,6 +73,18 @@ export const STRINGS = {
     layers: 'Layers', sarScene: 'SAR scene', cgPatrol: 'CG patrol',
     confVessel: "Confidence it's a vessel", low: 'low', medium: 'medium', high: 'high',
     detectionMethod: 'Detection method', automatic: 'Automatic', radarChip: 'SAR chip',
+    // Real-time + world map + national
+    liveNow: 'LIVE', updated: 'Updated', justNow: 'just now', minAgo: 'min ago', autoPolling: 'Auto-refreshing every 5 min',
+    geoFootprint: 'Geopolitical footprint', countriesInPlay: 'Actors in play', topActors: 'Most-active partners',
+    nationalSituation: 'National Situation', nationalPosture: 'National posture', posture: 'Posture',
+    diploPressure: 'Diplomatic pressure', fleetReady: 'Fleet readiness', maritimeThreat: 'Maritime threats',
+    calm: 'Stable', elevated: 'Elevated', high2: 'High', across3: 'Across DRISHTI · RAKKHOK · SHOMUDRO',
+    // RAKKHOK asset report
+    assetReport: 'Asset Health Report', digitalTwin: 'Digital twin', selectAsset: 'Select an asset from the ranking to open its digital-twin health report.',
+    healthAnalysis: 'Health analysis', serviceCountdown: 'Service-life countdown', maintRec: 'Maintenance recommendation',
+    commissioned: 'Commissioned', serviceLife: 'Service life', hoursLogged: 'Hours logged', nextService: 'Next service',
+    remainingLife: 'Remaining useful life', missionCap: 'Mission-capable', within180: '180-day window', within90: '90-day window', within30: '30-day window',
+    doNow: 'Do now', watch: 'Watch', evidenceBasis: 'Basis & confidence', predicted: 'ML-predicted', assetClass: 'Class', force: 'Force',
   },
   bn: {
     tagline: 'দ্য সেন্টিনেল · জাতীয় কৌশলগত গোয়েন্দা',
@@ -147,6 +159,18 @@ export const STRINGS = {
     layers: 'লেয়ার', sarScene: 'SAR দৃশ্য', cgPatrol: 'কোস্ট গার্ড',
     confVessel: 'জাহাজ হওয়ার আস্থা', low: 'কম', medium: 'মাঝারি', high: 'উচ্চ',
     detectionMethod: 'শনাক্তকরণ পদ্ধতি', automatic: 'স্বয়ংক্রিয়', radarChip: 'SAR চিপ',
+    // Real-time + world map + national
+    liveNow: 'লাইভ', updated: 'হালনাগাদ', justNow: 'এইমাত্র', minAgo: 'মিনিট আগে', autoPolling: 'প্রতি ৫ মিনিটে স্বয়ংক্রিয় হালনাগাদ',
+    geoFootprint: 'ভূরাজনৈতিক বিস্তৃতি', countriesInPlay: 'সক্রিয় পক্ষ', topActors: 'সবচেয়ে সক্রিয় অংশীদার',
+    nationalSituation: 'জাতীয় পরিস্থিতি', nationalPosture: 'জাতীয় অবস্থান', posture: 'অবস্থান',
+    diploPressure: 'কূটনৈতিক চাপ', fleetReady: 'নৌবহর প্রস্তুতি', maritimeThreat: 'সামুদ্রিক হুমকি',
+    calm: 'স্থিতিশীল', elevated: 'বর্ধিত', high2: 'উচ্চ', across3: 'দৃষ্টি · রক্ষক · সমুদ্র জুড়ে',
+    // RAKKHOK asset report
+    assetReport: 'সম্পদ স্বাস্থ্য প্রতিবেদন', digitalTwin: 'ডিজিটাল টুইন', selectAsset: 'ডিজিটাল-টুইন স্বাস্থ্য প্রতিবেদন খুলতে ক্রম থেকে একটি সম্পদ নির্বাচন করুন।',
+    healthAnalysis: 'স্বাস্থ্য বিশ্লেষণ', serviceCountdown: 'সার্ভিস-লাইফ কাউন্টডাউন', maintRec: 'রক্ষণাবেক্ষণ সুপারিশ',
+    commissioned: 'কমিশনকাল', serviceLife: 'সার্ভিস লাইফ', hoursLogged: 'লগকৃত ঘণ্টা', nextService: 'পরবর্তী সার্ভিস',
+    remainingLife: 'অবশিষ্ট কার্যকর আয়ু', missionCap: 'মিশন-সক্ষম', within180: '১৮০-দিন সীমা', within90: '৯০-দিন সীমা', within30: '৩০-দিন সীমা',
+    doNow: 'এখনই করুন', watch: 'পর্যবেক্ষণ', evidenceBasis: 'ভিত্তি ও আস্থা', predicted: 'ML-পূর্বাভাস', assetClass: 'শ্রেণি', force: 'বাহিনী',
   },
 }
 

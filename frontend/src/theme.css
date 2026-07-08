@@ -42,7 +42,8 @@
   --mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-:root { --chart-grid: rgba(255, 255, 255, 0.08); --track: rgba(255, 255, 255, 0.08); --topbar-bg: rgba(7, 11, 22, 0.72); }
+:root { --chart-grid: rgba(255, 255, 255, 0.08); --track: rgba(255, 255, 255, 0.08); --topbar-bg: rgba(7, 11, 22, 0.72);
+  --wm-land: rgba(255, 255, 255, 0.06); --wm-stroke: rgba(255, 255, 255, 0.14); }
 
 /* ─── Light / white theme (default) ──────────────────────────────────── */
 :root[data-theme="light"] {
@@ -59,6 +60,7 @@
   --shadow-lg: 0 24px 60px -24px rgba(15, 23, 42, 0.28);
   --chart-grid: rgba(15, 23, 42, 0.09); --track: rgba(15, 23, 42, 0.08);
   --topbar-bg: rgba(255, 255, 255, 0.82);
+  --wm-land: rgba(15, 23, 42, 0.07); --wm-stroke: rgba(15, 23, 42, 0.14);
 }
 :root[data-theme="light"] body::before {
   background:
@@ -410,3 +412,120 @@ body::before {
   border: 2px solid var(--stroke); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .placeholder { padding: 44px 22px; text-align: center; color: var(--text-faint); font-size: 14px; line-height: 1.6; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Real-time indicators · analytical bento · world map · national strip
+   RAKKHOK equipment + digital-twin health report
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Live indicator ─────────────────────────────────────────────────── */
+.live-pill { display: inline-flex; align-items: center; gap: 6px; margin-left: 12px; padding: 2px 10px;
+  font-size: 11px; font-weight: 700; letter-spacing: .08em; border-radius: 999px;
+  color: var(--text-faint); border: 1px solid var(--stroke); background: var(--glass); }
+.live-pill.on { color: var(--red); border-color: color-mix(in srgb, var(--red) 45%, transparent); background: var(--red-bg); }
+.live-pill i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.live-pill.on i { animation: pulse 1.4s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; box-shadow: 0 0 0 0 currentColor; } 50% { opacity: .5; box-shadow: 0 0 0 4px transparent; } }
+.live-stamp { margin-left: 8px; font-size: 11px; color: var(--text-faint); font-weight: 500; }
+.poll-note { margin-left: auto; font-size: 11px; color: var(--text-faint); }
+
+/* ─── Analytical bento grid ──────────────────────────────────────────── */
+.bento { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px;
+  grid-template-areas: "kpis kpis map map" "actors sector sev map"; }
+.bento-kpis { grid-area: kpis; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.bento-map { grid-area: map; min-height: 260px; display: flex; flex-direction: column; }
+.bento-actors { grid-area: actors; }
+.bento-sector { grid-area: sector; }
+.bento-sev { grid-area: sev; }
+.kpi { background: var(--glass); border: 1px solid var(--stroke); border-radius: var(--radius-sm);
+  padding: 14px 16px; position: relative; overflow: hidden; }
+.kpi .num { font-size: 30px; font-weight: 800; line-height: 1; font-family: var(--mono); }
+.kpi .lbl { margin-top: 6px; font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .05em; }
+.kpi::after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent); }
+.kpi-red .num { color: var(--red); } .kpi-red::after { background: var(--red); }
+.kpi-amber .num { color: var(--amber); } .kpi-amber::after { background: var(--amber); }
+.kpi-total .num { color: var(--accent); }
+.kpi-actors .num { color: var(--green); } .kpi-actors::after { background: var(--green); }
+
+.worldmap { position: relative; flex: 1; display: flex; align-items: center; }
+.worldmap svg { max-height: 340px; }
+.wm-tip { position: absolute; top: 6px; right: 10px; padding: 4px 9px; font-size: 12px; font-weight: 600;
+  background: var(--bg-2); border: 1px solid var(--stroke-strong); border-radius: 8px; color: var(--accent); box-shadow: var(--shadow); }
+
+.actor-bars { display: flex; flex-direction: column; gap: 9px; margin-top: 4px; }
+.actor-row { display: grid; grid-template-columns: 92px 1fr 26px; align-items: center; gap: 8px; }
+.actor-row .an { font-size: 12px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.actor-row .ab { height: 8px; background: var(--track); border-radius: 6px; overflow: hidden; }
+.actor-row .ab i { display: block; height: 100%; background: var(--grad-accent); border-radius: 6px; }
+.actor-row .av { font-size: 12px; font-weight: 700; font-family: var(--mono); text-align: right; color: var(--text); }
+
+/* ─── National Situation strip (C1) ──────────────────────────────────── */
+.natstrip { max-width: 1360px; margin: 12px auto 0; padding: 0 22px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.ns-title { font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--text-dim);
+  display: flex; align-items: center; gap: 8px; }
+.ns-title small { display: block; font-size: 10px; letter-spacing: .04em; color: var(--text-faint); font-weight: 500; text-transform: none; }
+.ns-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); animation: pulse 1.8s infinite; }
+.ns-cards { display: flex; gap: 10px; flex: 1; flex-wrap: wrap; }
+.ns-card { flex: 1; min-width: 150px; text-align: left; cursor: pointer; padding: 10px 14px; border-radius: var(--radius-sm);
+  background: var(--glass); border: 1px solid var(--stroke); border-left: 3px solid var(--accent); transition: transform .12s, box-shadow .12s; }
+.ns-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.ns-card.on { outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent); }
+.ns-card .ns-k { font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-dim); }
+.ns-card .ns-v { font-size: 22px; font-weight: 800; font-family: var(--mono); line-height: 1.1; }
+.ns-card .ns-v span { font-size: 12px; font-weight: 500; color: var(--text-faint); }
+.ns-card .ns-p { font-size: 11px; font-weight: 700; }
+.ns-green { border-left-color: var(--green); } .ns-green .ns-p { color: var(--green); }
+.ns-amber { border-left-color: var(--amber); } .ns-amber .ns-p { color: var(--amber); }
+.ns-red { border-left-color: var(--red); } .ns-red .ns-p { color: var(--red); } .ns-red .ns-v { color: var(--red); }
+
+/* ─── RAKKHOK equipment silhouettes + digital-twin report ────────────── */
+.equip-icon { color: var(--accent); display: block; }
+.equip-badge { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+  background: var(--glass-2); border: 1px solid var(--stroke); }
+.equip-badge.st-operational { color: var(--green); border-color: color-mix(in srgb, var(--green) 40%, transparent); }
+.equip-badge.st-maintenance { color: var(--amber); border-color: color-mix(in srgb, var(--amber) 40%, transparent); }
+.equip-badge.st-grounded { color: var(--red); border-color: color-mix(in srgb, var(--red) 40%, transparent); }
+.rank-row { cursor: pointer; transition: background .12s; }
+.rank-row:hover { background: var(--glass-2); }
+.rank-row.active { background: var(--glass-2); outline: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+.rk-col { align-items: start; }
+
+.asset-report .ar-head { display: flex; gap: 16px; align-items: center; margin-bottom: 14px; }
+.ar-photo { width: 108px; height: 108px; flex-shrink: 0; border-radius: 16px; display: grid; place-items: center;
+  background: radial-gradient(circle at 50% 35%, var(--glass-2), var(--glass)); border: 1px solid var(--stroke); }
+.ar-photo.st-operational { color: var(--green); } .ar-photo.st-maintenance { color: var(--amber); } .ar-photo.st-grounded { color: var(--red); }
+.ar-id h2 { margin: 0; font-size: 22px; }
+.ar-type { font-size: 13px; color: var(--text-dim); margin: 2px 0 8px; }
+.ar-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+
+.gauges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.gauge { text-align: center; padding: 8px 4px; background: var(--glass); border: 1px solid var(--stroke); border-radius: 12px; }
+.gauge .glabel { font-size: 11px; color: var(--text-dim); margin-top: 4px; line-height: 1.3; }
+.gauge .glabel em { color: var(--text-faint); font-style: normal; }
+.ring { display: block; margin: 0 auto; }
+.ring-track { fill: none; stroke: var(--track); stroke-width: 6; }
+.ring-val { fill: var(--text); font-weight: 800; text-anchor: middle; font-family: var(--mono); }
+.ring-unit { fill: var(--text-faint); font-size: 8px; text-anchor: middle; text-transform: uppercase; letter-spacing: .04em; }
+
+.ar-facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 16px; margin-top: 12px; }
+.ar-facts > div { display: flex; justify-content: space-between; font-size: 12.5px; padding: 4px 0; border-bottom: 1px dashed var(--stroke); }
+.ar-facts span { color: var(--text-dim); } .ar-facts b { font-family: var(--mono); }
+
+.clocks { display: flex; flex-direction: column; gap: 10px; }
+.clock-row .clabel { font-size: 12.5px; font-weight: 600; display: flex; align-items: center; gap: 7px; margin-bottom: 4px; }
+.clock-row .bar { height: 8px; background: var(--track); border-radius: 6px; overflow: hidden; }
+.clock-row .bar span { display: block; height: 100%; border-radius: 6px; }
+.clock-row .crem { font-size: 11px; color: var(--text-faint); margin-top: 3px; font-family: var(--mono); }
+.win-badge { font-size: 9.5px; font-weight: 800; padding: 1px 6px; border-radius: 999px; letter-spacing: .04em; }
+.win-badge.w30 { color: var(--red); background: var(--red-bg); }
+.win-badge.w90 { color: var(--amber); background: var(--amber-bg); }
+.win-badge.w180 { color: var(--text-dim); background: var(--glass-2); }
+
+.alert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 20px; }
+
+@media (max-width: 900px) {
+  .bento { grid-template-columns: repeat(2, 1fr); grid-template-areas: "kpis kpis" "map map" "actors actors" "sector sev"; }
+  .bento-kpis { grid-template-columns: repeat(2, 1fr); }
+  .gauges { grid-template-columns: repeat(3, 1fr); }
+  .alert-grid, .ar-facts { grid-template-columns: 1fr; }
+}

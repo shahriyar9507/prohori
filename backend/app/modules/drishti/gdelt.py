@@ -96,7 +96,15 @@ async def fetch_live_events(limit: int = 30) -> list[EventRecord]:
 
 
 async def get_events() -> tuple[list[EventRecord], bool]:
-    """Return (events, live_source). Falls back to cached snapshot on any issue."""
+    """Return (events, live_source). Real-time Google News first, then fallbacks."""
+    # Primary: real-time Google News (free, keyless, cached ~15 min).
+    try:
+        from app.modules.drishti.news import get_live_events
+        live_news = await get_live_events()
+        if live_news:
+            return live_news, True
+    except Exception:  # noqa: BLE001 — never break the endpoint on upstream failure
+        pass
     settings = get_settings()
     if settings.drishti_use_live_gdelt:
         try:
