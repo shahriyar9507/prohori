@@ -21,4 +21,4 @@ services:
       - key: DRISHTI_USE_LIVE_GDELT
         value: "False"
       - key: CORS_ORIGINS
-        value: https://frontend-zeta-beryl-51.vercel.app,http://localhost:5173
+        value: https://prahari.vercel.app,https://frontend-zeta-beryl-51.vercel.app,http://localhost:5173

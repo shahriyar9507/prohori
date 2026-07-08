@@ -5,10 +5,11 @@ export function loadGoogleMaps(key) {
   if (promise) return promise
   promise = new Promise((resolve, reject) => {
     if (!key) { reject(new Error('missing maps key')); return }
+    // Google fires this callback only once google.maps is fully initialised.
+    window.__prahariGmapsReady = () => resolve(window.google)
     const s = document.createElement('script')
-    s.src = `https://maps.googleapis.com/maps/api/js?key=${key}&loading=async&libraries=marker`
+    s.src = `https://maps.googleapis.com/maps/api/js?key=${key}&libraries=marker&loading=async&callback=__prahariGmapsReady`
     s.async = true
-    s.onload = () => resolve(window.google)
     s.onerror = () => reject(new Error('maps script failed'))
     document.head.appendChild(s)
   })
