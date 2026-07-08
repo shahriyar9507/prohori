@@ -1,13 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
+import mapboxgl from 'mapbox-gl'
 import { api } from '../api.js'
 import { useStrings } from '../i18n.js'
 import ShipIcon from '../components/ShipIcon.jsx'
-import { loadGoogleMaps, DARK_STYLE } from '../gmaps.js'
 
-const MAPS_KEY = import.meta.env.VITE_GOOGLE_MAPS_KEY
-// SAR scene AOI (matches the real Sentinel-1 image bounds)
-const SAR_BOUNDS = { north: 20.9, south: 20.2, east: 90.9, west: 90.2 }
-const VIEWS = { dark: 'viewDark', satellite: 'viewSat', streets: 'viewMap' }
+const TOKEN = import.meta.env.VITE_MAPBOX_TOKEN
+if (TOKEN) mapboxgl.accessToken = TOKEN
+
+const STYLES = {
+  satellite: 'mapbox://styles/mapbox/satellite-streets-v12',
+  dark: 'mapbox://styles/mapbox/dark-v11',
+  streets: 'mapbox://styles/mapbox/light-v11',
+}
+const VIEWS = { satellite: 'viewSat', dark: 'viewDark', streets: 'viewMap' }
+const SAR_COORDS = [[90.2, 20.9], [90.9, 20.9], [90.9, 20.2], [90.2, 20.2]]
 
 const ISO3_2 = { BGD: 'BD', CHN: 'CN', IND: 'IN', MMR: 'MM', LKA: 'LK', IDN: 'ID', PAN: 'PA',
   BLZ: 'BZ', SYC: 'SC', THA: 'TH', PAK: 'PK', MYS: 'MY', USA: 'US', GBR: 'GB', RUS: 'RU', VNM: 'VN' }
@@ -24,20 +30,31 @@ function shipVisual(kind, data) {
   if (kind === 'patrol') return ['patrol', '#22c55e']
   return ['generic', '#38bdf8']
 }
+// A ship-icon DOM marker (silhouette), colored per contact type.
+function makeShipEl(color, pulse) {
+  const el = document.createElement('div')
+  el.className = 'ship-marker' + (pulse ? ' pulse' : '')
+  el.style.setProperty('--mc', color)
+  el.innerHTML = `<svg width="26" height="26" viewBox="0 0 24 24">
+    <path d="M3.5 13 H20.5 L18 18.5 H6 Z" fill="${color}" stroke="#fff" stroke-width="0.8"/>
+    <rect x="9" y="6.5" width="6" height="6.5" rx="1" fill="${color}" stroke="#fff" stroke-width="0.6"/>
+    <path d="M12 6.5 V3" stroke="#fff" stroke-width="1.4"/></svg>`
+  return el
+}
 
 export default function ShomudroView({ lang }) {
   const t = useStrings(lang)
   const mapRef = useRef(null)
   const mapObj = useRef(null)
   const markers = useRef({ ais: [], sar: [], dark: [], sts: [], patrol: [] })
-  const overlay = useRef(null)
   const picRef = useRef(null)
+  const layersRef = useRef({ sarscene: false, ais: true, sar: true, dark: true, sts: true })
   const [pic, setPic] = useState(null)
   const [view, setView] = useState('satellite')
   const [contact, setContact] = useState(null)
   const [packet, setPacket] = useState(null)
   const [chips, setChips] = useState({})
-  const [layers, setLayers] = useState({ sarscene: false, ais: true, sar: true, dark: true, sts: true })
+  const [layers, setLayers] = useState(layersRef.current)
   const [mapErr, setMapErr] = useState(false)
 
   useEffect(() => {
@@ -49,50 +66,47 @@ export default function ShomudroView({ lang }) {
 
   useEffect(() => {
     if (!pic || mapObj.current || !mapRef.current) return
-    loadGoogleMaps(MAPS_KEY).then((g) => {
-      const [minLon, minLat, maxLon, maxLat] = pic.eez_bbox
-      const map = new g.maps.Map(mapRef.current, {
-        center: { lat: (minLat + maxLat) / 2, lng: (minLon + maxLon) / 2 },
-        zoom: 7, mapTypeId: 'hybrid', mapTypeControl: false, streetViewControl: false,
-        fullscreenControl: false, backgroundColor: '#0a1122',
-      })
-      map.fitBounds({ north: maxLat, south: minLat, east: maxLon, west: minLon })
-      mapObj.current = map
+    if (!TOKEN) { setMapErr(true); return }
+    const [minLon, minLat, maxLon, maxLat] = pic.eez_bbox
+    const map = new mapboxgl.Map({
+      container: mapRef.current, style: STYLES.satellite,
+      center: [(minLon + maxLon) / 2, (minLat + maxLat) / 2], zoom: 6.4, pitch: 55, bearing: -12, antialias: true,
+    })
+    map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'top-right')
+    mapObj.current = map
 
-      const mk = (lat, lon, color, scale, kind, id, z) => {
-        const m = new g.maps.Marker({
-          position: { lat, lng: lon }, map,
-          icon: { path: g.maps.SymbolPath.CIRCLE, scale, fillColor: color, fillOpacity: 0.9, strokeColor: '#ffffff', strokeWeight: 1.3 },
-          zIndex: z, title: id,
-        })
-        m.addListener('click', () => selectFeature(kind, id))
-        return m
+    const addScene = () => {
+      if (!map.getSource('mapbox-dem')) map.addSource('mapbox-dem', { type: 'raster-dem', url: 'mapbox://mapbox.mapbox-terrain-dem-v1', tileSize: 512, maxzoom: 14 })
+      map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.3 })
+      if (!map.getLayer('sky')) map.addLayer({ id: 'sky', type: 'sky', paint: { 'sky-type': 'atmosphere', 'sky-atmosphere-sun-intensity': 6 } })
+      if (layersRef.current.sarscene) addSar()
+    }
+    const addSar = () => {
+      if (!map.getSource('sarscene')) map.addSource('sarscene', { type: 'image', url: `${import.meta.env.BASE_URL}demo/shomudro/sar_scene.png`, coordinates: SAR_COORDS })
+      if (!map.getLayer('sarscene')) map.addLayer({ id: 'sarscene', type: 'raster', source: 'sarscene', paint: { 'raster-opacity': 0.92 } })
+    }
+    mapObj.current._addSar = addSar
+
+    map.on('style.load', addScene)
+    map.on('load', () => {
+      map.fitBounds([[minLon, minLat], [maxLon, maxLat]], { padding: 40, duration: 0 })
+      const add = (lat, lon, color, kind, id, pulse) => {
+        const el = makeShipEl(color, pulse)
+        el.addEventListener('click', (e) => { e.stopPropagation(); selectFeature(kind, id) })
+        return new mapboxgl.Marker({ element: el }).setLngLat([lon, lat]).addTo(map)
       }
       markers.current = { ais: [], sar: [], dark: [], sts: [], patrol: [] }
-      pic.ais_tracks.forEach((a) => markers.current.ais.push(mk(a.lat, a.lon, '#38bdf8', 5, 'vessel', a.mmsi, 2)))
-      pic.sar_detections.forEach((d) => markers.current.sar.push(mk(d.lat, d.lon, '#e2e8f0', 5, 'sar', d.id, 3)))
-      pic.dark_vessels.forEach((d) => markers.current.dark.push(mk(d.detection.lat, d.detection.lon, '#ff4d6a', 7 + d.risk_score / 20, 'dark', d.detection.id, 6)))
-      pic.sts_events.forEach((e) => markers.current.sts.push(mk(e.lat, e.lon, '#f59e0b', 9, 'sts', e.id, 4)))
-      pic.patrol_assets.forEach((a) => markers.current.patrol.push(mk(a.lat, a.lon, '#22c55e', 7, 'patrol', a.name, 5)))
-
-      overlay.current = new g.maps.GroundOverlay(`${import.meta.env.BASE_URL}demo/shomudro/sar_scene.png`, SAR_BOUNDS, { opacity: 0.9 })
-      applyView('satellite')
-    }).catch(() => setMapErr(true))
-    return () => {
-      Object.values(markers.current).flat().forEach((m) => m.setMap && m.setMap(null))
-      overlay.current?.setMap(null)
-      mapObj.current = null
-    }
+      pic.ais_tracks.forEach((a) => markers.current.ais.push(add(a.lat, a.lon, '#38bdf8', 'vessel', a.mmsi)))
+      pic.sar_detections.forEach((d) => markers.current.sar.push(add(d.lat, d.lon, '#cbd5e1', 'sar', d.id)))
+      pic.dark_vessels.forEach((d) => markers.current.dark.push(add(d.detection.lat, d.detection.lon, '#ff4d6a', 'dark', d.detection.id, true)))
+      pic.sts_events.forEach((e) => markers.current.sts.push(add(e.lat, e.lon, '#f59e0b', 'sts', e.id)))
+      pic.patrol_assets.forEach((a) => markers.current.patrol.push(add(a.lat, a.lon, '#22c55e', 'patrol', a.name)))
+    })
+    map.on('error', () => setMapErr(true))
+    return () => { map.remove(); mapObj.current = null }
   }, [pic])
 
-  function applyView(v) {
-    const g = window.google, map = mapObj.current
-    if (!g || !map) return
-    if (v === 'satellite') { map.setMapTypeId('hybrid'); map.setOptions({ styles: [] }) }
-    else if (v === 'streets') { map.setMapTypeId('roadmap'); map.setOptions({ styles: [] }) }
-    else { map.setMapTypeId('roadmap'); map.setOptions({ styles: DARK_STYLE }) }
-  }
-  function switchView(v) { setView(v); applyView(v) }
+  function switchView(v) { setView(v); mapObj.current?.setStyle(STYLES[v]) }
 
   function toggleLayer(key) {
     setLayers((prev) => {
@@ -100,13 +114,15 @@ export default function ShomudroView({ lang }) {
       const map = mapObj.current
       if (map) {
         if (key === 'sarscene') {
-          overlay.current?.setMap(on ? map : null)
-          if (on) map.fitBounds(SAR_BOUNDS)
+          if (on) { map._addSar?.(); map.fitBounds([[90.2, 20.2], [90.9, 20.9]], { padding: 60 }) }
+          else if (map.getLayer('sarscene')) map.removeLayer('sarscene')
         } else {
-          markers.current[key]?.forEach((m) => m.setMap(on ? map : null))
+          markers.current[key]?.forEach((m) => { m.getElement().style.display = on ? '' : 'none' })
         }
       }
-      return { ...prev, [key]: on }
+      const next = { ...prev, [key]: on }
+      layersRef.current = next
+      return next
     })
   }
 
@@ -121,14 +137,11 @@ export default function ShomudroView({ lang }) {
     else if (kind === 'patrol') data = p.patrol_assets.find((x) => x.name === id)
     if (!data) return
     setContact({ kind, data })
-    if (kind === 'dark' || kind === 'sts') {
-      setPacket(null)
-      api.interdiction(id).then(setPacket).catch(() => setPacket(null))
-    } else setPacket(null)
+    if (kind === 'dark' || kind === 'sts') { setPacket(null); api.interdiction(id).then(setPacket).catch(() => setPacket(null)) }
+    else setPacket(null)
     const lat = kind === 'dark' ? data.detection.lat : data.lat
     const lon = kind === 'dark' ? data.detection.lon : data.lon
-    mapObj.current?.panTo({ lat, lng: lon })
-    if (mapObj.current?.getZoom() < 8) mapObj.current.setZoom(9)
+    mapObj.current?.flyTo({ center: [lon, lat], zoom: 9, pitch: 55, duration: 1200 })
   }
 
   return (
@@ -152,7 +165,7 @@ export default function ShomudroView({ lang }) {
         <div>
           <div className="map-shell">
             <div className="map" ref={mapRef} />
-            {mapErr && <div className="placeholder" style={{ position: 'absolute', inset: 0 }}>Map failed to load (check Maps key/referrer).</div>}
+            {mapErr && <div className="placeholder" style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center' }}>Map needs a Mapbox token — sending it enables the 3D map.</div>}
             <div className="view-switch">
               {Object.entries(VIEWS).map(([k, label]) => (
                 <button key={k} className={view === k ? 'active' : ''} onClick={() => switchView(k)}>{t[label]}</button>

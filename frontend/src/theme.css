@@ -164,6 +164,14 @@ body::before {
   text-transform: uppercase; letter-spacing: .16em; color: var(--text-faint); margin: 0 0 14px; }
 .section-title::before { content: ''; width: 3px; height: 14px; border-radius: 3px; background: var(--grad-accent); }
 
+/* Mapbox ship-icon markers */
+.ship-marker { cursor: pointer; filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6)); transition: transform .12s; }
+.ship-marker:hover { transform: scale(1.35); }
+.ship-marker.pulse svg { animation: shipPulse 1.8s ease-in-out infinite; }
+@keyframes shipPulse { 0%, 100% { filter: drop-shadow(0 0 2px var(--mc)); } 50% { filter: drop-shadow(0 0 9px var(--mc)); } }
+.mapboxgl-ctrl-group { background: rgba(10, 17, 34, 0.85) !important; border: 1px solid var(--stroke) !important; }
+.mapboxgl-popup-content { background: var(--bg-2); color: var(--text); border: 1px solid var(--stroke-strong); border-radius: 10px; }
+
 .realbadge { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 800; letter-spacing: .08em;
   color: #04121f; background: linear-gradient(135deg, #2dd4a7, #22d3ee); padding: 3px 9px; border-radius: 20px;
   box-shadow: 0 0 16px rgba(45, 212, 167, .4); margin-left: 4px; }
