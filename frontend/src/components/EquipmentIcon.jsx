@@ -72,21 +72,33 @@ const ICONS = {
       <path {...P} d="M31 12c1 0 1.6 1 1.7 2.6l.5 9L58 27v3l-24.8-2 .3 12 5 4v2l-7-1.6-.5 3c-.1.6-.5 1-1 1s-.9-.4-1-1l-.5-3-7 1.6v-2l5-4 .3-12L8 30v-3l24.8-3.4.5-9C29.4 13 30 12 31 12z" />
     </>
   ),
+  generator: (
+    <>
+      <rect {...P} x="7" y="24" width="30" height="22" rx="4" />
+      <rect {...P} x="38" y="28" width="17" height="18" rx="3" />
+      <rect {...P} x="21" y="17" width="9" height="7" rx="1.5" />
+      <rect {...P} x="12" y="11" width="3.4" height="13" rx="1.7" />
+      <circle {...P} cx="16" cy="50" r="3.6" />
+      <circle {...P} cx="46" cy="50" r="3.6" />
+    </>
+  ),
 }
 
-// Map an asset's type string to the closest silhouette.
+// Map an asset's type string to the closest silhouette — ordered so specific
+// models win over generic words (e.g. "missile boat" = a vessel, not a SAM).
 export function iconKeyFor(type = '') {
   const s = type.toLowerCase()
   if (/(uav|drone|unmanned)/.test(s)) return 'uav'
-  if (/(fighter|jet|f-|mig|combat aircraft|interceptor)/.test(s)) return 'jet'
+  if (/(generator|genset|power unit|power pack|powerpack)/.test(s)) return 'generator'
+  if (/(missile boat|fast attack|\bfac\b|gun boat|gunboat)/.test(s)) return 'patrol'
+  if (/(sam|surface.to.air|air.?defen|s-300|s-400|missile system|missile battery)/.test(s)) return 'air_defense'
   if (/(helicopter|heli|rotor)/.test(s)) return 'helicopter'
+  if (/(mpa|maritime patrol aircraft|fighter|\bjet\b|f-\d|mig|combat aircraft|interceptor|aircraft|transport|plane)/.test(s)) return 'jet'
   if (/(frigate|corvette|destroyer|warship|naval ship)/.test(s)) return 'ship'
-  if (/(patrol|opv|boat|cutter|craft)/.test(s)) return 'patrol'
-  if (/(submarine|sub)/.test(s)) return 'submarine'
+  if (/(opv|offshore patrol|ipv|inshore patrol|patrol boat|patrol vessel|\bfpb\b|boat|cutter|craft)/.test(s)) return 'patrol'
+  if (/(submarine|\bsub\b)/.test(s)) return 'submarine'
   if (/(radar|sensor|surveillance)/.test(s)) return 'radar'
-  if (/(sam|missile|air.?defen|s-300|s-400)/.test(s)) return 'air_defense'
-  if (/(tank|apc|armou?r|vehicle|artillery|truck)/.test(s)) return 'vehicle'
-  if (/(aircraft|transport|plane)/.test(s)) return 'jet'
+  if (/(tank|\bapc\b|armou?r|vehicle|artillery|truck|carrier|\btrk\b)/.test(s)) return 'vehicle'
   if (/(ship|vessel)/.test(s)) return 'ship'
   return 'radar'
 }

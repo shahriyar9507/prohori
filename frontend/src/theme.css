@@ -9,10 +9,10 @@
   /* Surfaces */
   --bg: #070b16;
   --bg-2: #0a1122;
-  --glass: rgba(255, 255, 255, 0.035);
-  --glass-2: rgba(255, 255, 255, 0.055);
-  --stroke: rgba(255, 255, 255, 0.09);
-  --stroke-strong: rgba(255, 255, 255, 0.16);
+  --glass: rgba(150, 172, 224, 0.06);
+  --glass-2: rgba(150, 172, 224, 0.1);
+  --stroke: rgba(150, 175, 232, 0.13);
+  --stroke-strong: rgba(150, 175, 232, 0.22);
 
   /* Text */
   --text: #eaf0fb;
@@ -43,14 +43,15 @@
 }
 
 :root { --chart-grid: rgba(255, 255, 255, 0.08); --track: rgba(255, 255, 255, 0.08); --topbar-bg: rgba(7, 11, 22, 0.72);
-  --wm-land: rgba(255, 255, 255, 0.06); --wm-stroke: rgba(255, 255, 255, 0.14); --wm-grat: rgba(255, 255, 255, 0.05); }
+  --wm-land: rgba(148, 176, 226, 0.16); --wm-stroke: rgba(180, 205, 255, 0.28); --wm-grat: rgba(255, 255, 255, 0.05);
+  --wm-ocean: rgba(34, 122, 190, 0.10); }
 
 /* ─── Light / white theme (default) ──────────────────────────────────── */
 :root[data-theme="light"] {
-  --bg: #eef2f9; --bg-2: #ffffff;
-  --glass: rgba(255, 255, 255, 0.82); --glass-2: #ffffff;
-  --stroke: rgba(15, 23, 42, 0.1); --stroke-strong: rgba(15, 23, 42, 0.2);
-  --text: #0f172a; --text-dim: #475569; --text-faint: #64748b;
+  --bg: #eaeef6; --bg-2: #ffffff;
+  --glass: #ffffff; --glass-2: #f4f7fc;
+  --stroke: rgba(15, 23, 42, 0.09); --stroke-strong: rgba(15, 23, 42, 0.18);
+  --text: #0f172a; --text-dim: #475569; --text-faint: #718097;
   --accent: #2563eb; --accent-2: #0ea5e9;
   --grad-accent: linear-gradient(135deg, #2563eb, #0ea5e9);
   --glow-accent: 0 2px 14px rgba(37, 99, 235, 0.28);
@@ -60,7 +61,8 @@
   --shadow-lg: 0 24px 60px -24px rgba(15, 23, 42, 0.28);
   --chart-grid: rgba(15, 23, 42, 0.09); --track: rgba(15, 23, 42, 0.08);
   --topbar-bg: rgba(255, 255, 255, 0.82);
-  --wm-land: rgba(15, 23, 42, 0.07); --wm-stroke: rgba(15, 23, 42, 0.14); --wm-grat: rgba(15, 23, 42, 0.05);
+  --wm-land: rgba(37, 99, 235, 0.1); --wm-stroke: rgba(37, 99, 235, 0.28); --wm-grat: rgba(15, 23, 42, 0.05);
+  --wm-ocean: rgba(37, 99, 235, 0.05);
 }
 :root[data-theme="light"] body::before {
   background:
@@ -339,9 +341,7 @@ body::before {
 
 /* Cyber HUD panel: glowing corner brackets */
 .hud { position: relative; }
-.hud::before, .hud::after { content: ''; position: absolute; width: 15px; height: 15px; pointer-events: none; opacity: .55; }
-.hud::before { top: 7px; left: 7px; border-top: 2px solid var(--accent); border-left: 2px solid var(--accent); border-radius: 3px 0 0 0; }
-.hud::after { bottom: 7px; right: 7px; border-bottom: 2px solid var(--accent); border-right: 2px solid var(--accent); border-radius: 0 0 3px 0; }
+/* Corner-bracket HUD marks removed — they read as stray borders. Clean panels. */
 
 .profile-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
 .profile-title { font-weight: 750; font-size: 16px; letter-spacing: -0.01em; line-height: 1.25; }
@@ -430,13 +430,11 @@ body::before {
 .poll-note { margin-left: auto; font-size: 11px; color: var(--text-faint); }
 
 /* ─── Analytical bento grid ──────────────────────────────────────────── */
-.bento { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px;
-  grid-template-areas: "kpis kpis map map" "actors sector sev map"; }
-.bento-kpis { grid-area: kpis; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-.bento-map { grid-area: map; min-height: 260px; display: flex; flex-direction: column; }
-.bento-actors { grid-area: actors; }
-.bento-sector { grid-area: sector; }
-.bento-sev { grid-area: sev; }
+/* Robust linear bento — no overlap. KPIs row · world map · charts row. */
+.bento { display: flex; flex-direction: column; gap: 14px; margin-bottom: 18px; }
+.bento-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.bento-map { min-height: 300px; display: flex; flex-direction: column; }
+.bento-charts { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 14px; align-items: start; }
 .kpi { background: var(--glass); border: 1px solid var(--stroke); border-radius: var(--radius-sm);
   padding: 14px 16px; position: relative; overflow: hidden; }
 .kpi .num { font-size: 30px; font-weight: 800; line-height: 1; font-family: var(--mono); }
@@ -524,8 +522,8 @@ body::before {
 .alert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 20px; }
 
 @media (max-width: 900px) {
-  .bento { grid-template-columns: repeat(2, 1fr); grid-template-areas: "kpis kpis" "map map" "actors actors" "sector sev"; }
   .bento-kpis { grid-template-columns: repeat(2, 1fr); }
+  .bento-charts { grid-template-columns: 1fr; }
   .gauges { grid-template-columns: repeat(3, 1fr); }
   .alert-grid, .ar-facts { grid-template-columns: 1fr; }
 }
@@ -826,6 +824,9 @@ body::before {
 .nsr-ic { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--glass-2); }
 .nsr-ic.ic-drishti { color: #22d3ee; } .nsr-ic.ic-rakkhok { color: #f59e0b; } .nsr-ic.ic-shomudro { color: #14b8a6; }
 .ncd-open { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Real publisher logo chip in news cards. */
+.nc-logo { background: #fff; object-fit: contain; padding: 4px; border: 1px solid var(--stroke); }
 
 @media (max-width: 1100px) { .kpi-row { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 640px) { .kpi-row { grid-template-columns: repeat(2, 1fr); } .hide-sm { display: none; } }

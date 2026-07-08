@@ -37,7 +37,7 @@ export default function EventWorldMap({ events }) {
   return (
     <div className="worldmap">
       <ComposableMap projection="geoEqualEarth" projectionConfig={{ scale: 168, center: [40, 18] }} style={{ width: '100%', height: 'auto' }}>
-        <Sphere stroke="var(--wm-stroke)" strokeWidth={0.5} fill="transparent" />
+        <Sphere stroke="var(--wm-stroke)" strokeWidth={0.5} fill="var(--wm-ocean)" />
         <Graticule stroke="var(--wm-grat)" strokeWidth={0.4} />
         <Geographies geography={GEO}>
           {({ geographies }) => geographies.map((geo) => {

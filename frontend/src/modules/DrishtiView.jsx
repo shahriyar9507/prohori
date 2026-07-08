@@ -41,6 +41,34 @@ function daysAgo(dateStr) {
 function cleanSource(s = '') { return s.replace(/\s*\(Google News\)\s*/i, '').trim() || 'News' }
 function initials(s = '') { return cleanSource(s).replace(/[^A-Za-z ]/g, '').split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase() || 'N' }
 function avatarHue(s = '') { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) % 360; return h }
+
+// Map a publication name → its domain, so we can show the REAL publisher logo.
+const SRC_DOMAIN = {
+  'the daily star': 'thedailystar.net', 'the financial express': 'thefinancialexpress.com.bd',
+  'the business standard': 'tbsnews.net', 'tbs news': 'tbsnews.net', 'new age': 'newagebd.net',
+  'united news of bangladesh': 'unb.com.bd', 'bdnews24': 'bdnews24.com', 'dhaka tribune': 'dhakatribune.com',
+  'prothom alo': 'en.prothomalo.com', 'business post': 'businesspostbd.com', 'the daily observer': 'observerbd.com',
+  'daily sun': 'daily-sun.com', 'textile today': 'textiletoday.com.bd', 'fibre2fashion': 'fibre2fashion.com',
+  'apparel views': 'apparelviews.com', 'just style': 'just-style.com', 'just-style': 'just-style.com',
+  'modern diplomacy': 'moderndiplomacy.eu', 'big news network': 'bignewsnetwork.com', 'awaz the voice': 'awazthevoice.in',
+  'the hindu': 'thehindu.com', 'times of india': 'timesofindia.indiatimes.com', 'economic times': 'economictimes.indiatimes.com',
+  'reuters': 'reuters.com', 'bloomberg': 'bloomberg.com', 'al jazeera': 'aljazeera.com', 'bbc': 'bbc.com',
+  'nikkei': 'asia.nikkei.com', 'south china morning post': 'scmp.com', 'the diplomat': 'thediplomat.com',
+  'financial times': 'ft.com', 'anadolu': 'aa.com.tr', 'the express tribune': 'tribune.com.pk', 'dawn': 'dawn.com',
+  'the print': 'theprint.in', 'india today': 'indiatoday.in', 'ndtv': 'ndtv.com', 'the wire': 'thewire.in',
+}
+function domainForSource(src = '') {
+  const s = cleanSource(src).toLowerCase()
+  for (const [k, v] of Object.entries(SRC_DOMAIN)) if (s.includes(k)) return v
+  return null
+}
+// Real publisher logo (DuckDuckGo icon service) with a coloured-initials fallback.
+function SourceLogo({ source }) {
+  const [err, setErr] = useState(false)
+  const dom = domainForSource(source)
+  if (dom && !err) return <img className="nc-av nc-logo" src={`https://icons.duckduckgo.com/ip3/${dom}.ico`} alt="" loading="lazy" onError={() => setErr(true)} />
+  return <span className="nc-av" style={{ background: `hsl(${avatarHue(source || '')} 62% 46%)` }}>{initials(source)}</span>
+}
 function sentimentOf(ev) {
   const g = ev.goldstein ?? ev.tone ?? 0
   if (g > 1) return { k: 'pos', label: 'positive' }
@@ -233,25 +261,27 @@ export default function DrishtiView({ lang }) {
           <KpiCard icon={Bell} label={t.amberAlerts} value={sevCounts.amber} spark={spark.amber} delta={deltaOf(spark.amber)} tone="amber" />
           <KpiCard icon={Users} label={t.countriesInPlay} value={topActors.length} spark={spark.actors} delta={deltaOf(spark.actors)} tone="violet" />
         </div>
-        <div className="panel bento-map">
+        <div className="panel bento-map accent-cyan">
           <div className="mini-title"><Globe2 size={15} className="ti" /> {t.geoFootprint}<span className="pnl-tag">live arcs → Dhaka</span></div>
           <EventWorldMap events={events} />
         </div>
-        <div className="panel bento-actors">
-          <div className="mini-title">{t.topActors}</div>
-          <div className="actor-bars">
-            {topActors.map((a) => (
-              <div className="actor-row" key={a.name}>
-                <span className="an">{a.name}</span>
-                <span className="ab"><i style={{ width: `${(a.value / maxActor) * 100}%` }} /></span>
-                <span className="av">{a.value}</span>
-              </div>
-            ))}
-            {!topActors.length && <div className="placeholder">{t.loading}</div>}
+        <div className="bento-charts">
+          <div className="panel bento-actors accent-violet">
+            <div className="mini-title"><Radio size={15} className="ti" /> {t.topActors}</div>
+            <div className="actor-bars">
+              {topActors.map((a) => (
+                <div className="actor-row" key={a.name}>
+                  <span className="an">{a.name}</span>
+                  <span className="ab"><i style={{ width: `${(a.value / maxActor) * 100}%` }} /></span>
+                  <span className="av">{a.value}</span>
+                </div>
+              ))}
+              {!topActors.length && <div className="placeholder">{t.loading}</div>}
+            </div>
           </div>
+          <div className="panel accent-blue"><div className="mini-title"><PieChart size={15} className="ti" /> {t.bySector}</div><SectorDonut data={sectorData} /></div>
+          <div className="panel accent-red"><div className="mini-title"><PieChart size={15} className="ti" /> {t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
         </div>
-        <div className="panel bento-sector accent-blue"><div className="mini-title"><PieChart size={15} className="ti" /> {t.bySector}</div><SectorDonut data={sectorData} /></div>
-        <div className="panel bento-sev accent-red"><div className="mini-title"><PieChart size={15} className="ti" /> {t.bySeverity}</div><SeverityDonut counts={sevCounts} /></div>
       </div>
 
       {/* Early-warning + region focus */}
@@ -351,11 +381,10 @@ export default function DrishtiView({ lang }) {
       <div className="news-wall">
         {shown.map((s) => {
           const sent = sentimentOf(s.event)
-          const hue = avatarHue(s.event.source || '')
           return (
             <article key={s.event.id} className={`news-card sel-${s.severity} ${sel?.event.id === s.event.id ? 'active' : ''}`} onClick={() => openReport(s)}>
               <div className="nc-top">
-                <span className="nc-av" style={{ background: `hsl(${hue} 70% 45%)` }}>{initials(s.event.source)}</span>
+                <SourceLogo source={s.event.source} />
                 <div className="nc-src">
                   <b>{cleanSource(s.event.source)}</b>
                   <span>{daysAgo(s.event.event_date)}</span>
