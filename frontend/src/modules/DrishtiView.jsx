@@ -17,21 +17,6 @@ const SECTOR_ECON = {
 }
 
 /* ── small helpers ──────────────────────────────────────────────────── */
-function useCountUp(target, ms = 900) {
-  const [v, setV] = useState(0)
-  useEffect(() => {
-    let raf, start
-    const step = (ts) => {
-      if (!start) start = ts
-      const p = Math.min(1, (ts - start) / ms)
-      setV(Math.round(target * (1 - Math.pow(1 - p, 3))))
-      if (p < 1) raf = requestAnimationFrame(step)
-    }
-    raf = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(raf)
-  }, [target, ms])
-  return v
-}
 function daysAgo(dateStr, t) {
   const d = new Date(dateStr)
   if (isNaN(d)) return dateStr
@@ -111,12 +96,6 @@ function fallbackBrief(scored, t) {
     evidence: scored.evidence || [],
     meta: { confidence: 0.5, confidence_label: 'medium', model_version: 'drishti-doavoid-fallback/0.1' },
   }
-}
-
-/* ── KPI with animated counter ──────────────────────────────────────── */
-function Kpi({ value, label, cls }) {
-  const v = useCountUp(value || 0)
-  return <div className={`kpi ${cls}`}><div className="num">{v}</div><div className="lbl">{label}</div></div>
 }
 
 /* ── scrolling live signals ticker ──────────────────────────────────── */

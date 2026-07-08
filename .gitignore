@@ -98,3 +98,6 @@ backend/scripts/ais_snapshot.json
 # SAR pipeline artifacts (large/binary)
 backend/scripts/sar.tif
 backend/scripts/sar_detections.json
+
+# Local Claude Code config / skills (internal tooling)
+.claude/

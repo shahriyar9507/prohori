@@ -91,7 +91,8 @@ Two cross-cutting capabilities bind them:
 - **Remaining-Useful-Life (RUL) prediction** via **Weibull survival analysis** on the driving usage counter, reporting RUL in days *and* the conditional probability of failure within 90 days.
 - **Fleet & per-force readiness %** roll-up (mission-capable rates) with red/amber alert counts.
 - **Predictive-maintenance ranking** — the "service this one first" list, ordered by failure risk.
-- **Digital-twin health report** — ring gauges, maintenance *Do-now / Watch* recommendations, and an evidence chain per asset.
+- **Failure-risk data table** with **real equipment photos** (fetched by platform class from the Wikipedia/Wikimedia REST API, silhouette fallback), status pills, and per-asset risk bars.
+- **Digital-twin health report** — ring gauges (mission-capable, Weibull RUL, 90-day failure risk), service-life countdown clocks, maintenance *Do-now / Watch* recommendations, and an evidence chain per asset.
 - Asset data is **synthetic-but-realistic** — real defense data is classified; the demo is honest about this.
 
 ### 🌊 SHOMUDRO — Maritime Domain Awareness
@@ -248,7 +249,7 @@ Everything below is **actually in the codebase** — verified against `frontend/
 | **Explainable ML** | Weibull survival analysis (RUL) · transparent keyword extraction · gated SAR⋈AIS matching | Auditable, defensible logic instead of opaque black boxes. |
 | **Deployment** | Vercel (frontend, static bake) · Render (backend, blueprint) | Free public URLs that stay live for judging. |
 
-> ℹ️ `maplibre-gl` is present as a dependency but the active maps are Mapbox GL JS, Google Maps, and react-simple-maps. The heavy data-pipeline libraries (`numpy`, `scipy`, `tifffile`, `websockets`) live in `requirements-dev.txt` and are only used by the offline fetch scripts (`backend/scripts/`), not the runtime API.
+> ℹ️ The heavy data-pipeline libraries (`numpy`, `scipy`, `tifffile`, `websockets`) live in `requirements-dev.txt` and are only used by the offline fetch scripts (`backend/scripts/`), not the runtime API. RAKKHOK equipment photos come from the Wikipedia/Wikimedia REST API and DRISHTI publisher logos from the DuckDuckGo icon service — both are keyless client-side fetches with graceful fallbacks.
 
 ---
 

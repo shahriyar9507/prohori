@@ -25,7 +25,7 @@ components, each returning its own reasoning:
 | Actor relevance | 0.40 | Is Bangladesh / a neighbour / a major partner involved? |
 | Sector relevance | 0.30 | Remittance (labour) & RMG trade weighted highest |
 | Geographic proximity | 0.15 | Bay of Bengal / South Asia focus |
-| Event magnitude | 0.15 | GDELT Goldstein scale + coverage tone |
+| Event magnitude | 0.15 | Cooperation/conflict intensity signal from the keyword extractor |
 
 Severity bands: **≥70 = red** (act now) · **45–69 = amber** (30–90 day window)
 · **<45 = green** (nominal). An LLM judgement layer refines these in P1; the
@@ -43,13 +43,17 @@ Interactive docs: run the backend and open `/docs`.
 
 ## Data & grounding
 
-- **Events:** cached demo snapshot (`data/demo_events.json`, 10 Bangladesh-relevant
-  scenario events) by default; live GDELT DOC 2.0 when `DRISHTI_USE_LIVE_GDELT=True`.
-- **Recommendations:** grounded in `knowledge.py` (precedent corpus + per-sector
-  DO/AVOID/HEDGE playbooks). Every recommendation cites a precedent ID.
-- **LLM:** optional. Point `LLM_BASE_URL` at a local Ollama/vLLM endpoint
-  (sovereign/air-gapped) or a hosted API. With no key, deterministic grounded
-  output keeps the demo alive.
+- **Events:** live **Google News RSS** (`news.py`, keyless) is the primary feed,
+  cached ~15 min. A baked snapshot (`data/demo_events.json`, 14 Bangladesh-relevant
+  events) serves the instant static demo, and a secondary GDELT DOC 2.0 path
+  (`gdelt.py`) is available when `DRISHTI_USE_LIVE_GDELT=True` (off by default).
+- **Recommendations:** grounded in `knowledge.py` (per-sector DO/AVOID/HEDGE
+  playbooks). Every recommendation cites its evidence.
+- **Do/Avoid narrative:** the deployed LLM is **Google Gemini 2.5 Flash-Lite**
+  (via the OpenAI-compatible adapter), producing a real-time comparative read of
+  the event against today's live headline context. Point `LLM_BASE_URL` at a
+  local Ollama/vLLM endpoint instead to go sovereign/air-gapped. With no key, a
+  deterministic grounded narrative keeps the demo alive.
 
 ## Run locally
 

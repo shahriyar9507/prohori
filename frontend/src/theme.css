@@ -382,12 +382,10 @@ body::before {
 .layer-item i { width: 9px; height: 9px; border-radius: 50%; }
 .layer-item .li-count { font-family: var(--mono); font-size: 11px; color: var(--text-dim); background: rgba(255, 255, 255, 0.06); padding: 1px 7px; border-radius: 10px; }
 .layer-item .li-eye { font-size: 11px; }
-.maplibregl-popup-content { background: rgba(10, 17, 34, 0.92); backdrop-filter: blur(12px); color: var(--text);
+.mapboxgl-popup-content { background: rgba(10, 17, 34, 0.92); backdrop-filter: blur(12px); color: var(--text);
   border: 1px solid var(--stroke-strong); border-radius: 12px; font-family: var(--sans); font-size: 12px; box-shadow: var(--shadow-lg); }
-.maplibregl-popup-content strong { color: var(--accent); }
-.maplibregl-popup-tip { border-top-color: rgba(10, 17, 34, 0.92) !important; }
-.maplibregl-ctrl-group { background: rgba(10, 17, 34, 0.9) !important; border: 1px solid var(--stroke) !important; }
-.maplibregl-ctrl-group button { filter: invert(1) hue-rotate(180deg); }
+.mapboxgl-popup-content strong { color: var(--accent); }
+.mapboxgl-popup-tip { border-top-color: rgba(10, 17, 34, 0.92) !important; }
 .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px; font-size: 12px; color: var(--text-dim); }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
 .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }

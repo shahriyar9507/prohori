@@ -27,27 +27,28 @@ Every output is **explainable** (evidence chain + confidence), **Bangladesh-firs
 
 ## 3. Methodology
 
-A single deployable FastAPI backend exposes the three modules behind one API; a React + MapLibre command-center frontend consumes it. The production design is a five-layer sovereign, air-gappable platform (Kafka, PostGIS, TimescaleDB, Neo4j, Qdrant, locally-hosted LLMs); the hackathon MVP collapses this into one app with cached, deterministic demo data so the live demo is fast and reliable. All MVP data sources are free (GDELT, Sentinel-1/Copernicus, xView3, AIS, Global Fishing Watch, UN Comtrade).
+A single deployable FastAPI backend exposes the three modules behind one API; a React + Vite command-center frontend consumes it, with `react-simple-maps` for the DRISHTI world map and Mapbox GL JS / Google Maps for the SHOMUDRO tactical map. The frontend loads an instant baked JSON snapshot, then polls the live backend for fresh events and briefs, so the demo is fast and cannot go down. There is no database in the MVP: the backend reads local JSON data files and calls live public APIs. All MVP data sources are free and keyless (or free-tier): **Google News RSS** (primary live feed), **World Bank Open Data**, **Global Fishing Watch**, **Copernicus Sentinel-1**, and **Google Gemini** (2.5 Flash-Lite, via a pluggable OpenAI-compatible adapter that can point at a local open-weight model instead). GDELT DOC 2.0 is available as an opt-in secondary path. The larger production vision — a five-layer streaming platform (Kafka, PostGIS/TimescaleDB, a Neo4j knowledge graph, vector search) — is documented as a roadmap, **not built** in this MVP.
 
 ## 4. AI/ML Approach
 
 | Module | AI/ML component | Method |
 |---|---|---|
-| DRISHTI | Bangladesh Relevance Score | Transparent weighted model — actor (0.40) + sector (0.30) + geography (0.15) + magnitude (0.15); GDELT Goldstein/tone as signals |
-| DRISHTI | Do/Avoid brief | Retrieval-augmented generation grounded in a precedent knowledge base; **mandatory citations; refuses below a confidence floor**; sovereign-capable LLM (local or hosted) with deterministic fallback |
-| DRISHTI | Ask-PRAHARI | Bilingual retrieval-grounded Q&A |
+| DRISHTI | Event extraction | Transparent, auditable keyword engine — tags each headline with actors, policy sectors, and a cooperation/conflict intensity signal (no black box) |
+| DRISHTI | Bangladesh Relevance Score | Transparent weighted model — actor (0.40) + sector (0.30) + geography (0.15) + magnitude (0.15); each component carries its own reasoning |
+| DRISHTI | Do/Avoid brief | Real-time comparative analysis by **Google Gemini** (2.5 Flash-Lite) grounding the target event against today's live headline context, over per-sector DO/AVOID/HEDGE playbooks; **mandatory citations; refuses below a confidence floor**; deterministic grounded fallback when no LLM is configured; sovereign-capable (swap the endpoint for a local model) |
+| DRISHTI | Ask-PRAHARI | Bilingual keyword-grounded Q&A over the current feed |
 | RAKKHOK | RUL | Weibull survival analysis (wear-out shape k=2.5) on each asset's driving usage counter → RUL days + 90-day failure probability |
 | RAKKHOK | Readiness | Worst-clock grounding rule + asset→force roll-up |
-| SHOMUDRO | Dark detection | Gated greedy SAR↔AIS association (distance + size gates); unmatched = dark; risk scoring by corridor/night/size |
+| SHOMUDRO | Dark detection | Gated greedy SAR⋈AIS association (distance + size gates); unmatched = dark; risk scoring by corridor/night/size |
 | SHOMUDRO | STS | Rule engine: <200 m, ≈0 kn, >30 min, incl. one-party-dark |
 
-Production upgrades (documented, not overpromised): fine-tuned multilingual LLM for event extraction (≥85% F1 target), YOLOv8/11 on xView3 for SAR, sequence models for AIS, gradient boosting for RUL.
+Production upgrades (documented as roadmap, not overpromised and **not present in this MVP**): fine-tuned multilingual LLM for event extraction (≥85% F1 target), YOLOv8/11 on xView3 for live SAR vessel detection, sequence models for AIS anomalies, and gradient-boosting on real logbooks for RUL.
 
 ## 5. Results
 
-- **Working full-stack MVP**, all three modules, deployed as a self-contained live URL (never depends on a sleeping backend).
-- **21 automated tests pass** across the three modules (relevance scoring & refusal, worst-clock grounding, RUL risk ordering, SAR↔AIS dark identification, one-party-dark STS, interdiction packet with chain-of-custody hash).
-- **Demo scene:** 10 ranked geopolitical events; a 25-asset fleet with a live service-life alert and a grounding; a Bay of Bengal scene resolving to 4 dark contacts and one one-party-dark STS rendezvous with a generated interdiction packet.
+- **Working full-stack MVP**, all three modules, deployed as a self-contained live URL (never depends on a sleeping backend) that then upgrades to live data — real-time Google News headlines and freshly-generated Gemini briefs — by polling the backend.
+- **21 automated tests pass** across the three modules (relevance scoring & refusal, worst-clock grounding, RUL risk ordering, SAR⋈AIS dark identification, one-party-dark STS, interdiction packet with chain-of-custody hash).
+- **Demo scene:** 14 ranked Bangladesh-relevant events; a 25-asset fleet with a live service-life alert and a grounding; a Bay of Bengal scene (8 AIS tracks, 12 SAR detections) resolving to 4 dark contacts and one one-party-dark STS rendezvous with a generated interdiction packet.
 - Every AI output carries its evidence chain and confidence; the Do/Avoid advisor refuses rather than hallucinate on thin evidence.
 
 ## 6. Limitations & Future Work

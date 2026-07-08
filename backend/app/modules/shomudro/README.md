@@ -18,9 +18,11 @@ moment.
 
 ## The detection chain
 
-1. **SAR detection** — a Sentinel-1 pass over a Bay of Bengal AOI is processed
-   by a YOLO(xView3-trained) detector into vessel-like contacts *(pre-computed
-   for a fast, judge-safe live demo; the pipeline is the production path)*.
+1. **SAR detection** — a **bundled Sentinel-1 scene** (`data/scene.json`, real
+   Copernicus imagery over a Bay of Bengal AOI) provides the vessel-like radar
+   contacts. A trained **YOLO / xView3** detector is the documented *production*
+   path — pre-computed here so the demo runs fast and judge-safe without a GPU;
+   the fusion, risk, STS and interdiction logic all run for real on the scene.
 2. **AIS interpolation** — legal vessels' AIS positions are interpolated to the
    satellite-pass time.
 3. **SAR↔AIS matching** — a gated greedy assignment (distance + size gates; a
